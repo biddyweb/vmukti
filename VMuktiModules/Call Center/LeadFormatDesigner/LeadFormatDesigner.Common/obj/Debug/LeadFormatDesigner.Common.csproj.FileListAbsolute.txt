@@ -1,0 +1,5 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Common\bin\Debug\LeadFormatDesigner.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Common\bin\Debug\LeadFormatDesigner.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Common\obj\Debug\LeadFormatDesigner.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Common\obj\Debug\LeadFormatDesigner.Common.pdb

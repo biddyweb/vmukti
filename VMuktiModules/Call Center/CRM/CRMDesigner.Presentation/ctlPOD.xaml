@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="CRMDesigner.Presentation.ctlPOD"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="30" Width="100">
+	<Canvas  Name="cnvPOD" Background="Transparent">
+		<Rectangle Visibility="Hidden" Name="rect" Fill="Transparent" Stroke="Red" StrokeThickness="3" Height="30" Width="100"/>
+	</Canvas>
+
+</UserControl>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="Desktop_Sharing.Presentation.FullScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FullScreen" Height="30" Width="200" Visibility="Hidden" AllowsTransparency="True" WindowStyle="None" WindowState="Normal">
+    <Grid Name="grdPopUp" Height="30" Background="Beige">
+        <Label Name="lblName" Height="25" VerticalAlignment="Center" HorizontalAlignment="Left" Width="185" Margin="0,1" FontSize="12"></Label>
+        <Button Name="btnStop"  Width="50" Height="25" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,1">Stop</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\LoginPage\Basic HomePage\bin\VMuktiASPPage.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\LoginPage\Basic HomePage\bin\VMuktiASPPage.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\LoginPage\Basic HomePage\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\LoginPage\Basic HomePage\obj\Debug\VMuktiASPPage.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\LoginPage\Basic HomePage\obj\Debug\VMuktiASPPage.pdb

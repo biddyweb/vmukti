@@ -1,0 +1,55 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DragPanelControl.ascx.cs"
+    Inherits="Controls_DragPanelControl" %>
+<%@ Register Assembly="VMukti.AjaxControls" Namespace="VMukti.AjaxControls.CustomDragDrop"
+    TagPrefix="cdd" %>
+<%--<%@ Register Src="~/Controls/ctlPOD.ascx" TagName="ctlPOD" TagPrefix="widget" %>    --%>
+<table width="98%" cellspacing="1" border="0" class="table_fixed" height="100%">
+    <tbody>
+        <tr>
+            <td style="width: <%=LeftPanelSize%>; height: 50px; vertical-align: top">
+                <asp:UpdatePanel ID="LeftUpdatePanel" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Panel ID="LeftPanel" runat="server" class="widget_holder" columnNo="0">
+                            <div id="DropCueLeft" class="widget_dropcue"></div>
+                        </asp:Panel>
+                       <%-- <cdd:CustomDragDropExtender ID="CustomDragDropExtender1" runat="server" TargetControlID="LeftPanel"
+                            DragItemClass="widget" DragItemHandleClass="widget_header" DropCueID="DropCueLeft"
+                            OnClientDrop="onDrop"/>         --%>        
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+            <td style="visibility: <%=MiddlePanelVisible%>;cursor:e-resize;width:1px;">
+                &nbsp;
+            </td>
+            <td style="width: <%=MiddlePanelSize%>; vertical-align: top; visibility: <%=MiddlePanelVisible%>">
+                <asp:UpdatePanel ID="MiddleUpdatePanel" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Panel ID="MiddlePanel" runat="server" class="widget_holder" columnNo="1">
+                            <div id="DropCueMiddle" class="widget_dropcue">
+                            </div>                            
+                        </asp:Panel>
+                        <cdd:CustomDragDropExtender ID="CustomDragDropExtender2" runat="server" TargetControlID="MiddlePanel"
+                            DragItemClass="widget" DragItemHandleClass="widget_header" DropCueID="DropCueMiddle"
+                            OnClientDrop="onDrop"  />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+            <td style="visibility: <%=RightPanelVisible%>;cursor:e-resize;width:1px;">
+                &nbsp;
+            </td>
+            <td style="width: <%=RightPanelSize%>; vertical-align: top; visibility: <%=RightPanelVisible%>">
+                <asp:UpdatePanel ID="RightUpdatePanel" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Panel ID="RightPanel" runat="server" class="widget_holder" columnNo="2">
+                            <div id="DropCueRight" class="widget_dropcue">
+                            </div>
+                        </asp:Panel>
+                        <cdd:CustomDragDropExtender ID="CustomDragDropExtender3" runat="server" TargetControlID="RightPanel"
+                            DragItemClass="widget" DragItemHandleClass="widget_header" DropCueID="DropCueRight"
+                            OnClientDrop="onDrop" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+    </tbody>
+</table>

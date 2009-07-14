@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Dialer_AutoProgressive.Presentation.BtnAutoDialerPopUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="60" Width="100">
+    <Grid Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition> </RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Name="btnDialer" Grid.Row="1" Width="80" FontWeight="bold" Height="30" MouseEnter="btnDialer_MouseEnter" Background="LightGray">Dialer</Button>
+    </Grid>
+</UserControl>

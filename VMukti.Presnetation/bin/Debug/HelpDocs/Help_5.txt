@@ -1,0 +1,21 @@
+PRESENTATION APPLICATION
+
+Presentation Widget is used to give online 
+power pointpresentation to the buddies added
+with this widget.Host (who drags/starts 
+the presentation widget) can give 
+presentations and the buddies (guest) added 
+into this widget see/participate in the 
+presentation, guests can only view 
+the presentation.
+
+	How to Use:
+	• Start Presentation widget 
+	• Add buddies in this widget for inviting 
+	  them to participate in presentation 
+	• Click on Browse Button. 
+	• Select the File that User want to share. 
+	• Click on Upload button to upload the selected file. 
+	• Respond to the Uploaded file message. 
+	• Click on the desired slides of the uploaded 
+	  presentation file shown on the left panel

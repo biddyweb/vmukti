@@ -1,0 +1,18 @@
+FILE SEARCH APPLICATION
+
+File Search is used to share as well as search shared files. 
+For sharing local files residing in a folder, browse to the 
+folder and click on “Rebuild the index”. 
+All the text files will be shared for the buddies registered 
+to the server. For searching a text file, write name or a part 
+of name of the required file in the specified field, 
+click on “Search” button; link of all shared files whose name 
+is/containing the entered name will be displayed in specified 
+panel below to the search field.
+
+	How to Use:
+	• Drag File Search widget on the tab.
+	• Drag Buddies for adding/participating in this widget. 
+	• Browse to a folder for sharing text files inside that.   
+	• Index the text files residing in the browsed folder.
+	• Search shared text file.

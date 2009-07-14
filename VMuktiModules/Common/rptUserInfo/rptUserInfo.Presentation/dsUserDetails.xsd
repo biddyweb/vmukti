@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUserDetails" targetNamespace="http://tempuri.org/dsUserDetails.xsd" xmlns:mstns="http://tempuri.org/dsUserDetails.xsd" xmlns="http://tempuri.org/dsUserDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUserDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsUserDetails" msprop:Generator_DataSetName="dsUserDetails" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtUserAllDetails" msprop:Generator_UserTableName="dtUserAllDetails" msprop:Generator_RowDeletedName="dtUserAllDetailsRowDeleted" msprop:Generator_RowChangedName="dtUserAllDetailsRowChanged" msprop:Generator_RowClassName="dtUserAllDetailsRow" msprop:Generator_RowChangingName="dtUserAllDetailsRowChanging" msprop:Generator_RowEvArgName="dtUserAllDetailsRowChangeEvent" msprop:Generator_RowEvHandlerName="dtUserAllDetailsRowChangeEventHandler" msprop:Generator_TableClassName="dtUserAllDetailsDataTable" msprop:Generator_TableVarName="tabledtUserAllDetails" msprop:Generator_RowDeletingName="dtUserAllDetailsRowDeleting" msprop:Generator_TablePropName="dtUserAllDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActivityName" msprop:Generator_UserColumnName="ActivityName" msprop:Generator_ColumnVarNameInTable="columnActivityName" msprop:Generator_ColumnPropNameInRow="ActivityName" msprop:Generator_ColumnPropNameInTable="ActivityNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ActivityTime" msprop:Generator_UserColumnName="ActivityTime" msprop:Generator_ColumnVarNameInTable="columnActivityTime" msprop:Generator_ColumnPropNameInRow="ActivityTime" msprop:Generator_ColumnPropNameInTable="ActivityTimeColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtUserLoginDetails" msprop:Generator_UserTableName="dtUserLoginDetails" msprop:Generator_RowDeletedName="dtUserLoginDetailsRowDeleted" msprop:Generator_TableClassName="dtUserLoginDetailsDataTable" msprop:Generator_RowChangedName="dtUserLoginDetailsRowChanged" msprop:Generator_RowClassName="dtUserLoginDetailsRow" msprop:Generator_RowChangingName="dtUserLoginDetailsRowChanging" msprop:Generator_RowEvArgName="dtUserLoginDetailsRowChangeEvent" msprop:Generator_RowEvHandlerName="dtUserLoginDetailsRowChangeEventHandler" msprop:Generator_TablePropName="dtUserLoginDetails" msprop:Generator_TableVarName="tabledtUserLoginDetails" msprop:Generator_RowDeletingName="dtUserLoginDetailsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoginTime" msprop:Generator_UserColumnName="LoginTime" msprop:Generator_ColumnPropNameInRow="LoginTime" msprop:Generator_ColumnVarNameInTable="columnLoginTime" msprop:Generator_ColumnPropNameInTable="LoginTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LogoutTime" msprop:Generator_UserColumnName="LogoutTime" msprop:Generator_ColumnPropNameInRow="LogoutTime" msprop:Generator_ColumnVarNameInTable="columnLogoutTime" msprop:Generator_ColumnPropNameInTable="LogoutTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DiffTimeHour" msprop:Generator_UserColumnName="DiffTimeHour" msprop:Generator_ColumnPropNameInRow="DiffTimeHour" msprop:Generator_ColumnVarNameInTable="columnDiffTimeHour" msprop:Generator_ColumnPropNameInTable="DiffTimeHourColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DiffTimeMin" msprop:Generator_UserColumnName="DiffTimeMin" msprop:Generator_ColumnPropNameInRow="DiffTimeMin" msprop:Generator_ColumnVarNameInTable="columnDiffTimeMin" msprop:Generator_ColumnPropNameInTable="DiffTimeMinColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

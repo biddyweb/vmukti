@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="VMukti.Presentation.Controls.CtlEditCategory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:EditGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    
+    <Canvas>
+        
+        <EditGrid:ctlGrid Name="EditGrid" btnEditClicked="ctlGrid_btnEditClicked"  btnDeleteClicked="ctlGrid_btnDeleteClicked" Canvas.Top="0" Height="143" Width="300" Canvas.Left="0">
+        </EditGrid:ctlGrid>
+        <TabControl IsSynchronizedWithCurrentItem="True" x:Name="tbcEditCategory" Width="300" Height="156" Canvas.Top="144" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="0">
+            <TabItem Header="Category" x:Name="tbicategory" >
+                <Canvas Width="294" Height="132">
+                    <TextBox VerticalAlignment="Top" Width="169" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="70" Canvas.Top="9" x:Name="txtName" />
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="25" Content="Name" Canvas.Top="9" x:Name="lblName" HorizontalContentAlignment="Right" Canvas.Left="5" />
+                    <Button Width="50" Height="20" Content="Save" Canvas.Left="27" Canvas.Top="81" x:Name="btnSave" />
+                    <Button Width="50" Height="20" Content="Cancel" Canvas.Left="155" Canvas.Top="82" x:Name="btnCancel" />
+                </Canvas>
+            </TabItem>
+        </TabControl>
+    </Canvas>
+</UserControl>

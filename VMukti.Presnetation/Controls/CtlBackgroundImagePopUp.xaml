@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="VMukti.Presentation.Controls.CtlBackgroundImagePopUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   Name="ctlUserControlTheme" Width="Auto" Height="Auto" BorderBrush="Transparent">
+
+
+
+    <WrapPanel  Height="Auto" Width="Auto" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" 
+                            Background="{x:Null}" BorderBrush="{x:Null}" Tag="\Skins\Images1\Background.jpg"
+                            x:Name="btnbg1"  Height="80" Width="90" Margin="5,10,5,10"
+                             Visibility="Visible" HorizontalAlignment="Left">
+
+            <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="\Skins\Images1\Background.jpg" Stretch="Fill"  Margin="2,2,2,2"/>
+
+
+        </Button>
+
+        <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" 
+                            Background="{x:Null}" BorderBrush="{x:Null}" Tag="\Skins\Images1\Background1.jpg"
+                            x:Name="btnbg2"  Height="80" Width="90" Margin="5,10,5,10"
+                             Visibility="Visible" HorizontalAlignment="Left">
+
+            <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="\Skins\Images1\Background1.jpg" Stretch="Fill"  Margin="2,2,2,2"/>
+
+
+        </Button>
+
+        <Button Foreground="{DynamicResource TextBrushForMenuItem}" Template="{DynamicResource GrdBarButton}" 
+                           Height="80" Width="90" Margin="5,2,2,5" Content="None" 
+                           HorizontalAlignment="Left" Name="btnBackgroundSetting" Background="Transparent" />
+
+    </WrapPanel>
+
+
+</UserControl>

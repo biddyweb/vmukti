@@ -1,0 +1,5 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Common\bin\Debug\ToneDetect.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Common\bin\Debug\ToneDetect.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Common\obj\Debug\ToneDetect.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Common\obj\Debug\ToneDetect.Common.pdb

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCountByState" targetNamespace="http://tempuri.org/dsCountByState.xsd" xmlns:mstns="http://tempuri.org/dsCountByState.xsd" xmlns="http://tempuri.org/dsCountByState.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCountByState" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsCountByState" msprop:Generator_UserDSName="dsCountByState" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCountByState" msprop:Generator_UserTableName="dtCountByState" msprop:Generator_RowDeletedName="dtCountByStateRowDeleted" msprop:Generator_TableClassName="dtCountByStateDataTable" msprop:Generator_RowChangedName="dtCountByStateRowChanged" msprop:Generator_RowClassName="dtCountByStateRow" msprop:Generator_RowChangingName="dtCountByStateRowChanging" msprop:Generator_RowEvArgName="dtCountByStateRowChangeEvent" msprop:Generator_RowEvHandlerName="dtCountByStateRowChangeEventHandler" msprop:Generator_TablePropName="dtCountByState" msprop:Generator_TableVarName="tabledtCountByState" msprop:Generator_RowDeletingName="dtCountByStateRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_UserColumnName="Count" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInTable="CountColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

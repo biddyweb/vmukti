@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSQnA" targetNamespace="http://tempuri.org/DSQnA.xsd" xmlns:mstns="http://tempuri.org/DSQnA.xsd" xmlns="http://tempuri.org/DSQnA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="VMuktiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VMuktiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rptQuestionAnswers.Presentation.Properties.Settings.GlobalReference.Default.VMuktiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSQnA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSQnA" msprop:Generator_DataSetName="DSQnA" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Question" msprop:Generator_UserTableName="Question" msprop:Generator_RowDeletedName="QuestionRowDeleted" msprop:Generator_RowChangedName="QuestionRowChanged" msprop:Generator_RowClassName="QuestionRow" msprop:Generator_RowChangingName="QuestionRowChanging" msprop:Generator_RowEvArgName="QuestionRowChangeEvent" msprop:Generator_RowEvHandlerName="QuestionRowChangeEventHandler" msprop:Generator_TableClassName="QuestionDataTable" msprop:Generator_TableVarName="tableQuestion" msprop:Generator_RowDeletingName="QuestionRowDeleting" msprop:Generator_TablePropName="Question">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QuestionID" msprop:Generator_UserColumnName="QuestionID" msprop:Generator_ColumnVarNameInTable="columnQuestionID" msprop:Generator_ColumnPropNameInRow="QuestionID" msprop:Generator_ColumnPropNameInTable="QuestionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QuestionText" msprop:Generator_UserColumnName="QuestionText" msprop:Generator_ColumnVarNameInTable="columnQuestionText" msprop:Generator_ColumnPropNameInRow="QuestionText" msprop:Generator_ColumnPropNameInTable="QuestionTextColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OptionID" msprop:Generator_UserColumnName="OptionID" msprop:Generator_ColumnVarNameInTable="columnOptionID" msprop:Generator_ColumnPropNameInRow="OptionID" msprop:Generator_ColumnPropNameInTable="OptionIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Options" msprop:Generator_UserColumnName="Options" msprop:Generator_ColumnVarNameInTable="columnOptions" msprop:Generator_ColumnPropNameInRow="Options" msprop:Generator_ColumnPropNameInTable="OptionsColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

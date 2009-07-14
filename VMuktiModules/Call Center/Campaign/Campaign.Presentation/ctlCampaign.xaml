@@ -1,0 +1,179 @@
+﻿<UserControl x:Class="Campaign.Presentation.CtlCampaign"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:CampaignDatePicker="clr-namespace:VMukti.CtlDatePicker.Presentation;assembly=VMukti.CtlDatePicker.Presentation"
+    xmlns:CampaignGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    Height="Auto" Width="700"
+    x:Name="ucCampaign" MinHeight="631" MinWidth="551" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    
+    
+	<Grid x:Name="cnvMain" Width="{Binding Path=Width, ElementName=ucCampaign, Mode=Default}" HorizontalAlignment="Left">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="220"/>
+			<RowDefinition/>
+			<RowDefinition Height="40"/>
+		</Grid.RowDefinitions>
+		<Canvas x:Name="cnvView" Height="220" Background="{DynamicResource WindowBackgroundBrush}" Margin="0,0,11,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+				<CampaignGrid:ctlGrid Name="CtlGrid" Height="219" Width="{Binding Path=Width, ElementName=ucCampaign}" MinWidth="551"  btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked"></CampaignGrid:ctlGrid>
+			</Canvas>
+
+		<TabControl x:Name="tbcCampaign" IsSynchronizedWithCurrentItem="True"  SelectedIndex="3" Margin="0,8,0,8" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Left" Width="{Binding Path=Width, ElementName=ucCampaign}" MinWidth="500">
+				<TabItem  Header="Campaign Details" x:Name="tbiCampaignDetails" GotFocus="tbiCampaignDetails_GotFocus" LostFocus="tbiCampaignDetails_LostFocus" IsSelected="True">
+					<Canvas>
+						<Label Width="100" Height="30" Content="Campaign Name" x:Name="lblCampaignName" Canvas.Left="7" Canvas.Top="6" />
+						<Label Width="100" Height="30" Content="Description" Canvas.Top="31" x:Name="lblDescription" Canvas.Left="7" />
+						<!--<Label Width="100" Height="30" Content="No of Channels" Canvas.Top="57" x:Name="lblNoOfChannels"  Canvas.Left="7" Visibility="Collapsed"/>-->
+						<Label Width="100" Height="30" Content="Prefix" Canvas.Top="57" x:Name="lblCampignPrefix"  Canvas.Left="7" Visibility="Visible"/>
+						<Label Width="100" Height="30" Content="Default 5555" Canvas.Top="57" x:Name="lblCampignPrefixNote"  Canvas.Left="390" Visibility="Visible"/>
+						
+						<CheckBox  Width="100" Height="18" Content=" Is Active" Canvas.Top="118" x:Name="chkIsActive"  Canvas.Left="110" TabIndex="5"/>
+						<Label Width="100" Height="30" Content="Caller ID" Canvas.Top="85" x:Name="lblCallerId"  Canvas.Left="7"/>
+						<Label Width="100" Height="30" Content="Start Date" Canvas.Top="137" x:Name="lblStartDate"  Canvas.Left="7"/>
+						<Label Width="100" Height="30" Content="Park Extension" Canvas.Top="166" x:Name="lblParkExtension"  Canvas.Left="7" />
+						<Label Width="100" Height="30" Content="Park File " Canvas.Top="195" x:Name="lblParkFile"  Canvas.Left="7"/>
+						<Label Width="100" Height="30" Content="End Date" Canvas.Top="137" x:Name="lblEndDate" Canvas.Left="220"/>
+						<Label Width="100" Height="30" Content="Campaign Mode" Canvas.Top="220" x:Name="lblCampaignMode" Canvas.Left="7"/>
+						<TextBox  Width="280" Height="25" Canvas.Left="107" Text="" TextWrapping="Wrap" x:Name="txt_CampaignName" MaxLength="50" GotFocus="txt_CampaignName_GotFocus" KeyDown="txt_CampaignName_KeyDown" LostFocus="txt_CampaignName_LostFocus" Canvas.Top="6" TabIndex="1" />
+						<TextBox  Width="280" Height="25" Canvas.Left="107" Canvas.Top="33" Text="" TextWrapping="Wrap" x:Name="txtDescription" MaxLength="100" GotFocus="txtDescription_GotFocus" KeyDown="txtDescription_KeyDown" LostFocus="txtDescription_LostFocus" TabIndex="2" />
+						<TextBox  Width="280" Height="25" Canvas.Left="107" Canvas.Top="87" Text="" TextWrapping="Wrap" x:Name="txtCallerId" GotFocus="txtCallerId_GotFocus" KeyDown="txtCallerId_KeyDown" LostFocus="txtCallerId_LostFocus" TabIndex="4"  />
+
+						<TextBox  Width="110" Height="25" Canvas.Left="280" Canvas.Top="137" Text="" TextWrapping="Wrap" x:Name="txtEndDate" GotFocus="txtEndDate_GotFocus" KeyDown="txtEndDate_KeyDown" LostFocus="txtEndDate_LostFocus" TabIndex="7" VerticalAlignment="Center" />
+						<CampaignDatePicker:DatePicker Name="dtpEndDate" Width="110" Height="25" Canvas.Left="280" Canvas.Top="137"/>
+
+						<TextBox  Width="110" Height="25" Canvas.Left="107" Canvas.Top="137" Text="" TextWrapping="Wrap" x:Name="txtStartDate" GotFocus="txtStartDate_GotFocus" KeyDown="txtStartDate_KeyDown" LostFocus="txtStartDate_LostFocus" TabIndex="6" />
+						<CampaignDatePicker:DatePicker Name="dtpStartDate" Width="110" Height="25" Canvas.Left="107" Canvas.Top="137"/>
+
+						<TextBox  Width="280" Height="25" Canvas.Left="107" Canvas.Top="168" Text="" TextWrapping="Wrap" x:Name="txtParkExtension" GotFocus="txtParkExtension_GotFocus" KeyDown="txtParkExtension_KeyDown" LostFocus="txtParkExtension_LostFocus" TabIndex="8" MaxLength="100" />
+						<RadioButton Width="120" Height="18" Content=" Predictive" Canvas.Left="127" Canvas.Top="224" IsChecked="True" GroupName="Campaign_Mode" x:Name="rdoPredictive" GotFocus="rdoPredictive_GotFocus" Checked="rdoPredictive_Checked" TabIndex="11" />
+						<RadioButton Width="120" Height="18" Content=" Manual" Canvas.Left="222" Canvas.Top="224" GroupName="Campaign_Mode" x:Name="rdoManual" GotFocus="rdoManual_GotFocus" Checked="rdoManual_Checked" TabIndex="12" />
+					    <TextBox  Width="250" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="107" Canvas.Top="195" GotFocus="TextBox_GotFocus" KeyDown="TextBox_KeyDown" LostFocus="TextBox_LostFocus" x:Name="txtParkFileName" MaxLength="50" TabIndex="9" />
+						<Button  Width="25" Height="25" Content=". . ." Canvas.Left="360" Canvas.Top="195" x:Name="btnBrowsParkFile" Click="btnBrowsParkFile_Click" TabIndex="10" />
+						<Label Width="100" Height="30" Content="Script Name" Canvas.Top="245" x:Name="lblScriptName" Canvas.Left="7"/>
+						<TextBox  Height="25" TextWrapping="Wrap" Width="280" x:XmlAttributeProperties.XmlSpace="preserve" x:Name="txtNoOfChannels" Canvas.Left="107" Canvas.Top="60" TabIndex="3" MaxLength="9" Visibility="Collapsed" Text="0"/>
+						<TextBox  Height="25" TextWrapping="Wrap" Width="280" x:XmlAttributeProperties.XmlSpace="preserve" x:Name="txtCampaignPrefix" Canvas.Left="107" Canvas.Top="60" TabIndex="3" MaxLength="9" Visibility="Visible" Text="0"/>
+
+					<ComboBox  Height="25" Width="280" x:XmlAttributeProperties.XmlSpace="preserve" x:Name="cmbScriptName" Canvas.Left="107" Canvas.Top="245" IsEditable="False" TabIndex="13" IsSynchronizedWithCurrentItem="True"/>
+					</Canvas>
+				</TabItem>
+				<TabItem  Header="CallingList" x:Name="tbiList" GotFocus="tbiList_GotFocus" LostFocus="tbiList_LostFocus" IsSelected="True" TabIndex="14">
+					<Canvas>
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٧" Canvas.Left="401" Canvas.Top="137" x:Name="btnListDown" FontWeight="Bold" />
+						<Button   HorizontalAlignment="Right" Width="35" Height="35" Content="٨" Canvas.Left="401" Canvas.Top="92" x:Name="btnListUp" FontWeight="Bold" />
+						<Button   HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="104" Canvas.Top="250" x:Name="btnSelectNoneAL" Click="btnSelectNoneAL_Click" MouseMove="btnSelectNoneAL_MouseMove"/>
+						<Button   HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="320" Canvas.Top="250" x:Name="btnSelectNoneSL" Click="btnSelectNoneSL_Click" />
+						<Button HorizontalAlignment="Left" Width="35" Height="35" Content="&lt;" x:Name="btnDeSelectList" Canvas.Left="183" Canvas.Top="137" Click="btnDeSelectList_Click" FontWeight="Bold" />
+						<Button   HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="35" Content="&gt;" Canvas.Left="183" Canvas.Top="92" x:Name="btnSelectList" Click="btnSelectList_Click" FontWeight="Bold" />
+						<Button   HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Top="250" x:Name="btnSelectAllAL" Click="btnSelectAllAL_Click" Canvas.Left="12"/>
+						<Button   VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Left="229" Canvas.Top="250" x:Name="btnSelectAllSL" Click="btnSelectAllSL_Click" />
+						<Label  HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="30" Content="Available Lists" Canvas.Left="12" Canvas.Top="4" x:Name="lblAvailableLists" HorizontalContentAlignment="Center" />
+						<Label  HorizontalAlignment="Right" VerticalAlignment="Top" Width="160" Height="30" Content="Selected Lists" Canvas.Left="229" Canvas.Top="4" x:Name="lblSelectedList" HorizontalContentAlignment="Center" />
+						<ListBox  SelectionMode="Multiple"  HorizontalAlignment="Left" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="12" Canvas.Top="35" x:Name="lstAvailableLists" GotFocus="lstAvailableLists_GotFocus" LostFocus="lstAvailableLists_LostFocus" SelectionChanged="lstAvailableLists_SelectionChanged"/>
+						<ListBox  SelectionMode="Multiple" HorizontalAlignment="Right" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="229" Canvas.Top="35" x:Name="lstSelectedList" GotFocus="lstSelectedList_GotFocus" LostFocus="lstSelectedList_LostFocus" SelectionChanged="lstSelectedList_SelectionChanged"/>
+						<Button   Width="160" Height="25" Content="Add New" Canvas.Left="12" Canvas.Top="219" x:Name="btnAddNew" Click="btnAddNew_Click" Visibility="Hidden" />
+						<Button   Width="35" Height="35" Content="&gt;&gt;" x:Name="btnSelectListAll" Click="btnSelectListAll_Click" Canvas.Left="183" Canvas.Top="48" Visibility="Collapsed" FontWeight="Bold" />
+						<Button   Width="35" Height="35" Content="&lt;&lt;" x:Name="btnDeSelectListAll" Click="btnDeSelectListAll_Click" Canvas.Left="183" Canvas.Top="183" Visibility="Collapsed" FontWeight="Bold" />
+					</Canvas>
+				</TabItem>
+
+
+				<TabItem  Header="DNC Lists" x:Name="tbiDispList" IsSelected="True">
+					<Canvas>
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٧" Canvas.Left="401" Canvas.Top="137" x:Name="btnDListDown" />
+						<Button  HorizontalAlignment="Right" Width="35" Height="35" Content="٨" Canvas.Left="401" Canvas.Top="92" x:Name="btnDListUp" />
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="104" Canvas.Top="250" x:Name="btnSelectNoneADL" />
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="320" Canvas.Top="250" x:Name="btnSelectNoneSDL"/>
+
+						<Button  HorizontalAlignment="Left" Width="35" Height="35" Content="&lt;" x:Name="btnDeSelectDList" Canvas.Left="183" Canvas.Top="137" />
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="35" Content="&gt;" Canvas.Left="183" Canvas.Top="92" x:Name="btnSelectDList" />
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Top="250" x:Name="btnSelectAllADL" Canvas.Left="12"/>
+						<Button  VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Left="229" Canvas.Top="250" x:Name="btnSelectAllSDL" />
+						<Label  HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Height="30" Content="Available Lists" Canvas.Left="12" Canvas.Top="4" x:Name="lblAvailableDLists" HorizontalContentAlignment="Center" />
+						<Label  HorizontalAlignment="Right" VerticalAlignment="Top" Width="160" Height="30" Content="Selected Lists" Canvas.Left="229" Canvas.Top="4" x:Name="lblSelectedDList" HorizontalContentAlignment="Center" />
+						<ListBox  SelectionMode="Multiple"  HorizontalAlignment="Left" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="12" Canvas.Top="35" x:Name="lstAvailableDLists" />
+						<ListBox  SelectionMode="Multiple" HorizontalAlignment="Right" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="229" Canvas.Top="35" x:Name="lstSelectedDList" />
+
+						<Button  Width="160" Height="25" Content="Add New" Canvas.Left="12" Canvas.Top="219" x:Name="btnAddNewD" Visibility="Hidden" />
+						<Button  Width="35" Height="35" Content="&gt;&gt;" x:Name="btnSelectDListAll" Canvas.Left="183" Canvas.Top="48" Visibility="Collapsed"/>
+						<Button  Width="35" Height="35" Content="&lt;&lt;" x:Name="btnDeSelectDListAll" Canvas.Left="183" Canvas.Top="183" Visibility="Collapsed"/>
+					</Canvas>
+				</TabItem>
+
+				<TabItem Visibility="Collapsed"  Header="Treatments" x:Name="tbiTreatments" GotFocus="tbiTreatments_GotFocus" LostFocus="tbiTreatments_LostFocus" IsSelected="True">
+					<Canvas>
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٧" Canvas.Left="401" Canvas.Top="137" x:Name="btnMoveDownST" Click="btnMoveDownST_Click" FontWeight="Bold" />
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٨" Canvas.Left="401" Canvas.Top="92" x:Name="btnMoveUpST" Click="btnMoveUpST_Click" FontWeight="Bold" />
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="102" Canvas.Top="253" x:Name="btnSelectNoneAT" Click="btnSelectNoneAT_Click"/>
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="317" Canvas.Top="253" x:Name="btnSelectNoneST" Click="btnSelectNoneST_Click"/>
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="35" Content="&gt;" x:Name="btnSelectAT" Canvas.Left="182" Canvas.Top="92" Click="btnSelectAT_Click" FontWeight="Bold" />
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Top="253" x:Name="btnSelectAllAT" Canvas.Left="12" Click="btnSelectAllAT_Click"/>
+						<Button  VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Left="227" Canvas.Top="253" x:Name="btnSelectAllST" Click="btnSelectAllST_Click"/>
+						<Label HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="30" Content="Available Treatments" Canvas.Left="12" Canvas.Top="8" x:Name="lblAvailableTreatments" HorizontalContentAlignment="Center" />
+						<Label HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="30" Content="Selected Treatments" Canvas.Left="229" Canvas.Top="8" x:Name="lblSelectedTreatments" HorizontalContentAlignment="Center" />
+						<ListBox  SelectionMode="Multiple" HorizontalAlignment="Left" Width="160" Height="180" IsSynchronizedWithCurrentItem="True" x:Name="lstAvailableTreatments" Canvas.Left="12" Canvas.Top="38" SelectionChanged="lstAvailableTreatments_SelectionChanged"/>
+						<ListBox  SelectionMode="Multiple" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="227" Canvas.Top="38" x:Name="lstSelectedTreatments" SelectionChanged="lstSelectedTreatments_SelectionChanged"/>
+						<Button  Width="160" Height="25" Content="Add New" Canvas.Left="12" Canvas.Top="220" x:Name="btnAddNewT" Click="btnAddNewT_Click"/>
+						<Button  Width="35" Height="35" Content="&lt;" Canvas.Left="182" Canvas.Top="137" x:Name="btnDeselectT" Click="btnDeselectT_Click" FontWeight="Bold" />
+						<Button  Width="35" Height="35" Content="&gt;&gt;" x:Name="btnSelectAllT" Canvas.Left="182" Canvas.Top="47" Click="btnSelectAllT_Click" Visibility="Collapsed" FontWeight="Bold" />
+						<Button  Width="35" Height="35" Content="&lt;&lt;" x:Name="btnDeselectAllT" Canvas.Left="182" Canvas.Top="182" Click="btnDeselectAllT_Click" Visibility="Collapsed" FontWeight="Bold" />
+					</Canvas>
+				</TabItem>
+				<TabItem  Header="User Groups" x:Name="tbiAgentGroups" GotFocus="tbiAgentGroups_GotFocus" KeyDown="tbiAgentGroups_KeyDown" LostFocus="tbiAgentGroups_LostFocus" IsSelected="True">
+					<Canvas>
+					<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٧" Canvas.Left="401" Canvas.Top="145"  FontWeight="Bold" x:Name="btnGroupDown" />
+					<Button  HorizontalAlignment="Right" VerticalAlignment="Top" Width="35" Height="35" Content="٨" Canvas.Left="401" Canvas.Top="97"  FontWeight="Bold" x:Name="btnGroupUp" />
+						<Button  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="102" Canvas.Top="248" x:Name="btnSelectNoneAGroups" Click="btnSelectNoneAA_Click"/>
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Height="25" Content="Select None" Canvas.Left="320" Canvas.Top="248" x:Name="btnSelectNoneSGroup" Click="btnSelectNoneSA_Click"/>
+						<Button  HorizontalAlignment="Left" Width="35" Height="35" Content="&lt;" x:Name="btnDeselectGroups" FontWeight="Bold" Canvas.Left="182" Canvas.Top="145" IsCancel="True" Click="btnDeselectAgent_Click"/>
+						<Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="35" Height="35" Content="&gt;" Canvas.Left="182" Canvas.Top="97" x:Name="btnSelectGroups" FontWeight="Bold" Click="btnSelectAgent_Click"/>
+						<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="70" Height="25" Content="Select All" Canvas.Left="12" Canvas.Top="248" x:Name="btnSelectAllAGroups" Click="btnSelectAllAA_Click"/>
+						<Button  VerticalAlignment="Bottom" Width="70" Height="25" Content="Select All" Canvas.Left="230" Canvas.Top="248" x:Name="btnSelectAllSGroup" FontWeight="Normal" Click="btnSelectAllSA_Click"/>
+						<Label  HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" Height="25" Content="Available Groups" Canvas.Left="12" Canvas.Top="4" x:Name="lblAvialableGroups" Margin="0,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+						<Label  HorizontalAlignment="Right" VerticalAlignment="Top" Width="160" Height="25" Content="Selected Groups" Canvas.Left="230" Canvas.Top="4" x:Name="lblSelectedAgents" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+						<ListBox  SelectionMode="Multiple" HorizontalAlignment="Left" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="12" Canvas.Top="35" x:Name="lstAvailableGroups" SelectionChanged="lstAvailableAgents_SelectionChanged"/>
+						<ListBox  SelectionMode="Multiple" HorizontalAlignment="Right" Width="160" Height="210" IsSynchronizedWithCurrentItem="True" Canvas.Left="230" Canvas.Top="35" x:Name="lstSelectedGroups" SelectionChanged="lstSelectedAgents_SelectionChanged"/>
+
+						<Button  Width="160" Height="25" Content="Add New" Canvas.Left="12" Canvas.Top="220" x:Name="btnAddNewAGroups" Click="btnAddNewAA_Click" Visibility="Hidden" />
+
+						<Button  Width="35" Height="35" Content="&lt;&lt;" x:Name="btnDeselectAllGroups" FontWeight="Bold" IsCancel="True" Canvas.Left="182" Canvas.Top="195" Click="btnDeselectAllAgent_Click" Visibility="Collapsed"/>
+						<Button  Width="35" Height="35" Content="&gt;&gt;" x:Name="btnSelectAllGroups" FontWeight="Bold" Canvas.Left="182" Canvas.Top="51" Click="btnSelectAllAgent_Click" Visibility="Collapsed"/>
+
+					</Canvas>
+				</TabItem>
+				<TabItem  Header="Other Details" x:Name="tbiOtherDetails" GotFocus="tbiOtherDetails_GotFocus" LostFocus="tbiOtherDetails_LostFocus" IsSelected="True">
+					<Canvas HorizontalAlignment="Center" Width="413" >
+						<Label Width="130" Height="38" Content="Assigned To" Canvas.Left="12" Canvas.Top="25" x:Name="lblAssignTo" />
+						<Label Width="130" Content="Calling Times" Height="38" Canvas.Left="12" Canvas.Top="55" x:Name="lblCallingTimes" />
+						<Label Width="130" Content="Recording File Format" Height="38" Canvas.Left="12" Canvas.Top="85" x:Name="lblRecordingFileFormat" />
+						<ComboBox IsEditable="False"  Width="250" Height="25" IsSynchronizedWithCurrentItem="True" Canvas.Left="143" Canvas.Top="85" x:Name="cmbRecordingFileFormat" GotFocus="cmbRecordingFileFormat_GotFocus" LostFocus="cmbRecordingFileFormat_LostFocus" SelectionChanged="cmbRecordingFileFormat_SelectionChanged" TabIndex="33">
+						<ComboBoxItem  x:Name="cbiWav" Content="WAV"/>
+						<ComboBoxItem  x:Name="cbiMp3" Content="MP3"/>
+						<ComboBoxItem  x:Name="cbiavi" Content="AVI"/>
+						<ComboBoxItem  x:Name="cbi3gp" Content="3GP"/>
+						</ComboBox>
+					<ComboBox IsEditable="False" Width="250" Height="25" IsSynchronizedWithCurrentItem="True" Canvas.Left="143" Canvas.Top="55" x:Name="cmbCallingTimes" LostFocus="cmbTo_LostFocus" SelectionChanged="cmbTo_SelectionChanged"  TabIndex="32">
+						<ComboBoxItem  x:Name="cbi1" Content="9:00 AM To 5:00 PM" Tag="1"/>
+						<ComboBoxItem  x:Name="cbi2" Content="9:00 AM To 6:00 PM" Tag="2"/>
+						<ComboBoxItem  x:Name="cbi3" Content="9:00 AM To 10:00 PM" Tag="3"/>
+						<ComboBoxItem  x:Name="cbi4" Content="9:00 AM To 11:00 PM" Tag="4"/>
+						<ComboBoxItem  x:Name="cbi5" Content="10:00 AM To 6:00 PM" Tag="5"/>
+						<ComboBoxItem  x:Name="cbi6" Content="10:00 AM To 7:00 PM" Tag="6"/>
+						<ComboBoxItem  x:Name="cbi7" Content="10:00 AM To 8:00 PM" Tag="7"/>
+						<ComboBoxItem  x:Name="cbi8" Content="10:00 AM To 9:00 PM" Tag="8"/>
+						<ComboBoxItem  x:Name="cbi9" Content="12:00 AM To 12:00 PM" Tag="5"/>
+					</ComboBox>
+					<TextBox  Height="25" TextWrapping="Wrap" Width="250" x:XmlAttributeProperties.XmlSpace="preserve" Canvas.Left="143" Canvas.Top="25" x:Name="txtAssignedTo" TabIndex="30"/>
+					<Label Height="38" Width="130" x:Name="lblDispositionList" Canvas.Left="10" Canvas.Top="115" Content="Disposition List"/>
+					<ComboBox  Height="25" x:Name="cmbDispositionList" Canvas.Left="143" Canvas.Top="115" Width="250" TabIndex="36"/>
+					<Label Height="38" Width="130" x:Name="lblCRMList" Canvas.Left="10" Canvas.Top="145" Content="Select CRM"/>
+					<ComboBox  Height="25" Width="250" x:Name="cmbCRMName" Canvas.Left="143" Canvas.Top="145" IsEditable="false" TabIndex="37" IsSynchronizedWithCurrentItem="True"/>
+					</Canvas>
+				</TabItem>
+			</TabControl>
+		<Button  Width="80" Height="30" Content="Save" x:Name="btnSaveOD" Click="btnSaveOD_Click" TabIndex="37" HorizontalAlignment="Left" Margin="51,0,0,2" VerticalAlignment="Bottom" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" />
+		<Button Width="80" Height="30" Content="Cancel" x:Name="btnCancelOD" Click="btnCancelOD_Click" TabIndex="38" HorizontalAlignment="Left" Margin="140,0,173,2" VerticalAlignment="Bottom" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" />
+		<TextBlock Margin="0,0,0,0" Width="0"/>
+		<Label Content="" HorizontalContentAlignment="Center" BorderBrush="Black" Height="23"/>
+	</Grid>
+	
+</UserControl>

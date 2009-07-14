@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{672EE241-4670-42E1-8361-2A14AE97E766}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRMDesigner.Business</RootNamespace>
+    <AssemblyName>CRMDesigner.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsAnswer.cs" />
+    <Compile Include="ClsAnswerCollection.cs" />
+    <Compile Include="ClsAnswerCollectionR.cs" />
+    <Compile Include="ClsAnswerR.cs" />
+    <Compile Include="ClsBaseCollection.cs" />
+    <Compile Include="ClsBaseObject.cs" />
+    <Compile Include="ClsCRM.cs" />
+    <Compile Include="ClsCRMCollection.cs" />
+    <Compile Include="ClsCRMs.cs" />
+    <Compile Include="ClsCRMsCollection.cs" />
+    <Compile Include="ClsLeadFormat.cs" />
+    <Compile Include="ClsLeadFormatCollection.cs" />
+    <Compile Include="ClsOption.cs" />
+    <Compile Include="ClsOptionCollection.cs" />
+    <Compile Include="ClsQuestion.cs" />
+    <Compile Include="ClsQuestionCollection.cs" />
+    <Compile Include="ClsQuestionCollectionR.cs" />
+    <Compile Include="clsQuestionDynamic.cs" />
+    <Compile Include="ClsQuestionR.cs" />
+    <Compile Include="ClsScript.cs" />
+    <Compile Include="ClsScriptCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\BasicHttp\IHTTPFileTransferService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utils\VMuktiAPI\VMuktiAPI.csproj">
+      <Project>{DD700743-BEF3-4A12-BE92-21C5C9232B6C}</Project>
+      <Name>VMuktiAPI %28VMuktiModules\Utils\VMuktiAPI\VMuktiAPI%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRMDesigner.Common\CRMDesigner.Common.csproj">
+      <Project>{19C03C16-0FD4-4394-8435-431080845104}</Project>
+      <Name>CRMDesigner.Common %28VMuktiModules\Call Center\CRM\CRMDesigner.Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRMDesigner.DataAccess\CRMDesigner.DataAccess.csproj">
+      <Project>{B60C478B-87AE-4826-80F1-FAE430E7007E}</Project>
+      <Name>CRMDesigner.DataAccess %28VMuktiModules\Call Center\CRM\CRMDesigner.DataAccess%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

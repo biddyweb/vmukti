@@ -1,0 +1,189 @@
+﻿<UserControl x:Class="VMukti.Presentation.Controls.CtlProfile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Width="488" Height="416" Background="{DynamicResource Background}" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+    <ScrollViewer Height="416" Width="488" Focusable="False" Background="{DynamicResource Background}">
+        <Grid  x:Name="grdProfile" Height="600" Width="468"  HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="row0" Height="16" />
+                <RowDefinition x:Name="row1" Height="180"/>
+                <RowDefinition x:Name="row2" Height="400"/>
+            </Grid.RowDefinitions>
+
+
+            <Grid x:Name="TopRGrid" Grid.Row="0" VerticalAlignment="Top" d:IsLocked="True" />
+
+            <Grid x:Name="MiddleRGrid" Grid.Row="1" VerticalAlignment="Top">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="col10" Width="10" />
+                    <ColumnDefinition x:Name="col11" Width="278"/>
+                    <ColumnDefinition x:Name="col12" Width="180"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid x:Name="mrgM" Grid.Column="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="col13" Width="70"/>
+                        <ColumnDefinition x:Name="col14" Width="208"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="row3" Height="30" />
+                        <RowDefinition x:Name="row4" Height="30"/>
+                        <RowDefinition x:Name="row5" Height="30"/>
+                        <RowDefinition x:Name="row6" Height="30" />
+                        <RowDefinition x:Name="row7" Height="30"/>
+                        <RowDefinition x:Name="row8" Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:Name="tblkFullName" Text="Full Name:" Grid.Row="1"  Height="20" Width="57" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            			<TextBox x:Name="txtFullName" Grid.Row="1" Grid.Column="1"  Height="20" VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,0,48,0" />		
+						
+						<TextBlock x:Name="tblkEmail" Text="Email:" Grid.Row="2" Height="20"  Width="35" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+            			<TextBox x:Name="txtEmail" Grid.Row="2"  Height="20"  Grid.Column="1" VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,0,8,0" />	
+						
+						<TextBlock x:Name="tblkCountry" Text="Country:" Grid.Row="3"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+            			<ComboBox x:Name="cmbCountry" Grid.Column="1" Grid.Row="3" Height="20"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" SelectionChanged="cmbCountry_SelectionChanged" Margin="0,0,48,0" >				
+                            <ComboBoxItem Selector.IsSelected="True">-Not Specified-</ComboBoxItem>    
+                        </ComboBox>
+						
+						<TextBlock x:Name="tblkState" Text="State:" Grid.Row="4"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+	            		<TextBox x:Name="txtState" Grid.Row="4" Grid.Column="1"  Height="20"  Width="91" HorizontalAlignment="Left"  VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, GridBox" />
+
+	            		<TextBlock x:Name="tblkCity" Text="City:" Grid.Row="5"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+	            		<TextBox x:Name="txtCity" Grid.Row="5" Grid.Column="1"  Height="20"  Width="91" HorizontalAlignment="Left"  VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, GridBox" />
+        			</Grid>
+
+            </Grid>
+
+
+
+
+            <Grid x:Name="LowerRGrid" Grid.Row="2" VerticalAlignment="Top" Margin="8,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="col15" Width="358"/>
+                    <ColumnDefinition x:Name="col16" Width="80"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid x:Name="lrgM" Grid.Column="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="col18" Width="70"/>
+                        <ColumnDefinition x:Name="col19" Width="190"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="row9" Height="30" />
+                        <RowDefinition x:Name="row10" Height="30"/>
+                        <RowDefinition x:Name="row11" Height="30"/>
+                        <RowDefinition x:Name="row12" Height="30" />
+                        <RowDefinition x:Name="row13" Height="30"/>
+                        <RowDefinition x:Name="row14" Height="30"/>
+                        <RowDefinition x:Name="row15" Height="30"/>
+                        <RowDefinition x:Name="row16" Height="30"/>
+                        <RowDefinition x:Name="row17" Height="100"/>
+                        <RowDefinition x:Name="row18" Height="20"/>
+                        <RowDefinition x:Name="row19" Height="30"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:Name="tblkTimezone" Text="Timezone:" Grid.Row="0" Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+	            		<ComboBox x:Name="cmbTimezone"  Grid.Column="1" Grid.Row="0" Height="20"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,0,-98,0"  SelectionChanged="cmbTimezone_SelectionChanged">
+					        <ComboBoxItem Selector.IsSelected="True">-Not Specified-</ComboBoxItem>    
+                        </ComboBox>	
+                    
+						<TextBlock x:Name="tblkLanguage" Text="Language:" Grid.Row="1" Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+            			<ComboBox x:Name="cmbLanguage"  Grid.Column="1" Grid.Row="1" Height="20"  Width="182" HorizontalAlignment="Left"  VerticalAlignment="Top" SelectionChanged="cmbLanguage_SelectionChanged" >
+					     <ComboBoxItem Selector.IsSelected="True">-Not Specified-</ComboBoxItem>    
+                        </ComboBox>
+                    
+        				<TextBlock x:Name="tblkGender" Text="Gender:" Grid.Row="2"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+        				<ComboBox x:Name="cmbGender"  Grid.Column="1" Grid.Row="2" Height="20"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,0,71,0" SelectionChanged="cmbGender_SelectionChanged">
+                             <ComboBoxItem Selector.IsSelected="True">-Not Specified-</ComboBoxItem>  
+                             <ComboBoxItem>Male</ComboBoxItem>
+                            <ComboBoxItem>Female</ComboBoxItem>
+                        </ComboBox>
+                
+        				<TextBlock x:Name="tblkBirthdate" Text="Birth Date:" Grid.Row="3"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+        				<ComboBox x:Name="cmbBDay"  Grid.Column="2" Grid.Row="3" Height="20"   Width="43" HorizontalAlignment="Left"  VerticalAlignment="Top" SelectionChanged="cmbBDay_SelectionChanged" >
+        				     <ComboBoxItem Selector.IsSelected="True">-</ComboBoxItem> 
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>12</ComboBoxItem>
+                            <ComboBoxItem>13</ComboBoxItem>
+                            <ComboBoxItem>14</ComboBoxItem>
+                            <ComboBoxItem>15</ComboBoxItem>
+                            <ComboBoxItem>16</ComboBoxItem>
+                            <ComboBoxItem>17</ComboBoxItem>
+                            <ComboBoxItem>18</ComboBoxItem>
+                            <ComboBoxItem>19</ComboBoxItem>
+                            <ComboBoxItem>20</ComboBoxItem>
+                            <ComboBoxItem>21</ComboBoxItem>
+                            <ComboBoxItem>22</ComboBoxItem>
+                            <ComboBoxItem>23</ComboBoxItem>
+                            <ComboBoxItem>24</ComboBoxItem>
+                            <ComboBoxItem>25</ComboBoxItem>
+                            <ComboBoxItem>26</ComboBoxItem>
+                            <ComboBoxItem>27</ComboBoxItem>
+                            <ComboBoxItem>28</ComboBoxItem>
+                            <ComboBoxItem>29</ComboBoxItem>
+                            <ComboBoxItem>30</ComboBoxItem>
+                            <ComboBoxItem>31</ComboBoxItem>
+                        </ComboBox>
+        
+                        <Label x:Name="lblDay" Content="(Day)"  Grid.Row="3" Grid.Column="1" Width="37" HorizontalAlignment="Left"  VerticalAlignment="Top" RenderTransformOrigin="2,0.473" Margin="38,-1.277,0,0" />
+        				<ComboBox x:Name="cmbBMonth"  Grid.Column="1" Grid.Row="3" Height="20" Width="40" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment" Margin="87,0,63,0" SelectionChanged="cmbBMonth_SelectionChanged" >
+        				     <ComboBoxItem Selector.IsSelected="True">-</ComboBoxItem>  
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                            <ComboBoxItem>7</ComboBoxItem>
+                            <ComboBoxItem>8</ComboBoxItem>
+                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>11</ComboBoxItem>
+                            <ComboBoxItem>12</ComboBoxItem>
+                        </ComboBox>
+    
+                        <Label x:Name="lblMonth" Content="(Month)"  Grid.Row="3"  Grid.Column="1" Width="60" HorizontalAlignment="Right" Margin="0,-1.277,8,1.277" />
+
+        				<ComboBox x:Name="cmbBYear"  Grid.Column="1" Grid.Row="3" Height="20" Width="58" HorizontalAlignment="Right"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,2,-45,0" SelectionChanged="cmbBYear_SelectionChanged" >
+        				     <ComboBoxItem Selector.IsSelected="True">-</ComboBoxItem>    
+                        </ComboBox>
+    
+                        <Label x:Name="lblYear" Content="(Year)"  Grid.Row="3" Grid.Column="1" Width="42" HorizontalAlignment="Right"  VerticalAlignment="Top" Margin="0,-1.277,-83,0" />
+					
+						<TextBlock x:Name="tblkHomePhone" Text="Home Phone:" Grid.Row="4"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+            			<TextBox x:Name="txtHomePhone" Grid.Row="4" Grid.Column="1"  Height="20" Width="104" HorizontalAlignment="Left"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" />
+
+            			<TextBlock x:Name="tblkOfficePhone" Text="Office Phone:" Grid.Row="5"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+            			<TextBox x:Name="txtOfficePhone" Grid.Row="5" Grid.Column="2"  Height="20" Width="104" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+
+            			<TextBlock x:Name="tblkMobilePhone" Text="Mobile Phone:" Grid.Row="6"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+            			<TextBox x:Name="txtMobilePhone" Grid.Row="6" Grid.Column="2"  Height="20" Width="104" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+					
+						<TextBlock x:Name="tblkHomePage" Text="Home Page:" Grid.Row="7"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+            			<TextBox x:Name="txtHomePage" Grid.Row="7" Grid.Column="1"  Height="20"  VerticalAlignment="Top" d:LayoutOverrides="GridBox" Margin="0,0,-79,0" Text="http://" />
+
+            			<TextBlock x:Name="tblkAboutMe" Text="About Me:" Grid.Row="8"  Height="20" HorizontalAlignment="Left"  VerticalAlignment="Top"  />
+            			<RichTextBox x:Name="txtAboutMe" Grid.Row="8" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" d:LayoutOverrides="GridBox" Margin="0,0,-79,0" VerticalScrollBarVisibility="Auto" />
+				        
+                        <Button x:Name="btnSave" Width="60" Content="Save" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" Click="btnSave_Click" d:LayoutOverrides="Width" Margin="33,0,0,5" />
+                    <Button x:Name="btnClear" Width="60" Content="Clear" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Right" Click="btnClear_Click" d:LayoutOverrides="Width" Margin="0,0,20,5" />
+                </Grid>
+            </Grid>
+        </Grid>
+
+
+
+    </ScrollViewer>
+</UserControl>

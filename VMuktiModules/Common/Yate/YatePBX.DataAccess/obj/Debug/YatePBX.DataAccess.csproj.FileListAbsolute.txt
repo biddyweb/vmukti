@@ -1,0 +1,32 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\YatePBX.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\YatePBX.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll.CodeAnalysisLog.xml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll.lastcodeanalysissucceeded
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.Common.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\YatePBX.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\obj\Debug\YatePBX.DataAccess.pdb

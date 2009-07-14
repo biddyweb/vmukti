@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader\bin\Debug\VMukti.Profile.dll">
+   <Modules>
+    <Module Name="vmukti.profile.dll">
+     <Namespaces>
+      <Namespace Name="VMukti.Profile">
+       <Types>
+        <Type Name="Config" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HasGroupName" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_HasGroupName()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Config.cs" Line="110">Replace the call to 'string.operator !=(string, string)' in 'Config.HasGroupName.get()' with a call to 'String.IsNullOrEmpty'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Ini" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEntryNames(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Ini.cs" Line="172">Replace the call to 'string.operator ==(string, string)' in 'Ini.GetEntryNames(string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSectionNames()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Ini.cs" Line="196">Replace the call to 'string.operator ==(string, string)' in 'Ini.GetSectionNames()' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Profile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DefaultNameWithoutExtension" Kind="Property" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Profile.cs" Line="278">The 'this' parameter (or 'Me' in Visual Basic) of 'Profile.DefaultNameWithoutExtension' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Test(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Profile.cs" Line="542">'roProfile', a variable, is cast to type 'IProfile' multiple times in method 'Profile.Test(bool)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Profile.cs" Line="439">Replace the call to 'string.operator !=(string, string)' in 'Profile.Test(bool)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Profile.cs" Line="455">Replace the call to 'string.operator !=(string, string)' in 'Profile.Test(bool)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyName()" Kind="Method" Static="False" Accessibility="FamilyOrAssembly" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Profile.cs" Line="312">Replace the call to 'string.operator ==(string, string)' in 'Profile.VerifyName()' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Registry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DefaultName" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_DefaultName()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Registry.cs" Line="61">Replace the call to 'string.operator ==(string, string)' in 'Registry.DefaultName.get()' with a call to 'String.IsNullOrEmpty'.</Issue>
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Registry.cs" Line="61">Replace the call to 'string.operator ==(string, string)' in 'Registry.DefaultName.get()' with a call to 'String.IsNullOrEmpty'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Xml" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEntryPath(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Xml.cs" Line="90">The 'this' parameter (or 'Me' in Visual Basic) of 'Xml.GetEntryPath(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSectionsPath(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="Xml.cs" Line="80">The 'this' parameter (or 'Me' in Visual Basic) of 'Xml.GetSectionsPath(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="XmlBuffer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsEmpty" Kind="Property" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_IsEmpty()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-05-28 11:42:33Z" FixCategory="NonBreaking">
+               <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.XMLReader" File="XmlHelper.cs" Line="166">Replace the call to 'string.operator ==(string, string)' in 'XmlBuffer.IsEmpty.get()' with a call to 'String.IsNullOrEmpty'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182271(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182279(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

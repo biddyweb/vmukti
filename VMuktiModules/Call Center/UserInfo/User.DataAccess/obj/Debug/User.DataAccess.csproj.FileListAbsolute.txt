@@ -1,0 +1,14 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\User.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\User.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\User.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\User.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\obj\Debug\User.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.DataAccess\obj\Debug\User.DataAccess.pdb

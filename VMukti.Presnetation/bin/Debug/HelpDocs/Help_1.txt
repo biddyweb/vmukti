@@ -1,0 +1,17 @@
+CHAT APPLICATON
+     
+Chat is one of the features provided by VMukti collaborative 
+conferencing, where users can chat through text messages 
+collaboratively. Use the Chat Widget to communicate with the 
+friends which you have added in your Buddy list.
+    
+How to Use:
+
+1. Drag the chat widget onto the tab. 
+2. Drag buddies from the buddy list to whom user want to chat. 
+3. Buddy who is dragged on to the tab will be displayed on the
+   buddy list button. 
+
+After performing the above steps user can chat with the buddies. 
+For using chat collaborative conference drag the chat widget into
+the main pane of the grid

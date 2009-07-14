@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\bin\Debug\Audio.VistaService.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\bin\Debug\Audio.VistaService.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\obj\Debug\Audio.VistaService.Business.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\obj\Debug\VMuktiAudio.VistaService.Business.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\obj\Debug\Audio.VistaService.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService.Business\obj\Debug\Audio.VistaService.Business.pdb

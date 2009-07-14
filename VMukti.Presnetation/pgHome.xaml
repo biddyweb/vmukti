@@ -1,0 +1,184 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:VMuktiControls="clr-namespace:VMukti.Presentation.Controls" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="VMukti.Presentation.pgHome" x:Name="HomePage"
+    Title="VMukti"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Focusable="False" xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+
+    <Page.Resources>
+        <Storyboard x:Key="OnOpenClick">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grdBar" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1024"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnCloseClick">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grdBar" Storyboard.TargetProperty="(FrameworkElement.Width)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1024"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <ScrollViewer x:Name="svMain" VerticalScrollBarVisibility="Auto" Focusable="False">
+        
+        <Grid x:Name="grdMain" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+              Background="{DynamicResource Background}" Width="Auto">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="colDef1" Width="0"/>
+                <ColumnDefinition x:Name="colDef2" Width="*"/>
+                <ColumnDefinition x:Name="colDef3" Width="0"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="rowDef1" Height="35"/>
+                <RowDefinition x:Name="rowModule" Height="0"/>
+                <RowDefinition x:Name="rowDef2" Height="*"/>
+                <RowDefinition x:Name="rowDef3" Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Grid.ColumnSpan="3"  VerticalAlignment="Top" Height="35"  
+                    BorderThickness="0,0,0,0" BorderBrush="{DynamicResource MainBorderBrush}">
+
+                <Grid Focusable="False"   HorizontalAlignment="Stretch" 
+                      Width="{Binding Path=Width, ElementName=grdMain, Mode=Default}"
+                      x:Name="grdBar" Background="{DynamicResource MainGridBackground}"
+                      VerticalAlignment="Top" Height="34"  >
+
+                    <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" Margin="3,5,0,5" 
+                            Click="btnMExp_Click" HorizontalAlignment="Left" Width="118" Visibility="Hidden"
+                            Background="{x:Null}" BorderBrush="{x:Null}" d:LayoutOverrides="Height" x:Name="btnMExp">
+                        <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                            <Image Width="17" Height="17" Name="imgMExp" Stretch="Fill" Margin="0,0,0,0"/>
+                            <TextBlock Margin="5,0,50,0" VerticalAlignment="Center" FontSize="12" Text="WidgetExplorer" TextWrapping="Wrap" TextTrimming="None" FontFamily="Segoe UI" d:IsStaticText="True" FontStretch="Normal" FontWeight="Normal" Foreground="{DynamicResource TextBrush}"/>
+					    </StackPanel>
+                    </Button>
+
+                    <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" 
+                            Click="btnBList_Click" x:Name="btnBList" Width="86" d:LayoutOverrides="Height" Visibility="Hidden"
+                            Margin="122,5,0,5" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" >
+                        <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                            <Image Width="17" Height="17" Name="imgBList" Stretch="Fill" Margin="0,0,0,0"/>
+                            <TextBlock Margin="5,0,50,0" VerticalAlignment="Center" FontSize="12" Text="BuddyList" TextWrapping="Wrap" d:IsStaticText="True" FontFamily="Segoe UI" FontStretch="Normal" FontWeight="Normal" TextTrimming="None" Foreground="{DynamicResource TextBrush}"/>
+					    </StackPanel>
+                    </Button>
+
+                    <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}"
+                            Margin="212,5,0,5" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnSettings_Click"
+                            HorizontalAlignment="Left" x:Name="btnSettings"
+                            Visibility="Hidden" Width="73" d:LayoutOverrides="Height">
+
+                        <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                            <Image Width="17" Height="17" Name="imgBtnSetting" Stretch="Fill" Margin="0,0,0,0"/>
+                            <TextBlock Margin="5,0,50,0" VerticalAlignment="Center" FontSize="12" Text="Setting" TextWrapping="Wrap" d:IsStaticText="True" FontFamily="Segoe UI" FontStretch="Normal" FontWeight="Normal" TextTrimming="None" Foreground="{DynamicResource TextBrush}"/>
+					    </StackPanel>
+
+                    </Button>
+
+                    <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" 
+                            Margin="288,6,0,5" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnConsole_Click"
+                            x:Name="btnConsole"
+                             Visibility="Hidden" HorizontalAlignment="Left" Width="76.957">
+
+                        <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                            <Image Width="17" Height="17" Name="imgBtnConsole" Stretch="Fill" Margin="0,0,0,0"/>
+                            <TextBlock Margin="5,0,50,0" VerticalAlignment="Center" FontSize="12" Text="Console" TextWrapping="Wrap" d:IsStaticText="True" FontFamily="Segoe UI" FontStretch="Normal" FontWeight="Normal" TextTrimming="None" Foreground="{DynamicResource TextBrush}"/>
+					    </StackPanel>
+
+                    </Button>
+
+                    <TextBlock Visibility="Hidden" IsEnabled="True" x:Name="tblkUserName"   Margin="535,5,0,5" HorizontalAlignment="Left" FontSize="14" FontFamily="Arial" Text="Welcome!" TextWrapping="Wrap"  Foreground="{DynamicResource TextBrush}"  Width="Auto"/>
+
+                    <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}"
+                            Margin="0,5,220,5" Background="{x:Null}" BorderBrush="{x:Null}" 
+                            HorizontalAlignment="Right" x:Name="btnRecord"
+                            Visibility="Collapsed" Width="100" d:LayoutOverrides="Height">
+
+                        <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                            <Image Width="17" Height="17" Name="imgBtnRecord" Stretch="Fill" Margin="0,0,0,0"/>
+                            <TextBlock Margin="5,0,60,0" Name="txtRecord" VerticalAlignment="Center" FontSize="12" Text="Start Record" TextWrapping="Wrap" d:IsStaticText="True" FontFamily="Segoe UI" FontStretch="Normal" FontWeight="Normal" TextTrimming="None" Foreground="{DynamicResource TextBrush}"/>
+					    </StackPanel>
+
+                    </Button>
+                  
+                   <Button Foreground="{DynamicResource TextBrush}" Template="{DynamicResource GrdBarButton}" 
+                        Margin="0,1,45,13" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="btnLogin" HorizontalAlignment="Right"
+                        d:LayoutOverrides="Height" Width="80" Height="20" Click="btnLogin_Click" VerticalAlignment="Top">
+                	<StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Orientation="Horizontal" Margin="4,2,4,2">
+                		<Image Width="17" Height="17" Name="imgBtnLogin" Stretch="Fill" Margin="0,0,0,0"/>
+                		<TextBlock Margin="5,0,50,0" VerticalAlignment="Center" FontSize="12" Text="Sign In" 
+                                   Name="btnLoginText" TextWrapping="Wrap" d:IsStaticText="True" 
+                                   FontFamily="Segoe UI" FontStretch="Normal" FontWeight="Normal" TextTrimming="None"
+                                   Foreground="{DynamicResource TextBrush}" />
+                	</StackPanel>
+                </Button>
+                    
+                   <TextBlock Cursor="Hand" Height="19" VerticalAlignment="Bottom" Margin="0,0,145,-2" HorizontalAlignment="Right" ><Hyperlink  TargetName="window1" x:Name="bughlink" TextBlock.Foreground="{DynamicResource TextBrush}" TextBlock.FontSize="11" TextBlock.FontStyle="Normal" TextBlock.FontFamily="Segoe UI" ><Run Text="Report Bug"/></Hyperlink></TextBlock>
+				   <TextBlock Cursor="Hand" Height="19" VerticalAlignment="Bottom" Margin="0,0,95,-2" HorizontalAlignment="Right" ><Hyperlink  TargetName="window1" x:Name="tutorialhlink" TextBlock.Foreground="{DynamicResource TextBrush}" TextBlock.FontSize="11" TextBlock.FontStyle="Normal" TextBlock.FontFamily="Segoe UI" ><Run Text="Tutorials"/></Hyperlink></TextBlock>
+				   <TextBlock Cursor="Hand" Height="19" VerticalAlignment="Bottom" Margin="0,0,50,-2" HorizontalAlignment="Right" ><Hyperlink TargetName="window1" x:Name="Supporthlink" TextBlock.FontSize="11" TextBlock.FontStyle="Normal" TextBlock.Foreground="{DynamicResource TextBrush}" TextBlock.FontFamily="Segoe UI" ><Run Text="Support"/></Hyperlink></TextBlock>
+				
+				   <StatusBar ToolTip="Bandwidth" Margin="0,1,20,2" x:Name="sbBandwidth" Background="{x:Null}" Foreground="#FFFFFFFF" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" HorizontalAlignment="Right" Width="27">
+					<Grid Width="19.75" Height="24" Background="#00FFFFFF" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition MinWidth="4" Width="4*"/>
+							<ColumnDefinition MinWidth="4" Width="4*"/>
+							<ColumnDefinition MinWidth="4" Width="4*"/>
+							<ColumnDefinition MinWidth="4" Width="4*"/>
+							<ColumnDefinition MinWidth="4" Width="4*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="100*"/>
+						</Grid.RowDefinitions>
+						<StatusBarItem x:Name="sbiBandwidth1" Content="" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="3" Height="8" Background="Green" MinWidth="3" VerticalAlignment="Bottom" HorizontalContentAlignment="Stretch" Padding="0,0,0,0" VerticalContentAlignment="Stretch"/>
+						<StatusBarItem x:Name="sbiBandwidth2" Content="" RenderTransformOrigin="0.25,0.5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="3" Background="Green" Grid.Column="1" Grid.ColumnSpan="1" MinWidth="3" VerticalAlignment="Bottom" Height="12" HorizontalContentAlignment="Stretch" Padding="0,0,0,0" VerticalContentAlignment="Stretch"/>
+						<StatusBarItem x:Name="sbiBandwidth3" Content="" RenderTransformOrigin="-0.4,0.5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="3" Height="16" Background="Green" Grid.Column="2" MinWidth="3" VerticalAlignment="Bottom" HorizontalContentAlignment="Stretch" Padding="0,0,0,0" VerticalContentAlignment="Stretch"/>
+						<StatusBarItem x:Name="sbiBandwidth4" Content="" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="3" Height="20" Background="Green" Grid.Column="3" Grid.ColumnSpan="1" MinWidth="3" VerticalAlignment="Bottom" HorizontalContentAlignment="Stretch" Padding="0,0,0,0" VerticalContentAlignment="Stretch"/>
+						<StatusBarItem x:Name="sbiBandwidth5" Content="" RenderTransformOrigin="-2.3,0.5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="3" Height="24" Background="Green" Grid.Column="4" MinWidth="3" VerticalAlignment="Bottom" HorizontalContentAlignment="Stretch" Padding="0,0,0,0" VerticalContentAlignment="Stretch"/>
+					</Grid>
+				</StatusBar>
+                    
+                   <Ellipse  Name="rectNodeType" Visibility="Visible" Height="10" Width="10" HorizontalAlignment="Right"
+                              Margin="0,7,5,7"/>
+                 
+            </Grid>
+
+            </Border>
+
+            <VMuktiControls:CtlModule x:Name="objAmit" Visibility="Hidden" HorizontalAlignment="Stretch"
+                                                  VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="3" />
+            
+            <VMuktiControls:CtlBuddies x:Name="objBuddies" Visibility="Hidden" Grid.Row="2" Grid.Column="2" 
+                                       Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                       EntBeginAnination ="objBuddy_AnimateGrid" EntCloseBuddy="ObjBuddy_CloseBuddy"/>
+
+            <Button x:Name="btnPane" Width="30" Height="30" Margin="0,2,0,2" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0" 
+                    Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="3" Content="" 
+                    Click="btnPane_Click" Style="{DynamicResource ArrowButtonsForPaneBtn}" 
+                    RenderTransformOrigin="0.5,0.5" ToolTip="Hide ToolBar"  >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+
+            <Grid x:Name="cnvSettings" Visibility="Collapsed" Background="#99000000" Grid.Row="0" Grid.Column="0" 
+                  Grid.RowSpan="4" Grid.ColumnSpan="3" Width="{Binding Path=Width, ElementName=HomePage, Mode=Default}" 
+                  Height="{Binding Path=Height, ElementName=HomePage, Mode=Default}" >
+                
+            </Grid>
+
+            <Border BorderThickness="2,2,2,2" Margin="5,5,5,5" Height="Auto" CornerRadius="5,5,5,5"
+            BorderBrush="{DynamicResource MainBorderBrush}" Width="Auto" Name="brdVMuktiGridHost"
+            VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="2" Grid.RowSpan="2"
+            Grid.Column="1" Grid.ColumnSpan="1" Background="{DynamicResource SubBackground}"/>
+            
+        </Grid>
+        
+    </ScrollViewer>
+    
+</Page>

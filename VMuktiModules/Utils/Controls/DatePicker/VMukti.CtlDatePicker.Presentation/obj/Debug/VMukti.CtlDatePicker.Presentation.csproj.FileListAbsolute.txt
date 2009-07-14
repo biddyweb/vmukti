@@ -1,0 +1,30 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation_MarkupCompile.lref
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\Themes\DateControls.generic.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\Themes\generic.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll.CodeAnalysisLog.xml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll.lastcodeanalysissucceeded
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation_MarkupCompile.lref
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\Themes\DateControls.generic.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\Themes\generic.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\DatePicker\VMukti.CtlDatePicker.Presentation\obj\Debug\VMukti.CtlDatePicker.Presentation.pdb

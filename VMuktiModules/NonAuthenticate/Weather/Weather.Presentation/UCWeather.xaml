@@ -1,0 +1,1373 @@
+﻿<UserControl 
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+                 xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"
+                 x:Class="Weather.Presentation.UCWeather" HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                  Height="129.875"  Opacity="1" Foreground="#FFEBEEF0" Margin="0,0,0,0" BorderThickness="0,0,0,0" Visibility="Visible" FontSize="8" Width="228" ClipToBounds="False" SnapsToDevicePixels="False">
+
+    <UserControl.Resources>
+        <Style x:Key="BlackButton" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="Timeline1"/>
+                            <Storyboard x:Key="Timeline2"/>
+                            <Storyboard x:Key="Timeline3"/>
+                            <Storyboard x:Key="Timeline4"/>
+                        </ControlTemplate.Resources>
+                        <Border x:Name="border" Background="#99000000" BorderBrush="#FFFFFFFF" BorderThickness="2,2,2,2" CornerRadius="5,5,5,5" RenderTransformOrigin="0.5,0.5" Width="204.25" Height="121">
+                            <Border.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    <SkewTransform AngleX="0" AngleY="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform X="0" Y="0"/>
+                                </TransformGroup>
+                            </Border.RenderTransform>
+                            <Border.BitmapEffect>
+                                <OuterGlowBitmapEffect GlowColor="#FF000000"/>
+                            </Border.BitmapEffect>
+                            <Grid RenderTransformOrigin="0.5,0.5" x:Name="grid" HorizontalAlignment="Left" Width="214.25">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="0*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="0" Y="0"/>
+                                    </TransformGroup>
+                                </Grid.RenderTransform>
+                                <Border HorizontalAlignment="Stretch" x:Name="shine" Width="Auto" CornerRadius="5,5,0,0" Margin="-4,-1,8,57.631" VerticalAlignment="Stretch" Height="Auto">
+                                    <Border.Background>
+                                        <LinearGradientBrush EndPoint="0.496,0.993" StartPoint="0.494,0.028">
+                                            <GradientStop Color="#99FFFFFF" Offset="0"/>
+                                            <GradientStop Color="#33FFFFFF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                </Border>
+                                <Image Opacity="0.55" Margin="-110.835,-25.682,2.88,-22.908" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Source="Images\sun.png" HorizontalAlignment="Stretch" >
+                                    <Image.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                            <SkewTransform AngleX="0" AngleY="0"/>
+                                            <RotateTransform Angle="10.602"/>
+                                            <TranslateTransform X="0" Y="0"/>
+                                        </TransformGroup>
+                                    </Image.RenderTransform>
+                                    <Image.BitmapEffect>
+                                        <OuterGlowBitmapEffect GlowColor="#FFEDEDED"/>
+                                    </Image.BitmapEffect>
+                                </Image>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle2" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="Timeline1">
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF000000"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF070707"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.99"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF000000"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF101111"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,-0.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.2000000" Value="0.5,-0.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,1.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.2000000" Value="0.5,1.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF424646"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF0B7AA5"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="Timeline2">
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF424848"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#FF000000"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,-0.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.5,-0.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,1.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.5,1.222"/>
+                                </PointAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="Timeline3">
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF000000"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#FF424848"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.478,-0.218"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.5,-0.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.522,1.218"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.1000000" Value="0.5,1.222"/>
+                                </PointAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="Timeline4">
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="rectangle">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF070707"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF000000"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="rectangle">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.99"/>
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="rectangle">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF101111"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF000000"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.StartPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,-0.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.2000000" Value="0.5,-0.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <PointAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(Shape.Fill).(LinearGradientBrush.EndPoint)">
+                                    <SplinePointKeyFrame KeyTime="00:00:00" Value="0.5,1.222"/>
+                                    <SplinePointKeyFrame KeyTime="00:00:00.2000000" Value="0.5,1.222"/>
+                                </PointAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="rectangle">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF0B7AA5"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF424646"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </ControlTemplate.Resources>
+                        <Grid>
+                            <Rectangle Stroke="#FF000000" RadiusX="7.5" RadiusY="7.5" x:Name="rectangle">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush EndPoint="0.503,1.222" StartPoint="0.497,-0.222">
+                                        <GradientStop Color="#FF000000" Offset="0.005"/>
+                                        <GradientStop Color="#FF424646" Offset="0.526"/>
+                                        <GradientStop Color="#FFA6A2A2" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard x:Name="Timeline1_BeginStoryboard" Storyboard="{StaticResource Timeline1}"/>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard x:Name="Timeline1_BeginStoryboard1" Storyboard="{StaticResource Timeline4}"/>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard x:Name="Timeline2_BeginStoryboard" Storyboard="{StaticResource Timeline2}"/>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard x:Name="Timeline2_BeginStoryboard1" Storyboard="{StaticResource Timeline3}"/>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <LinearGradientBrush x:Key="Brush1" EndPoint="0.494,0.962" StartPoint="0.494,0.219">
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#FF645F5F" Offset="0.536"/>
+            <GradientStop Color="#FF000000" Offset="0.99"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="Brush2" EndPoint="0.479,0.882" StartPoint="0.479,0.139">
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#FF645F5F" Offset="0.536"/>
+            <GradientStop Color="#FF000000" Offset="0.99"/>
+        </LinearGradientBrush>
+        <ControlTemplate x:Key="GlassButton" TargetType="{x:Type Button}">
+            <ControlTemplate.Resources>
+                <Storyboard x:Key="Timeline1">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="glow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Key="Timeline2">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="glow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Key="Timeline3">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.064"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.017"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.15"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Key="Timeline4">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="border1">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.064"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="border1">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.017"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="border1">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.15"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                    </DoubleAnimationUsingKeyFrames>
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="border1">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+            </ControlTemplate.Resources>
+            <Border BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" RenderTransformOrigin="0.5,0.5" x:Name="border1">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+                <Border x:Name="border" Background="#7F000000" BorderBrush="#FF000000" BorderThickness="0,0.5,0,0" CornerRadius="2,2,2,2" RenderTransformOrigin="0.5,0.5">
+                    <Border.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            <SkewTransform AngleX="0" AngleY="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </Border.RenderTransform>
+                    <Grid RenderTransformOrigin="0.5,0.5" x:Name="grid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.507*"/>
+                            <RowDefinition Height="0.493*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Border Opacity="0" HorizontalAlignment="Stretch" x:Name="glow" Width="Auto" Grid.RowSpan="2" CornerRadius="2,2,2,2">
+                            <Border.Background>
+                                <RadialGradientBrush>
+                                    <RadialGradientBrush.RelativeTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="1.702" ScaleY="2.243"/>
+                                            <SkewTransform AngleX="0" AngleY="0"/>
+                                            <RotateTransform Angle="0"/>
+                                            <TranslateTransform X="-0.368" Y="-0.152"/>
+                                        </TransformGroup>
+                                    </RadialGradientBrush.RelativeTransform>
+                                    <GradientStop Color="#B28DBDFF" Offset="0"/>
+                                    <GradientStop Color="#008DBDFF" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" x:Name="contentPresenter">
+                            <ContentPresenter.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    <SkewTransform AngleX="0" AngleY="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform X="0" Y="0"/>
+                                </TransformGroup>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                        <Border HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="shine" Width="Auto" CornerRadius="2,2,0,0">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.494,0.889" StartPoint="0.494,0.028">
+                                    <GradientStop Color="#99FFFFFF" Offset="0"/>
+                                    <GradientStop Color="#33FFFFFF" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsDefault" Value="False"/>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+                <Trigger Property="IsPressed" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard Storyboard="{StaticResource Timeline1}"/>
+                    </Trigger.EnterActions>
+                    <Setter Property="Opacity" TargetName="shine" Value="0.4"/>
+                    <Setter Property="Background" TargetName="border" Value="#CC000000"/>
+                    <Setter Property="Visibility" TargetName="glow" Value="Hidden"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard Storyboard="{StaticResource Timeline1}"/>
+                        <BeginStoryboard x:Name="Timeline3_BeginStoryboard" Storyboard="{StaticResource Timeline3}"/>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard x:Name="Timeline2_BeginStoryboard" Storyboard="{StaticResource Timeline4}"/>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="ComboBoxControlTemplate1" TargetType="{x:Type ComboBox}"/>
+        <LinearGradientBrush x:Key="lablebrush" EndPoint="0.5,0.942" StartPoint="0.493,0.087">
+            <GradientStop Color="#FFFF8017" Offset="0"/>
+            <GradientStop Color="#FF22201F" Offset="1"/>
+        </LinearGradientBrush>
+        <DataTemplate x:Key="DataTemplate1"/>
+        <Style x:Key="ExpanderHeaderFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border>
+                            <Rectangle SnapsToDevicePixels="true" Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderDownHeaderStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False" Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="19"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Microsoft_Windows_Themes:ClassicBorderDecorator SnapsToDevicePixels="true" x:Name="Bd" Width="19" Height="19" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderStyle="None" BorderThickness="1">
+                                    <Path SnapsToDevicePixels="false" Stroke="{TemplateBinding Foreground}" StrokeThickness="1.5" HorizontalAlignment="Center" x:Name="arrow" VerticalAlignment="Center" Data="M 1,1.5 L 4.5,5 L 8,1.5"/>
+                                </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                                <ContentPresenter SnapsToDevicePixels="True" HorizontalAlignment="Left" Margin="4,0,0,0" VerticalAlignment="Center" Grid.Column="1" RecognizesAccessKey="True"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Data" TargetName="arrow" Value="M 1,4.5  L 4.5,1  L 8,4.5"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinRaised"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinPressed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderRightHeaderStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False" Background="Transparent">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="19"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Microsoft_Windows_Themes:ClassicBorderDecorator SnapsToDevicePixels="true" x:Name="Bd" Width="19" Height="19" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderStyle="None" BorderThickness="1">
+                                    <Path SnapsToDevicePixels="false" Stroke="{TemplateBinding Foreground}" StrokeThickness="1.5" HorizontalAlignment="Center" x:Name="arrow" VerticalAlignment="Center" Data="M 1,1.5 L 4.5,5 L 8,1.5">
+                                        <Path.LayoutTransform>
+                                            <RotateTransform Angle="-90"/>
+                                        </Path.LayoutTransform>
+                                    </Path>
+                                </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                                <ContentPresenter SnapsToDevicePixels="True" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" Grid.Row="1" RecognizesAccessKey="True"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Data" TargetName="arrow" Value="M 1,4.5  L 4.5,1  L 8,4.5"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinRaised"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinPressed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderUpHeaderStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False" Background="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="19"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Microsoft_Windows_Themes:ClassicBorderDecorator SnapsToDevicePixels="true" x:Name="Bd" Width="19" Height="19" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderStyle="None" BorderThickness="1">
+                                    <Path SnapsToDevicePixels="false" Stroke="{TemplateBinding Foreground}" StrokeThickness="1.5" HorizontalAlignment="Center" x:Name="arrow" VerticalAlignment="Center" Data="M 1,1.5 L 4.5,5 L 8,1.5">
+                                        <Path.LayoutTransform>
+                                            <RotateTransform Angle="180"/>
+                                        </Path.LayoutTransform>
+                                    </Path>
+                                </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                                <ContentPresenter SnapsToDevicePixels="True" HorizontalAlignment="Left" Margin="4,0,0,0" VerticalAlignment="Center" Grid.Column="1" RecognizesAccessKey="True"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Data" TargetName="arrow" Value="M 1,4.5  L 4.5,1  L 8,4.5"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinRaised"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinPressed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderLeftHeaderStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False" Background="Transparent">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="19"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Microsoft_Windows_Themes:ClassicBorderDecorator SnapsToDevicePixels="true" x:Name="Bd" Width="19" Height="19" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderStyle="None" BorderThickness="1">
+                                    <Path SnapsToDevicePixels="false" Stroke="{TemplateBinding Foreground}" StrokeThickness="1.5" HorizontalAlignment="Center" x:Name="arrow" VerticalAlignment="Center" Data="M 1,1.5 L 4.5,5 L 8,1.5">
+                                        <Path.LayoutTransform>
+                                            <RotateTransform Angle="90"/>
+                                        </Path.LayoutTransform>
+                                    </Path>
+                                </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                                <ContentPresenter SnapsToDevicePixels="True" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" Grid.Row="1" RecognizesAccessKey="True"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Data" TargetName="arrow" Value="M 1,4.5  L 4.5,1  L 8,4.5"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinRaised"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Bd" Value="ThinPressed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderStyle1" TargetType="{x:Type Expander}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Expander}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="Timeline1"/>
+                        </ControlTemplate.Resources>
+                        <Border SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3">
+                            <DockPanel RenderTransformOrigin="0.5,0.5" x:Name="dockPanel">
+                                <DockPanel.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="0" Y="0"/>
+                                    </TransformGroup>
+                                </DockPanel.RenderTransform>
+                                <ToggleButton FocusVisualStyle="{StaticResource ExpanderHeaderFocusVisual}" Margin="1" MinHeight="0" MinWidth="0" x:Name="HeaderSite" Style="{StaticResource ExpanderDownHeaderStyle}" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontStretch="{TemplateBinding FontStretch}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}" Foreground="{TemplateBinding Foreground}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}" ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}" IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" DockPanel.Dock="Top" Opacity="0.5">
+                                    <ToggleButton.Background>
+                                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                            <GradientStop Color="#FF000000" Offset="0"/>
+                                            <GradientStop Color="#FF7C6B6B" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </ToggleButton.Background>
+                                </ToggleButton>
+                                <ContentPresenter Focusable="false" Visibility="Collapsed" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" x:Name="ExpandSite" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" DockPanel.Dock="Bottom"/>
+                            </DockPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+                            <Trigger Property="IsExpanded" Value="true">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard Storyboard="{StaticResource Timeline1}"/>
+                                </Trigger.EnterActions>
+                                <Setter Property="Visibility" TargetName="ExpandSite" Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="ExpandDirection" Value="Right">
+                                <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Right"/>
+                                <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Left"/>
+                                <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderRightHeaderStyle}"/>
+                            </Trigger>
+                            <Trigger Property="ExpandDirection" Value="Up">
+                                <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Top"/>
+                                <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Bottom"/>
+                                <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderUpHeaderStyle}"/>
+                            </Trigger>
+                            <Trigger Property="ExpandDirection" Value="Left">
+                                <Setter Property="DockPanel.Dock" TargetName="ExpandSite" Value="Left"/>
+                                <Setter Property="DockPanel.Dock" TargetName="HeaderSite" Value="Right"/>
+                                <Setter Property="Style" TargetName="HeaderSite" Value="{StaticResource ExpanderLeftHeaderStyle}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- DefaultedBorderBrush is used to show KeyBoardFocus -->
+        <LinearGradientBrush x:Key="DefaultedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#777" Offset="0.0"/>
+            <GradientStop Color="#000" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#EEE"/>
+
+        <!-- MouseOverBrush is used for MouseOver in Button, Radio Button, CheckBox -->
+        <LinearGradientBrush x:Key="MouseOverBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FFF" Offset="0.0"/>
+            <GradientStop Color="#AAA" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <!-- PressedBrush is used for Pressed in Button, Radio Button, CheckBox -->
+        <LinearGradientBrush x:Key="PressedBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#BBB" Offset="0.0"/>
+            <GradientStop Color="#EEE" Offset="0.1"/>
+            <GradientStop Color="#EEE" Offset="0.9"/>
+            <GradientStop Color="#FFF" Offset="1.0"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="DisabledBorderBrush" Color="#AAA"/>
+
+        <!-- Disabled Brushes are used for the Disabled look of each control -->
+        <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888"/>
+
+        <!-- Simple ComboBox Toggle Button - This is used in ComboBox to expand and collapse the ComboBox Popup-->
+        <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+            <Grid Width="122.92">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle HorizontalAlignment="Right" x:Name="Rectangle" VerticalAlignment="Stretch" Width="123" Height="Auto" RadiusX="5" RadiusY="5" Fill="{DynamicResource DefaultedBorderBrush}" Stroke="{x:Null}" Opacity="0.5" RenderTransformOrigin="-6.446,0.62" Grid.Column="0" d:LayoutOverrides="HorizontalAlignment" Margin="0,0,1,0" Grid.ColumnSpan="2"/>
+                <Rectangle Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Fill="{x:Null}" Stroke="{x:Null}" RenderTransformOrigin="0.5,0.5" Margin="0,0,-2.08,0" Grid.ColumnSpan="2">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            <SkewTransform AngleX="0" AngleY="0"/>
+                            <RotateTransform Angle="0"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+                <Path Grid.Column="1" HorizontalAlignment="Center" x:Name="Arrow" VerticalAlignment="Center" Fill="{DynamicResource DisabledBackgroundBrush}" Data="M 0 0 L 4 4 L 8 0 Z"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource MouseOverBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource PressedBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Fill" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Stroke" Value="{DynamicResource DisabledBorderBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                    <Setter Property="Fill" Value="{DynamicResource DisabledForegroundBrush}" TargetName="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <!-- This is the area which contains the selected item in the ComboBox -->
+
+        <ControlTemplate x:Key="ComboBoxTextBox" TargetType="{x:Type TextBox}">
+            <!-- This must be named as PART_ContentHost -->
+            <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}"/>
+        </ControlTemplate>
+
+        <!-- Used for background of ScrollViewer, TreeView, ListBox, Expander, TextBox, Tab Control -->
+        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF"/>
+
+        <SolidColorBrush x:Key="SolidBorderBrush" Color="#888"/>
+
+        <!-- NormalBrush is used as the Background for SimpleButton, SimpleRepeatButton -->
+        <LinearGradientBrush x:Key="NormalBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#EEE" Offset="0.0"/>
+            <GradientStop Color="#CCC" Offset="1.0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="NormalBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#CCC" Offset="0.0"/>
+            <GradientStop Color="#444" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PressedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#444" Offset="0.0"/>
+            <GradientStop Color="#888" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <!-- Simple Repeat Button - This is used by Simple ScrollBar for the up and down buttons -->
+        <Style x:Key="SimpleRepeatButton" d:IsControlPart="True" TargetType="{x:Type RepeatButton}" BasedOn="{x:Null}">
+            <Setter Property="Background" Value="{DynamicResource NormalBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid>
+                            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
+                            <ContentPresenter HorizontalAlignment="Center" x:Name="ContentPresenter" VerticalAlignment="Center" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" Value="{DynamicResource DefaultedBorderBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource MouseOverBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource PressedBrush}" TargetName="Border"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource PressedBorderBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                                <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollRepeatButton Style - This RepeatButton is used above and below the Thumb in the Scrollbar. They are set to transparent si that they do not show over the scrollbar -->
+        <Style x:Key="SimpleScrollRepeatButtonStyle" d:IsControlPart="True" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="IsTabStop" Value="false"/>
+            <Setter Property="Focusable" Value="false"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid>
+                            <Rectangle StrokeThickness="{TemplateBinding BorderThickness}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple Thumb - The Thumb is the draggable part of the Scrollbar -->
+        <Style x:Key="SimpleThumbStyle" d:IsControlPart="True" TargetType="{x:Type Thumb}" BasedOn="{x:Null}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Grid Margin="0,0,0,0" x:Name="Grid">
+                            <Rectangle HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="2" RadiusY="2" Fill="{DynamicResource NormalBrush}" Stroke="{DynamicResource NormalBorderBrush}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                            <Trigger Property="IsDragging" Value="True"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollBar  This makes use of SimpleThumb, SimpleRepeatButton and SimpleScrollRepeatButton -->
+
+        <Style x:Key="SimpleScrollBar" TargetType="{x:Type ScrollBar}">
+            <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ScrollBar}">
+                        <Grid x:Name="GridRoot" Width="7.475">
+                            <Grid.RowDefinitions>
+                                <RowDefinition MaxHeight="18" Height="0.144*"/>
+                                <RowDefinition Height="0.712*"/>
+                                <RowDefinition MaxHeight="18" Height="0.144*"/>
+                            </Grid.RowDefinitions>
+
+                            <RepeatButton x:Name="DecreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineUpCommand">
+                                <RepeatButton.Background>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FF444444" Offset="0"/>
+                                        <GradientStop Color="#FFCCCCCC" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </RepeatButton.Background>
+                                <Grid/>
+                            </RepeatButton>
+
+                            <!-- Track is a special layout container which sizes the thumb and the repeat button which do jump scrolling either side of it -->
+                            <Track Grid.Row="1" x:Name="PART_Track" Orientation="Vertical" IsDirectionReversed="true">
+                                <Track.Thumb>
+                                    <Thumb Style="{DynamicResource SimpleThumbStyle}" Cursor="Hand"/>
+                                </Track.Thumb>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton x:Name="PageUp" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageDownCommand" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                                </Track.IncreaseRepeatButton>
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton x:Name="PageDown" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageUpCommand" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                                </Track.DecreaseRepeatButton>
+                            </Track>
+
+                            <RepeatButton Grid.Row="2" x:Name="IncreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineDownCommand">
+                                <RepeatButton.Background>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFEEEEEE" Offset="0"/>
+                                        <GradientStop Color="#FF444444" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </RepeatButton.Background>
+                                <Grid/>
+                            </RepeatButton>
+                        </Grid>
+
+                        <!-- This uses a single template for ScrollBar and rotate it to be Horizontal
+					It also changes the commands so that the it does Left and Right instead of Up and Down Commands -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Orientation" Value="Horizontal">
+
+                                <!-- Rotate the ScrollBar from Vertical to Horizontal -->
+                                <Setter Property="LayoutTransform" TargetName="GridRoot">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="-90"/>
+                                    </Setter.Value>
+                                </Setter>
+
+                                <!-- Track is bound to Orientation internally, so we need to rotate it back to Vertical -->
+                                <Setter TargetName="PART_Track" Property="Orientation" Value="Vertical"/>
+
+                                <!-- Change the commands to do Horizontal commands -->
+                                <Setter Property="Command" Value="ScrollBar.LineLeftCommand" TargetName="DecreaseRepeat"/>
+                                <Setter Property="Command" Value="ScrollBar.LineRightCommand" TargetName="IncreaseRepeat"/>
+                                <Setter Property="Command" Value="ScrollBar.PageLeftCommand" TargetName="PageDown"/>
+                                <Setter Property="Command" Value="ScrollBar.PageRightCommand" TargetName="PageUp"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollViewer 
+	ScrollViewer is a Grid control which has a ContentPresenter and a Horizontal and Vertical ScrollBar 
+	It is used by ListBox, MenuItem, ComboBox, and TreeView -->
+        <Style x:Key="SimpleScrollViewer" TargetType="{x:Type ScrollViewer}" BasedOn="{x:Null}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <ScrollContentPresenter Grid.Column="0" Grid.Row="0" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}"/>
+
+                            <!-- The visibility of the ScrollBars is controlled by the implementation fo the control -->
+                            <ScrollBar Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Grid.Column="0" Grid.Row="1" x:Name="PART_HorizontalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Horizontal" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar"/>
+                            <ScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Grid.Column="1" Grid.Row="0" x:Name="PART_VerticalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Vertical" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ComboBox 
+	This uses the ComboBoxToggleButton to expand and collapse a Popup control
+	SimpleScrollViewer to allow items to be scrolled and SimpleComboBoxItem to define the look of each item 
+	The Popup shows a list of items in a StackPanel-->
+
+        <Style x:Key="SimpleComboBox" TargetType="{x:Type ComboBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <!-- The ToggleButton is databound to the ComboBox itself to toggle IsDropDownOpen -->
+                            <ToggleButton Grid.Column="0" Template="{DynamicResource ComboBoxToggleButton}" x:Name="ToggleButton" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" d:LayoutOverrides="GridBox" HorizontalAlignment="Stretch" Margin="1,0,1.08,0" Width="Auto"/>
+                            <ContentPresenter HorizontalAlignment="Left" Margin="1,0,0,0" x:Name="ContentSite" VerticalAlignment="Center" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" IsHitTestVisible="False"/>
+
+                            <!-- The TextBox must be named PART_EditableTextBox or ComboBox will not recognize it -->
+                            <TextBox Visibility="Hidden" Template="{DynamicResource ComboBoxTextBox}" HorizontalAlignment="Left" Margin="3,3,23,3" x:Name="PART_EditableTextBox" Style="{x:Null}" VerticalAlignment="Center" Focusable="True" Background="Transparent" IsReadOnly="{TemplateBinding IsReadOnly}"/>
+
+                            <!-- The Popup shows the list of items in the ComboBox. IsOpen is databound to IsDropDownOpen which is toggled via the ComboBoxToggleButton -->
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide" Margin="-10.92,0,10.92,0">
+                                <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True" Height="96" Background="#FF000000">
+                                    <Border x:Name="DropDownBorder" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{DynamicResource SolidBorderBrush}" BorderThickness="1"/>
+                                    <ScrollViewer Margin="4,6,4,6" Style="{DynamicResource SimpleScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+
+                                        <!-- The StackPanel is used to display the children by setting IsItemsHost to be True -->
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained"/>
+
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <!-- This forces the DropDown to have a minimum size if it is empty -->
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter Property="MinHeight" Value="95" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="true">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                            </Trigger>
+                            <Trigger Property="AllowsTransparency" SourceName="Popup" Value="true">
+                                <Setter Property="CornerRadius" Value="4" TargetName="DropDownBorder"/>
+                                <Setter Property="Margin" Value="0,2,0,0" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEditable" Value="true">
+                                <Setter Property="IsTabStop" Value="false"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="PART_EditableTextBox"/>
+                                <Setter Property="Visibility" Value="Hidden" TargetName="ContentSite"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+            <StackPanel IsItemsHost="True"/>
+        </ItemsPanelTemplate>
+        <Style x:Key="ComboBoxFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle SnapsToDevicePixels="true" Stroke="Black" StrokeDashArray="1 2" StrokeThickness="1" Margin="4,4,21,4"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Geometry x:Key="DownArrowGeometry">M 0 0 L 3.5 4 L 7 0 Z</Geometry>
+        <Style x:Key="ComboBoxTransparentButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="MinWidth" Value="0"/>
+            <Setter Property="MinHeight" Value="0"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <DockPanel SnapsToDevicePixels="true" Background="{TemplateBinding Background}" LastChildFill="false">
+                            <Microsoft_Windows_Themes:ClassicBorderDecorator x:Name="Border" Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="{TemplateBinding BorderBrush}" BorderStyle="AltRaised" BorderThickness="{TemplateBinding BorderThickness}" DockPanel.Dock="Right">
+                                <Path Fill="{TemplateBinding Foreground}" HorizontalAlignment="Center" VerticalAlignment="Center" Data="{StaticResource DownArrowGeometry}"/>
+                            </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                        </DockPanel>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="BorderStyle" TargetName="Border" Value="AltPressed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="ComboBoxEditableTextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="MinWidth" Value="0"/>
+            <Setter Property="MinHeight" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <ScrollViewer Focusable="false" x:Name="PART_ContentHost" Background="Transparent" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ControlTemplate x:Key="ComboBoxEditableTemplate" TargetType="{x:Type ComboBox}">
+            <Border SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                <Grid>
+                    <Microsoft_Windows_Themes:ClassicBorderDecorator x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}" BorderStyle="Sunken" BorderThickness="2">
+                        <Popup Focusable="False" AllowsTransparency="true" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" x:Name="PART_Popup">
+                            <Microsoft_Windows_Themes:SystemDropShadowChrome MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding Path=ActualWidth, ElementName=Border}" x:Name="Shdw" Color="Transparent">
+                                <Border x:Name="DropDownBorder" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" BorderThickness="1">
+                                    <ScrollViewer>
+                                        <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Microsoft_Windows_Themes:SystemDropShadowChrome>
+                        </Popup>
+                    </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                    <ToggleButton Focusable="false" Margin="2" MinHeight="0" MinWidth="0" Style="{StaticResource ComboBoxTransparentButtonStyle}" Width="Auto" ClickMode="Press" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+                    <DockPanel Margin="2">
+                        <FrameworkElement Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" DockPanel.Dock="Right"/>
+                        <TextBox Margin="{TemplateBinding Padding}" x:Name="PART_EditableTextBox" Style="{StaticResource ComboBoxEditableTextBox}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" IsReadOnly="{Binding Path=IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"/>
+                    </DockPanel>
+                </Grid>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="HasItems" Value="false">
+                    <Setter Property="MinHeight" TargetName="DropDownBorder" Value="95"/>
+                </Trigger>
+                <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+                    <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+                    <Setter Property="Color" TargetName="Shdw" Value="#71000000"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="IsGrouping" Value="true">
+                    <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <Style x:Key="ComboBoxStyle1" TargetType="{x:Type ComboBox}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource ComboBoxFocusVisual}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="Padding" Value="2,1"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid Width="21" Height="30">
+                            <!-- The ToggleButton is databound to the ComboBox itself to toggle IsDropDownOpen -->
+                            <ToggleButton Grid.Column="0" Template="{DynamicResource ComboBoxToggleButton3}" x:Name="ToggleButton" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" d:LayoutOverrides="GridBox" HorizontalAlignment="Right" Width="24"/>
+
+                            <!-- The Popup shows the list of items in the ComboBox. IsOpen is databound to IsDropDownOpen which is toggled via the ComboBoxToggleButton -->
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
+                                <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True" Width="206" Height="83.792">
+                                    <Border x:Name="DropDownBorder" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{DynamicResource SolidBorderBrush}" BorderThickness="1"/>
+                                    <ScrollViewer Margin="4,6,4,6" Style="{DynamicResource SimpleScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+
+                                        <!-- The StackPanel is used to display the children by setting IsItemsHost to be True -->
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Height="144.792"/>
+
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsSelectionBoxHighlighted" Value="true"/>
+                                    <Condition Property="IsDropDownOpen" Value="false"/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+                            </MultiTrigger>
+                            <Trigger Property="IsSelectionBoxHighlighted" Value="true"/>
+                            <Trigger Property="HasItems" Value="false"/>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="true">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsEditable" Value="true">
+                    <Setter Property="IsTabStop" Value="false"/>
+                    <Setter Property="Padding" Value="1"/>
+                    <Setter Property="Template" Value="{StaticResource ComboBoxEditableTemplate}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Simple ComboBox Toggle Button - This is used in ComboBox to expand and collapse the ComboBox Popup-->
+        <ControlTemplate x:Key="ComboBoxToggleButton2" TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.ColumnSpan="1" HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Fill="{DynamicResource DefaultedBorderBrush}" Stroke="{x:Null}" Opacity="0.5" Grid.Column="1"/>
+                <Rectangle Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Fill="{x:Null}" Stroke="{x:Null}"/>
+                <Path Grid.Column="1" HorizontalAlignment="Center" x:Name="Arrow" VerticalAlignment="Center" Fill="{DynamicResource DisabledBackgroundBrush}" Data="M 0 0 L 4 4 L 8 0 Z"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource MouseOverBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource PressedBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Fill" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Stroke" Value="{DynamicResource DisabledBorderBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                    <Setter Property="Fill" Value="{DynamicResource DisabledForegroundBrush}" TargetName="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <!-- Simple ComboBox 
+	This uses the ComboBoxToggleButton to expand and collapse a Popup control
+	SimpleScrollViewer to allow items to be scrolled and SimpleComboBoxItem to define the look of each item 
+	The Popup shows a list of items in a StackPanel-->
+
+        <Style x:Key="SimpleComboBox2" TargetType="{x:Type ComboBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <!-- The ToggleButton is databound to the ComboBox itself to toggle IsDropDownOpen -->
+                            <ToggleButton Grid.Column="0" Template="{DynamicResource ComboBoxToggleButton}" x:Name="ToggleButton" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" d:LayoutOverrides="GridBox" HorizontalAlignment="Right" Width="24"/>
+
+                            <!-- The Popup shows the list of items in the ComboBox. IsOpen is databound to IsDropDownOpen which is toggled via the ComboBoxToggleButton -->
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
+                                <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+                                    <Border x:Name="DropDownBorder" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{DynamicResource SolidBorderBrush}" BorderThickness="1"/>
+                                    <ScrollViewer Margin="4,6,4,6" Style="{DynamicResource SimpleScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+
+                                        <!-- The StackPanel is used to display the children by setting IsItemsHost to be True -->
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Height="144.792"/>
+
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="MaxDropDownHeight" Value="256"/>
+                            <!-- This forces the DropDown to have a minimum size if it is empty -->
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter Property="MinHeight" Value="95" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="true">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                            </Trigger>
+                            <Trigger Property="AllowsTransparency" SourceName="Popup" Value="true">
+                                <Setter Property="CornerRadius" Value="4" TargetName="DropDownBorder"/>
+                                <Setter Property="Margin" Value="0,2,0,0" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEditable" Value="true">
+                                <Setter Property="IsTabStop" Value="false"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ComboBox Toggle Button - This is used in ComboBox to expand and collapse the ComboBox Popup-->
+        <ControlTemplate x:Key="ComboBoxToggleButton3" TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="0" RadiusY="0" Fill="{DynamicResource DefaultedBorderBrush}" Stroke="{x:Null}" Opacity="0.5" Grid.Column="0" Margin="2,0,2,8" Grid.ColumnSpan="2"/>
+                <Rectangle Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Fill="{x:Null}" Stroke="{x:Null}"/>
+                <Path Grid.Column="1" HorizontalAlignment="Stretch" x:Name="Arrow" VerticalAlignment="Stretch" Fill="{DynamicResource DisabledBackgroundBrush}" Data="M 0 0 L 4 4 L 8 0 Z" Margin="4,8,8,0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource MouseOverBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource PressedBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Fill" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Stroke" Value="{DynamicResource DisabledBorderBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                    <Setter Property="Fill" Value="{DynamicResource DisabledForegroundBrush}" TargetName="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <Style x:Key="ButtonStyle1" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="OnMouseEnter1">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="5"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.GlowColor)">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#00FFD700"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFFFD700"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="OnMouseLeave1">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.GlowSize)" Storyboard.TargetName="grid">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="5"/>
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.BitmapEffect).(OuterGlowBitmapEffect.GlowColor)" Storyboard.TargetName="grid">
+                                    <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFFFD700"/>
+                                    <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#00FFD700"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </ControlTemplate.Resources>
+                        <Grid x:Name="grid">
+                            <Grid.BitmapEffect>
+                                <OuterGlowBitmapEffect GlowColor="#00FFD700"/>
+                            </Grid.BitmapEffect>
+                            <Rectangle Fill="#00FFFFFF" Stroke="#00000000" StrokeThickness="0">
+                                <Rectangle.BitmapEffect>
+                                    <OuterGlowBitmapEffect GlowColor="#00FF2300"/>
+                                </Rectangle.BitmapEffect>
+                            </Rectangle>
+                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                <BeginStoryboard x:Name="OnMouseLeave1_BeginStoryboard" Storyboard="{StaticResource OnMouseLeave1}"/>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                <BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+                            </EventTrigger>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Storyboard x:Key="OnMouseEnter1">
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMouseLeave1">
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </UserControl.Resources>
+
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+            <BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave">
+            <BeginStoryboard x:Name="OnMouseLeave1_BeginStoryboard" Storyboard="{StaticResource OnMouseLeave1}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <UserControl.BitmapEffect>
+        <DropShadowBitmapEffect/>
+    </UserControl.BitmapEffect>
+
+    <Grid x:Name="LayoutRoot" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Height="126" VerticalAlignment="Center" Width="208">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                <SkewTransform AngleX="0" AngleY="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform X="0" Y="0"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.BitmapEffect>
+            <DropShadowBitmapEffect/>
+        </Grid.BitmapEffect>
+        <Button Style="{DynamicResource BlackButton}" FontFamily="Comic Sans MS" FontSize="18" Foreground="#FFFDFDFD" x:Name="btnmain" AllowDrop="True" Opacity="1" BorderThickness="0,0,0,0" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="1,1,0,0" VerticalAlignment="Top" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#33000000" Offset="0.493"/>
+                    <GradientStop Color="#33FFFFFF" Offset="1"/>
+                    <GradientStop Color="#33FFFFFF" Offset="0.493"/>
+                    <GradientStop Color="#33000000" Offset="0.01"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Canvas Margin="0,0,1,3" Name="cnvMain" Opacity="1">
+            <Label FontFamily="Gautami" FontSize="22" Content="" x:Name="lblValue" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="132" Height="44.344" Canvas.Top="62.656" Opacity="1" Foreground="#FF000000" Canvas.Left="27" ClipToBounds="False" SnapsToDevicePixels="True" >
+                <Label.BitmapEffect>
+                    <OuterGlowBitmapEffect GlowColor="#FFC0C0C0"/>
+                </Label.BitmapEffect>
+            </Label>
+            <Label FontSize="24" x:Name="lblName" Width="198" Height="44.656" Content="Loading..." Opacity="1" FontFamily="Gautami" Canvas.Top="18" RenderTransformOrigin="0.504,0.513" Foreground="#FF000000" Canvas.Left="1" />
+
+            <Grid VerticalAlignment="Stretch" Width="193" Height="23" Canvas.Left="6" Canvas.Top="6" Visibility="Hidden" x:Name="grid">
+                <Button HorizontalAlignment="Right" Margin="0,1,2,4" x:Name="btnclick" Style="{DynamicResource ButtonStyle1}" Width="18">
+                    <Image Width="17" Height="17"  Stretch="Fill" RenderTransformOrigin="0.619,0.039" Source="/Weather.Presentation;component/Images/Config-Tools.ico" />
+                </Button>
+
+                <ComboBox x:Name="expMenu" Style="{DynamicResource ComboBoxStyle1}" Width="18" IsSynchronizedWithCurrentItem="True" FontSize="12" FontWeight="Normal" Foreground="#FFCE7114" HorizontalAlignment="Left" Margin="0,0,0,1.344"/>
+
+            </Grid>
+
+        </Canvas>
+        <Canvas Margin="8,7.967,8,3" x:Name="cnvlbl" HorizontalAlignment="Stretch" Background="#00232121" d:IsHidden="True">
+            <Label x:Name="lblCity" FontSize="14" Foreground="#FF000000" Content="City" Width="120" Height="31" Canvas.Top="23.967" FontFamily="Gautami" d:IsHidden="True"/>
+            <Label x:Name="lblState" FontSize="14" Foreground="#FF000000" Content="Country" Width="120" Height="31" Canvas.Top="-3.033" FontFamily="Gautami"/>
+            <Button Height="21.033" Content="Get" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" x:Name="btnGet" FontSize="14" Width="48" Canvas.Left="72" Canvas.Top="76.967" FontFamily="Gautami" HorizontalAlignment="Stretch">
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </Button.BitmapEffect>
+            </Button>
+            <Label x:Name="lblDef" Width="88" Height="24" Content="Set Default" FontSize="14" Foreground="#FF000000" Canvas.Top="48.967" FontFamily="Gautami"/>
+            <CheckBox x:Name="chkDefault" Width="40" Height="14" Background="#FF554C4C" Foreground="#FFFFFFFF" Canvas.Left="72" Canvas.Top="59" HorizontalAlignment="Stretch" BorderThickness="0" Padding="0">
+                <CheckBox.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </CheckBox.BitmapEffect>
+            </CheckBox>
+            <Button Height="21.033" Content="Cancel" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" x:Name="btnCancle" FontSize="14" Width="50" Canvas.Left="142" Canvas.Top="76.967" FontFamily="Gautami" HorizontalAlignment="Stretch">
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </Button.BitmapEffect>
+            </Button>
+
+            <ComboBox Style="{DynamicResource SimpleComboBox}" Canvas.Left="70" Canvas.Top="23.967" Height="21"  IsSynchronizedWithCurrentItem="True" x:Name="cmbCity" Width="126"   OpacityMask="{x:Null}" Background="#FF000000" FontSize="12" FontWeight="Normal" Foreground="#FFFF6800" HorizontalContentAlignment="Left" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+                <ComboBox.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </ComboBox.BitmapEffect>
+            </ComboBox>
+
+            <ComboBox Style="{DynamicResource SimpleComboBox}" Height="21"  IsSynchronizedWithCurrentItem="True" x:Name="cmbCountry"   OpacityMask="{x:Null}" Background="#FF000000" FontSize="12" FontWeight="Normal" Foreground="#FFFF6902" HorizontalContentAlignment="Left" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" Width="126" Canvas.Left="70" HorizontalAlignment="Stretch">
+                <ComboBox.BitmapEffect>
+                    <DropShadowBitmapEffect/>
+                </ComboBox.BitmapEffect>
+                <ComboBoxItem Content="India" x:Name="india"/>
+                <ComboBoxItem Content="United Kingdom"/>
+                <ComboBoxItem Content="United States" />
+                <ComboBoxItem Content="italy" x:Name="italy"/>
+                <ComboBoxItem Content="france" x:Name="france"/>
+                <ComboBoxItem Content="Brazil" x:Name="Brazil"/>
+                <ComboBoxItem Content="Canada" x:Name="Canada"/>
+                <ComboBoxItem Content="china " x:Name="china"/>
+                <ComboBoxItem Content="Germany" x:Name="Germany"/>
+                <ComboBoxItem Content="Malaysia" x:Name="Malaysia"/>
+                <ComboBoxItem Content="Switzerland" x:Name="Switzerland"/>
+                <ComboBoxItem Content="Thailand" x:Name="Thailand"/>
+
+                <ComboBoxItem Content="pakistan" x:Name="pakistan"/>
+                <ComboBoxItem Content="Afghanistan" x:Name="Afghanistan"/>
+
+                <ComboBoxItem Content="Angola" x:Name="Angola"/>
+                <ComboBoxItem Content="Argentina" x:Name="Argentina"/>
+                <ComboBoxItem Content="Bahamas" x:Name="Bahamas"/>
+                <ComboBoxItem Content="Bulgaria" x:Name="Bulgaria"/>
+
+                <ComboBoxItem Content="Colombia" x:Name="Colombia"/>
+                <ComboBoxItem Content="Cuba" x:Name="Cuba"/>
+                <ComboBoxItem Content="Cyprus" x:Name="Cyprus"/>
+                <ComboBoxItem Content="Denmark" x:Name="Denmark"/>
+                <ComboBoxItem Content="Egypt" x:Name="Egypt"/>
+                <ComboBoxItem Content="Japan" x:Name="Japan"/>
+                <ComboBoxItem Content="Russia" x:Name="Russia"/>
+                <ComboBoxItem Content="Singapore" x:Name="Singapore"/>
+                <ComboBoxItem Content="Spain" x:Name="Spain"/>
+
+                <ComboBoxItem Content="Greece" x:Name="Greece"/>
+                <ComboBoxItem Content="Greenland" x:Name="Greenland"/>
+                <ComboBoxItem Content="HongKong" x:Name="HongKong"/>
+                <ComboBoxItem Content="Iceland " x:Name="Iceland"/>
+                <ComboBoxItem Content="Indonesia" x:Name="Indonesia"/>
+                <ComboBoxItem Content="Iran" x:Name="Iran"/>
+                <ComboBoxItem Content="Ireland" x:Name="Ireland"/>
+                <ComboBoxItem Content="Iraq" x:Name="Iraq"/>
+                <ComboBoxItem Content="Jordan"  x:Name="Jordan"/>
+                <ComboBoxItem Content="Kenya" x:Name="Kenya"/>
+                <ComboBoxItem Content="KoreaNorth" x:Name="KoreaNorth"/>
+                <ComboBoxItem Content="KoreaSouth" x:Name="KoreaSouth"/>
+                <ComboBoxItem Content="Kuwait" x:Name="Kuwait"/>
+                <ComboBoxItem Content="Libya" x:Name="Libya"/>
+                <ComboBoxItem Content="Mexico" x:Name="Mexico"/>
+                <ComboBoxItem Content="Myanmar" x:Name="Myanmar"/>
+                <ComboBoxItem Content="Nepal" x:Name="Nepal"/>
+                <ComboBoxItem Content="Netherlands" x:Name="Netherlands"/>
+                <ComboBoxItem Content=" New Zealand" />
+                <ComboBoxItem Content="Norway" x:Name="Norway"/>
+                <ComboBoxItem Content="Sri Lanka" />
+                <ComboBoxItem Content="Syria" x:Name="Syria"/>
+                <ComboBoxItem Content="Turkey" x:Name="Turkey"/>
+                <ComboBoxItem Content="Vatican City" />
+                <ComboBoxItem Content="Vietnam " />
+                <ComboBoxItem Content="Zimbabwe " />
+
+            </ComboBox>
+        </Canvas>
+    </Grid>
+
+</UserControl>

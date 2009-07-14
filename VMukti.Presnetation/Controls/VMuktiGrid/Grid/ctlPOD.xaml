@@ -1,0 +1,199 @@
+﻿<UserControl x:Class="VMuktiGrid.CustomGrid.ctlPOD"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="Transparent" Height="Auto" Width="Auto" Mouse.MouseMove="ctlPOD_MouseMove" 
+    MinWidth="0" MinHeight="0" x:Name="CtlPOD" Padding="2,2,2,2"
+    xmlns:nmImageAnim="clr-namespace:ReissSoftware"
+    xmlns:nmBuddy="clr-namespace:VMuktiGrid.Buddy" HorizontalAlignment="Stretch"
+    xmlns:convPODHeight="clr-namespace:VMuktiGrid.CustomGrid" SnapsToDevicePixels="True">
+
+    <UserControl.Resources>        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Skins\PodRes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <Storyboard x:Key="OnMouseEnter1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgPODIcon" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                
+            </Storyboard>
+            
+            <Storyboard x:Key="OnMouseLeave1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <LinearGradientBrush x:Key="Background" EndPoint="0,1" StartPoint="0,0">
+                <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                <GradientStop Color="#FFF5F5F5" Offset="0.905"/>
+                <GradientStop Color="#FFEDEDED" Offset="1"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="Title1" EndPoint="0,1" StartPoint="0,0">
+                <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                <GradientStop Color="#FFCDCDCD" Offset="1"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+        
+    </UserControl.Resources>
+    
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+            <BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave">
+            <StopStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+            <BeginStoryboard x:Name="OnMouseLeave1_BeginStoryboard" Storyboard="{StaticResource OnMouseLeave1}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    
+    <Grid x:Name="grdMain" RenderTransformOrigin="0.5,0.5" Grid.IsSharedSizeScope="True" 
+          ShowGridLines="False" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+          ScrollViewer.VerticalScrollBarVisibility="Auto" SnapsToDevicePixels="True" >
+    
+        <Grid x:Name="grdSub"  SnapsToDevicePixels="True" RenderTransformOrigin="0.5,0.5" Grid.IsSharedSizeScope="True" ShowGridLines="False" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="colDef1" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Name="rowDef1" Height="25" />
+                <RowDefinition Name="rowDef2" Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Rectangle Stroke="{DynamicResource MainBorderBrush}" RadiusX="8.5" StrokeThickness="0.5"
+					RadiusY="8.5" Fill="{DynamicResource PodBackGround}" Width="Auto" Height="Auto" 
+					HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+					Grid.RowSpan="2" MinWidth="0" MinHeight="0" Margin="0,0,0,0" 
+					x:Name="Rectangle" RenderTransformOrigin="0.5,0.5"/>
+
+            <Border Width="Auto" Height="Auto" HorizontalAlignment="Stretch" Mouse.MouseEnter="brdPOD_MouseEnter" 
+					VerticalAlignment="Stretch" Grid.RowSpan="1" MinWidth="0" MinHeight="0"  
+					x:Name="brdPOD" RenderTransformOrigin="0.5,0.5" MouseDown="grdTitle_PreviewMouseDown"
+					Background="{DynamicResource MainGridBackground}" 
+                    ClipToBounds="True"
+					BorderBrush="{DynamicResource PodBorderBrush}" CornerRadius="7,7,0,0" Margin="1,1,1,1" >
+
+                <Grid x:Name="grdTitle" Height="25" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" >
+                    
+                    <Image HorizontalAlignment="Left" Margin="6,4,0,4" x:Name="imgPODIcon" Width="18" Height="18" Source="\Skins\Images\VMuktiIcon.ico" Stretch="Fill"/>
+                    
+                    <Label Foreground ="{DynamicResource TextBrush}" FontFamily="Segoe UI" Name="lblTitle"
+                           Width="Auto" Height="24" Background="{x:Null}" Margin="25,0,0,1" 
+                           FontSize="12" FontWeight="Normal" HorizontalAlignment="Stretch" Content="VMukti Solutions" />
+
+                    <Button Style="{DynamicResource SmallButton}" x:Name="btnClose" ToolTip="Close" AllowDrop="False"  BorderThickness="1,1,1,1" Cursor="Arrow"  FontWeight="Bold" FontSize="13"  Focusable="False" Width="14" HorizontalAlignment="Right" Margin="0,5,17,5" Click="btnClose_Click" Visibility="Collapsed">
+                        <Canvas Width="9" Height="3">
+                            <Rectangle Fill="{DynamicResource MinBrush}" Height="3" Width="9" RenderTransformOrigin="0.5,0.5" >
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="45"/>
+                                        <TranslateTransform X="0" Y="0"/>
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+                            </Rectangle>
+                            <Rectangle RenderTransformOrigin="0.5,0.5" Width="9" Height="3" Fill="{DynamicResource MinBrush}">
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="135"/>
+                                        <TranslateTransform X="0" Y="0"/>
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+                            </Rectangle>
+                        </Canvas>
+                    </Button>
+                    <nmBuddy:ctlPodBuddyList x:Name="objBuddyList" VerticalAlignment="Center"
+                                    HorizontalAlignment="Right" Margin="0,5,35,5" Visibility="Collapsed" />
+                    
+                    <Button x:Name="btnMinPanel" Width="16" Content="" 
+                        Click="btnMinPanel_Click" Style="{DynamicResource ArrowButtons}" 
+                        RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" 
+                        Focusable="False" HorizontalAlignment="Right" Height="6" 
+                        Margin="0,0,0,0" Visibility="Collapsed">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                                <SkewTransform AngleX="0" AngleY="0"/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                    </Button>
+                </Grid>
+            </Border>
+            
+            <Grid x:Name="grdBody" OpacityMask="{DynamicResource Background}" Grid.Row="1"
+                  RenderTransformOrigin="0.5,0.5" Height="Auto" MinWidth="0" MinHeight="0" Margin="5,5,5,5"
+                  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SnapsToDevicePixels="True" >
+                <!--<Button x:Name="btnObject" Height="25" Width="100" Content="Click Me!!" />-->
+                <Rectangle x:Name="Rct1" Height="100" HorizontalAlignment="Stretch" Fill="BlanchedAlmond" 
+                           Stroke="Blue" StrokeThickness="2,2,2,2" Visibility="Collapsed" SnapsToDevicePixels="True" />
+                <nmImageAnim:ImageAnim Source="\Skins\Images\loading.gif" Height="50" Width="50" x:Name="animImage" />
+            </Grid>
+            
+            <Button x:Name="btnHidePanel" Width="14" Height="9" Content="" Click="btnHidePanel_Click" Style="{DynamicResource ArrowButtons}" RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}"  Focusable="False" HorizontalAlignment="Left" Margin="5,6,0,0" VerticalAlignment="Top" Visibility="Collapsed">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+        <Button x:Name="btnMinPanel1" Width="0" Content="" Click="btnMinPanel1_Click" Style="{DynamicResource ArrowButtons}" RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}"  Focusable="False" HorizontalAlignment="Left" Height="6" Canvas.Left="5" Canvas.Top="9" Margin="0,-100,0,0" Visibility="Collapsed">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="270"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+    
+</UserControl>

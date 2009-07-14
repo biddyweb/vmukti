@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="Treatment.Presentation.ctlGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	>
+	<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <Grid Name="grdControl" Background="AliceBlue">
+    </Grid>
+    </ScrollViewer>
+</UserControl>

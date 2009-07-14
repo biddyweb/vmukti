@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Modules Name="DesktopSharing">
+
+<DummyClient class="DummyClient" method="DesktopClient">
+</DummyClient>
+                            
+<P2PDummyClient classname="P2PDesktopDummyClient" methodname="DesktopP2PClient">              
+</P2PDummyClient>
+
+</Modules>

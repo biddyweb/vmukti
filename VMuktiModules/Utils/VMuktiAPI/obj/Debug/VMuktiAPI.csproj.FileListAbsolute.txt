@@ -1,0 +1,28 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.config
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\HttpNamespaceManagerLib.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.config
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.CodeAnalysisLog.xml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiAPI.dll.lastcodeanalysissucceeded
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\HttpNamespaceManagerLib.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\obj\Debug\VMuktiAPI.pdb

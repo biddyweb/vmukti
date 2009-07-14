@@ -1,0 +1,28 @@
+VIDEO APPLICATION
+
+Video Widget is used to make a simple video
+conferencing between more than two people. 
+Besides the visual transmission of people 
+images, videoconferencing can be used to share 
+documents, computer-displayed information, and 
+whiteboards. A live conversation is achieved.
+
+	Features
+	• User can enlarge the screen with the help of 
+	  the full screen option.
+	• With the full screen option new popup window
+	  will open containing The video with enlarged size.
+	• User can also remove full screen using 
+	  the Cancel option.
+	• With the cancel option window containing 
+	  the full screen video will be closed.
+
+	How to Use 
+
+	1. After being logged in, user has to drag the 
+	   video widget from the left pane of the main 
+	   window to central working area.For working with 
+	   video widget, user should have web camera for 
+	   capturing the user’s video that would 
+	   be a part of video collaborative conference.
+

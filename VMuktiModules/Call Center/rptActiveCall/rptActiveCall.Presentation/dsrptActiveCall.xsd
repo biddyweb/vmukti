@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsrptActiveCall" targetNamespace="http://tempuri.org/dsrptActiveCall.xsd" xmlns:mstns="http://tempuri.org/dsrptActiveCall.xsd" xmlns="http://tempuri.org/dsrptActiveCall.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsrptActiveCall" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsrptActiveCall" msprop:Generator_DataSetName="dsrptActiveCall" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtActiveCall" msprop:Generator_UserTableName="dtActiveCall" msprop:Generator_RowDeletedName="dtActiveCallRowDeleted" msprop:Generator_RowChangedName="dtActiveCallRowChanged" msprop:Generator_RowClassName="dtActiveCallRow" msprop:Generator_RowChangingName="dtActiveCallRowChanging" msprop:Generator_RowEvArgName="dtActiveCallRowChangeEvent" msprop:Generator_RowEvHandlerName="dtActiveCallRowChangeEventHandler" msprop:Generator_TableClassName="dtActiveCallDataTable" msprop:Generator_TableVarName="tabledtActiveCall" msprop:Generator_RowDeletingName="dtActiveCallRowDeleting" msprop:Generator_TablePropName="dtActiveCall">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="u_Name" msprop:Generator_UserColumnName="u_Name" msprop:Generator_ColumnVarNameInTable="columnu_Name" msprop:Generator_ColumnPropNameInRow="u_Name" msprop:Generator_ColumnPropNameInTable="u_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Campaign_Id" msprop:Generator_UserColumnName="Campaign_Id" msprop:Generator_ColumnVarNameInTable="columnCampaign_Id" msprop:Generator_ColumnPropNameInRow="Campaign_Id" msprop:Generator_ColumnPropNameInTable="Campaign_IdColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Group_Name" msprop:Generator_UserColumnName="Group_Name" msprop:Generator_ColumnVarNameInTable="columnGroup_Name" msprop:Generator_ColumnPropNameInRow="Group_Name" msprop:Generator_ColumnPropNameInTable="Group_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone_No" msprop:Generator_UserColumnName="Phone_No" msprop:Generator_ColumnVarNameInTable="columnPhone_No" msprop:Generator_ColumnPropNameInRow="Phone_No" msprop:Generator_ColumnPropNameInTable="Phone_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="callDuration" msprop:Generator_UserColumnName="callDuration" msprop:Generator_ColumnPropNameInRow="callDuration" msprop:Generator_ColumnVarNameInTable="columncallDuration" msprop:Generator_ColumnPropNameInTable="callDurationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:dtActiveCall" />
+      <xs:field xpath="mstns:u_Name" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

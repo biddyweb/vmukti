@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\bin\Debug\Chat.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\bin\Debug\Chat.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\obj\Debug\Chat.Common.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\obj\Debug\Chat.Common.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\obj\Debug\Chat.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Common\obj\Debug\Chat.Common.pdb

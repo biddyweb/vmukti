@@ -1,0 +1,77 @@
+﻿<!-- ctlBuddy.xaml 22 : previous it renders buddy with buddy image, buddy caption and delete image in buddy lists (pod, tab & page) -->
+    <UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="VMuktiGrid.Buddy.ctlBuddy" Visibility="Visible"
+    Height="Auto" Background="{x:Null}" FontSize="18" 
+    HorizontalAlignment="Stretch" Padding="0,0,0,5">
+    
+    <UserControl.Resources>
+        <Storyboard x:Key="OnMouseOver">
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="txtTitle" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF376DB1"/>
+                <SplineColorKeyFrame KeyTime="00:00:00.2600000" Value="#FFE18926"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="OnMoudeLeft">
+            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="txtTitle">
+                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FFE18926"/>
+
+                <SplineColorKeyFrame KeyTime="00:00:00.5000000" Value="#FF376DB1"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </UserControl.Resources>
+    
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="txtTitle">
+            <BeginStoryboard Storyboard="{StaticResource OnMouseOver}" x:Name="OnMouseOver_BeginStoryboard"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="txtTitle">
+            <BeginStoryboard x:Name="OnMoudeLeft_BeginStoryboard" Storyboard="{StaticResource OnMoudeLeft}"/>
+        </EventTrigger>
+
+    </UserControl.Triggers>
+
+    <Grid x:Name="LayoutRoot" Width="Auto" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <!--for buddy image-->
+            <ColumnDefinition Width="16" />
+            <!--for buddy caption-->
+            <ColumnDefinition Width="Auto" />
+            <!--for buddy delete image-->
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border HorizontalAlignment="Left" Width="16" BorderThickness="0,0,0,0" Padding="0,0,0,2" Grid.Column="0">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#00515151" Offset="0"/>
+                    <GradientStop Color="#B2515151" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Image x:Name="imagePanel" Width="16" Height="16" 
+                   Source="\Skins\Images\Buddy.Png" Stretch="Uniform" StretchDirection="Both"/>
+        </Border>
+        <Border HorizontalAlignment="Left" Margin="2,0,2,0" BorderThickness="0,0,0,0" Padding="0,0,0,2" Grid.Column="1">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#B2515151" Offset="0"/>
+                    <GradientStop Color="#80FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <TextBlock x:Name="txtTitle" FontFamily="Segoe UI" FontSize="12"  
+                       Text="TextBlock" TextWrapping="Wrap" Cursor="Hand" Width="Auto" 
+                       Height="20" Padding="3,3,3,0" FontWeight="Normal" Background="{x:Null}" />
+        </Border>
+
+        <Border HorizontalAlignment="Right" Width="16" BorderThickness="0,0,0,0" Padding="0,0,0,2" Grid.Column="2">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#00515151" Offset="0"/>
+                    <GradientStop Color="#B2515151" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <!--<Image x:Name="imgDelete" Width="16" Source="\Skins\Images\Delete.png" Stretch="Uniform" StretchDirection="Both" Height="20" Cursor="Hand" PreviewMouseDown="imgDelete_PreviewMouseDown" />-->
+        </Border>
+    </Grid>
+</UserControl>

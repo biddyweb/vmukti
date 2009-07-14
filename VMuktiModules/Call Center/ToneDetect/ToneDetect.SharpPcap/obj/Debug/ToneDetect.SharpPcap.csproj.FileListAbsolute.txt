@@ -1,0 +1,5 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.SharpPcap\bin\Debug\ToneDetect.SharpPcap.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.SharpPcap\bin\Debug\ToneDetect.SharpPcap.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.SharpPcap\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.SharpPcap\obj\Debug\ToneDetect.SharpPcap.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.SharpPcap\obj\Debug\ToneDetect.SharpPcap.pdb

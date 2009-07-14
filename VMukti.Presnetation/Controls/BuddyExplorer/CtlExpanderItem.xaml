@@ -1,0 +1,42 @@
+﻿<UserControl Focusable="True"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="VMukti.Presentation.Controls.CtlExpanderItem" Background="Transparent"
+	
+	x:Name="ucExpanderItem" VerticalContentAlignment="Stretch"  HorizontalContentAlignment="Stretch" >
+
+
+
+        <Border Height="Auto" Width="Auto" CornerRadius="2,2,2,2" BorderThickness="1" Background="#00000000" BorderBrush="#00000000">
+
+
+		<Grid>
+		<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="35" />
+				<ColumnDefinition Width="*" MinWidth="90"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+				<RowDefinition Height="25"/>            
+                <RowDefinition Height="8" />
+                <RowDefinition Height="*" MinHeight="0"/>
+            
+		</Grid.RowDefinitions>
+
+            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            </Image>
+            
+            <Label Height="25"  HorizontalAlignment="left" Grid.Row="0" Foreground="{DynamicResource TextBrush}"
+				Grid.Column="1" FontFamily="Segoe UI" FontSize="12" Content="Testing Drag Drop">
+            </Label>
+
+            <Separator Grid.Row="1" Grid.ColumnSpan="2" Visibility="Collapsed">
+            </Separator>
+
+            <UniformGrid Visibility="Collapsed" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="2" >
+            </UniformGrid>
+
+        </Grid>
+
+	</Border>
+
+</UserControl>

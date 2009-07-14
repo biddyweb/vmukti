@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\bin\Debug\Video.Presentation.dll">
+   <Modules>
+    <Module Name="video.presentation.dll">
+     <Namespaces>
+      <Namespace Name="Video.Presentation">
+       <Types>
+        <Type Name="clsVideoSNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RegNetP2pClient(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\SuperNode" File="clsVideoSNode.cs" Line="156">'objDirectXVideo', a variable, is cast to type 'ClsNetP2PUserVideo' multiple times in method 'clsVideoSNode.RegNetP2pClient(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\SuperNode" File="clsVideoSNode.cs" Line="157">'objDirectXVideo', a variable, is cast to type 'ClsNetP2PUserVideo' multiple times in method 'clsVideoSNode.RegNetP2pClient(object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ctlUserVideo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="113">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.MyID' of type 'int' to 0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="112">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.MyMeetingID' of type 'int' to 0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="114">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.OldHeight' of type 'double' to 0.0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="115">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.OldWidth' of type 'double' to 0.0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="141">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.Tfs' of type 'TestFullScreen' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="98">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.bhcDirectXVideo' of type 'BasicHttpClient' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="91">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.capture' of type 'Capture' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="92">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.filters' of type 'Filters' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="117">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.flg' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="122">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.lstVideoInput' of type 'List&lt;string&gt;' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="94">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.npcDirectXVideo' of type 'NetPeerClient' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="142">'ctlUserVideo.ctlUserVideo(string, string, string)' initializes field 'ctlUserVideo.objShowVideo' of type 'ShowVideoInputs' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlUserVideo.xaml.cs" Line="203">Replace the call to 'string.operator !=(string, string)' in 'ctlUserVideo.ctlUserVideo(string, string, string)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#cnvMain" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.cnvMain' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CtlUserVideo" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.CtlUserVideo' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MyID" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.MyID' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MyMeetingID" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.MyMeetingID' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OldHeight" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.OldHeight' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OldWidth" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.OldWidth' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#row1" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.row1' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#row2" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlUserVideo.row2' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning">'target', a parameter, is cast to type 'RowDefinition' multiple times in method 'ctlUserVideo.IComponentConnector.Connect(int, object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ctlUserVideo+INPUT" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'ctlUserVideo.INPUT' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'ctlUserVideo.INPUT' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ctlUserVideo+MOUSEINPUT" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'ctlUserVideo.MOUSEINPUT' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'ctlUserVideo.MOUSEINPUT' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ctlVideo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(VMuktiAPI.PeerType,System.String,Video.Presentation.ModulePermissions[],System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlVideo.xaml.cs" Line="100">'ctlVideo.ctlVideo(PeerType, string, ModulePermissions[], string)' initializes field 'ctlVideo.objUserVideoMe' of type 'ctlUserVideo' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CtlVideo" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlVideo.CtlVideo' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dispTimer_Tick(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlVideo.xaml.cs" Line="559">'ctlVideo.dispTimer_Tick(object, EventArgs)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#myViewer_ScrollChanged(System.Object,System.Windows.Controls.ScrollChangedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="xy" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="ctlVideo.xaml.cs" Line="206">'ctlVideo.myViewer_ScrollChanged(object, ScrollChangedEventArgs)' declares a variable, 'xy', of type 'double[]', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#row1" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ctlVideo.row1' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning">'target', a parameter, is cast to type 'Canvas' multiple times in method 'ctlVideo.IComponentConnector.Connect(int, object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MainVideoDummies" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,System.Int32,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="MainVideoDummies.cs" Line="74">'MainVideoDummies.MainVideoDummies(string, string, int, string, string)' initializes field 'MainVideoDummies.HttpMainVideoServer' of type 'BasicHttpServer' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="MainVideoDummies.cs" Line="70">'MainVideoDummies.MainVideoDummies(string, string, int, string, string)' initializes field 'MainVideoDummies.objClsHttpMainVideo' of type 'object' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="MainVideoDummies.cs" Line="71">'MainVideoDummies.MainVideoDummies(string, string, int, string, string)' initializes field 'MainVideoDummies.objClsNetP2PMainVideo' of type 'object' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="MainVideoDummies.cs" Line="79">'MainVideoDummies.MainVideoDummies(string, string, int, string, string)' initializes field 'MainVideoDummies.tempcounter' of type 'int' to 0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MyID" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'MainVideoDummies.MyID' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="P2PVideoClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="P2PVideoClient.cs" Line="58">'P2PVideoClient.P2PVideoClient(string, string)' initializes field 'P2PVideoClient.objNetTcpVideo' of type 'object' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation" File="P2PVideoClient.cs" Line="64">'P2PVideoClient.P2PVideoClient(string, string)' initializes field 'P2PVideoClient.tempcounter' of type 'int' to 0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShowVideoInputs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#cnvVideoOptions" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ShowVideoInputs.cnvVideoOptions' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#label1" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ShowVideoInputs.label1' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#label2" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ShowVideoInputs.label2' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning">'target', a parameter, is cast to type 'Label' multiple times in method 'ShowVideoInputs.IComponentConnector.Connect(int, object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TestFullScreen" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#gdbottom" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'TestFullScreen.gdbottom' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#gdtop" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'TestFullScreen.gdtop' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Warning">'target', a parameter, is cast to type 'RowDefinition' multiple times in method 'TestFullScreen.IComponentConnector.Connect(int, object)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant castclass instruction.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserVideoDummies" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String,System.Int32,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\SuperNode" File="UserVideoDummies.cs" Line="74">'UserVideoDummies.UserVideoDummies(string, string, int, string, string)' initializes field 'UserVideoDummies.HttpUserVideoServer' of type 'BasicHttpServer' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\SuperNode" File="UserVideoDummies.cs" Line="70">'UserVideoDummies.UserVideoDummies(string, string, int, string, string)' initializes field 'UserVideoDummies.objClsHttpUserVideo' of type 'object' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Presentation\SuperNode" File="UserVideoDummies.cs" Line="71">'UserVideoDummies.UserVideoDummies(string, string, int, string, string)' initializes field 'UserVideoDummies.objClsNetP2PUserVideo' of type 'object' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MyID" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'UserVideoDummies.MyID' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182264(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245042(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182271(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+   <Name>Do not initialize unnecessarily</Name>
+   <Description>Do not make initializations that have already been done by the runtime.</Description>
+   <Resolution Name="Default">{0} initializes field {1} of type {2} to {3}. Remove this initialization because it will be done automatically by the runtime.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182274(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815">
+   <Name>Override equals and operator equals on value types</Name>
+   <Description>The default System.ValueType implementation might not perform as well as a custom implementation.</Description>
+   <Resolution Name="Equals">{0} should override Equals.</Resolution>
+   <Resolution Name="op_Equality">{0} should override the equality (==) and inequality (!=) operators.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182276(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182278(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182279(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

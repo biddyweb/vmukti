@@ -1,0 +1,58 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Images\fileopen.png
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ctlPlayFile.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ctlPlayFile.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\RdlCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\RdlCompile.compiled
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Images\fileopen.png
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMukti.CtlDatePicker.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\PlayFile.Common.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ctlPlayFile.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\ctlPlayFile.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\RdlCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\RdlCompile.compiled
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Presentation\obj\Debug\PlayFile.Presentation.pdb

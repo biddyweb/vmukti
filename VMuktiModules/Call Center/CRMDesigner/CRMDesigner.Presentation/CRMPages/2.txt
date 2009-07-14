@@ -1,0 +1,21 @@
+<EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRM.Business\CRM.Business.csproj">
+      <Project>{4E950B82-167B-4A42-8ECA-2F7607A9746D}</Project>
+      <Name>CRM.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReferencedAssemblies\VMuktiAPI.dll" />
+  </ItemGroup>
+  <ItemGroup>

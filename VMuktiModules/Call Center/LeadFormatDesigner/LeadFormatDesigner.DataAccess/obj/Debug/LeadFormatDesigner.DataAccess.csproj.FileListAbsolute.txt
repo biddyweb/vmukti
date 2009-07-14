@@ -1,0 +1,14 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\LeadFormatDesigner.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\LeadFormatDesigner.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\LeadFormatDesigner.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\LeadFormatDesigner.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\obj\Debug\LeadFormatDesigner.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.DataAccess\obj\Debug\LeadFormatDesigner.DataAccess.pdb

@@ -1,0 +1,9 @@
+﻿<Window x:Class="ImageSharing.Presentation.FullScreenSlideShow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FullScreenSlideShow" Height="300" Width="300" WindowState="Maximized">
+    <Grid>
+		<Image x:Name="imgFullScreen"/>
+
+	</Grid>
+</Window>

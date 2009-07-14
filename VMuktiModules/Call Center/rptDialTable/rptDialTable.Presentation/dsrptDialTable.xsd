@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsrptDialTable" targetNamespace="http://tempuri.org/dsrptDialTable.xsd" xmlns:mstns="http://tempuri.org/dsrptDialTable.xsd" xmlns="http://tempuri.org/dsrptDialTable.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsrptDialTable" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsrptDialTable" msprop:Generator_DataSetName="dsrptDialTable" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtrptDialTable" msprop:Generator_UserTableName="dtrptDialTable" msprop:Generator_RowDeletedName="dtrptDialTableRowDeleted" msprop:Generator_RowChangedName="dtrptDialTableRowChanged" msprop:Generator_RowClassName="dtrptDialTableRow" msprop:Generator_RowChangingName="dtrptDialTableRowChanging" msprop:Generator_RowEvArgName="dtrptDialTableRowChangeEvent" msprop:Generator_RowEvHandlerName="dtrptDialTableRowChangeEventHandler" msprop:Generator_TableClassName="dtrptDialTableDataTable" msprop:Generator_TableVarName="tabledtrptDialTable" msprop:Generator_RowDeletingName="dtrptDialTableRowDeleting" msprop:Generator_TablePropName="dtrptDialTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Campaign" msprop:Generator_UserColumnName="Campaign" msprop:Generator_ColumnVarNameInTable="columnCampaign" msprop:Generator_ColumnPropNameInRow="Campaign" msprop:Generator_ColumnPropNameInTable="CampaignColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Eligible" msprop:Generator_UserColumnName="Eligible" msprop:Generator_ColumnVarNameInTable="columnEligible" msprop:Generator_ColumnPropNameInRow="Eligible" msprop:Generator_ColumnPropNameInTable="EligibleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NotCalled" msprop:Generator_UserColumnName="NotCalled" msprop:Generator_ColumnVarNameInTable="columnNotCalled" msprop:Generator_ColumnPropNameInRow="NotCalled" msprop:Generator_ColumnPropNameInTable="NotCalledColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Called" msprop:Generator_UserColumnName="Called" msprop:Generator_ColumnVarNameInTable="columnCalled" msprop:Generator_ColumnPropNameInRow="Called" msprop:Generator_ColumnPropNameInTable="CalledColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBToday" msprop:Generator_UserColumnName="CBToday" msprop:Generator_ColumnVarNameInTable="columnCBToday" msprop:Generator_ColumnPropNameInRow="CBToday" msprop:Generator_ColumnPropNameInTable="CBTodayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBBeyond" msprop:Generator_UserColumnName="CBBeyond" msprop:Generator_ColumnVarNameInTable="columnCBBeyond" msprop:Generator_ColumnPropNameInRow="CBBeyond" msprop:Generator_ColumnPropNameInTable="CBBeyondColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastImport" msprop:Generator_UserColumnName="LastImport" msprop:Generator_ColumnVarNameInTable="columnLastImport" msprop:Generator_ColumnPropNameInRow="LastImport" msprop:Generator_ColumnPropNameInTable="LastImportColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

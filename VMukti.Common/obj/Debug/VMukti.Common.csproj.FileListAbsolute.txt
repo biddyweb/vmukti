@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\bin\Debug\VMukti.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\bin\Debug\VMukti.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\bin\Debug\VMukti.Common.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\bin\Debug\VMukti.Common.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\obj\Debug\VMukti.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Common\obj\Debug\VMukti.Common.pdb

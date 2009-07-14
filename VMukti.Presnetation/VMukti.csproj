@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E83E5AA-7473-4FDA-8CC6-345178E1701E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VMukti.Presentation</RootNamespace>
+    <AssemblyName>VMukti.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <EnableSecurityDebugging>true</EnableSecurityDebugging>
+    <StartAction>URL</StartAction>
+    <ApplicationExtension>.xbap</ApplicationExtension>
+    <StartURL>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)</StartURL>
+    <HostInBrowser>true</HostInBrowser>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>True</SignManifests>
+    <ManifestKeyFile>Adiance.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>0E8AB752CA7B611A2268165EF685E2E1DB869610</ManifestCertificateThumbprint>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\Inetpub\wwwroot\VMukti\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost/VMukti/</InstallUrl>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>2.0.0.8</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NetFwTypeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Interop.NetFwTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMEncoderLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Interop.WMEncoderLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Synchronization.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Synchronization.Data.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\Microsoft.Synchronization.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Classic">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="VMukti.CtlResizer.Presentation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VMuktiModules\Utils\ReferenceAssembly\VMukti.CtlResizer.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\BuddyExplorer\CtlBuddies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ctlBuddyGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlBuddyList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlEditCategory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BuddyExplorer\CtlExpanderContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BuddyExplorer\CtlExpanderItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlGeneral.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlPBX.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\CtlProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ctlSkinItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlSkinPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlThemPopUp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlUploadModule.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlViewProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlVMuktiHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlVMuktiVersion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ModuleExplorer\CtlMExpanderItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ModuleExplorer\CtlModule.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Buddy\ctlBuddy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Buddy\ctlBuddyList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Buddy\ctlPodBuddyList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\ctlVMuktiGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Grid\ctlGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Grid\ctlPOD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Grid\ResPOD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Menu\ctlExpMenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Menu\ctlMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Menu\ctlMenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VMuktiGrid\Menu\ctlPgTabHeader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\wndVMuktiPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Find_Buddy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pgHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CtlLogin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\BlackTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\BlueTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\GreenTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\OrangeTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\Orkut.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\OrkutTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\PinkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\PodRes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\PurpleTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\TabControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Skins\White.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\SPResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pgHome.xaml.cs">
+      <DependentUpon>pgHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsGlobal.cs" />
+    <Compile Include="Controls\BuddyExplorer\CtlBuddies.xaml.cs">
+      <DependentUpon>CtlBuddies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlBuddyGrid.xaml.cs">
+      <DependentUpon>ctlBuddyGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlBuddyList.xaml.cs">
+      <DependentUpon>CtlBuddyList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlEditCategory.xaml.cs">
+      <DependentUpon>CtlEditCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BuddyExplorer\CtlExpanderContent.xaml.cs">
+      <DependentUpon>CtlExpanderContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BuddyExplorer\CtlExpanderItem.xaml.cs">
+      <DependentUpon>CtlExpanderItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlGeneral.xaml.cs">
+      <DependentUpon>CtlGeneral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlPBX.xaml.cs">
+      <DependentUpon>CtlPBX.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlProfile.xaml.cs">
+      <DependentUpon>CtlProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlSettings.xaml.cs">
+      <DependentUpon>CtlSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlSkinItem.xaml.cs">
+      <DependentUpon>ctlSkinItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlSkinPopUp.xaml.cs">
+      <DependentUpon>CtlSkinPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlThemPopUp.xaml.cs">
+      <DependentUpon>CtlThemPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlUploadModule.xaml.cs">
+      <DependentUpon>CtlUploadModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlViewProfile.xaml.cs">
+      <DependentUpon>CtlViewProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlVMuktiHelp.xaml.cs">
+      <DependentUpon>CtlVMuktiHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CtlVMuktiVersion.xaml.cs">
+      <DependentUpon>CtlVMuktiVersion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GridLengthAnimation.cs" />
+    <Compile Include="Controls\ModuleExplorer\CtlMExpanderItem.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CtlMExpanderItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModuleExplorer\CtlModule.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CtlModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModuleExplorer\SimpleCircleAdorner.cs" />
+    <Compile Include="Controls\VMuktiGrid\Buddy\ctlBuddy.xaml.cs">
+      <DependentUpon>ctlBuddy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Buddy\ctlBuddyList.xaml.cs">
+      <DependentUpon>ctlBuddyList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Buddy\ctlPodBuddyList.xaml.cs">
+      <DependentUpon>ctlPodBuddyList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\clsConverters.cs" />
+    <Compile Include="Controls\VMuktiGrid\ctlVMuktiGrid.xaml.cs">
+      <DependentUpon>ctlVMuktiGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\DragDropAdviser\VMuktiDragDropAdvisor.cs" />
+    <Compile Include="Controls\VMuktiGrid\DragDropManager\DragDropManager.cs" />
+    <Compile Include="Controls\VMuktiGrid\DragDropManager\DragSourceBase.cs" />
+    <Compile Include="Controls\VMuktiGrid\DragDropManager\DropPreviewAdorner.cs" />
+    <Compile Include="Controls\VMuktiGrid\DragDropManager\DropTargetBase.cs" />
+    <Compile Include="Controls\VMuktiGrid\GifAnimation.cs" />
+    <Compile Include="Controls\VMuktiGrid\Grid\clsConverters.cs" />
+    <Compile Include="Controls\VMuktiGrid\Grid\clsGridPOD.cs" />
+    <Compile Include="Controls\VMuktiGrid\Grid\clsPodAdorner.cs" />
+    <Compile Include="Controls\VMuktiGrid\Grid\ctlGrid.xaml.cs">
+      <DependentUpon>ctlGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Grid\ctlPOD.xaml.cs">
+      <DependentUpon>ctlPOD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\ImageAnim.cs" />
+    <Compile Include="Controls\VMuktiGrid\Menu\ctlExpMenuItem.xaml.cs">
+      <DependentUpon>ctlExpMenuItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Menu\ctlMenu.xaml.cs">
+      <DependentUpon>ctlMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Menu\ctlMenuItem.xaml.cs">
+      <DependentUpon>ctlMenuItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Menu\ctlPgTabHeader.xaml.cs">
+      <DependentUpon>ctlPgTabHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VMuktiGrid\Page\Helper.cs" />
+    <Compile Include="Controls\VMuktiGrid\Page\TabControl.cs" />
+    <Compile Include="Controls\VMuktiGrid\Page\TabEventArgs.cs" />
+    <Compile Include="Controls\VMuktiGrid\Page\TabItem.cs" />
+    <Compile Include="Controls\VMuktiGrid\Page\VirtualizingTabPanel.cs" />
+    <Compile Include="Controls\VMuktiGrid\Tab\Helper.cs" />
+    <Compile Include="Controls\VMuktiGrid\Tab\TabControl.cs" />
+    <Compile Include="Controls\VMuktiGrid\Tab\TabEventArgs.cs" />
+    <Compile Include="Controls\VMuktiGrid\Tab\TabItem.cs" />
+    <Compile Include="Controls\VMuktiGrid\Tab\VirtualizingTabPanel.cs" />
+    <Compile Include="Controls\wndVMuktiPopup.xaml.cs">
+      <DependentUpon>wndVMuktiPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ClsBuddyGridConverters.cs" />
+    <Compile Include="Converters\ClsBuddyListConverters.cs" />
+    <Compile Include="Converters\clsCnvScrollViewerLogin.cs" />
+    <Compile Include="Converters\ClsIntToStringConverter.cs" />
+    <Compile Include="Converters\clsMainCanvas.cs" />
+    <Compile Include="Converters\ClsPODConverters.cs" />
+    <Compile Include="Converters\clsSvLogin.cs" />
+    <Compile Include="DebugTraceListener.cs" />
+    <Compile Include="Domains\BootstrapServiceDomain.cs" />
+    <Compile Include="Domains\SuperNodeServiceDomain.cs" />
+    <Compile Include="Find_Buddy.xaml.cs">
+      <DependentUpon>Find_Buddy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\CtlLogin.xaml.cs">
+      <DependentUpon>CtlLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WinXPSP2FireWall.cs" />
+    <Compile Include="Xml\XmlMain.cs" />
+    <Compile Include="Xml\XmlParser.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VMukti.Bussiness\VMukti.Bussiness.csproj">
+      <Project>{816BB0B1-D647-4315-88B9-E128800031D4}</Project>
+      <Name>VMukti.Bussiness %28VMukti.Bussiness\VMukti.Bussiness%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMukti.Common\VMukti.Common.csproj">
+      <Project>{E7300E7E-850D-434A-AAAC-23A11CC48CFD}</Project>
+      <Name>VMukti.Common %28VMukti.Common\VMukti.Common%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\Common\Yate\YatePBX.Presentation\YatePBX.Presentation.csproj">
+      <Project>{1658F3BD-0355-4713-B028-0C875AC6DEC1}</Project>
+      <Name>YatePBX.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\FirewallDetector\StunFireWallDetector.csproj">
+      <Project>{7A8C1200-6779-4EF7-926A-44300B6B1679}</Project>
+      <Name>StunFireWallDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\Utils\Controls\Grid\VMukti.CtlGrid.Presentation\VMukti.CtlGrid.Presentation.csproj">
+      <Project>{FE511957-C03F-4BEA-AC1C-B60409E6E0C6}</Project>
+      <Name>VMukti.CtlGrid.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\VMukti.ZipUnzip.csproj">
+      <Project>{B04AEC23-5087-44BD-A2B7-8D88593F4018}</Project>
+      <Name>VMukti.ZipUnzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\Utils\VMuktiAPI\VMuktiAPI.csproj">
+      <Project>{DD700743-BEF3-4A12-BE92-21C5C9232B6C}</Project>
+      <Name>VMuktiAPI %28VMuktiModules\Utils\VMuktiAPI\VMuktiAPI%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VMuktiModules\Utils\VMuktiService\VMuktiService.csproj">
+      <Project>{BAE31720-AFA9-4AE2-8270-487A83B6CC52}</Project>
+      <Name>VMuktiService %28VMuktiModules\Utils\VMuktiService\VMuktiService%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assamblies 3MB.zip" />
+    <None Include="Assamblies_old.zip" />
+    <Content Include="HelpDocs.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\UploadService\UploadService.wsdl" />
+    <None Include="VideoExe.zip" />
+    <None Include="VistaAudio.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Configuration.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Interop.RTCCORELib">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization.Data.Server">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Synchronization.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controls\VMuktiGrid\Images\Save.gif" />
+    <Resource Include="Skins\Images\Buddy.Png" />
+    <Resource Include="Skins\Images\buddylist.png" />
+    <Resource Include="Skins\Images\Delete.png" />
+    <Resource Include="Skins\Images\FBuddy.Png" />
+    <Content Include="Assamblies.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Adiance.pfx" />
+    <None Include="Assamblies_1025 %28very old%29.zip" />
+    <None Include="ImportLead.zip" />
+    <None Include="Service References\UploadService\UploadService.disco" />
+    <None Include="Service References\UploadService\configuration.svcinfo" />
+    <None Include="Service References\UploadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Skins\Images1\Recorder.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Skins\Images\Help.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Skins\Images\loading.gif" />
+    <Resource Include="Skins\Images\Meeting.png" />
+    <Resource Include="Skins\Images\NewTab.ico" />
+    <Resource Include="Skins\Images\Page.png" />
+    <Resource Include="Skins\Images\userprofile.png" />
+    <Resource Include="Skins\Images1\Buddy.png" />
+    <Resource Include="Skins\Images1\Console.png" />
+    <Content Include="Skins\Images1\Delete.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Skins\Images1\Login.gif" />
+    <Resource Include="Skins\Images1\ModulExplorer.gif" />
+    <Resource Include="Skins\Images1\Setting.gif" />
+    <Resource Include="Skins\Images1\Skins.png" />
+    <Resource Include="Skins\Images1\Themes.png" />
+    <Content Include="Skins\Images1\userprofile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ul.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VMuktiMonitor.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Controls\VMuktiGrid\Images\PageDelete.png" />
+    <Resource Include="Controls\VMuktiGrid\Images\Rename.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\UploadService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\VMuktiGrid\Themes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <StartArguments />
+  </PropertyGroup>
+</Project>

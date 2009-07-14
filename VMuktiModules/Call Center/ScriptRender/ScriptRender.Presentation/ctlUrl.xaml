@@ -1,0 +1,148 @@
+﻿<UserControl x:Class="ScriptRender.Presentation.ctlUrl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="600" Width="600" MinHeight="300" MinWidth="300"
+    xmlns:DTPicker="clr-namespace:VMukti.CtlDatePicker.Presentation;assembly=VMukti.CtlDatePicker.Presentation">
+    <ScrollViewer Name="scvControll" Height="600" Width="600" Background="AliceBlue" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+        <Grid>
+            <Frame Name="frmMain" Margin="8,8,8,8">
+
+            </Frame>
+            <Canvas VerticalAlignment="Top" Name="cnvMain" Width="{Binding Width,ElementName=UcDisRender}" Height="{Binding Height,ElementName=UcDisRender}" IsEnabled="true" MinHeight="450" MinWidth="195">
+                <!--<Canvas Name="cnvMain" Width="50" Height="600" IsEnabled="true" Background="AliceBlue">-->
+                <!--<Canvas Name="cnvDispoButtons" Height="600" Width="50" IsEnabled="true" />-->
+                <Canvas VerticalAlignment="Top" Name="cnvDispoButtons" Height="600" Width="195" IsEnabled="true"/>
+
+                <Canvas Name="cnvOtherDispositon" Height="600" Width="195" Canvas.Left="0"  IsEnabled="true" Visibility="Hidden" Canvas.Top="10.723">
+
+                    <Label Name="lblOtherPhoneNo" Canvas.Top="5" Width="195" Height="25" Content="Phone Number: "></Label>
+                    <TextBox   Name="txtOtherPhoneNo" Canvas.Top="30" Width="195" Height="20"></TextBox>
+
+                    <Label Name="lblOtherCallNote" Canvas.Top="50" Width="195" Height="25" Content="Enter Call Note"></Label>
+                    <TextBox  Name="txtCallNote" Canvas.Top="75" Width="195" Height="40" TextWrapping="Wrap"></TextBox>
+                    <Button Name="btnEnterOtherDispReason" Canvas.Top="120" Width="60" Height="20" Content="Ok" ></Button>
+                    <Button Name="btnCancelOtherDispReason" Canvas.Left="70" Canvas.Top="120" Width="60" Height="20" Content="Cancel" ></Button>
+                </Canvas>
+
+                <Canvas Name="cnvDispositon" Height="600" Width="195" Canvas.Left="5"  IsEnabled="true" Visibility="Hidden" Canvas.Top="5.723">
+
+                    <Label Name="lblPhoneNo" Canvas.Top="5" Width="195" Height="25" Content="Phone Number: "></Label>
+                    <TextBox   Name="txtPhoneNo" Canvas.Top="30" Width="195" Height="20"></TextBox>
+
+                    <Label Name="lblDNCReason" Canvas.Top="50" Width="195" Height="25" Content="Enter DNC Reason"></Label>
+                    <TextBox  Name="txtDNCReason" Canvas.Top="75" Width="195" Height="40" TextWrapping="Wrap"></TextBox>
+                    <Button Name="btnEnterDispReason" Canvas.Top="120" Width="60" Height="20" Content="Ok" ></Button>
+                    <Button Name="btnCancelDispReason" Canvas.Left="70" Canvas.Top="120" Width="60" Height="20" Content="Cancel" ></Button>
+                </Canvas>
+
+                <Canvas Name="cnvCallBack" Height="600" Width="195" Canvas.Left="2" IsEnabled="true" Visibility="Hidden" Canvas.Top="5.723">
+
+                    <Label Name="lblCallBackNo" Canvas.Top="5" Width="195" Height="25" Content="CallBack Phone Number: "></Label>
+                    <TextBox Name="txtCallBackNo" Canvas.Top="30" Width="195" Height="20"></TextBox>
+
+                    <Label Name="lblCallBackReason" Canvas.Top="50" Width="195" Height="25" Content="Enter CallBack Reason"></Label>
+                    <TextBox   Name="txtCallBackReason" Canvas.Top="75" Width="195" Height="40" TextWrapping="Wrap"></TextBox>
+
+                    <Label Name="lblIsPublic" Canvas.Top="120" Width="195" Height="25" Content="CallBack to All"></Label>
+                    <CheckBox Name="chkIsPublic" Height="18" Width="50" Canvas.Top="122" Canvas.Left="80"  Focusable="False"></CheckBox>
+
+                    <Label Name="lblSelDate" Canvas.Top="140" Width="195" Height="25" Content="Select a CallBack Time:"></Label>
+                    <Label Name="lblHour" Width="33.3966666666666" Height="25" Canvas.Top="160" Content="HH:"></Label>
+
+                    <ComboBox   Name="cmbHour" Width="40" Height="20" Canvas.Top="164" Canvas.Left="28">
+                        <ComboBoxItem>01</ComboBoxItem>
+                        <ComboBoxItem>02</ComboBoxItem>
+                        <ComboBoxItem>03</ComboBoxItem>
+                        <ComboBoxItem>04</ComboBoxItem>
+                        <ComboBoxItem>05</ComboBoxItem>
+                        <ComboBoxItem>06</ComboBoxItem>
+                        <ComboBoxItem>07</ComboBoxItem>
+                        <ComboBoxItem>08</ComboBoxItem>
+                        <ComboBoxItem>09</ComboBoxItem>
+                        <ComboBoxItem>10</ComboBoxItem>
+                        <ComboBoxItem>11</ComboBoxItem>
+                        <ComboBoxItem>12</ComboBoxItem>
+
+                    </ComboBox>
+
+                    <Label Name="lblMin" Width="33" Height="25" Canvas.Top="161" Canvas.Left="73" Content="MM:"></Label>
+                    <ComboBox Name="cmbMin" Width="40" Height="20" Canvas.Left="102" Canvas.Top="164" >
+                        <ComboBoxItem>01</ComboBoxItem>
+                        <ComboBoxItem>02</ComboBoxItem>
+                        <ComboBoxItem>03</ComboBoxItem>
+                        <ComboBoxItem>04</ComboBoxItem>
+                        <ComboBoxItem>05</ComboBoxItem>
+                        <ComboBoxItem>06</ComboBoxItem>
+                        <ComboBoxItem>07</ComboBoxItem>
+                        <ComboBoxItem>08</ComboBoxItem>
+                        <ComboBoxItem>09</ComboBoxItem>
+                        <ComboBoxItem>10</ComboBoxItem>
+                        <ComboBoxItem>11</ComboBoxItem>
+                        <ComboBoxItem>12</ComboBoxItem>
+                        <ComboBoxItem>13</ComboBoxItem>
+                        <ComboBoxItem>14</ComboBoxItem>
+                        <ComboBoxItem>15</ComboBoxItem>
+                        <ComboBoxItem>16</ComboBoxItem>
+                        <ComboBoxItem>17</ComboBoxItem>
+                        <ComboBoxItem>18</ComboBoxItem>
+                        <ComboBoxItem>19</ComboBoxItem>
+                        <ComboBoxItem>20</ComboBoxItem>
+                        <ComboBoxItem>21</ComboBoxItem>
+                        <ComboBoxItem>22</ComboBoxItem>
+                        <ComboBoxItem>23</ComboBoxItem>
+                        <ComboBoxItem>24</ComboBoxItem>
+                        <ComboBoxItem>25</ComboBoxItem>
+                        <ComboBoxItem>26</ComboBoxItem>
+                        <ComboBoxItem>27</ComboBoxItem>
+                        <ComboBoxItem>28</ComboBoxItem>
+                        <ComboBoxItem>29</ComboBoxItem>
+                        <ComboBoxItem>30</ComboBoxItem>
+                        <ComboBoxItem>31</ComboBoxItem>
+                        <ComboBoxItem>32</ComboBoxItem>
+                        <ComboBoxItem>33</ComboBoxItem>
+                        <ComboBoxItem>34</ComboBoxItem>
+                        <ComboBoxItem>35</ComboBoxItem>
+                        <ComboBoxItem>36</ComboBoxItem>
+                        <ComboBoxItem>37</ComboBoxItem>
+                        <ComboBoxItem>38</ComboBoxItem>
+                        <ComboBoxItem>39</ComboBoxItem>
+                        <ComboBoxItem>40</ComboBoxItem>
+                        <ComboBoxItem>41</ComboBoxItem>
+                        <ComboBoxItem>42</ComboBoxItem>
+                        <ComboBoxItem>43</ComboBoxItem>
+                        <ComboBoxItem>44</ComboBoxItem>
+                        <ComboBoxItem>45</ComboBoxItem>
+                        <ComboBoxItem>46</ComboBoxItem>
+                        <ComboBoxItem>47</ComboBoxItem>
+                        <ComboBoxItem>48</ComboBoxItem>
+                        <ComboBoxItem>49</ComboBoxItem>
+                        <ComboBoxItem>50</ComboBoxItem>
+                        <ComboBoxItem>51</ComboBoxItem>
+                        <ComboBoxItem>52</ComboBoxItem>
+                        <ComboBoxItem>53</ComboBoxItem>
+                        <ComboBoxItem>54</ComboBoxItem>
+                        <ComboBoxItem>55</ComboBoxItem>
+                        <ComboBoxItem>56</ComboBoxItem>
+                        <ComboBoxItem>57</ComboBoxItem>
+                        <ComboBoxItem>58</ComboBoxItem>
+                        <ComboBoxItem>59</ComboBoxItem>
+
+                    </ComboBox>
+
+                    <ComboBox  Name="cmbAMPM" Width="40" Height="20" Canvas.Left="150" Canvas.Top="164">
+                        <ComboBoxItem>AM</ComboBoxItem>
+                        <ComboBoxItem>PM</ComboBoxItem>
+                    </ComboBox>
+
+                    <Label Name="lblMonth" Content="Select CallBack Date" Canvas.Top="190" ></Label>
+                    <DTPicker:MonthCalendar x:Name="monthPicker" Canvas.Top="215" Canvas.Left="5"></DTPicker:MonthCalendar>
+
+                    <Button  Name="btnEnterCallBackReason" Canvas.Top="380" Width="60" Height="20" Content="Ok"></Button>
+                    <Button Name="btnCancelCallBackReason" Canvas.Left="70" Canvas.Top="380" Width="60" Height="20" Content="Cancel" ></Button>
+                </Canvas>
+            </Canvas>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,756 @@
+﻿<ResourceDictionary
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2006"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+>
+
+	<LinearGradientBrush x:Key="NormalBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#EEE" Offset="0.0"/>
+		<GradientStop Color="#CCC" Offset="1.0"/>
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="NormalBorderBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#CCC" Offset="0.0"/>
+		<GradientStop Color="#444" Offset="1.0"/>
+	</LinearGradientBrush>
+
+	<!-- LightBrush is used for content areas such as Menu, Tab Control background -->
+	<LinearGradientBrush x:Key="LightBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#FFF" Offset="0.0"/>
+		<GradientStop Color="#EEE" Offset="1.0"/>
+	</LinearGradientBrush>
+
+	<!-- MouseOverBrush is used for MouseOver in Button, Radio Button, CheckBox -->
+	<LinearGradientBrush x:Key="MouseOverBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#FFF" Offset="0.0"/>
+		<GradientStop Color="#AAA" Offset="1.0"/>
+	</LinearGradientBrush>
+
+	<!-- PressedBrush is used for Pressed in Button, Radio Button, CheckBox -->
+	<LinearGradientBrush x:Key="PressedBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#BBB" Offset="0.0"/>
+		<GradientStop Color="#EEE" Offset="0.1"/>
+		<GradientStop Color="#EEE" Offset="0.9"/>
+		<GradientStop Color="#FFF" Offset="1.0"/>
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="PressedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#444" Offset="0.0"/>
+		<GradientStop Color="#888" Offset="1.0"/>
+	</LinearGradientBrush>
+
+	<!-- SelectedBackgroundBrush is used for the Selected item in ListBoxItem, ComboBoxItem-->
+	<SolidColorBrush x:Key="SelectedBackgroundBrush" Color="#DDD"/>
+
+	<!-- Disabled Brushes are used for the Disabled look of each control -->
+	<SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888"/>
+	<SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#EEE"/>
+	<SolidColorBrush x:Key="DisabledBorderBrush" Color="#AAA"/>
+
+	<!-- Used for background of ScrollViewer, TreeView, ListBox, Expander, TextBox, Tab Control -->
+	<SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF"/>
+
+	<!-- DefaultedBorderBrush is used to show KeyBoardFocus -->
+	<LinearGradientBrush x:Key="DefaultedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+		<GradientStop Color="#777" Offset="0.0"/>
+		<GradientStop Color="#000" Offset="1.0"/>
+	</LinearGradientBrush>
+
+	<SolidColorBrush x:Key="SolidBorderBrush" Color="#888"/>
+	<SolidColorBrush x:Key="LightBorderBrush" Color="#AAA"/>
+	<SolidColorBrush x:Key="LightColorBrush" Color="#DDD"/>
+
+	<!-- Used for Checkmark, Radio button, TreeViewItem, Expander ToggleButton glyphs -->
+	<SolidColorBrush x:Key="GlyphBrush" Color="#444"/>
+	
+	<SolidColorBrush x:Key="MyToolBarGripperSolidBrush" Color="#C6C3C6"/>
+  <SolidColorBrush x:Key="MyBrightBlueSolidBrush1" Color="#FFBFDBFF"/>
+  <SolidColorBrush x:Key="MyBrightBlueSolidBrush2" Color="#FFDFECFF"/>
+  <SolidColorBrush x:Key="MyBlueSolidBrush1" Color="#FF6593CF"/>
+  <SolidColorBrush x:Key="MyBlueSolidBrush2" Color="#FF3D6394"/>
+  <SolidColorBrush x:Key="MySelectedListItemBlueSolidBrush" Color="#FFA7CDF0"/>
+  <SolidColorBrush x:Key="MyDarkBlueSolidBrush" Color="#FF2B5597"/>
+  <SolidColorBrush x:Key="MyBrightOrangeSolidBrush" Color="#FFFFE7A2"/>
+  <SolidColorBrush x:Key="MyOrangeSolidBrush" Color="#FFFFBD69"/>
+  <SolidColorBrush x:Key="MyDarkOrangeSolidBrush" Color="#FFFB8C3C"/>
+  <SolidColorBrush x:Key="MyInboxExpanderExpandSiteBackground" Color="#FFF7BE57"/>
+  <SolidColorBrush x:Key="MyDropDownGraySolidBrush1" Color="#FFE9EEEE"/>
+  <SolidColorBrush x:Key="MyDropDownGraySolidBrush2" Color="#FFF6F6F6"/>
+  <SolidColorBrush x:Key="MyGraySolidBrush" Color="#FFE5E5E5"/>
+
+  <LinearGradientBrush x:Key="MyToolBarBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFCEE0F5" Offset="0"/>
+    <GradientStop Color="#FFDDEEFF" Offset="0.041666666666666664"/>
+    <GradientStop Color="#FFE5F0FD" Offset="0.5"/>
+    <GradientStop Color="#FFAECBEF" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyBorderBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFB3D6FD" Offset="0.044936933513453105"/>
+    <GradientStop Color="#FFA7CAF3" Offset="0.046890713231429328"/>
+    <GradientStop Color="#FFB7D9FF" Offset="0.052752052385357996"/>
+    <GradientStop Color="#FF688FCD" Offset="0.98827732169214266"/>
+    <GradientStop Color="#FF688FBA" Offset="0.99413866084607139"/>
+    <GradientStop Color="#FF6990D2" Offset="0.99804622028202383"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFE3EFFF" Offset="0"/>
+    <GradientStop Color="#FFD4E5FC" Offset="0.2"/>
+    <GradientStop Color="#FFB3CFF5" Offset="0.6"/>
+    <GradientStop Color="#FF89B3ED" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyButtonBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFD9EDFF" Offset="0"/>
+    <GradientStop Color="#FFC0DEFF" Offset="0.445"/>
+    <GradientStop Color="#FFC0D9FB" Offset="1"/>
+    <GradientStop Color="#FFAFD1F8" Offset="0.53"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyBlueBarGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFDDE8F8" Offset="0.2"/>
+    <GradientStop Color="#FFB4D2F0" Offset="0.96"/>
+    <GradientStop Color="#FF85A2C0" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyHGridSplitterBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFDFDFD" Offset="0"/>
+    <GradientStop Color="#FFC0DEFF" Offset="0.654"/>
+    <GradientStop Color="#FFC0D9FB" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyOrangeBarGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFFFFDC" Offset="0"/>
+    <GradientStop Color="#FFFADC96" Offset="0.525"/>
+    <GradientStop Color="#FFF9D07D" Offset="0.732"/>
+    <GradientStop Color="#FFF7BE57" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MySelectedButtonOrangeGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFF2DABD" Offset="0"/>
+    <GradientStop Color="#FFFFCF8C" Offset="0.0967741935483871"/>
+    <GradientStop Color="#FFFDC47F" Offset="0.25806451612903225"/>
+    <GradientStop Color="#FFF9B04A" Offset="0.38709677419354838"/>
+    <GradientStop Color="#FFFFDD7B" Offset="0.967741935483871"/>
+    <GradientStop Color="#FFF3DE94" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyMouseOverOrangeGradientBrush1" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFDF8EE" Offset="0"/>
+    <GradientStop Color="#FFFFECA8" Offset="0.3"/>
+    <GradientStop Color="#FFFCD987" Offset="0.36666666666666664"/>
+    <GradientStop Color="#FFFEDD70" Offset="0.6"/>
+    <GradientStop Color="#FFFFD694" Offset="0.7"/>
+    <GradientStop Color="#FFFDE599" Offset="0.93333333333333335"/>
+    <GradientStop Color="#FFF3E7B5" Offset="0.96666666666666667"/>
+    <GradientStop Color="#FFA0A0A8" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyMouseOverOrangeGradientBrush2" EndPoint="0,1" StartPoint="0,0" SpreadMethod="Reflect">
+    <GradientStop Color="#FFF6B046" Offset="0.5"/>
+    <GradientStop Color="#FFEDA234" Offset="0.7"/>
+    <GradientStop Color="#FFEA9727" Offset="0.8"/>
+    <GradientStop Color="#FFE98915" Offset="0.9"/>
+    <GradientStop Color="#FFE87F08" Offset="1"/>
+    <GradientStop Color="#FFF7DA7B" Offset="0"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyMouseOverOrangeGradientBrush3" EndPoint="0,1" StartPoint="0,0" SpreadMethod="Reflect">
+    <GradientStop Color="#FFFFF5CB" Offset="0.2"/>
+    <GradientStop Color="#FFFFE290" Offset="0.6"/>
+    <GradientStop Color="#FFFFDB76" Offset="1"/>
+    <GradientStop Color="#FFFFF8D5" Offset="0"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyMouseDownOrangeGradientBrush" EndPoint="0,1" StartPoint="0,0" SpreadMethod="Reflect">
+    <GradientStop Color="#FFF6B046" Offset="0.5"/>
+    <GradientStop Color="#FFEDA234" Offset="0.3"/>
+    <GradientStop Color="#FFEA9727" Offset="0.2"/>
+    <GradientStop Color="#FFE98915" Offset="0.1"/>
+    <GradientStop Color="#FFF7DA7B" Offset="1"/>
+    <GradientStop Color="#FFE87F08" Offset="0"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyButtonPressedOrangeGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFB923C" Offset="0"/>
+    <GradientStop Color="#FFFC953C" Offset="0.0967741935483871"/>
+    <GradientStop Color="#FFFD9D3D" Offset="0.303"/>
+    <GradientStop Color="#FFFFAB3F" Offset="0.551"/>
+    <GradientStop Color="#FFFFB14D" Offset="0.788"/>
+    <GradientStop Color="#FFFFB85D" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyDropDownGrayGradientBrush" EndPoint="1,0.5" StartPoint="0,0.5">
+    <GradientStop Color="#FFE9EEEE" Offset="0.15"/>
+    <GradientStop Color="#FFF6F6F6" Offset="0.15"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyGridViewColumnHeaderBlueGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFFFFFF" Offset="0"/>
+    <GradientStop Color="#FFC4DDFF" Offset="0.987"/>
+    <GradientStop Color="#FFDEECFF" Offset="0.535"/>
+  </LinearGradientBrush>
+  
+  <LinearGradientBrush x:Key="MyGridViewColumnHeaderButtonPressedBlueGradientBrush" EndPoint="0,0" StartPoint="0,1">
+    <GradientStop Color="#FFFFFFFF" Offset="0"/>
+    <GradientStop Color="#FFC4DDFF" Offset="0.987"/>
+    <GradientStop Color="#FFDEECFF" Offset="0.535"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="MyDarkOrangeGradientBrush" EndPoint="0,1" StartPoint="0,0">
+    <GradientStop Color="#FFFFBD69" Offset="0"/>
+    <GradientStop Color="#FFFFB75A" Offset="0.0967741935483871"/>
+    <GradientStop Color="#FFFFB14C" Offset="0.25806451612903225"/>
+    <GradientStop Color="#FFFB8C3C" Offset="0.38709677419354838"/>
+    <GradientStop Color="#FFFEB461" Offset="0.967741935483871"/>
+    <GradientStop Color="#FFFEBB67" Offset="1"/>
+  </LinearGradientBrush>
+      <!-- Geometry (down arrow) used in the ToggleButton in the editable ComboBox control -->
+      <Geometry x:Key="MyDownArrowGeometry">M 0 0 L 3.5 4 L 7 0 Z</Geometry>
+
+      <!-- ******************************************************** -->
+      <!-- Style and control template for the InboxExpander control -->
+      <!-- ******************************************************** -->
+
+      <!-- Control template for the ToggleButton control which is used to expand/collapse the Expander control -->
+      <ControlTemplate x:Key="MyToggleButtonControlTemplate" TargetType="{x:Type ToggleButton}">
+        <Grid>
+          <Rectangle Margin="0,0,0,0" x:Name="Rectangle" Fill="Transparent" Stroke="{DynamicResource NormalBorderBrush}" StrokeThickness="0"/>
+          <Path RenderTransformOrigin="0.331351646560514,0.668211636061805" Fill="{x:Null}" Stretch="Fill" Stroke="{DynamicResource MyDarkBlueSolidBrush}" Width="Auto" Height="Auto" Data="M4.3499998,4.3690003 L0.49999971,4.3690003 0.53757259,0.50000022 M6.8185094,1.9004906 L2.9685095,1.9004906 3.0060828,-1.9685095" Margin="11.033,1.358,6.648,4.304" x:Name="path">
+            <Path.RenderTransform>
+              <TransformGroup>
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                <SkewTransform AngleX="0" AngleY="0"/>
+                <RotateTransform Angle="315"/>
+                <TranslateTransform X="0" Y="0"/>
+              </TransformGroup>
+            </Path.RenderTransform>
+          </Path>
+        </Grid>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsMouseOver" Value="true"/>
+          <Trigger Property="IsPressed" Value="true"/>
+          <Trigger Property="IsChecked" Value="true">
+            <Setter Property="RenderTransform" TargetName="path">
+              <Setter.Value>
+                <TransformGroup>
+                  <ScaleTransform ScaleX="1" ScaleY="1"/>
+                  <SkewTransform AngleX="0" AngleY="0"/>
+                  <RotateTransform Angle="135"/>
+                  <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+              </Setter.Value>
+            </Setter>
+          </Trigger>
+          <Trigger Property="IsEnabled" Value="False">
+            <Setter Property="Fill" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Rectangle"/>
+            <Setter Property="Stroke" Value="{DynamicResource DisabledBorderBrush}" TargetName="Rectangle"/>
+            <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+          </Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate>
+
+      <!-- Style for the Expander control -->
+      <Style x:Key="MyInboxExpanderStyle" TargetType="{x:Type Expander}" BasedOn="{x:Null}">
+        <Setter Property="Background" Value="{DynamicResource MyBlueBarGradientBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type Expander}">
+              <Grid Margin="0,0,0,0" >
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="*" x:Name="ContentRow"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="0,0,0,0" Margin="0,0,0,0">
+                  <Grid Margin="0,0,0,0" ShowGridLines="false">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="40.455"/>
+                    </Grid.ColumnDefinitions>
+                    <ToggleButton Template="{DynamicResource MyToggleButtonControlTemplate}" Background="{DynamicResource NormalBrush}" IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" OverridesDefaultStyle="True"  BorderThickness="4,4,4,4" Grid.Column="1" d:LayoutOverrides="Width" Margin="2.955,8.5,12.5,8.5" VerticalAlignment="Stretch" Width="25" />
+                    <ContentPresenter Grid.Column="0" Margin="4,4,0,4" RecognizesAccessKey="True" ContentSource="Header" HorizontalAlignment="Stretch" Width="Auto" Grid.ColumnSpan="1"/>
+                  </Grid>
+                </Border>
+                <Border Visibility="Collapsed" Grid.Row="1" x:Name="ExpandSite" Background="{TemplateBinding Background}" BorderBrush="{x:Null}" BorderThickness="0" CornerRadius="0,0,0,0">
+                  <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Focusable="true"/>
+                </Border>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsExpanded" Value="True">
+                  <Setter Property="Visibility" Value="Visible" TargetName="ExpandSite"/>
+                  <Setter Property="Background" Value="{DynamicResource MyOrangeBarGradientBrush}" TargetName="Border"/>
+                  <Setter Property="Background" Value="{DynamicResource MyInboxExpanderExpandSiteBackground}" TargetName="ExpandSite" />
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                  <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                  <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+
+      <!-- *************************************************************** -->
+      <!-- Styles and control template for the SearchInboxComboBox control -->
+      <!-- *************************************************************** -->
+
+      <!-- Style for the SearchInboxComboBox control -->
+      <Style x:Key="MySearchInboxComboStyle" TargetType="{x:Type ComboBox}">
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="BorderThickness" Value="1.1"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="Padding" Value="4,3"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ComboBox}">
+              <Grid SnapsToDevicePixels="true" x:Name="MainGrid">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"/>
+                  <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
+                </Grid.ColumnDefinitions>
+                <Popup AllowsTransparency="true" IsOpen="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" Margin="1" x:Name="PART_Popup" Grid.ColumnSpan="2">
+                  <Microsoft_Windows_Themes:SystemDropShadowChrome MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding Path=ActualWidth, ElementName=MainGrid}" x:Name="Shdw" Color="Transparent">
+                    <Border x:Name="DropDownBorder" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" BorderThickness="1">
+                      <ScrollViewer CanContentScroll="true">
+                        <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                      </ScrollViewer>
+                    </Border>
+                  </Microsoft_Windows_Themes:SystemDropShadowChrome>
+                </Popup>
+                <ToggleButton Background="#FFFFFFFF" BorderBrush="{x:Null}" Grid.ColumnSpan="2" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+                <ContentPresenter IsHitTestVisible="false" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"/>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+                  <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+                  <Setter Property="Color" TargetName="Shdw" Value="#71000000"/>
+                </Trigger>
+                <Trigger Property="HasItems" Value="false">
+                  <Setter Property="Height" TargetName="DropDownBorder" Value="95"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                  <Setter Property="Background" Value="#FFF4F4F4"/>
+                </Trigger>
+                <Trigger Property="IsGrouping" Value="true">
+                  <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+          <Trigger Property="IsEditable" Value="true">
+            <Setter Property="BorderBrush" Value="{DynamicResource MyBlueSolidBrush2}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="IsTabStop" Value="false"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="Template" Value="{DynamicResource MySearchInboxComboBoxEditableTemplate}"/>
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+
+      <!-- Control template for the SearchInboxComboBox to make it editable -->
+      <ControlTemplate x:Key="MySearchInboxComboBoxEditableTemplate" TargetType="{x:Type ComboBox}">
+        <Grid SnapsToDevicePixels="true" x:Name="Placement">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <Popup AllowsTransparency="true" IsOpen="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" x:Name="PART_Popup" Grid.ColumnSpan="2">
+            <Microsoft_Windows_Themes:SystemDropShadowChrome MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding Path=ActualWidth, ElementName=Placement}" x:Name="Shdw" Color="Transparent">
+              <Border x:Name="DropDownBorder" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" BorderThickness="1">
+                <ScrollViewer>
+                  <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                </ScrollViewer>
+              </Border>
+            </Microsoft_Windows_Themes:SystemDropShadowChrome>
+          </Popup>
+          <Microsoft_Windows_Themes:ListBoxChrome x:Name="Border" Grid.ColumnSpan="2" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" RenderFocused="{TemplateBinding IsKeyboardFocusWithin}" RenderMouseOver="{TemplateBinding IsMouseOver}"/>
+          <TextBox Margin="{TemplateBinding Padding}" x:Name="PART_EditableTextBox" Style="{DynamicResource MyComboBoxEditableTextBoxStyle}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" IsReadOnly="{Binding Path=IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"/>
+          <ToggleButton Style="{DynamicResource MySearchInboxComboBoxToggleButtonStyle}" Grid.Column="1" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsKeyboardFocusWithin" Value="true">
+            <Setter Property="Foreground" Value="Black"/>
+          </Trigger>
+          <Trigger Property="IsDropDownOpen" Value="true">
+            <Setter Property="RenderFocused" TargetName="Border" Value="true"/>
+          </Trigger>
+          <Trigger Property="HasItems" Value="false">
+            <Setter Property="Height" TargetName="DropDownBorder" Value="95"/>
+          </Trigger>
+          <Trigger Property="IsEnabled" Value="false">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+            <Setter Property="Background" Value="#FFF4F4F4"/>
+          </Trigger>
+          <Trigger Property="IsGrouping" Value="true">
+            <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+          </Trigger>
+          <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+            <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+            <Setter Property="Color" TargetName="Shdw" Value="#71000000"/>
+          </Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate>
+
+      <!-- Style for the editable TextBox control in the SearchInboxComboBox control -->
+      <Style x:Key="MyComboBoxEditableTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="OverridesDefaultStyle" Value="true"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="MinWidth" Value="0"/>
+        <Setter Property="MinHeight" Value="0"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type TextBox}">
+              <ScrollViewer Focusable="false" x:Name="PART_ContentHost" Background="Transparent" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!-- Style for the ToggleButton control in the SearchInboxComboBox control -->
+      <Style x:Key="MySearchInboxComboBoxToggleButtonStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="OverridesDefaultStyle" Value="true"/>
+        <Setter Property="IsTabStop" Value="false"/>
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="ClickMode" Value="Press"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ToggleButton}">
+              <Grid Margin="2,2,2,2" Width="Auto" Height="18" >
+                <StackPanel Orientation="Horizontal">
+                  <!--<Image Margin="0,0,0,0" Source="graphics\magnifier.gif"></Image>-->
+                  <Path Fill="Black" x:Name="Arrow" Data="{DynamicResource MyDownArrowGeometry}" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="Height" HorizontalAlignment="Left" Margin="2,0,1,0" VerticalAlignment="Center">
+                    <Path.RenderTransform>
+                      <TransformGroup>
+                        <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform X="0" Y="0"/>
+                      </TransformGroup>
+                    </Path.RenderTransform>
+                  </Path>
+                </StackPanel>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsChecked" Value="true"/>
+                <Trigger Property="IsEnabled" Value="false"/>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+
+      <!-- ************************************************************************ -->
+      <!-- Styles and control templates for the ComboBox controls in the ExpandSite -->
+      <!-- ************************************************************************ -->
+
+      <!-- Style for the ComboBoxItem controls which pop up when the user clicks the ToggleButton for the ComboBox -->
+      <Style x:Key="MyComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}" BasedOn="{x:Null}">
+        <Setter Property="HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Padding" Value="1,1,1,1"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="MinWidth" Value="180"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+              <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                <Border x:Name="InnerBorder" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="1" BorderThickness="0.7" Padding="27,1,1,1">
+                  <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+                </Border>
+              </Border>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="true">
+                  <Setter Property="BorderBrush" Value="{DynamicResource DefaultedBorderBrush}" TargetName="Border"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="true">
+                  <Setter Property="Background" Value="{DynamicResource MyBrightOrangeSolidBrush}" TargetName="InnerBorder"/>
+                  <Setter Property="BorderBrush" Value="{DynamicResource MyDarkOrangeSolidBrush}" TargetName="InnerBorder"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="true"/>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                  <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!-- Control template for the ComboBox controls in the ExpandSite -->
+      <ControlTemplate x:Key="MyInboxExpanderComboBoxTemplate" TargetType="{x:Type ComboBox}">
+        <ToggleButton x:Name="comboBoxButton" Style="{DynamicResource MyInboxExpanderComboBoxToggleButtonStyle}" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+          <Grid x:Name="Placement" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="0" >
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Popup AllowsTransparency="true" IsOpen="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" x:Name="PART_Popup" Grid.ColumnSpan="2">
+              <Microsoft_Windows_Themes:SystemDropShadowChrome MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding Path=ActualWidth, ElementName=Placement}" x:Name="Shdw" Color="Transparent">
+                <Border x:Name="DropDownBorder" BorderBrush="{DynamicResource MyBlueSolidBrush2}" BorderThickness="0.7" Background="{DynamicResource MyDropDownGrayGradientBrush}">
+                  <ScrollViewer>
+                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                  </ScrollViewer>
+                </Border>
+              </Microsoft_Windows_Themes:SystemDropShadowChrome>
+            </Popup>
+            <Microsoft_Windows_Themes:ListBoxChrome x:Name="Border" Grid.ColumnSpan="2" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" RenderFocused="{TemplateBinding IsKeyboardFocusWithin}" RenderMouseOver="{TemplateBinding IsMouseOver}"/>
+            <TextBlock Text="{TemplateBinding Text}"  x:Name="PART_TextBlock" Grid.Column="0" Grid.ColumnSpan="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="3,0,3,0"/>
+            <Border x:Name="triangleBorder" Grid.Column="1" Grid.ColumnSpan="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="Auto" Height="20" Margin="3,0,3,0">
+              <Path Fill="{DynamicResource GlyphBrush}" Data="M 0 0 L 4 4 L 8 0 Z" Width="Auto" Height="Auto" Margin="0,9,0,0"/>
+            </Border>
+          </Grid>
+        </ToggleButton>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsKeyboardFocusWithin" Value="true">
+            <Setter Property="Foreground" Value="Black"/>
+          </Trigger>
+          <Trigger Property="IsDropDownOpen" Value="true">
+            <Setter Property="RenderFocused" TargetName="Border" Value="true"/>
+          </Trigger>
+          <Trigger Property="HasItems" Value="false">
+            <Setter Property="Height" TargetName="DropDownBorder" Value="95"/>
+          </Trigger>
+          <Trigger Property="IsEnabled" Value="false">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+            <Setter Property="Background" Value="#FFF4F4F4"/>
+          </Trigger>
+          <Trigger Property="IsGrouping" Value="true">
+            <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+          </Trigger>
+          <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+            <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+            <Setter Property="Color" TargetName="Shdw" Value="#71000000"/>
+          </Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate>
+
+      <!-- Style for the ToggleButton controls used in ComboBox controls in the ExpandSite -->
+      <Style x:Key="MyInboxExpanderComboBoxToggleButtonStyle" TargetType="{x:Type ToggleButton}" BasedOn="{x:Null}">
+        <Setter Property="Background" Value="{DynamicResource NormalBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ToggleButton}">
+              <Grid x:Name="Grid">
+                <Border x:Name="Border" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0.7" />
+                <ContentPresenter x:Name="Content" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="true">
+                  <Setter Property="BorderBrush" Value="{DynamicResource DefaultedBorderBrush}" TargetName="Border"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="true">
+                  <Setter Property="Background" TargetName="Border" Value="{DynamicResource MyMouseOverOrangeGradientBrush2}"/>
+                  <Setter Property="BorderBrush" Value="#FF6593CF" TargetName="Border"/>
+                  <Setter Property="BorderThickness" Value="0.7" TargetName="Border"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="True">
+                  <Setter Property="Background" Value="{DynamicResource MyMouseDownOrangeGradientBrush}" TargetName="Border"/>
+                  <Setter Property="BorderBrush" Value="#FF6593CF" TargetName="Border"/>
+                  <Setter Property="BorderThickness" Value="0.7" TargetName="Border"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="true"/>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                  <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+        <Setter Property="ClickMode" Value="Press"/>
+      </Style>
+
+      <!-- Control template for the ComboBox with an Image control in the ExpandSite -->
+      <ControlTemplate x:Key="MyInboxExpanderImageComboBoxTemplate" TargetType="{x:Type ComboBox}">
+        <ToggleButton x:Name="imagecomboBoxButton" Style="{DynamicResource MyInboxExpanderComboBoxToggleButtonStyle}" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" HorizontalAlignment="Left" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+          <Grid x:Name="imagePlacement" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="0" >
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Popup AllowsTransparency="true" IsOpen="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Bottom" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" x:Name="PART_Popup2" Grid.ColumnSpan="2">
+              <Microsoft_Windows_Themes:SystemDropShadowChrome MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding Path=ActualWidth, ElementName=Placement}" x:Name="Shdw2" Color="Transparent">
+                <Border x:Name="imageDropDownBorder" Background="{DynamicResource MyDropDownGrayGradientBrush}" BorderBrush="{DynamicResource MyBlueSolidBrush2}" BorderThickness="1">
+                  <ScrollViewer>
+                    <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.DirectionalNavigation="Contained"/>
+                  </ScrollViewer>
+                </Border>
+              </Microsoft_Windows_Themes:SystemDropShadowChrome>
+            </Popup>
+            <Microsoft_Windows_Themes:ListBoxChrome x:Name="imageBorder" Grid.ColumnSpan="2" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" RenderFocused="{TemplateBinding IsKeyboardFocusWithin}" RenderMouseOver="{TemplateBinding IsMouseOver}"/>
+            <StackPanel Orientation="Horizontal" Grid.ColumnSpan="1" Grid.Column="0">
+              <!--<Image HorizontalAlignment="Left" Margin="3,3,3,3" VerticalAlignment="Top" Width="Auto" Height="Auto" Stretch="None" Source="graphics\addCategories.gif"/>-->
+              <TextBlock HorizontalAlignment="Left" Margin="3,3,3,3" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF000000" Text="Add Categories" TextWrapping="Wrap"/>
+              <Border x:Name="triangleBorder2" Grid.Column="1" Grid.ColumnSpan="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="Auto" Height="20" Margin="3,0,3,0">
+                <Path Fill="{DynamicResource GlyphBrush}" Data="M 0 0 L 4 4 L 8 0 Z" Width="Auto" Height="Auto" Margin="0,9,0,0"/>
+              </Border>
+            </StackPanel>
+          </Grid>
+        </ToggleButton>
+        <ControlTemplate.Triggers>
+          <Trigger Property="IsKeyboardFocusWithin" Value="true">
+            <Setter Property="Foreground" Value="Black"/>
+          </Trigger>
+          <Trigger Property="IsDropDownOpen" Value="true">
+            <Setter Property="RenderFocused" TargetName="imageBorder" Value="true"/>
+          </Trigger>
+          <Trigger Property="HasItems" Value="false">
+            <Setter Property="Height" TargetName="imageDropDownBorder" Value="95"/>
+          </Trigger>
+          <Trigger Property="IsEnabled" Value="false">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+            <Setter Property="Background" Value="#FFF4F4F4"/>
+          </Trigger>
+          <Trigger Property="IsGrouping" Value="true">
+            <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+          </Trigger>
+          <Trigger Property="HasDropShadow" SourceName="PART_Popup2" Value="true">
+            <Setter Property="Margin" TargetName="Shdw2" Value="0,0,5,5"/>
+            <Setter Property="Color" TargetName="Shdw2" Value="#71000000"/>
+          </Trigger>
+        </ControlTemplate.Triggers>
+      </ControlTemplate>
+
+ <!-- Style for the TreeViewItem controls -->
+      <Style x:Key="MyTreeViewItemStyle" d:IsControlPart="True" TargetType="{x:Type TreeViewItem}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="HorizontalContentAlignment" Value="{Binding Path=HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding Path=VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Padding" Value="1,0,0,0"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type TreeViewItem}">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition MinWidth="19" Width="Auto"/>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition/>
+                </Grid.RowDefinitions>
+                <ToggleButton x:Name="Expander" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press"/>
+                <Border Grid.Column="1" x:Name="Selection_Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                  <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" x:Name="PART_Header" ContentSource="Header"/>
+                </Border>
+                <ItemsPresenter Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" x:Name="ItemsHost"/>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsExpanded" Value="false">
+                  <Setter Property="Visibility" Value="Collapsed" TargetName="ItemsHost"/>
+                </Trigger>
+                <Trigger Property="HasItems" Value="false">
+                  <Setter Property="Visibility" Value="Hidden" TargetName="Expander"/>
+                </Trigger>
+                <Trigger Property="IsSelected" Value="true">
+                  <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" TargetName="Selection_Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+                </Trigger>
+                <MultiTrigger>
+                  <MultiTrigger.Conditions>
+                    <Condition Property="IsSelected" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="false"/>
+                  </MultiTrigger.Conditions>
+                  <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Selection_Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+                </MultiTrigger>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!-- Style for the ToggleButton control used to expand/collapse a TreeViewItem control -->
+      <Style TargetType="{x:Type ToggleButton}">
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Width" Value="19"/>
+        <Setter Property="Height" Value="13"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ToggleButton}">
+              <Border Width="19" Height="13" Background="#00FFFFFF" x:Name="Border">
+                <Border Width="9" Height="9" x:Name="Border1" SnapsToDevicePixels="True" BorderBrush="#FF9495A2" BorderThickness="1,1,1,1" CornerRadius="1,1,1,1">
+                  <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                      <GradientStop Color="#FFFFFFFF" Offset="0.4"/>
+                      <GradientStop Color="#FFC6CEDA" Offset="1"/>
+                    </LinearGradientBrush>
+                  </Border.Background>
+                  <Path Fill="#FF000000" Margin="1,1,1,1" x:Name="ExpandPath" Data="M0,2L0,3 2,3 2,5 3,5 3,3 5,3 5,2 3,2 3,0 2,0 2,2z"/>
+                </Border>
+              </Border>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                  <Setter Property="Data" Value="M0,2L0,3 5,3 5,2z" TargetName="ExpandPath"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!-- Style for the Expander controls -->
+      <Style x:Key="MyFoldersExpanderStyle" TargetType="{x:Type Expander}">
+        <Setter Property="Background" Value="{DynamicResource LightBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type Expander}">
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="*" x:Name="ContentRow"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2,2,0,0">
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="111"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ToggleButton Template="{DynamicResource MyToggleButtonControlTemplate}" Background="{DynamicResource NormalBrush}" IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" OverridesDefaultStyle="True" HorizontalAlignment="Right" Margin="0,0,0,0" Width="25" BorderThickness="4,4,4,4" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <ContentPresenter Grid.Column="0" Margin="4,4,0,4" RecognizesAccessKey="True" ContentSource="Header" HorizontalAlignment="Left" Width="Auto"/>
+                  </Grid>
+                </Border>
+                <Border Visibility="Collapsed" Grid.Row="1" x:Name="ExpandSite" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{x:Null}" BorderThickness="1,0,1,1" CornerRadius="0,0,2,2">
+                  <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Focusable="false"/>
+                </Border>
+              </Grid>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsExpanded" Value="True">
+                  <Setter Property="Visibility" Value="Visible" TargetName="ExpandSite"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                  <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                  <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                  <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+</ResourceDictionary>

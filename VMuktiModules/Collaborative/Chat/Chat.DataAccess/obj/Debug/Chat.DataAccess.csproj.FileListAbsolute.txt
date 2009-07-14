@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\bin\Debug\Chat.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\bin\Debug\Chat.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\obj\Debug\Chat.DataAccess.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\obj\Debug\Chat.DataAccess.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\obj\Debug\Chat.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.DataAccess\obj\Debug\Chat.DataAccess.pdb

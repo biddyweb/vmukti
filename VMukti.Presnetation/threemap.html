@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API Example: Tile Detector</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAzr2EBOXUKnm_jVnk0OJI7xSosDVG8KKPE1-m51RBrvYughuyMxQ-i1QfUnH94QxWIa6N4U6MouMmBA"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+	var map	;
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+      
+        map = new GMap2(document.getElementById("map_canvas"));
+        map.setCenter(new GLatLng(23.02346597567082, 72.58872188709813), 7);
+        map.addControl(new GSmallMapControl());
+        map.addControl(new GMapTypeControl());
+	//showAddress("Ahmedabad , India");
+        GEvent.addListener(map,"click", function(overlay,latlng) {
+          if (overlay) {
+            // ignore if we click on the info window
+            return;
+          }
+          var tileCoordinate = new GPoint();
+          var tilePoint = new GPoint();
+          var currentProjection = G_NORMAL_MAP.getProjection();
+          tilePoint = currentProjection.fromLatLngToPixel(latlng, map.getZoom());
+          tileCoordinate.x = Math.floor(tilePoint.x / 256);
+          tileCoordinate.y = Math.floor(tilePoint.y / 256);
+          var myHtml = "Latitude: " + latlng.lat() + "<br/>Longitude: " + latlng.lng() + 
+            "<br/>The Tile Coordinate is:<br/> x: " + tileCoordinate.x + 
+            "<br/> y: " + tileCoordinate.y + "<br/> at zoom level " + map.getZoom();	
+          map.openInfoWindow(latlng, myHtml);
+        });
+      }
+    }
+
+
+
+ function showAddress(address) 
+	{
+      		if (map) 
+		{
+		        map.getLatLng(address,
+				function(point) 
+				{
+			            if (!point) 
+					{
+				              alert(address + " not found");
+				        } 
+				    else 
+					{
+				              map.setCenter(point,ZoomSize);
+				              var marker = new GMarker(point);
+				              map.addOverlay(marker);
+				              marker.openInfoWindowHtml(address);
+            				}
+          			}
+        		);
+      		}
+    	}
+
+
+    </script>
+  </head>
+
+  <body onload="initialize()" onunload="GUnload()">
+    <div id="map_canvas" style="width: 300px; height: 300px"></div>
+  </body>
+</html>

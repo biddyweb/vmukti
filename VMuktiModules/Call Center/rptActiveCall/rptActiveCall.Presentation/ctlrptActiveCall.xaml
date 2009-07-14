@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="rptActiveCall.Presentation.ctlrptActiveCall"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" MinHeight="300"  Width="550"   HorizontalAlignment="Left" VerticalAlignment="Stretch" ClipToBounds="True" 
+    xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+     Name="ucRptActiveCall">
+
+	<Canvas Name="cnvView" Height="300" Width="550" ClipToBounds="True">
+        <Canvas.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="ActiveCallTemplate.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Canvas.Resources>
+        <ItemsControl x:Name="AgentItems" 
+            HorizontalAlignment="Stretch"
+            Margin="10" 
+            VerticalAlignment="Center"/>
+        <!--<WindowsFormsHost x:Name="wfhRptViewer" Canvas.Left="40"  Height="179" Width="400" MaxWidth="400" Canvas.Top="41" Margin="0,0,0,0">
+			<rv:ReportViewer  x:Name="objReportViewer"/>
+		</WindowsFormsHost>-->
+
+		<StackPanel Orientation="Horizontal" Canvas.Left="0" Canvas.Top="0" Height="25" Name="stackPanel1" Width="550" Background="Maroon">
+			<Label Canvas.Left="0"  Canvas.Top="0" Height="25" Name="lblAgentName" Width="110" Foreground="White" HorizontalContentAlignment="Center" Background="Transparent">AgentName</Label>
+			<Label Canvas.Left="110" Canvas.Top="0" Height="25" Name="lblCampName" Width="110" Foreground="White" HorizontalContentAlignment="Center" Background="Transparent">Status</Label>
+			<Label Canvas.Left="220" Canvas.Top="0" Height="25" Name="lblCallStatus" Width="110" Foreground="White" HorizontalContentAlignment="Center" Background="Transparent">Number</Label>
+			<Label Canvas.Left="330" Canvas.Top="0" Height="25" Name="lblNumber" Width="110" Foreground="White" HorizontalContentAlignment="Left" Background="Transparent">Duration</Label>
+			<Label Canvas.Left="440" Canvas.Top="0" Height="25" Name="lblCallDuration" Width="110" Foreground="White" HorizontalContentAlignment="Left" Background="Transparent">Campagine Name</Label>
+		</StackPanel>
+		
+	</Canvas>
+
+</UserControl>

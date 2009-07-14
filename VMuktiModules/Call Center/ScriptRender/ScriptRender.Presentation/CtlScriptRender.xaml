@@ -1,0 +1,16 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="ScriptRender.Presentation.CtlScriptRender"
+	x:Name="ucScriptRender"
+	MinHeight="184" MinWidth="454"
+	Width="600" Height="600">
+	<ScrollViewer Name="scvControll" Height="600" Width="600" Background="AliceBlue" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+		<Canvas x:Name="cnvLayoutRoot" Height="{Binding Height,ElementName=ucScriptRender}" Width="{Binding Width,ElementName=ucScriptRender}">
+		
+		</Canvas>
+		
+	</ScrollViewer>
+
+</UserControl>

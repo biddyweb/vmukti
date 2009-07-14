@@ -1,0 +1,13 @@
+﻿<Window x:Class="Video.Presentation.ShowVideoInputs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ShowVideoInputs" Height="300" Width="300" WindowStyle="ThreeDBorderWindow">
+    <Grid Background="Black">
+        <Canvas x:Name="cnvVideoOptions" Margin="8,8,11,9">
+            <Label Canvas.Left="71" Canvas.Top="10" Height="28" Foreground="Aquamarine" Name="label1" FontSize="15" Width="142" HorizontalAlignment="Center" VerticalAlignment="Center">Video Configuration</Label>
+            <ComboBox Canvas.Left="95" Canvas.Top="76" Height="23" Name="cmbVideoDevice" Width="153" />
+            <Label Canvas.Left="10" Canvas.Top="75" Height="28" Name="label2" Foreground="Aquamarine" Width="82" FontSize="12">Video Device</Label>
+            <Button Canvas.Left="83" Canvas.Top="176" Height="23" Name="btnOK" Width="110">OK</Button>
+        </Canvas>
+    </Grid>
+</Window>

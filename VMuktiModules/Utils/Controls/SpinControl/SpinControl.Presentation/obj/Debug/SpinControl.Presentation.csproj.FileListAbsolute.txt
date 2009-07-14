@@ -1,0 +1,26 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\CtlSpin.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\CtlSpin.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll.CodeAnalysisLog.xml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\bin\Debug\SpinControl.Presentation.dll.lastcodeanalysissucceeded
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\CtlSpin.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\CtlSpin.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Controls\SpinControl\SpinControl.Presentation\obj\Debug\SpinControl.Presentation.pdb

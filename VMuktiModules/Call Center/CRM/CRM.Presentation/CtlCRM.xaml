@@ -1,0 +1,39 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:CRMGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+x:Class="CRM.Presentation.CtlCRM"
+Height="600" Width="600" MinHeight="550" MinWidth="501" Margin="5,5,5,5"
+Name="ucCRM" HorizontalAlignment="Left" VerticalAlignment="Top"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+>
+    
+    <!--<Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Width="{Binding Path=Width, ElementName=ucCRM, Mode=Default}" Height="{Binding Path=Height, ElementName=ucCRM, Mode=Default}">-->
+		<Canvas Name="cnvView" Height="595">
+			<!--<Canvas Name="cnvView" Height="550" Width="501">-->
+
+			<CRMGrid:ctlGrid Name="CtlGrid" Height="230" Width="{Binding Path=Width, ElementName=ucCRM, Mode=Default}" btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+			<TabControl IsSynchronizedWithCurrentItem="True" x:Name="tbcCRMAddition" Width="250" Height="160" Canvas.Top="250" HorizontalAlignment="Left" VerticalAlignment="Top" >
+				<TabItem Header="CRM" x:Name="tbiCRM" d:IsLocked="True" >
+					<Canvas Width="281" Height="149.723333333333">
+						<TextBox VerticalAlignment="Top" Width="169" Height="20" Text="" TextWrapping="Wrap" Canvas.Left="70" Canvas.Top="9" x:Name="txtName" />
+						<TextBox Width="170" Text="" TextWrapping="Wrap" Canvas.Left="70" Canvas.Top="38" x:Name="txtCRMURL" Height="20" Visibility="Hidden"/>
+						<Button Visibility="Collapsed" x:Name="btnBrowse" Height="18" Width="43" Content="Browse" Canvas.Left="196" Canvas.Top="40"/>
+						<!-- <ComboBox Width="200" Canvas.Left="110" Canvas.Top="75" x:Name="cmbCRMType" Height="25" Visibility="Collapsed"/>
+						<Label Visibility="Collapsed" Width="90" Height="30" Content="CRMType" Canvas.Left="10" Canvas.Top="75" x:Name="lblCRMType" HorizontalContentAlignment="Right" />-->
+
+						<Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="25" Content="Name" Canvas.Top="9" x:Name="lblName" HorizontalContentAlignment="Right" Canvas.Left="5" />
+						<Label HorizontalAlignment="Left" Width="55" Content="CRM URL" Canvas.Left="6" Canvas.Top="39" x:Name="lblCRMURL" HorizontalContentAlignment="Right" Height="23" Visibility="Hidden" />
+						<Label VerticalAlignment="Bottom" Width="55" Height="21" Content="Is Active" Canvas.Top="67" x:Name="lblIsActive" HorizontalContentAlignment="Right" Canvas.Left="5" />
+						<CheckBox HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="19" Height="15" Content="" Canvas.Left="70" Canvas.Top="72" x:Name="chkIsActive" Focusable="False" />
+
+
+					</Canvas>
+				</TabItem>
+			</TabControl>
+			<Button Width="50" Height="20" Content="Save" Canvas.Left="67" Canvas.Top="385" x:Name="btnSave" />
+			<Button Width="50" Height="20" Content="Cancel" Canvas.Left="144" Canvas.Top="385" x:Name="btnCancel"/>
+		</Canvas>
+	<!--</Viewbox>-->
+	
+</UserControl>

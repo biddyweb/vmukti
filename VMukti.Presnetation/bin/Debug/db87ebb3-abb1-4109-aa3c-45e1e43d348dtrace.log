@@ -1,0 +1,95 @@
+----------------header------------------------
+Timestamp: 7/13/2009 7:09:14 PM
+Message: Object reference not set to an instance of an object.
+
+StackTrace :    at VMukti.DataAccess.ClsDataServiceBase.ExecuteDataSet(SqlCommand& cmd, String procName, IDataParameter[] procParams) in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.DataAccess\ClsDataServiceBase.cs:line 132
+   at VMukti.DataAccess.clsBuddyStatus.GetAllBuddies() in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.DataAccess\VmuktiBuddy\clsBuddyStatus.cs:line 90
+
+Location : GetAllBuddies()--:--clsBuddyStatus.cs--:--Object reference not set to an instance of an object. :--:--
+
+User Is : 
+Peer Type is : BootStrap
+User's SuperNode is : 192.168.191.212
+User's Machine Ip Address : 192.168.191.212
+----------------------------------------------------------------------------------------
+
+Title:
+Machine: TEJAS
+)}
+----------------footer------------------------
+----------------header------------------------
+Timestamp: 7/13/2009 7:09:14 PM
+Message: Object reference not set to an instance of an object.
+
+StackTrace :    at VMukti.Business.clsBuddyStatus.GetAllBuddies() in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Bussiness\VmuktiBuddy\clsBuddyStatus.cs:line 84
+
+Location : GetAllBuddies--:--clsBuddyStatus.cs--:--Object reference not set to an instance of an object. :--:--
+
+User Is : 
+Peer Type is : BootStrap
+User's SuperNode is : 192.168.191.212
+User's Machine Ip Address : 192.168.191.212
+----------------------------------------------------------------------------------------
+
+Title:
+Machine: TEJAS
+)}
+----------------footer------------------------
+----------------header------------------------
+Timestamp: 7/13/2009 7:09:14 PM
+Message: Object reference not set to an instance of an object.
+
+StackTrace :    at VMukti.Presentation.BootstrapServiceDomain.GetBuddyInfoFromServer() in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\Domains\BootstrapServiceDomain.cs:line 2406
+
+Location : GetBuddyInfoFromServer()--:--Domains\BootstrapServiceDomain.cs--:--Object reference not set to an instance of an object. :--:--
+
+User Is : 
+Peer Type is : BootStrap
+User's SuperNode is : 192.168.191.212
+User's Machine Ip Address : 192.168.191.212
+----------------------------------------------------------------------------------------
+
+Title:
+Machine: TEJAS
+)}
+----------------footer------------------------
+----------------header------------------------
+Timestamp: 7/13/2009 7:09:16 PM
+Message: Invalid character in a Base-64 string.
+
+StackTrace :    at System.Convert.FromBase64String(String s)
+   at VMuktiAPI.VMuktiInfo.get_MainConnectionString() in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\VMuktiInfo\VMuktiInfo.cs:line 135
+   at VMukti.Presentation.BootstrapServiceDomain.BootstrapServiceDomain_EntHttpBSJoin(String uName, clsPeerInfo objPeerInformation) in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\Domains\BootstrapServiceDomain.cs:line 1234
+
+Location : BootStrapServiceDomain_EntHttpBSJoin()--:--Domains\BootstrapServiceDomain.cs--:--Invalid character in a Base-64 string. :--:--
+
+User Is : 
+Peer Type is : BootStrap
+User's SuperNode is : 192.168.191.212
+User's Machine Ip Address : 192.168.191.212
+----------------------------------------------------------------------------------------
+
+Title:
+Machine: TEJAS
+)}
+----------------footer------------------------
+----------------header------------------------
+Timestamp: 7/13/2009 7:09:24 PM
+Message: Invalid character in a Base-64 string.
+
+StackTrace :    at System.Convert.FromBase64String(String s)
+   at VMuktiAPI.VMuktiInfo.get_MainConnectionString() in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\VMuktiAPI\VMuktiInfo\VMuktiInfo.cs:line 135
+   at VMukti.Presentation.BootstrapServiceDomain.BootstrapServiceDomain_EntHttpBSJoin(String uName, clsPeerInfo objPeerInformation) in F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\Domains\BootstrapServiceDomain.cs:line 1234
+
+Location : BootStrapServiceDomain_EntHttpBSJoin()--:--Domains\BootstrapServiceDomain.cs--:--Invalid character in a Base-64 string. :--:--
+
+User Is : 
+Peer Type is : BootStrap
+User's SuperNode is : 192.168.191.212
+User's Machine Ip Address : 192.168.191.212
+----------------------------------------------------------------------------------------
+
+Title:
+Machine: TEJAS
+)}
+----------------footer------------------------

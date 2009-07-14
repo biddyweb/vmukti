@@ -1,0 +1,1296 @@
+Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:16:34 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 192.168.191.190
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:16:35 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:16:37 PM
+===========================================================================================Title: Error
+Error Message: ctlDesktop_Sharing_EntsvcGetUserList:-  tejas
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:25:30 PM
+===========================================================================================Title: Error
+Error Message: Loading Starts
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Creating Directory Presentations
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Directory Presentations created successfully
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Going to start Loop
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Loop ended successfully
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Presentation module:
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: loading Presentation module
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Consturctor loaded successfully
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:05 PM
+===========================================================================================Title: Error
+Error Message: Presentation module:
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Opened presenation P2P Client
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Uri for opening the client is : net.tcp://192.168.191.190:4000/VMukti/528200912071262192.168.191.190
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: MeshId for opening the client is : VMukti
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Presentation module:
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Buddy To Be Added In the Buddylist
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Receiver's Name : 
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:38:07 PM
+===========================================================================================Title: Error
+Error Message: Presentation module:
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:39:18 PM
+===========================================================================================Title: Error
+Error Message: Buddy Leaving presentation
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:39:18 PM
+===========================================================================================Title: Error
+Error Message: Sender is (Buddy Leaving presentation): Dhaval123
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:39:18 PM
+===========================================================================================Title: Error
+Error Message: Time is : 5/28/2009 5:39:18 PM
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:39:18 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  5/28/2009 5:42:24 PM
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:42:24 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  5/28/2009 5:42:24 PM
+StackTrace is as follow: 
+
+Date - Time: 5/28/2009 5:42:24 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:29 PM
+===========================================================================================Title: Error
+Error Message: FncFireWall:- Connection failed to open
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:29 PM
+===========================================================================================Title: Error
+Error Message: In LIve IP :: Fire Wall is true in LiveIP  in FncFireWall means node with http
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:29 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithHttp
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:29 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:50 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:51:51 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 4:52:10 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:52:10 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 4:52:10 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:52:10 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 4:54:26 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:17 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:42 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:49 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:49 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:51 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:03:57 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:19:56 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:19:58 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:19:58 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:19:58 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:20:00 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:20:08 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:19 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:22 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:22 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:22 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:24 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:50:29 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:53:52 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:53:54 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:53:54 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:53:54 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:53:56 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 5:54:02 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: UdpBlocked
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:12:10 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:12:26 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:12:26 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:12:27 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:12:31 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 6:13:11 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:13:11 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 6:13:11 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 6:13:11 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:05:59 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:06:03 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:06:03 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:06:03 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:06:05 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:06:12 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 7:08:27 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:08:27 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 7:08:27 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:08:27 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:38 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:39 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:39 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:39 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:41 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:23:48 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 7:38:57 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:38:57 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 7:38:57 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:38:57 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:41:56 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:41:56 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:41:57 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:41:57 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:41:58 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:42:05 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 7:46:02 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:02 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 7:46:02 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:02 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: RestrictedCone
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:41 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:42 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:42 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:42 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:45 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:46:53 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/11/2009 7:48:19 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:48:19 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/11/2009 7:48:19 PM
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:48:19 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:47 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:48 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:48 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:48 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:50 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/11/2009 7:49:57 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:17:20 AM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:17:21 AM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:17:21 AM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:17:21 AM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 11:18:31 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:18:31 AM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 11:18:31 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:18:31 AM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:38:59 AM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:39:00 AM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:39:00 AM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:39:00 AM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:39:02 AM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:39:08 AM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 11:40:01 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:40:01 AM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 11:40:01 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:40:01 AM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:07 AM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:08 AM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:08 AM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:08 AM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:10 AM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:42:16 AM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 11:51:56 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:51:56 AM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 11:51:56 AM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:51:56 AM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:50 AM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:51 AM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:51 AM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:51 AM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:52 AM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 11:53:58 AM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 12:11:11 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:11:11 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 12:11:11 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:11:11 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:37 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:38 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:38 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:38 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:40 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:30:47 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 12:34:27 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:34:27 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 12:34:27 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 12:34:27 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: RestrictedCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:16:41 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:16:56 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:16:56 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:16:57 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:17:06 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 2:58:25 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:58:25 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 2:58:25 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 2:58:25 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:08 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:09 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:09 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:09 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:11 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 3:02:18 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 5:29:39 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 5:29:40 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 5:29:40 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 5:29:40 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:42:37 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:42:38 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:42:38 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:42:38 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 6:46:10 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:46:10 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 6:46:10 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:46:10 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:30 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:31 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:31 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:31 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:34 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 6:56:40 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 7:01:19 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:01:19 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 7:01:19 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:01:19 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:04 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:05 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:05 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:05 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:07 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:05:13 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:15 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:16 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:16 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:16 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:18 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:19:23 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:36:56 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:36:57 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:36:57 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:36:57 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:36:59 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:37:04 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:02 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:03 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:03 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:03 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:05 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:52:11 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:42 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:43 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:43 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:43 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:45 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:55:51 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/15/2009 7:58:52 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:58:52 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/15/2009 7:58:52 PM
+StackTrace is as follow: 
+
+Date - Time: 6/15/2009 7:58:52 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:21 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:22 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:22 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:22 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:24 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:12:33 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:19:50 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:19:51 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:19:51 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:19:51 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:19:53 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:20:00 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:37 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:38 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:38 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:38 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:41 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:32:47 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:42:54 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:42:55 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:42:55 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:42:55 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:42:57 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 12:43:03 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:54:51 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:54:52 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:54:52 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:54:52 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:54:55 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 1:55:05 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:24 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:25 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:25 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:25 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:27 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:15:34 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:14 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:16 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:16 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:17 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:23 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 2:54:47 PM
+===========================================================================================Title: Error
+Error Message: Stun has detected your systemtype :: FullCone
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:16:26 PM
+===========================================================================================Title: Error
+Error Message: ip Address is ::59.165.20.13
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:16:28 PM
+===========================================================================================Title: Error
+Error Message: This is not live IP and firewall is off that means node with NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:16:28 PM
+===========================================================================================Title: Error
+Error Message: System Type:NodeWithNetP2P
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:16:28 PM
+===========================================================================================Title: Error
+Error Message: My SuperNode IP is :: 98.124.176.108
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:16:35 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:17:01 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  6/16/2009 3:51:28 PM
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:51:28 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  6/16/2009 3:51:28 PM
+StackTrace is as follow: 
+
+Date - Time: 6/16/2009 3:51:28 PM
+===========================================================================================Title: Error
+Error Message: System Type:BootStrap
+StackTrace is as follow: 
+
+Date - Time: 7/13/2009 7:09:10 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 7/13/2009 7:09:24 PM
+===========================================================================================Title: Error
+Error Message: Database channel open sucessfully.
+StackTrace is as follow: 
+
+Date - Time: 7/13/2009 7:09:25 PM
+===========================================================================================Title: Error
+Error Message: OnExit()--:--App.xaml.cs  7/13/2009 7:09:54 PM
+StackTrace is as follow: 
+
+Date - Time: 7/13/2009 7:09:54 PM
+===========================================================================================Title: Error
+Error Message: LogOut  -- App.xaml.cs  7/13/2009 7:09:54 PM
+StackTrace is as follow: 
+
+Date - Time: 7/13/2009 7:09:54 PM
+===========================================================================================

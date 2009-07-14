@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="rptUserAudit.Presentation.ctlRptUserAudit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   MinHeight="280" MinWidth="450" HorizontalAlignment="Left" VerticalAlignment="Top"
+    xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+    x:Name="ucRptUserAudit" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+
+	<Canvas x:Name="cnvView" VerticalAlignment="Top" HorizontalAlignment="Left" Width="{Binding Path=Width, ElementName=ucRptUserAudit}"  Height="{Binding Path=Height, ElementName=ucRptUserAudit}" >
+		<Grid Height="221" Width="450">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="54"/>
+				<RowDefinition Height="167*" />
+			</Grid.RowDefinitions>
+			
+            
+            
+            <WindowsFormsHost x:Name="wfhRptViewer" HorizontalAlignment="Left" Grid.Row="1" Visibility="Hidden" Width="{Binding Path=Width, ElementName=ucRptUserAudit, Mode=Default}">
+			<rv:ReportViewer x:Name="objReportViewer" />	
+			</WindowsFormsHost>
+            <Label Width="50" Content="Users : " HorizontalAlignment="Left" Margin="129,7.138,0,16.862" />            
+			<ComboBox DropDownOpened="cmbUsers_DropDownOpened" x:Name="cmbUsers" Margin="186,7.138,0,22.862" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Width="150" />
+			<Button x:Name="btnGo" Content="Go" Click="btnGo_Click" HorizontalAlignment="Right" Margin="0,7.138,46,16.862" Width="50" d:LayoutOverrides="HorizontalAlignment" HorizontalContentAlignment="Center" />
+            
+        </Grid>
+			
+          
+		</Canvas>
+		
+	
+
+</UserControl>

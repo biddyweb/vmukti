@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Modules Name="Presentation">
+<DummyClient class="DummyClient" method="PresentationClient">
+</DummyClient>
+<P2PDummyClient classname="P2PPresentationDummyClient" methodname="PresentationP2PClient">
+</P2PDummyClient>
+</Modules>

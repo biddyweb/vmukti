@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadLiveVideo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTitle" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="videoName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mmsImage" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUri" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="confID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadLiveVideoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadLiveVideoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadRecordedVideo">
+        <s:complexType />
+      </s:element>
+      <s:element name="UploadRecordedVideoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadRecordedVideoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadLiveVideoSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadLiveVideo" />
+  </wsdl:message>
+  <wsdl:message name="UploadLiveVideoSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadLiveVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadRecordedVideoSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadRecordedVideo" />
+  </wsdl:message>
+  <wsdl:message name="UploadRecordedVideoSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadRecordedVideoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UploadServiceSoap">
+    <wsdl:operation name="UploadLiveVideo">
+      <wsdl:input message="tns:UploadLiveVideoSoapIn" />
+      <wsdl:output message="tns:UploadLiveVideoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadRecordedVideo">
+      <wsdl:input message="tns:UploadRecordedVideoSoapIn" />
+      <wsdl:output message="tns:UploadRecordedVideoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UploadServiceSoap" type="tns:UploadServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadLiveVideo">
+      <soap:operation soapAction="http://tempuri.org/UploadLiveVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadRecordedVideo">
+      <soap:operation soapAction="http://tempuri.org/UploadRecordedVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploadServiceSoap12" type="tns:UploadServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadLiveVideo">
+      <soap12:operation soapAction="http://tempuri.org/UploadLiveVideo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadRecordedVideo">
+      <soap12:operation soapAction="http://tempuri.org/UploadRecordedVideo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UploadService">
+    <wsdl:port name="UploadServiceSoap" binding="tns:UploadServiceSoap">
+      <soap:address location="http://video.vmukti.com/UploadService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploadServiceSoap12" binding="tns:UploadServiceSoap12">
+      <soap12:address location="http://video.vmukti.com/UploadService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="SpinControl.Presentation.CtlSpin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Canvas Name="cnvMain" Height="25" Width="65" Background="AliceBlue">
+    <TextBox Name="txtValue" Height="25" Width="40"/>
+    <Button Name="btnUp" Canvas.Top="0" Canvas.Left="40" Height="12" Width="25" FontSize="8" Content="U"/>
+    <Button Name="btnDown" Canvas.Top="13" Canvas.Left="40" Height="12" Width="25" FontSize="8" Content="D"/>
+    </Canvas>
+</UserControl>

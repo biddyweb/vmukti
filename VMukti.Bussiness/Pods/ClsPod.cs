@@ -39,7 +39,8 @@ namespace VMukti.Business
 
         #region Fields
 
-        private int moduleId = VMukti.Common.ClsConstants.NullInt;
+	private string test = "";
+	      private int moduleId = VMukti.Common.ClsConstants.NullInt;
         private string zipFile = VMukti.Common.ClsConstants.NullString;
         private string assemblyFile = VMukti.Common.ClsConstants.NullString;
         private string className = VMukti.Common.ClsConstants.NullString;

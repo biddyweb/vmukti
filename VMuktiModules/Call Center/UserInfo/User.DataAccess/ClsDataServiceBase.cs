@@ -1,4 +1,4 @@
-/* VMukti 2.0 -- An Open Source Video Communications Suite
+/* VMukti 2.0 -- An Open Source Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
 *

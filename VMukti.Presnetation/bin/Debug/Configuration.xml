@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Authentication>
+    <AuthServer AuthType="SQL" IPAddresss="">
+      <SQLInfo SQLInstanceName="98.124.176.108" DatabaseName="VMukti" SQLUserName="sa" SQLPassword="mahavir" />
+    </AuthServer>
+  </Authentication>
+  <OtherSettings>
+    <SoftwareType Value="WebApplication" />
+    <BootStrpIP Value="98.124.176.108" />
+    <VMuktiVersion Value="1.1" />
+    <PhysicalPathOfVirtualDirectory Value="E:\Program Files\VMukti\VMukti 1.1\Adiance" />
+    <CurrentVersion Value="1132" />
+    <LastUpdateDate Value="4/16/2009" />
+    <ExternalPBX Value="false" />
+    <Port80 Value="false" />
+    <RTMP Value="" />
+  </OtherSettings>
+</Root>

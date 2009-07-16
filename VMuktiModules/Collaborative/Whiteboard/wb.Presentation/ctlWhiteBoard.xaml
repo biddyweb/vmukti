@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="wb.Presentation.ctlWhiteBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    MinHeight="500" MinWidth="200" Width="351" Name="ctlWhiteBoard1" 
+             VerticalAlignment="Top" HorizontalAlignment="Left" Height="400">
+    
+    
+	<Canvas Background="Transparent" ClipToBounds="True" Width="{Binding ElementName=ctlWhiteBoard1, Path=Width}" Name="cnvBody" Height="{Binding Path=Height, ElementName=ctlWhiteBoard1, Mode=Default}" VerticalAlignment="Top" >
+        <!--<InkCanvas VerticalAlignment="Top" Canvas.Top="0" Background="Transparent"  EditingMode="None" Height="240" Width="{Binding Width, ElementName=ctlWhiteBoard1}" MoveEnabled="True" ResizeEnabled="True" Name="inkCanvas1" PreviewMouseDown="mouseD" PreviewMouseUp="mouseU" PreviewMouseMove="mouseM" StrokeCollected="inkCanvas1_StrokeCollected" SelectionResized="inkCanvas1_SelectionResized" SelectionResizing="inkCanvas1_SelectionResizing" SelectionMoved="inkCanvas1_SelectionMoved" SelectionChanged="inkCanvas1_SelectionChanged" KeyUp="inkCanvas1_KeyUp" StrokeErased="inkCanvas1_StrokeErased">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes IgnorePressure="False" FitToCurve="True"></DrawingAttributes>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>-->
+			<ToolBar Canvas.Top="0" Canvas.Left="0" Width="{Binding Width, ElementName=ctlWhiteBoard1}" Name="tbWBTray">
+				
+				<ComboBox  SelectionChanged="selectionchanged" IsEnabled="True" Visibility="Visible" Height="23" HorizontalAlignment="Right"  Name="comboBox1" VerticalAlignment="Top" Width="30" SelectedIndex="1">
+				</ComboBox>
+
+				<Button ToolTip="Rectangle" Click="rect" Height="23" HorizontalAlignment="Left"  Name="btnRect" VerticalAlignment="Top" Width="20">
+					<Image Source="Images\8.gif"></Image>
+				</Button>
+
+				<Button Height="23"  ToolTip="Ellipse" Name="btnEle" VerticalAlignment="Top" Click="ellipse" Width="20">
+					<Image Source="Images\9.gif"></Image>
+				</Button>
+
+				<Button ToolTip="Line" Height="23" HorizontalAlignment="Right"  Name="btnLine" VerticalAlignment="Top" Width="20" Click="Line1">
+					<Image Source="Images\7.gif"></Image>
+				</Button>
+
+				<Button ToolTip="Selection" Height="23" HorizontalAlignment="Right"  Name="button1" VerticalAlignment="Top" Width="20" Click="select">
+					<Image Source="Images\5.gif"></Image>
+				</Button>
+
+				<Button ToolTip="Erase by brush" Height="23" Name="button2" VerticalAlignment="Top" Click="erase" Width="20">
+					<Image Source="Images\erase-by-brush.gif"></Image>
+				</Button>
+
+				<Button ToolTip="Pen" Height="23" HorizontalAlignment="Left"  Name="button3" VerticalAlignment="Top" Width="20" Click="pen">
+					<Image Source="Images\6.gif"></Image>
+				</Button>
+
+				<Button Height="23" HorizontalAlignment="Left"  Name="button4" VerticalAlignment="Top" Width="20" Click="strokeerase" ToolTip="Erase by stroke">
+					<Image Source="Images\erase-by-stroke.gif" Height="23" Width="17"></Image>
+				</Button>
+
+				<Button ToolTip="Clear All" Height="23" HorizontalAlignment="Left"  Name="button5" VerticalAlignment="Top" Width="20" Click="clear">
+					<Image Source="Images\3.gif"></Image>
+				</Button>
+
+				<Button ToolTip="Color" Height="23" HorizontalAlignment="Left"  Name="button6" VerticalAlignment="Top" Width="25" Click="color">
+					<Image Source="Images\paintbucket.gif" />
+				</Button>
+
+            <Button ToolTip="Stamper" Height="23" HorizontalAlignment="Left"  Name="button7" VerticalAlignment="Top" Width="20" Click="stamper">
+                <Image Source="Images\1.gif" />
+				</Button>
+
+				<Button ToolTip="Texttool" Height="23" Name="button8" VerticalAlignment="Top" Click="texttool" Width="20">
+					<Image Source="Images\10.gif" />
+				</Button>
+
+				<Button ToolTip="Marker" Height="23" HorizontalAlignment="Right"  Name="button10" VerticalAlignment="Top" Width="40" Click="marker">
+					<Image Source="Images\marker.gif"></Image>
+				</Button>
+
+			</ToolBar>
+
+        <DockPanel Height="Auto" Canvas.Left="2" Canvas.Top="29" Width="{Binding ElementName=cnvBody ,Path=Width}" Name="dockPanel1">
+            <Slider ToolTip="Zoom" Name="zoomSlider" DockPanel.Dock="Top" Minimum="1.01" Maximum="5" Value="1"/>
+            <Border BorderThickness="2,2,2,2" BorderBrush="#FF90B194" CornerRadius="5,5,5,5" Margin="0,5,2,0" Height="345">
+            	<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            		<InkCanvas Background="#FFE5FFE8" EditingMode="None" x:Name="inkCanvas1" MinHeight="300" MoveEnabled="True" ResizeEnabled="True" PreviewMouseDown="mouseD" PreviewMouseUp="mouseU" PreviewMouseMove="mouseM" StrokeCollected="inkCanvas1_StrokeCollected" SelectionResized="inkCanvas1_SelectionResized" SelectionResizing="inkCanvas1_SelectionResizing" SelectionMoved="inkCanvas1_SelectionMoved" SelectionChanged="inkCanvas1_SelectionChanged" KeyUp="inkCanvas1_KeyUp" StrokeErased="inkCanvas1_StrokeErased" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" MinWidth="600">
+            			<InkCanvas.LayoutTransform>
+
+            				<ScaleTransform ScaleX="{Binding Path=Value, ElementName=zoomSlider}"
+
+            					ScaleY="{Binding Path=Value, ElementName=zoomSlider}"/>
+
+            			</InkCanvas.LayoutTransform>
+            		</InkCanvas>
+            	</ScrollViewer>
+            </Border>
+        </DockPanel>
+		
+			
+		
+		<Label Visibility="Collapsed" x:Name="lblDisplay" Width="103" Height="24" Content="" Foreground="Black" Canvas.Left="16" Canvas.Top="29"/>
+	</Canvas>
+	
+</UserControl>

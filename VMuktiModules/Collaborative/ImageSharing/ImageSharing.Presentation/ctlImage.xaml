@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="ImageSharing.Presentation.ctlImage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="60" Width="60">
+	<!--<Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch">-->
+		<Image Name="picImage" Height="60" Width="60"/>
+		<!--<Button Name="btnSave" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Left">-->
+			<!--<Image Source="Images\FileSave.png" Height="22" Width="24"/>-->
+		<!--</Button>-->
+	<!--</Canvas>-->
+</UserControl>

@@ -1,0 +1,285 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\HelpDocs.zip
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Assamblies.zip
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\ImportLead.zip
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\Recorder.ico
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images\Help.png
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\Delete.png
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\userprofile.png
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\ul.txt
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiMonitor.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe.config
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe.manifest
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.xbap
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.NetFwTypeLib.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.WMEncoderLib.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\StunFireWallDetector.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlGrid.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlResizer.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.ZipUnzip.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Presentation.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.ShockwaveFlashObjects.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Profile.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.RTCCORELib.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlGrid.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Presentation.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\StunFireWallDetector.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.ZipUnzip.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Profile.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlBuddyList.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlEditCategory.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderItem.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlGeneral.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlPBX.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlProfile.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlSkinItem.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlThemPopUp.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlUploadModule.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiHelp.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlMExpanderItem.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\Record_Inputs.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddy.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddyList.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlPodBuddyList.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ResPOD.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenuItem.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlPgTabHeader.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\wndVMuktiPopup.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Find_Buddy.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlLogin.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\BlackTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\BlueTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\GreenTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\OrangeTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\Orkut.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\OrkutTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PinkTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PodRes.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PurpleTheme.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\White.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Styles\SPResource.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\App.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlBuddies.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlBuddyGrid.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlBuddyList.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlEditCategory.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderContent.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderItem.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlGeneral.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlPBX.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlProfile.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSettings.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlSkinItem.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSkinPopUp.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlThemPopUp.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlUploadModule.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlViewProfile.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiHelp.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlMExpanderItem.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlModule.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\Record_Inputs.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddy.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddyList.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlPodBuddyList.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\ctlVMuktiGrid.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlGrid.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlPOD.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlExpMenuItem.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenu.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenuItem.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlPgTabHeader.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\wndVMuktiPopup.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Find_Buddy.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\pgHome.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlLogin.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\App.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_Content.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_MarkupCompile.lref
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlBuddies.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlBuddyGrid.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderContent.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSettings.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSkinPopUp.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlViewProfile.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlModule.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\ctlVMuktiGrid.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlGrid.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlPOD.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlExpMenuItem.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenu.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\pgHome.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\TabControlStyle.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.TrustInfo.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.exe.manifest
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.xbap
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\HelpDocs.zip
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Assamblies.zip
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\Recorder.ico
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images\Help.png
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\Delete.png
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Skins\Images1\userprofile.png
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\ul.txt
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiMonitor.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe.config
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe.manifest
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.xbap
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.NetFwTypeLib.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.WMEncoderLib.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\StunFireWallDetector.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlGrid.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlResizer.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.ZipUnzip.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Presentation.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.ShockwaveFlashObjects.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Profile.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\Interop.RTCCORELib.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Common.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.CtlGrid.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Presentation.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\StunFireWallDetector.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.ZipUnzip.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\YatePBX.Common.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMukti.Profile.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlBuddyList.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlEditCategory.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderItem.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlGeneral.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlPBX.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlProfile.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlSkinItem.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlThemPopUp.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlUploadModule.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiHelp.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiVersion.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlMExpanderItem.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddy.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddyList.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlPodBuddyList.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ResPOD.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenuItem.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlPgTabHeader.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\wndVMuktiPopup.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Find_Buddy.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlLogin.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\BlackTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\BlueTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\GreenTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\OrangeTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\Orkut.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\OrkutTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PinkTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PodRes.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\PurpleTheme.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\White.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Styles\SPResource.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\App.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlBuddies.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlBuddyGrid.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlBuddyList.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlEditCategory.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderContent.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderItem.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlGeneral.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlPBX.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlProfile.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSettings.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlSkinItem.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSkinPopUp.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlThemPopUp.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlUploadModule.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlViewProfile.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiHelp.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlVMuktiVersion.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlMExpanderItem.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlModule.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddy.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlBuddyList.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Buddy\ctlPodBuddyList.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\ctlVMuktiGrid.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlGrid.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlPOD.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlExpMenuItem.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenu.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenuItem.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlPgTabHeader.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\wndVMuktiPopup.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Find_Buddy.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\pgHome.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlLogin.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\App.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_Content.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation_MarkupCompile.lref
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlBuddies.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ctlBuddyGrid.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\BuddyExplorer\CtlExpanderContent.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSettings.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlSkinPopUp.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\CtlViewProfile.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\ModuleExplorer\CtlModule.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\ctlVMuktiGrid.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlGrid.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Grid\ctlPOD.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlExpMenuItem.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Controls\VMuktiGrid\Menu\ctlMenu.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\pgHome.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\Skins\TabControlStyle.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.TrustInfo.xml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.exe.manifest
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.xbap
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMukti.Presnetation\obj\Debug\VMukti.Presentation.pdb

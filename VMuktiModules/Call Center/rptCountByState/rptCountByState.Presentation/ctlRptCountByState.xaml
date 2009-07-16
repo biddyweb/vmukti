@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="rptCountByState.Presentation.ctlRptCountByState"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    MinHeight="280" MinWidth="430"  HorizontalAlignment="Left" VerticalAlignment="Top" ClipToBounds="True" 
+    xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+             xmlns:DateControl="clr-namespace:VMukti.CtlDatePicker.Presentation;assembly=VMukti.CtlDatePicker.Presentation"
+    x:Name="ucRptCountByState" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" >
+
+    <Canvas x:Name="cnvView" VerticalAlignment="Top" HorizontalAlignment="Left" Width="{Binding Path=Width, ElementName=ucRptCountByState}"  Height="{Binding Path=Height, ElementName=ucRptCountByState}" >
+    	<Grid Width="430" Height="324" VerticalAlignment="Top" HorizontalAlignment="Left">
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="38"/>
+    			<RowDefinition Height="30"/>
+    			<RowDefinition Height="30"/>
+    			<RowDefinition Height="*"/>
+    		</Grid.RowDefinitions>
+    		<DateControl:DatePicker DropDownOpened="dtpStartDate_DropDownOpened" x:Name="dtpStartDate" Width="94" HorizontalAlignment="Left" Margin="72,8,0,2" Grid.Row="1" />
+    		<DateControl:DatePicker DropDownOpened="dtpStartDate_DropDownOpened" x:Name="dtpEndDate" Width="94" HorizontalAlignment="Left" Margin="72,6,0,2" Grid.Row="2" />
+    		<Label Width="68" Content="Campaign : " Foreground="#FF000000" HorizontalAlignment="Left" Margin="8,8,0,6" />
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbCampaign" Width="94" SelectionChanged="cmbCampaign_SelectionChanged" HorizontalAlignment="Left" Margin="72,10,0,6" />
+    		<Label Width="33" Content="List : " Foreground="#FF000000" HorizontalAlignment="Left" Margin="179,8,0,8" />
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbList" Margin="0,11,116,5" Width="98" HorizontalAlignment="Right" />
+    		<Label x:Name="lblStartDate" Width="68" Foreground="#FF000000" HorizontalAlignment="Left" Margin="8,8,0,0" Content="StartDate :" Grid.Row="1"/>
+    		<Label x:Name="lblEndHour" Foreground="#FF000000" Margin="170,3,214,0" Content="Time :" Grid.Row="2" Height="30" Grid.RowSpan="2" VerticalAlignment="Top" />
+    		<Label x:Name="lblStrtHour" Width="42" Foreground="#FF000000" HorizontalAlignment="Left" Margin="170,7,0,1" Content="Time :" Grid.Row="1"/>
+    		<Label x:Name="lblEndDate" Width="84" Foreground="#FF000000" HorizontalAlignment="Left" Margin="8,2,0,0" Content="EndDate :" Grid.Row="2"/>
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbEndHour" Width="40" HorizontalAlignment="Right" Margin="0,6,174,2" Grid.Row="2" >
+    			<ComboBoxItem Content="00"/>
+    			<ComboBoxItem Content="01"/>
+    			<ComboBoxItem Content="02"/>
+    			<ComboBoxItem Content="03"/>
+    			<ComboBoxItem Content="04"/>
+    			<ComboBoxItem Content="05"/>
+    			<ComboBoxItem Content="06"/>
+    			<ComboBoxItem Content="07"/>
+    			<ComboBoxItem Content="08"/>
+    			<ComboBoxItem Content="09"/>
+    			<ComboBoxItem Content="10"/>
+    			<ComboBoxItem Content="11"/>
+    			<ComboBoxItem Content="12"/>
+    			<ComboBoxItem Content="13"/>
+    			<ComboBoxItem Content="14"/>
+    			<ComboBoxItem Content="15"/>
+    			<ComboBoxItem Content="16"/>
+    			<ComboBoxItem Content="17"/>
+    			<ComboBoxItem Content="18"/>
+    			<ComboBoxItem Content="19"/>
+    			<ComboBoxItem Content="20"/>
+    			<ComboBoxItem Content="21"/>
+    			<ComboBoxItem Content="22"/>
+    			<ComboBoxItem Content="23"/>
+    		</ComboBox>
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbStartHour" Width="40" HorizontalAlignment="Right" Margin="0,9,174,29" Grid.Row="1" Grid.RowSpan="2">
+    			<ComboBoxItem Content="00"/>
+    			<ComboBoxItem Content="01"/>
+    			<ComboBoxItem Content="02"/>
+    			<ComboBoxItem Content="03"/>
+    			<ComboBoxItem Content="04"/>
+    			<ComboBoxItem Content="05"/>
+    			<ComboBoxItem Content="06"/>
+    			<ComboBoxItem Content="07"/>
+    			<ComboBoxItem Content="08"/>
+    			<ComboBoxItem Content="09"/>
+    			<ComboBoxItem Content="10"/>
+    			<ComboBoxItem Content="11"/>
+    			<ComboBoxItem Content="12"/>
+    			<ComboBoxItem Content="13"/>
+    			<ComboBoxItem Content="14"/>
+    			<ComboBoxItem Content="15"/>
+    			<ComboBoxItem Content="16"/>
+    			<ComboBoxItem Content="17"/>
+    			<ComboBoxItem Content="18"/>
+    			<ComboBoxItem Content="19"/>
+    			<ComboBoxItem Content="20"/>
+    			<ComboBoxItem Content="21"/>
+    			<ComboBoxItem Content="22"/>
+    			<ComboBoxItem Content="23"/>
+    		</ComboBox>
+    		<Label x:Name="lblEndMinute" Width="15" Foreground="#FF000000" HorizontalAlignment="Right" Margin="0,2,159,3" Content=":" Grid.Row="2"/>
+    		<Label x:Name="lblStrtMinute" Width="15" Foreground="#FF000000" HorizontalAlignment="Right" Margin="0,5,159,0" Content=":" Grid.Row="1"/>
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbEndMinute" Width="40" HorizontalAlignment="Right" Margin="0,7,115,1" Grid.Row="2" >
+    			<ComboBoxItem Content="00"/>
+    			<ComboBoxItem Content="30"/>
+    		</ComboBox>
+    		<Button x:Name="btnGo" Content="Go" Width="58" Click="btnGo_Click" HorizontalAlignment="Right" Margin="0,5,29,0" Grid.Row="1" />
+    		<ComboBox DropDownOpened="cmbCampaign_DropDownOpened" x:Name="cmbStartMinute" Width="40" HorizontalAlignment="Right" Margin="0,9,115,29" Grid.Row="1" Grid.RowSpan="2">
+    			<ComboBoxItem Content="00"/>
+    			<ComboBoxItem Content="30"/>
+
+    		</ComboBox>
+    		<WindowsFormsHost x:Name="wfhRptViewer"  Height="Auto" Margin="0,19,0,17" HorizontalAlignment="Left" Grid.RowSpan="1" Grid.Row="3" Width="{Binding Path=Width, ElementName=ucRptCountByState, Mode=Default}">
+				<rv:ReportViewer  x:Name="objReportViewer" />	
+			</WindowsFormsHost>
+    	</Grid>
+		</Canvas>
+		
+	
+	
+</UserControl>

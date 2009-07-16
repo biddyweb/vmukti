@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Recycle.Presentation.CtlRecycle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height ="Auto" Width="570" MinHeight="494" MinWidth="570"
+    Name="ucRecycle">
+
+	
+
+		<Canvas Name="cnvMain"  Height="{Binding Height, ElementName=ucRecycle}" Width="{Binding Width, ElementName=ucRecycle}" HorizontalAlignment="Left">
+			<Label Name="lblCampaign" Height="30" Width="100" Canvas.Left="10" Canvas.Top="10" Content="Select Campaign"/>
+			<ComboBox  Name="cmbCampaign" Height="27" Width="200" Canvas.Left="110" Canvas.Top="10"/>
+
+			<Label Name="lblLists" Height="30" Width="70" Canvas.Left="10" Canvas.Top="40" Content="Select List"/>
+			<ListBox  Name="lstLists" Height="200" Width="200" Canvas.Left="110" Canvas.Top="40"/>
+
+			<ScrollViewer   Canvas.Left="330" Height="250" Width="200" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Name="svrDisposition">
+				<Canvas Name="cnvDispo" Height="250" Width="200" Canvas.Left="330" Canvas.Top="10"/>
+			</ScrollViewer>
+
+			<Button  Name="btnRecycle" Height="27" Width="83" Canvas.Left="110" Canvas.Top="260" Content="Recycle"/>
+			<Button  Name="btnCancel" Height="27" Width="79" Canvas.Left="231" Canvas.Top="260" Content="Cancel"/>
+			<Label Name="lblSummary" Height="30" Width="150" Canvas.Left="10" Canvas.Top="300" Content="Summary :" FontSize="14"/>
+			<RichTextBox  Name="rtcSummary" Height="120" Width="500" Canvas.Left="10" Canvas.Top="330" FontSize="13" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+		</Canvas>
+	
+</UserControl>

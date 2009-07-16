@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\bin\Debug\YatePBX.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\bin\Debug\YatePBX.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\bin\Debug\YatePBX.Common.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\bin\Debug\YatePBX.Common.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\obj\Debug\YatePBX.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.Common\obj\Debug\YatePBX.Common.pdb

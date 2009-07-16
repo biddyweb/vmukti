@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRecordedFileDetail" targetNamespace="http://tempuri.org/dsRecordedFileDetail.xsd" xmlns:mstns="http://tempuri.org/dsRecordedFileDetail.xsd" xmlns="http://tempuri.org/dsRecordedFileDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRecordedFileDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRecordedFileDetail" msprop:Generator_DataSetName="dsRecordedFileDetail" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRecordedFileDetail" msprop:Generator_UserTableName="dtRecordedFileDetail" msprop:Generator_RowDeletedName="dtRecordedFileDetailRowDeleted" msprop:Generator_RowChangedName="dtRecordedFileDetailRowChanged" msprop:Generator_RowClassName="dtRecordedFileDetailRow" msprop:Generator_RowChangingName="dtRecordedFileDetailRowChanging" msprop:Generator_RowEvArgName="dtRecordedFileDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRecordedFileDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtRecordedFileDetailDataTable" msprop:Generator_TableVarName="tabledtRecordedFileDetail" msprop:Generator_RowDeletingName="dtRecordedFileDetailRowDeleting" msprop:Generator_TablePropName="dtRecordedFileDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DurationInSecond" msprop:Generator_UserColumnName="DurationInSecond" msprop:Generator_ColumnVarNameInTable="columnDurationInSecond" msprop:Generator_ColumnPropNameInRow="DurationInSecond" msprop:Generator_ColumnPropNameInTable="DurationInSecondColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNo" msprop:Generator_UserColumnName="PhoneNo" msprop:Generator_ColumnVarNameInTable="columnPhoneNo" msprop:Generator_ColumnPropNameInRow="PhoneNo" msprop:Generator_ColumnPropNameInTable="PhoneNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RecordedFileName" msprop:Generator_UserColumnName="RecordedFileName" msprop:Generator_ColumnVarNameInTable="columnRecordedFileName" msprop:Generator_ColumnPropNameInRow="RecordedFileName" msprop:Generator_ColumnPropNameInTable="RecordedFileNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

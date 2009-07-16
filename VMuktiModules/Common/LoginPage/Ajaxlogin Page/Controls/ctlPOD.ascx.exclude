@@ -1,0 +1,50 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ctlPOD.ascx.cs" Inherits="Controls_ctlPOD" %>
+<%@ Register Assembly="wb.Presentation" Namespace="wb.Presentation"  TagPrefix="wb"%>
+<%@ Register Assembly="CoAuthering.Presentation" Namespace="CoAuthering.Presentation" TagPrefix="wCoAuth" %>
+
+<asp:Panel ID="pnlPanel" runat="server" style="width:100%;height:auto;" CssClass="widget">
+    <div class="widget_header" id="widgetHeader">
+        <div class="rpTopLeft" id="topLeft" runat="server">
+            <div class="rpTopRight" id="topRight" runat="server">
+                <div class="rpTopRow" id="topRow" runat="server">
+                    <div id="widgetTitle">
+                        <div id="widgetMinimize" class="widget_buttonmin"  runat="server" ></div>
+                        <div id="divTitleTex" style="float: left; margin-left: 10px;" runat="server">Widget Title</div>
+                        <div id="titleVisible" class="widget_buttonRight_min" style="float: right; margin-right: -5px; margin-top: 5px" runat="server">&nbsp;</div>
+                        <div id="widgetClose" class="widget_buttonClose" style="float: right; margin-right: 4px; margin-top: 5px" runat="server"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="midLeft" class="rpMidLeft" runat="server">
+        <div id="midRight" class="rpMidRight" runat="server">
+            <div id="midContent" class="rpMidContent" runat="server">
+                <%--<div id="contDIV" style="width:100px; height:60px;"></div>--%>
+                <%-- <wCoAuth:CoAuth ID="wCoAuth" ImagesLocation="Images/CoAuth/"
+                GeneralStyle="coAuthBackground" ButtonStyle="coAuthBtnOver"
+                ChatTextAreaStyle="chatTextArea" runat="server"/>--%>
+                <%--<wChat:ctlChat ID="widgetChat" 
+                   ChatStyle="chatBackground" ChatLabelStyle="chatLabelDisplay"
+                   ChatTextAreaStyle="chatTextArea" runat="server"/>--%>
+                <%-- <wb:ctlWhiteBoard ID="wb1" Text="widget" Width="15px" Height="15px"
+                 LeftStyle="tBarBtnleft" CenterStyle="tBarBtncontent" RightStyle="tBarBtnright" 
+                 GeneralStyle="toolBarBackground"
+                 ButtonStyle="tbBtnOver"
+                 ImagesLocation="Images/WhiteBoard/"
+                 runat="server">
+                </wb:ctlWhiteBoard>--%>
+            </div>
+        </div>
+    </div>
+    <div id="botLeft" class="rpBotLeft" runat="server">
+        <div id="botRight" class="rpBotRight" runat="server">
+            <div id="bot" class="rpBot" runat="server">
+            </div>
+        </div>
+    </div>
+</asp:Panel>
+<script type="text/javascript">
+
+
+</script>

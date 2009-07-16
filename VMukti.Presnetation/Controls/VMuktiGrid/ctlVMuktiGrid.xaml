@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="VMuktiGrid.ctlVMuktiGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:nmVMuktiGrid="clr-namespace:VMuktiGrid"
+    xmlns:nmPage="clr-namespace:VMuktiGrid.ctlPage"
+    xmlns:nmTab="clr-namespace:VMuktiGrid.ctlTab"
+    xmlns:nmBuddy="clr-namespace:VMuktiGrid.Buddy"
+    xmlns:nmGrid="clr-namespace:VMuktiGrid.CustomGrid"
+    xmlns:nmMenu="clr-namespace:VMuktiGrid.CustomMenu" Background="{x:Null}"
+    Height="Auto" Width="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+    
+    <UserControl.Resources>
+        <nmVMuktiGrid:CTabControlHeight x:Key="oTabControlHeight" />
+        <nmVMuktiGrid:CTabControlWidth x:Key="oTabControlWidth" />
+    </UserControl.Resources>
+    
+    <Grid Name="grdMain" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="Auto" Width="Auto">
+
+        <Button x:Name="btnPane" Width="30" Height="30" Margin="0,2,40,2" Panel.ZIndex="2"
+                    HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Row="0" 
+                    Grid.Column="0"  
+                    Click="btnPane_Click" Style="{DynamicResource ArrowButtonsForPaneBtn}" 
+                    RenderTransformOrigin="0.5,0.5" ToolTip="Hide Page and Tab"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <nmPage:TabControl x:Name="pageControl" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TabStripPlacement="{Binding ElementName=listBox, Path=SelectedItem}" 
+				TabItemMinWidth="150" TabItemMaxWidth="300" TabItemMinHeight="30" TabItemMaxHeight="50" VerticalContentAlignment="Center" Height="Auto" Width="Auto">
+            
+            <nmPage:TabControl.pgTabItemNormalBackground>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFCFDFD" Offset="0"/>
+                    <GradientStop Color="#FFE5EAF5" Offset="0.3"/>
+                    <GradientStop Color="#FFCFD7EB" Offset="0.3"/>
+                    <GradientStop Color="#FFE0E5F5" Offset="0.7"/>
+                    <GradientStop Color="#FFECEEFC" Offset="1"/>
+                </LinearGradientBrush>
+            </nmPage:TabControl.pgTabItemNormalBackground>
+
+            <nmPage:TabControl.pgTabItemSelectedBackground>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFBFDFE" Offset="0"/>
+                    <GradientStop Color="#FFEAF6FB" Offset="0.3"/>
+                    <GradientStop Color="#FFCEE7FA" Offset="0.3"/>
+                    <GradientStop Color="#FFB9D1FA" Offset="1"/>
+                </LinearGradientBrush>
+            </nmPage:TabControl.pgTabItemSelectedBackground>
+
+            <nmPage:TabControl.pgTabItemMouseOverBackground>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFCFDFD" Offset="0"/>
+                    <GradientStop Color="#FFC6DDF7" Offset="0.3"/>
+                    <GradientStop Color="#FF99C6EE" Offset="0.3"/>
+                    <GradientStop Color="#FFB6D6F1" Offset="0.7"/>
+                    <GradientStop Color="#FFD9E9F9" Offset="1"/>
+                </LinearGradientBrush>
+            </nmPage:TabControl.pgTabItemMouseOverBackground>
+
+        </nmPage:TabControl>
+    </Grid>
+</UserControl>

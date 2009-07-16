@@ -1,0 +1,12 @@
+CO-AUTHORING APPLICATION
+
+VMukti provides facility of Co-Authoring. 
+Co-Authoring allows multi user to write/edit 
+something on same page collaboratively.
+	
+	How to Use:
+	• Drag co-authoring widget on the tab. 
+	• Drag Buddies on Co-Authoring from Buddy list. 
+	• Activities on this Widget display to all the 
+	  participants of the Co-Authoring. 
+

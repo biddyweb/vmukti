@@ -1,0 +1,32 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.DataAccess.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\DashBoard.Common.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.DataAccess\obj\Debug\DashBoard.DataAccess.pdb

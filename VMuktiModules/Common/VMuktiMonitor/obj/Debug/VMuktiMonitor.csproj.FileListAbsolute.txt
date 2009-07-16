@@ -1,0 +1,24 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\bin\Debug\VMuktiMonitor.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\bin\Debug\VMuktiMonitor.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\Window1.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\Window1.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\App.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\bin\Debug\VMuktiMonitor.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\bin\Debug\VMuktiMonitor.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\Window1.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\Window1.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\App.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\VMuktiMonitor\obj\Debug\VMuktiMonitor.pdb

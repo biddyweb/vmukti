@@ -1,0 +1,9 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DirectX.Capture.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DirectX.Capture.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DirectX.Capture.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DirectX.Capture.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DShowNET.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DShowNET.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\obj\Debug\DirectX.Capture.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\obj\Debug\DirectX.Capture.pdb

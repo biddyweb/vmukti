@@ -1,0 +1,129 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="VMuktiGrid.Buddy.ctlPodBuddyList" 
+    Height="Auto">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Skins\PodRes.xaml"/>
+                <!--<ResourceDictionary Source="\Skins\ResPOD1.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+
+            <Storyboard x:Key="OnMouseEnter1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgPODIcon" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+            </Storyboard>
+
+            <Storyboard x:Key="OnMouseLeave1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+
+            <SolidColorBrush x:Key="tbTabCloseButtonBrush" Color="#FFADADAD"/>
+            
+            <Style x:Key="tbCloseButtonStyle" TargetType="{x:Type Button}">
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border x:Name="border" 
+						CornerRadius="2" 
+						Background="{TemplateBinding Background}" 
+						BorderThickness="1" 
+						BorderBrush="{TemplateBinding BorderBrush}" 
+						Width="16" Height="16" 
+						SnapsToDevicePixels="True">
+                                <Grid Width="8" Height="8" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Path x:Name="path1" Stroke="{StaticResource tbTabCloseButtonBrush}" Data="M0,0 L8,8" StrokeThickness="2" />
+                                    <Path x:Name="path2" Stroke="{StaticResource tbTabCloseButtonBrush}" Data="M8,0 L0,8" StrokeThickness="2" />
+                                </Grid>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" Value="{StaticResource tbTabCloseButtonBrush}"/>
+                                    <Setter Property="Background" Value="WhiteSmoke"/>
+                                    <Setter Property="Stroke" TargetName="path1" Value="DarkRed"/>
+                                    <Setter Property="Stroke" TargetName="path2" Value="DarkRed"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                <GradientStop Color="#FFADADAD" Offset="0"/>
+                                                <GradientStop Color="White" Offset="0.5"/>
+                                                <GradientStop Color="White" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <!--This buddylist will be shown in POD's titlebar-->
+    <Grid>
+        <Button x:Name="btnMenu" Width="16" Content="" Style="{DynamicResource ArrowButtons}" 
+                RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" Focusable="False" HorizontalAlignment="Right" 
+                Height="10" Margin="0,0,0,0" Click="btnMenu_Click" ToolTip="Options"/>
+        <Popup Name="menuPopUP" PlacementTarget="{Binding ElementName=btnMenu}" PopupAnimation="Slide" PlacementRectangle="-70,15,0,0" StaysOpen="False" MaxHeight="200">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+                <StackPanel MinWidth="100" Width="Auto" Background="{DynamicResource MenuBackGround}" Name="stPanel">
+                    <Grid HorizontalAlignment="Stretch">
+                        <Label x:Name="lblMenuTitle" Width="100" Content="Buddy List" Height="25" 
+                            FontWeight="12" HorizontalAlignment="Left" VerticalAlignment="Top"
+                               Foreground="{DynamicResource TextBrush}" FontFamily="Segoe UI"/>
+                        <Button x:Name="btnClosePopUp" VerticalAlignment="Top"
+					        HorizontalAlignment="Right" Margin="2,2,2,2" ToolTip="Close"
+					        Style="{StaticResource tbCloseButtonStyle}" Click="btnClosePopUp_Click" />
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Popup>
+    </Grid>
+
+
+</UserControl>

@@ -1,0 +1,21 @@
+AUDIO APPLICATION
+
+Audio Widget is used to make a simple conversation 
+between two or more than two people. Using this widget 
+people located in offices, homes, colleges, schools can 
+communicate with one another using audio conferencing. 
+A live collaborative conversation is achieved.
+
+	Features
+	• User can enlarge the screen with the help of the 
+      full screen option.
+	• With the full screen option new popup window will 
+	  open containing the.
+	  video with enlarged size.
+	• User can also remove full screen using the Cancel option.
+	• With the cancel option window containing the full 
+	  screen video will be closed.
+
+
+
+

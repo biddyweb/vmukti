@@ -1,0 +1,564 @@
+﻿<UserControl x:Class="VMukti.CtlGrid.Presentation.ctlGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/interactivedesigner/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d"
+	>
+	<UserControl.Resources>
+	<!--Green Spot And Red Spot -->
+	
+	<DrawingBrush x:Key="RedSpot" Viewbox="0,0,25,25" ViewboxUnits="Absolute">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.OpacityMask>
+					<RadialGradientBrush>
+						<GradientStop Color="#FF000000" Offset="0"/>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+						<GradientStop Color="#DE202020" Offset="0.766"/>
+					</RadialGradientBrush>
+				</DrawingGroup.OpacityMask>
+				<GeometryDrawing Geometry="M12.597202,24.999992 C19.379486,24.999992 24.999999,19.230752 24.999999,12.499973 24.999999,5.5768849 19.379486,-4.6950194E-05 12.597202,-4.6950194E-05 5.6205153,-4.6950194E-05 2.7846075E-06,5.5768849 2.7846075E-06,12.499973 2.7846075E-06,19.230752 5.6205153,24.999992 12.597202,24.999992 z">
+					<GeometryDrawing.Brush>
+						<RadialGradientBrush>
+							<GradientStop Color="#FFFF0000" Offset="0"/>
+							<GradientStop Color="#FFFFFFFF" Offset="1"/>
+						</RadialGradientBrush>
+					</GeometryDrawing.Brush>
+				</GeometryDrawing>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+<DrawingBrush x:Key="GreenSpot" Viewbox="0,0,25,25" ViewboxUnits="Absolute">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<DrawingGroup.OpacityMask>
+				<RadialGradientBrush>
+					<GradientStop Color="#FF000000" Offset="0"/>
+					<GradientStop Color="#00FFFFFF" Offset="1"/>
+					<GradientStop Color="#DE202020" Offset="0.766"/>
+				</RadialGradientBrush>
+			</DrawingGroup.OpacityMask>
+			<GeometryDrawing Geometry="M12.597202,24.999992 C19.379486,24.999992 24.999999,19.230752 24.999999,12.499973 24.999999,5.5768849 19.379486,-4.6950194E-05 12.597202,-4.6950194E-05 5.6205153,-4.6950194E-05 2.7846075E-06,5.5768849 2.7846075E-06,12.499973 2.7846075E-06,19.230752 5.6205153,24.999992 12.597202,24.999992 z">
+				<GeometryDrawing.Brush>
+					<RadialGradientBrush>
+						<GradientStop Color="#FF009832" Offset="0"/>
+						<GradientStop Color="#FFFFFFFF" Offset="1"/>
+					</RadialGradientBrush>
+				</GeometryDrawing.Brush>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+
+	
+	<!-- Green Spot And Red Spot-->
+	
+		<!--Green man & Red Man-->	
+		
+			<DrawingBrush x:Key="GreenMan" Viewbox="0,0,26.389,24.469" ViewboxUnits="Absolute">
+			<DrawingBrush.Drawing>
+				<DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,0,10.955"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M26.389301,13.514189 C25.984657,13.514189 1.0109798,13.301175 7.713961E-07,13.194669 1.617841,-5.4440307 26.389301,-3.4204005 26.389301,13.514189 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FF009832" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,7.392,10.98"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M1.8342825E-06,1.1339955 C3.6876941,-0.35976914 7.9178069,-0.35976914 11.605499,1.027298 L11.063079,2.2009703 5.7486892,13.297508 0.5424225,2.2009703 1.8342825E-06,1.1339955 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FF009832" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,11.425,10.98"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M-3.2891816E-06,1.1339955 C1.0776354,-0.35976914 2.4632166,-0.35976914 3.5413364,1.027298 L3.3873651,2.2009703 1.8476522,13.297508 0.153968,2.2009703 -3.2891816E-06,1.1339955 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FF009832" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,6.336,0"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M6.9120848,13.813796 C10.633524,13.813796 13.717499,10.625991 13.717499,6.9068849 13.717499,3.0815189 10.633524,-2.5942423E-05 6.9120848,-2.5942423E-05 3.0839768,-2.5942423E-05 1.5279142E-06,3.0815189 1.5279142E-06,6.9068849 1.5279142E-06,10.625991 3.0839768,13.813796 6.9120848,13.813796 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FF009832" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<LinearGradientBrush EndPoint="0.477,0.91" StartPoint="0.524,-0.096">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#26FFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,6.336,0"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Brush="#FF007125" Geometry="M6.9120848,-2.7153304E-05 C10.633524,-2.7153304E-05 13.717499,3.225351 13.717499,7.2292687 13.717499,7.8965883 13.611163,8.5639079 13.504827,9.2312275 12.654136,9.2312275 12.122344,7.5629285 12.441463,6.1170693 11.803667,5.1160899 10.102064,4.3375503 9.1451478,4.7824301 7.4436557,3.7814507 5.8484999,3.8926706 4.4663491,5.2273098 3.5091006,4.6712101 2.1270605,5.2273098 1.1697012,6.673169 1.5951573,8.341468 1.3824846,10.120987 0.42545763,9.6761072 0.10633786,8.8975677 1.5279142E-06,8.1190281&#xd;&#xa;1.5279142E-06,7.2292687 1.5279142E-06,3.225351 3.0839768,-2.7153304E-05 6.9120848,-2.7153304E-05 z"/>
+					</DrawingGroup>
+				</DrawingGroup>
+			</DrawingBrush.Drawing>
+		</DrawingBrush>
+		<DrawingBrush x:Key="RedMan" Viewbox="0,0,26.389,24.469" ViewboxUnits="Absolute">
+			<DrawingBrush.Drawing>
+				<DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,0,10.955"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M26.389001,13.513989 C25.984361,13.513989 1.0109683,13.300979 7.7138733E-07,13.194473 1.6178226,-5.4439501 26.389001,-3.4203498 26.389001,13.513989 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FFFF0600" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,7.392,10.98"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M1.8343615E-06,1.1340381 C3.6878529,-0.35978266 7.9181481,-0.35978266 11.605999,1.0273367 L11.063555,2.201053 5.7489369,13.298008 0.54244586,2.201053 1.8343615E-06,1.1340381 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FFF82E2E" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,11.425,10.98"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M-3.2888659E-06,1.1340381 C1.0775319,-0.35978266 2.4629801,-0.35978266 3.5409964,1.0273367 L3.3870399,2.201053 1.8474748,13.298008 0.15395322,2.201053 -3.2888659E-06,1.1340381 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FFE30000" Offset="0"/>
+									<GradientStop Color="#FFFCFCFC" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<RadialGradientBrush>
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#00FFFFFF" Offset="1"/>
+								<GradientStop Color="#DE202020" Offset="0.766"/>
+							</RadialGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,6.336,0"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Geometry="M6.9123368,13.813996 C10.633912,13.813996 13.717999,10.626145 13.717999,6.9069849 13.717999,3.0815635 10.633912,-2.5942799E-05 6.9123368,-2.5942799E-05 3.0840892,-2.5942799E-05 1.5279699E-06,3.0815635 1.5279699E-06,6.9069849 1.5279699E-06,10.626145 3.0840892,13.813996 6.9123368,13.813996 z">
+							<GeometryDrawing.Brush>
+								<RadialGradientBrush>
+									<GradientStop Color="#FFFF0000" Offset="0"/>
+									<GradientStop Color="#FFFFFFFF" Offset="1"/>
+								</RadialGradientBrush>
+							</GeometryDrawing.Brush>
+						</GeometryDrawing>
+					</DrawingGroup>
+					<DrawingGroup>
+						<DrawingGroup.OpacityMask>
+							<LinearGradientBrush EndPoint="0.477,0.91" StartPoint="0.524,-0.096">
+								<GradientStop Color="#FF000000" Offset="0"/>
+								<GradientStop Color="#26FFFFFF" Offset="1"/>
+							</LinearGradientBrush>
+						</DrawingGroup.OpacityMask>
+						<DrawingGroup.Transform>
+							<MatrixTransform Matrix="1,0,0,1,6.336,0"/>
+						</DrawingGroup.Transform>
+						<GeometryDrawing Brush="#FFB90000" Geometry="M6.9123368,-2.7152134E-05 C10.633912,-2.7152134E-05 13.717999,3.225212 13.717999,7.2289571 13.717999,7.8962479 13.611659,8.5635388 13.505319,9.2308296 12.654597,9.2308296 12.122786,7.5626025 12.441917,6.1168057 11.804097,5.1158694 10.102432,4.3373634 9.1454812,4.782224 7.443927,3.7812877 5.8487131,3.8925028 4.4665119,5.2270845 3.5092285,4.6710088 2.1271381,5.2270845 1.1697438,6.6728814 1.5952155,8.3411085 1.382535,10.120551 0.42547314,9.6756902 0.10634174,8.8971842 1.5279699E-06,8.1186782&#xd;&#xa;1.5279699E-06,7.2289571 1.5279699E-06,3.225212 3.0840892,-2.7152134E-05 6.9123368,-2.7152134E-05 z"/>
+					</DrawingGroup>
+				</DrawingGroup>
+			</DrawingBrush.Drawing>
+		</DrawingBrush>
+		
+		<!--Green man & Red Man-->	
+		 <LinearGradientBrush x:Key="GridNormalBorderBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#CCC" Offset="0.0"/>
+			<GradientStop Color="#444" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<!-- GridNormalBrush is used as the Background for SimpleButton, SimpleRepeatButton -->
+		<LinearGradientBrush x:Key="GridNormalBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFDDDDDD" Offset="0.0"/>
+			<GradientStop Color="#FF999999" Offset="0.1"/>
+			<GradientStop Color="#FF565656" Offset="0.3"/>
+			<GradientStop Color="#FF121212" Offset="1.0"/>
+		</LinearGradientBrush>
+		
+		<LinearGradientBrush x:Key="GridGridNormalBrush1" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFDDDDDD" Offset="0.0"/>
+			<GradientStop Color="#FF999999" Offset="1.0"/>
+		</LinearGradientBrush>
+		
+		<!-- GridPressedBrush is used for Pressed in Button, Radio Button, CheckBox -->
+		<LinearGradientBrush x:Key="GridPressedBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#BBB" Offset="0.0"/>
+			<GradientStop Color="#FFC4C2C2" Offset="0.1"/>
+			<GradientStop Color="#FFAFAAAA" Offset="0.9"/>
+			<GradientStop Color="#FFB2AFAF" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<!-- GridLightBrush is used for content areas such as Menu, Tab Control background -->
+		<LinearGradientBrush x:Key="GridLightBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFFFFFFF" Offset="0.0"/>
+			<GradientStop Color="#FFEDEDED" Offset="1.0"/>
+		</LinearGradientBrush>
+		
+		<LinearGradientBrush x:Key="GridLightDarkBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFEFEFEF" Offset="0.0"/>
+			<GradientStop Color="#FFC1C1C1" Offset="1.0"/>
+		</LinearGradientBrush>
+		
+		<!-- GridMouseOverBrush is used for MouseOver in Button, Radio Button, CheckBox -->
+		<LinearGradientBrush x:Key="GridMouseOverBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#FFF7F3F3" Offset="0.0"/>
+			<GradientStop Color="#FF3D3B3B" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<LinearGradientBrush x:Key="GridPressedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#444" Offset="0.0"/>
+			<GradientStop Color="#FF545454" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<!-- Disabled Brushes are used for the Disabled look of each control -->
+		<SolidColorBrush x:Key="DisabledForegroundBrush" Color="#FF585757"/>
+
+		<!-- SelectedBackgroundBrush is used for the Selected item in ListBoxItem, ComboBoxItem-->
+		<SolidColorBrush x:Key="SelectedBackgroundBrush" Color="#FF8F8989"/>
+
+		<SolidColorBrush x:Key="DisabledBorderBrush" Color="#FF9B9696"/>
+
+		<SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#FFB8B8B8"/>
+
+		<!-- Used for background of ScrollViewer, TreeView, ListBox, Expander, TextBox, Tab Control -->
+		<SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FF9B9696"/>
+
+		<!-- GridDefaultedBorderBrush is used to show KeyBoardFocus -->
+		<LinearGradientBrush x:Key="GridDefaultedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+			<GradientStop Color="#777" Offset="0.0"/>
+			<GradientStop Color="#000" Offset="1.0"/>
+		</LinearGradientBrush>
+
+		<SolidColorBrush x:Key="SolidBorderBrush" Color="#FF313030"/>
+		<SolidColorBrush x:Key="LightColorBrush" Color="#FFB1B1B1"/>
+
+		<SolidColorBrush x:Key="LightBorderBrush" Color="#FFAFADAD"/>
+
+		<!-- Used for Checkmark, Radio button, TreeViewItem, Expander ToggleButton glyphs -->
+		<SolidColorBrush x:Key="GlyphBrush" Color="#FF919090"/>
+
+
+		<!-- Style and Template pairs are used to define each control Part -->
+		<!-- The Style provides default values on the control; the Template gives the elements for each control -->
+
+		<!-- SimpleButtonFocusVisual is used to show keyboard focus around a SimpleButton control -->
+		
+
+		<Style x:Key="SimpleButtonFocusVisual">
+			<Setter Property="Control.Template">
+				<Setter.Value>
+					<ControlTemplate>
+						<Border>
+							<Rectangle Margin="2" Stroke="#60000000" StrokeThickness="1" StrokeDashArray="1 2"/>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- Simple Button - This control sets brushes on each state. Note that these brushes must be listed above since they are static resources -->
+		<Style x:Key="SimpleButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
+			<Setter Property="FocusVisualStyle" Value="{DynamicResource SimpleButtonFocusVisual}"/>
+			<Setter Property="Background" Value="{DynamicResource GridNormalBrush}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource GridNormalBorderBrush}"/>
+			<Setter Property="Foreground" Value="{DynamicResource GridLightBrush}"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+
+						<!-- We use Grid as a root because it is easy to add more elements to customize the button -->
+						<Grid x:Name="Grid">
+							<Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}"/>
+
+							<!-- Content Presenter is where the text content etc is placed by the control -->
+							<!-- The bindings are useful so that the control can be parameterized without editing the template -->
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+						</Grid>
+
+						<!--Each state sets a brush on the Border in the template -->
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsKeyboardFocused" Value="true">
+								<Setter Property="BorderBrush" Value="{DynamicResource GridDefaultedBorderBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsMouseOver" Value="true">
+								<Setter Property="Background" Value="{DynamicResource GridMouseOverBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="true">
+								<Setter Property="Background" Value="{DynamicResource GridPressedBrush}" TargetName="Border"/>
+								<Setter Property="BorderBrush" Value="{DynamicResource GridPressedBorderBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsEnabled" Value="true"/>
+							<Trigger Property="IsEnabled" Value="false">
+								<Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+								<Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+								<Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<!-- Simple Repeat Button - This is used by Simple 
+		for the up and down buttons -->
+		<Style x:Key="SimpleRepeatButton" d:IsControlPart="True" TargetType="{x:Type RepeatButton}" BasedOn="{x:Null}">
+			<Setter Property="Background" Value="{DynamicResource GridNormalBrush1}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource GridLightBrush}"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type RepeatButton}">
+						<Grid>
+							<Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,1,1,1"/> <!--{TemplateBinding BorderThickness}-->
+							<ContentPresenter HorizontalAlignment="Center" x:Name="ContentPresenter" VerticalAlignment="Center" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsKeyboardFocused" Value="true">
+								<Setter Property="BorderBrush" Value="{DynamicResource GridDefaultedBorderBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsMouseOver" Value="true">
+								<Setter Property="Background" Value="{DynamicResource GridMouseOverBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="true">
+								<Setter Property="Background" Value="{DynamicResource GridPressedBrush}" TargetName="Border"/>
+								<Setter Property="BorderBrush" Value="{DynamicResource GridPressedBorderBrush}" TargetName="Border"/>
+							</Trigger>
+							<Trigger Property="IsEnabled" Value="false">
+								<Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+								<Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+								<Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- Simple Thumb - The Thumb is the draggable part of the Scrollbar -->
+		<Style x:Key="SimpleThumbStyle" d:IsControlPart="True" TargetType="{x:Type Thumb}" BasedOn="{x:Null}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Thumb}">
+						<Grid Margin="0,0,0,0" x:Name="Grid">
+							<Rectangle HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="1" RadiusY="1" Fill="{DynamicResource GridNormalBrush1}" Stroke="{DynamicResource GridLightBrush}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+							<Trigger Property="IsDragging" Value="True"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- Simple ScrollRepeatButton Style - This RepeatButton is used above and below the Thumb in the Scrollbar. They are set to transparent si that they do not show over the scrollbar -->
+		<Style x:Key="SimpleScrollRepeatButtonStyle" d:IsControlPart="True" TargetType="{x:Type RepeatButton}">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="BorderBrush" Value="Transparent"/>
+			<Setter Property="IsTabStop" Value="false"/>
+			<Setter Property="Focusable" Value="false"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type RepeatButton}">
+						<Grid>
+							<Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- Simple ScrollBar  This makes use of SimpleThumb, SimpleRepeatButton and SimpleScrollRepeatButton -->
+
+		<Style x:Key="SimpleScrollBar" TargetType="{x:Type ScrollBar}">
+			<Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
+			<Setter Property="Foreground" Value="{DynamicResource GridNormalBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource GridLightBrush}"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ScrollBar}">
+						<Grid x:Name="GridRoot" Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Background="{TemplateBinding Background}">
+							<Grid.RowDefinitions>
+								<RowDefinition MaxHeight="18"/>
+								<RowDefinition Height="0.00001*"/>
+								<RowDefinition MaxHeight="18"/>
+							</Grid.RowDefinitions>
+
+							<RepeatButton x:Name="DecreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineUpCommand">
+								<Grid>
+									<Path x:Name="DecreaseArrow" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Foreground}" StrokeThickness=".5" Data="M 0 4 L 8 4 L 4 0 Z"/>
+								</Grid>
+							</RepeatButton>
+
+							<!-- Track is a special layout container which sizes the thumb and the repeat button which do jump scrolling either side of it -->
+							<Track Grid.Row="1" x:Name="PART_Track" Orientation="Vertical" IsDirectionReversed="true">
+								<Track.Thumb>
+									<Thumb Style="{DynamicResource SimpleThumbStyle}"/>
+								</Track.Thumb>
+								<Track.IncreaseRepeatButton>
+									<RepeatButton x:Name="PageUp" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageDownCommand"/>
+								</Track.IncreaseRepeatButton>
+								<Track.DecreaseRepeatButton>
+									<RepeatButton x:Name="PageDown" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageUpCommand"/>
+								</Track.DecreaseRepeatButton>
+							</Track>
+
+							<RepeatButton Grid.Row="2" x:Name="IncreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineDownCommand">
+								<Grid>
+									<Path x:Name="IncreaseArrow" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Foreground}" StrokeThickness=".5" Data="M 0 0 L 4 4 L 8 0 Z"/>
+								</Grid>
+							</RepeatButton>
+						</Grid>
+
+						<!-- This uses a single template for ScrollBar and rotate it to be Horizontal
+					It also changes the commands so that the it does Left and Right instead of Up and Down Commands -->
+						<ControlTemplate.Triggers>
+							<Trigger Property="Orientation" Value="Horizontal">
+
+								<!-- Rotate the ScrollBar from Vertical to Horizontal -->
+								<Setter Property="LayoutTransform" TargetName="GridRoot">
+									<Setter.Value>
+										<RotateTransform Angle="-90"/>
+									</Setter.Value>
+								</Setter>
+
+								<!-- Track is bound to Orientation internally, so we need to rotate it back to Vertical -->
+								<Setter TargetName="PART_Track" Property="Orientation" Value="Vertical"/>
+
+								<!-- Change the commands to do Horizontal commands -->
+								<Setter Property="Command" Value="ScrollBar.LineLeftCommand" TargetName="DecreaseRepeat"/>
+								<Setter Property="Command" Value="ScrollBar.LineRightCommand" TargetName="IncreaseRepeat"/>
+								<Setter Property="Command" Value="ScrollBar.PageLeftCommand" TargetName="PageDown"/>
+								<Setter Property="Command" Value="ScrollBar.PageRightCommand" TargetName="PageUp"/>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- Simple ScrollViewer 
+	ScrollViewer is a Grid control which has a ContentPresenter and a Horizontal and Vertical ScrollBar 
+	It is used by ListBox, MenuItem, ComboBox, and TreeView -->
+		<Style x:Key="SimpleScrollViewer" TargetType="{x:Type ScrollViewer}" BasedOn="{x:Null}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ScrollViewer}">
+						<Grid Background="{TemplateBinding Background}">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="Auto"/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="*"/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<ScrollContentPresenter Grid.Column="0" Grid.Row="0" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}"/>
+
+							<!-- The visibility of the ScrollBars is controlled by the implementation fo the control -->
+							<ScrollBar Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Grid.Column="0" Grid.Row="1" x:Name="PART_HorizontalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Horizontal" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar"/>
+							<ScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Grid.Column="1" Grid.Row="0" x:Name="PART_VerticalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Vertical" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources> 
+	
+	<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <Grid Name="grdControl" >
+    </Grid>
+    </ScrollViewer>
+</UserControl>

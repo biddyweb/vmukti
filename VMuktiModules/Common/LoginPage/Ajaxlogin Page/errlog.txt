@@ -1,0 +1,1204 @@
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 16:19:24
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 16:19:25
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 16:19:25
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 16:19:25
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 18:45:14
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 18:45:14
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 05.06.2008 19:24:10
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:39:27
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:39:27
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:39:37
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:39:37
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:21
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:21
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:22
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:22
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:29
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:40:29
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:42:31
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:42:31
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:42:32
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in D:\Vmukti\SRC\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 06.06.2008 13:42:32
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:47
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:48
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:49
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:49
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:50
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:50
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:50
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:52
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:53
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:53
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:53
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:53
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process.
+StackTrace is as follow: 
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at VMuktiAPI.ClsException.WriteToErrorLogFile(Exception ex) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Exception\ClsException.cs:line 147
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToErrorLogFile()--:--ClsException.cs--:--The process cannot access the file 'C:\Users\Administrator\Desktop\asp\Web\errlog.txt' because it is being used by another process. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:54
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================
+Title: Error
+Error Message: The configuration section for Logging cannot be found in the configuration source.
+StackTrace is as follow: 
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.ValidateLoggingSettings(LoggingSettings loggingSettings)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterStructureHolderCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterCustomFactory.CreateObject(IBuilderContext context, String name, IConfigurationSource configurationSource, ConfigurationReflectionCache reflectionCache)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfiguredObjectStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.SingletonStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.ObjectBuilder.BuilderStrategy.BuildUp(IBuilderContext context, Type typeToBuild, Object existing, String idToBuild)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.ConfigurationNameMappingStrategy.BuildUp(IBuilderContext context, Type t, Object existing, String id)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.DoBuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp(IReadWriteLocator locator, Type typeToBuild, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.ObjectBuilder.BuilderBase`1.BuildUp[TTypeToBuild](IReadWriteLocator locator, String idToBuild, Object existing, PolicyList[] transientPolicies)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IReadWriteLocator locator, IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ObjectBuilder.EnterpriseLibraryFactory.BuildUp[T](IConfigurationSource configurationSource)
+   at Microsoft.Practices.EnterpriseLibrary.Logging.LogWriterFactory.Create()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.get_Writer()
+   at Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write(LogEntry log)
+   at VMuktiAPI.ClsLogging.WriteToTresslog(StringBuilder LogMessage) in C:\Users\Administrator\Desktop\asp\VMuktiModules\Utils\VMuktiAPI\Logging\ClsLogging.cs:line 24
+Date - Time: 13-06-2008 10:15:55
+Location: WriteToTresslog()--:--ClsLogging.cs--:--The configuration section for Logging cannot be found in the configuration source. :--:--
+===========================================================================================

@@ -1,0 +1,53 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:UserGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+	x:Class="User.Presentation.CtlUserInfo"
+	Height="Auto" Width="Auto" MinHeight="602" MinWidth="509"
+    Name="ucUserInfo">
+
+	
+		<Canvas Name="cnvMain"  Height="{Binding Height, ElementName=ucUserInfo}" Width="{Binding Width, ElementName=ucUserInfo}">
+	
+	<Canvas Name="cnvView" Height="219" Width="490">
+      <UserGrid:ctlGrid Name="CtlGrid" Height="200" Width="480" btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked" CanDelete="True" CanEdit="True"></UserGrid:ctlGrid>
+    </Canvas>
+		<TabControl  IsSynchronizedWithCurrentItem="True" x:Name="tbcUserAdditon" Width="500" Height="340" Canvas.Left="0" Canvas.Top="228" SelectedIndex="0">
+			<TabItem   Header="Personal Info." x:Name="tbiPersonalInfo" GotFocus="tbiPersonalInfo_GotFocus" LostFocus="tbiPersonalInfo_LostFocus" IsSelected="True">
+				<Canvas>
+					<Label Width="99" Height="25" Content="User Name" Canvas.Left="37" Canvas.Top="20" x:Name="lblDisplayName"/>
+					<Label Width="99" Height="25" Content="Role Assigned" Canvas.Left="37" Canvas.Top="55" x:Name="lblRoleAssigned"/>
+					<Label Width="99" Height="25" Content="First Name" Canvas.Left="37" Canvas.Top="90" x:Name="lblFirstName" />
+					<Label Width="99" Height="25" Content="Last Name" Canvas.Left="37" Canvas.Top="125" x:Name="lblLastName" />
+					<Label Width="99" Height="25" Content="E-Mail" Canvas.Left="37" Canvas.Top="162" x:Name="lblEmail"/>
+					<Label Width="99" Height="25" Content="Password" Canvas.Left="37" Canvas.Top="199" x:Name="lblPassword" />
+					<TextBox   Width="322" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="150" Canvas.Top="20" x:Name="txtDisplayName" MaxLength="100" GotFocus="txtDisplayName_GotFocus" KeyDown="txtDisplayName_KeyDown" LostFocus="txtDisplayName_LostFocus" TabIndex="0" />
+					<TextBox  Width="322" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="150" Canvas.Top="90" x:Name="txtFirstName" MaxLength="50" GotFocus="txtFirstName_GotFocus" KeyDown="txtFirstName_KeyDown" LostFocus="txtFirstName_LostFocus" TabIndex="3" />
+					<TextBox  Width="322" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="150" Canvas.Top="125" x:Name="txtLastName" MaxLength="50" GotFocus="txtLastName_GotFocus" KeyDown="txtLastName_KeyDown" LostFocus="txtLastName_LostFocus" TabIndex="4" />
+					<TextBox  Width="322" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="150" Canvas.Top="162" x:Name="txtEmail" MaxLength="256" GotFocus="txtEmail_GotFocus" KeyDown="txtEmail_KeyDown" LostFocus="txtEmail_LostFocus" TabIndex="5" />
+					<PasswordBox  Width="322" Height="25" Canvas.Left="150" Canvas.Top="199" x:Name="txtPassWord" MaxLength="50" GotFocus="txtPassword_GotFocus" KeyDown="txtPassword_KeyDown" LostFocus="txtPassword_LostFocus" Password="" TabIndex="6" />
+					<ComboBox  Width="322" Height="25" IsSynchronizedWithCurrentItem="True" Canvas.Left="150" Canvas.Top="55" x:Name="cmbRoleAssigned" GotFocus="cmbRoleAssigned_GotFocus" LostFocus="cmbRoleAssigned_LostFocus" SelectionChanged="cmbRoleAssigned_SelectionChanged" TabIndex="1" />
+						
+					<Button  RenderTransformOrigin="0.667,0.44" Width="27" Height="25" Content="+" Canvas.Left="445" Canvas.Top="55" x:Name="btnAddRole" Click="btnAddRole_Click" TabIndex="2" Visibility="Hidden" />
+					<Label Width="60" Height="25" Content="Is Active" Canvas.Left="37" Canvas.Top="228" x:Name="lblIsActive"/>
+					<CheckBox Focusable="False" Width="18" Height="18" Canvas.Left="150" Canvas.Top="233" x:Name="chkIsActive" GotFocus="chkIsActive_GotFocus" LostFocus="chkIsActive_LostFocus" Checked="chkIsActive_Checked" TabIndex="7" Content="{x:Null}"></CheckBox>
+        </Canvas>
+			</TabItem>
+			<TabItem   Header="Payroll Info." x:Name="tbiPayrollInfo" GotFocus="tbiPayrollInfo_GotFocus" LostFocus="tbiPayrollInfo_LostFocus" IsSelected="True" TabIndex="8">
+				<Canvas>
+					<Label Width="155" Height="30" Content="Rate Per Hour" Canvas.Left="52" Canvas.Top="23" x:Name="lblRatePerHour"/>
+					<Label Width="155" Height="30" Content="Over Time Rate" Canvas.Left="52" Canvas.Top="56" x:Name="lblOverTimeRate"/>
+					<Label Width="155" Height="30" Content="Double Time Rate" Canvas.Left="52" Canvas.Top="89" x:Name="lblDoubleTimeRate" />
+					<Label Width="155" Height="30" Content="Double Over Time Rate" Canvas.Left="52" Canvas.Top="122" x:Name="lblDoubleOverTimeRate"/>
+					<TextBox  Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="210" Canvas.Top="23" x:Name="txtRatePerHour" GotFocus="txtRatePerHour_GotFocus" KeyDown="txtRatePerHour_KeyDown" KeyUp="txtRatePerHour_KeyUp" LostFocus="txtRatePerHour_LostFocus" TabIndex="9" />
+					<TextBox  Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="210" Canvas.Top="89" x:Name="txtDoubleTimeRate" GotFocus="txtDoubleTimeRate_GotFocus" KeyDown="txtDoubleTimeRate_KeyDown" KeyUp="txtDoubleTimeRate_KeyUp"  LostFocus="txtDoubleTimeRate_LostFocus" TabIndex="11" />
+					<TextBox  Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="210" Canvas.Top="56" x:Name="txtOverTimeRate" GotFocus="txtOverTimeRate_GotFocus" KeyDown="txtOverTimeRate_KeyDown" KeyUp="txtOverTimeRate_KeyUp" LostFocus="txtOverTimeRate_LostFocus" TabIndex="10" />
+					<TextBox  Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="210" Canvas.Top="122" x:Name="txtDoubleOverTimeRate" GotFocus="txtDoubleOverTimeRate_GotFocus" KeyDown="txtDoubleOverTimeRate_KeyDown" KeyUp="txtDoubleOverTimeRate_KeyUp" LostFocus="txtDoubleOverTimeRate_LostFocus" TabIndex="12" />
+					</Canvas>
+			</TabItem>
+		</TabControl>
+		<Button  Width="75" Height="25" Content="Save" Canvas.Left="155" Canvas.Top="530" x:Name="btnSave" Click="btnSave_Click"  TabIndex="13" />
+		<Button  Width="75" Height="25" Content="Cancel" Canvas.Left="255" Canvas.Top="530" x:Name="btnCancel" Click="btnCancel_Click" TabIndex="14" />
+	</Canvas>
+	
+</UserControl>

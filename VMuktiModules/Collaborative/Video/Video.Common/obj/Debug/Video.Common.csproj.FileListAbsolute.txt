@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\bin\Debug\Video.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\bin\Debug\Video.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\bin\Debug\Video.Common.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\bin\Debug\Video.Common.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\obj\Debug\Video.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\Video.Common\obj\Debug\Video.Common.pdb

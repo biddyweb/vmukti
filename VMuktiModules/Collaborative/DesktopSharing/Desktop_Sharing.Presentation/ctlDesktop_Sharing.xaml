@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Desktop_Sharing.Presentation.ctlDesktop_Sharing"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="600" Width="570" Name="ctlDetop_Sharing" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1">
+ 
+    <Grid x:Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Name="row1" Height="30"/>
+            <RowDefinition Name="row2" Height="570"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="col1" Width="570" />
+        </Grid.ColumnDefinitions>
+        
+        <Canvas x:Name="cnvTop" Grid.Row="0" Grid.Column="0" Background="Transparent">
+            
+            <TextBox x:Name="txtInput" Width="1" Height="1" Background="Transparent" Canvas.Top="10" Canvas.Left="10" Visibility="Visible"/>
+            <Label x:Name="lblResolution" Width="227" Canvas.Top="5" Canvas.Left="0" Visibility="Visible" Content="Recommended Resolution : 1024 X 768"  HorizontalAlignment="Left" FontWeight="Bold" FontSize="11" />
+            <Label x:Name="lblUser_Desktop" Canvas.Top="5" Canvas.Left="233" Visibility="Collapsed" />
+            <Button x:Name="btnView" Height="25" Width="60" Content="Stop View" Background="Green" Canvas.Top="3" Canvas.Left="419"/>
+            <Button x:Name="btnControl" Height="25" Width="70" Content="Stop Control" Background="Green" Canvas.Top="3" Canvas.Left="484"/>
+            <Button x:Name="btnClose" Height="25" Width="60" Content="Stop" Canvas.Top="3" Canvas.Left="353" Visibility="Collapsed"/>
+        </Canvas>
+
+        <ScrollViewer Name="desktopViewer" Grid.Row="1" Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Image x:Name="imgUser_Desktop"  Width="1024" Height="768"  Source="Image\no_signal.png" Visibility="Collapsed" />
+        </ScrollViewer>
+        
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Name="myViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+            <WrapPanel x:Name="cnvDesktops" Background="Transparent" Grid.Column="0" Grid.Row="1" Height="Auto" Width="570">
+            </WrapPanel>
+
+        </ScrollViewer>
+    </Grid>
+
+</UserControl>

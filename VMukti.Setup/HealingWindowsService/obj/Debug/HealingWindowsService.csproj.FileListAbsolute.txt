@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\bin\Debug\VMuktiHealingService.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\bin\Debug\VMuktiHealingService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\obj\Debug\HealingWindowsService.ProjectInstaller.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\obj\Debug\HealingWindowsService.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\obj\Debug\VMuktiHealingService.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMukti.Setup\HealingWindowsService\obj\Debug\VMuktiHealingService.pdb

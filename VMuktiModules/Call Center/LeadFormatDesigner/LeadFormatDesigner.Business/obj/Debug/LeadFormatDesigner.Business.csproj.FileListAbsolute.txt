@@ -1,0 +1,16 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.DataAccess.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.DataAccess.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\LeadFormatDesigner.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\obj\Debug\LeadFormatDesigner.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\LeadFormatDesigner\LeadFormatDesigner.Business\obj\Debug\LeadFormatDesigner.Business.pdb

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Modules Name="Chat">
+<DummyClient class="DummyClient" method="WhiteboardClient">
+</DummyClient>
+<P2PDummyClient classname="P2PWhiteBoardDummyClient" methodname="WhiteBoardP2PClient">
+</P2PDummyClient>
+</Modules>

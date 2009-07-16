@@ -1,0 +1,156 @@
+void SetLeadIDCRM_VMuktiEvent(object sender, VMuktiAPI.VMuktiEventArgs e)
+        {
+            clsStartClass.LeadID = int.Parse(e._args[0].ToString());
+            FncRefresh();
+            //FncVisibility(clsStartClass.strStartQuesion);
+        }
+
+void FncRefresh()
+{
+foreach (TabItem t in tbcMain.Items)
+{
+foreach (object o in ((Canvas)t.Content).Children)
+{
+    if (o.GetType() == typeof(TextBox))
+    {
+        string[] str = ((TextBox)o).Tag.ToString().Split('-');
+        if (str[0].ToLower() == "bind")
+        {
+            ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+            if (objlead.Count > 0)
+            {
+                ((TextBox)o).Text = objlead[0].PropertyValue;
+            }
+            else
+            {
+                ((TextBox)o).Text = "";
+            }
+            
+        }
+    }
+
+    else if (o.GetType() == typeof(Button))
+    {
+        string[] str = ((Button)o).Tag.ToString().Split('-');
+        if (str[0].ToLower() == "bind")
+        {
+
+            ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+            if (objlead.Count > 0)
+            {
+                ((Button)o).Content = objlead[0].PropertyValue;
+            }
+            else
+            {
+                ((Button)o).Content = "";
+            }
+            
+        }
+    }
+
+    else if (o.GetType() == typeof(Label))
+    {
+        string[] str = ((Label)o).Tag.ToString().Split('-');
+        if (str[0].ToLower() == "bind")
+        {
+            ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+            if (objlead.Count > 0)
+            {
+                ((Label)o).Content = objlead[0].PropertyValue;
+            }
+            else
+            {
+                ((Label)o).Content = "";
+            }
+        }
+    }
+
+}
+}
+}
+
+
+private void btnSave_Click(object sender, RoutedEventArgs e)
+{
+    foreach (TabItem t in tbcMain.Items)
+    {
+        foreach (object o in ((Canvas)t.Content).Children)
+        {
+            if (o.GetType() == typeof(TextBox))
+            {
+                string[] str = ((TextBox)o).Tag.ToString().Split('-');
+                if (str[0].ToLower() == "bind")
+                {
+                    ClsLead obj = new ClsLead();
+
+                    string oldPropertyValue = obj.PropertyValue;
+                    if (!oldPropertyValue.Equals(((TextBox)o).Text))
+                    {
+                        int result;
+                        if (int.Parse(str[1].ToString()) == 2)   //LeadCustomField - 2 --> State
+                        {
+                            clsStartClass.StateName = ((TextBox)o).Text;
+                        }
+                        else if (int.Parse(str[1].ToString()) == 3) //LeadCustomField - 3 --> Zipcode
+                        {
+                            clsStartClass.ZipCode = ((TextBox)o).Text;
+                        }
+                        else
+                        {
+                            result = CRM.Business.ClsLead.UpdateLeadInfo(clsStartClass.LeadID, int.Parse(str[1].ToString()), ((TextBox)o).Text);
+
+                            if (result == -1)
+                            {
+                                //Invalid Lead ID  
+                                Exception myException = new Exception();
+                                myException.Data.Add("My Key", "Dynamic CRM --:--" + "Invalid Lead ID" + " :--:--");
+                                VMuktiAPI.ClsException.LogError(myException);
+                                VMuktiAPI.ClsException.WriteToErrorLogFile(myException);
+
+                            }
+                            else if (result == -2)
+                            {
+                                //Invalid State
+                                Exception myException = new Exception();
+                                myException.Data.Add("My Key", "Dynamic CRM --:--" + "Invalid State" + " :--:--");
+                                VMuktiAPI.ClsException.LogError(myException);
+                                VMuktiAPI.ClsException.WriteToErrorLogFile(myException);
+
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (int.Parse(str[1].ToString()) == 2)   //LeadCustomField - 2 --> State
+                        {
+                            clsStartClass.StateName = ((TextBox)o).Text;
+                        }
+                        else if (int.Parse(str[1].ToString()) == 3) //LeadCustomField - 3 --> Zipcode
+                        {
+                            clsStartClass.ZipCode = ((TextBox)o).Text;
+                        }
+                    }
+                    
+
+
+                }
+            }
+
+            //else if (o.GetType() == typeof(Label))
+            //{
+            //    string[] str = ((Label)o).Tag.ToString().Split('-');
+            //    if (str[0].ToLower() == "bind")
+            //    {
+            //        ClsLead obj = new ClsLead();
+            //        obj.Save(clsStartClass.LeadID, int.Parse(str[1].ToString()), ((Label)o).Content.ToString());
+            //    }
+            //}
+
+        }
+    }
+}
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            FncRefresh();
+        }

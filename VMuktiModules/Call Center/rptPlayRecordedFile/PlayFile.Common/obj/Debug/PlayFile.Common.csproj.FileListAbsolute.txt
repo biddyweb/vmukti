@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\bin\Debug\PlayFile.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\bin\Debug\PlayFile.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\obj\Debug\PlayFile.Common.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\obj\Debug\PlayFile.Common.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\obj\Debug\PlayFile.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\rptPlayRecordedFile\PlayFile.Common\obj\Debug\PlayFile.Common.pdb

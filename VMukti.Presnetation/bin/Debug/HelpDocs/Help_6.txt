@@ -1,0 +1,14 @@
+WHITEBOARD APPLICATION
+
+White Board widget more or less have the functionalities 
+of paint. User can draw circle, rectangle, line etc. on the
+whiteboard. User also can see pictures on the white board.
+	
+	How to Use:
+	• Drag White-Board widget on the tab. 
+	• Add buddies in this widget to enable 
+	  them to see the activities performed on whiteboard 
+
+There is a single painting pad for User & their buddies 
+i.e. whatever written by user will be visible to 
+     their online buddies and vice-versa

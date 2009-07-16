@@ -1,0 +1,91 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6FF143D-6E71-4AA2-B1B9-C5143B82CCEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PredictiveDialler.Business</RootNamespace>
+    <AssemblyName>PredictiveDialler.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveCallInfo\ActiveCalls.cs" />
+    <Compile Include="ActiveCallInfo\INetP2PBootStrapActiveCallReportService.cs" />
+    <Compile Include="ActiveCallInfo\NetP2PBootStrapActiveCallReportDelegates.cs" />
+    <Compile Include="ClsBaseCollection.cs" />
+    <Compile Include="ClsBaseObject.cs" />
+    <Compile Include="ClsChannel.cs" />
+    <Compile Include="ClsChannelManager.cs" />
+    <Compile Include="ClsDisposition.cs" />
+    <Compile Include="ClsLead.cs" />
+    <Compile Include="ClsLeadCollection.cs" />
+    <Compile Include="DashBoard\INetP2PBootStrapDashBoardServices.cs" />
+    <Compile Include="DashBoard\NetP2PBootStrapDashBoardDelegate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\MessageContract\clsMessageContract.cs" />
+    <Compile Include="Services\RecordingCalls\INetP2PRecordingCallsService.cs" />
+    <Compile Include="Services\RecordingCalls\NetP2PRecordingCallsDelegates.cs" />
+    <Compile Include="svcCallInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utils\VMuktiAPI\VMuktiAPI.csproj">
+      <Project>{DD700743-BEF3-4A12-BE92-21C5C9232B6C}</Project>
+      <Name>VMuktiAPI %28VMuktiModules\Utils\VMuktiAPI\VMuktiAPI%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PredictiveDialler.Common\PredictiveDialler.Common.csproj">
+      <Project>{CE1E153F-A211-4CC9-A442-B5C309167271}</Project>
+      <Name>PredictiveDialler.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PredictiveDialler.DataAccess\PredictiveDialler.DataAccess.csproj">
+      <Project>{0570B927-66E8-4D61-9858-86E9F6C0909E}</Project>
+      <Name>PredictiveDialler.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

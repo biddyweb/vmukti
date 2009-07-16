@@ -1,0 +1,453 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" x:Class="News.Presentation.ctlOurNews" Width="254" Foreground="#FFFFFFFF" Height="406" MinHeight="200" MinWidth="200" Opacity="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="Brush1" EndPoint="0.517,1.109" StartPoint="0.516,-0.118">
+            <GradientStop Color="#FF000000" Offset="0.522"/>
+            <GradientStop Color="#FFB4E3F0" Offset="1"/>
+            <GradientStop Color="#FFBEE9F5" Offset="0.033"/>
+            <GradientStop Color="#FF000000" Offset="0.254"/>
+            <GradientStop Color="#FF000000" Offset="0.761"/>
+        </LinearGradientBrush>
+        <ControlTemplate x:Key="ScrollViewerControlTemplate1" TargetType="{x:Type ScrollViewer}">
+            <Grid x:Name="Grid" Background="{TemplateBinding Background}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Rectangle Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" x:Name="Corner" Grid.Column="1" Grid.Row="1"/>
+                <ScrollContentPresenter Margin="{TemplateBinding Padding}" x:Name="PART_ScrollContentPresenter" Grid.Column="0" Grid.Row="0" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}" CanHorizontallyScroll="False" CanVerticallyScroll="True"/>
+                <ScrollBar Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" x:Name="PART_HorizontalScrollBar1_Copy" Style="{DynamicResource SimpleScrollBar}" Orientation="Horizontal" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar" d:LayoutOverrides="Height" Margin="0,0,16,-16" VerticalAlignment="Bottom" Grid.Row="1"/>
+                <ScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" x:Name="PART_VerticalScrollBar1_Copy" Style="{DynamicResource SimpleScrollBar}" Orientation="Vertical" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar" d:LayoutOverrides="Width" HorizontalAlignment="Right"/>
+            </Grid>
+        </ControlTemplate>
+
+        <!-- NormalBrush is used as the Background for SimpleButton, SimpleRepeatButton -->
+        <LinearGradientBrush x:Key="NormalBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#EEE" Offset="0.0"/>
+            <GradientStop Color="#CCC" Offset="1.0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="NormalBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#CCC" Offset="0.0"/>
+            <GradientStop Color="#444" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <!-- DefaultedBorderBrush is used to show KeyBoardFocus -->
+        <LinearGradientBrush x:Key="DefaultedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#777" Offset="0.0"/>
+            <GradientStop Color="#000" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <!-- MouseOverBrush is used for MouseOver in Button, Radio Button, CheckBox -->
+        <LinearGradientBrush x:Key="MouseOverBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FFF" Offset="0.0"/>
+            <GradientStop Color="#AAA" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <!-- PressedBrush is used for Pressed in Button, Radio Button, CheckBox -->
+        <LinearGradientBrush x:Key="PressedBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#BBB" Offset="0.0"/>
+            <GradientStop Color="#EEE" Offset="0.1"/>
+            <GradientStop Color="#EEE" Offset="0.9"/>
+            <GradientStop Color="#FFF" Offset="1.0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="PressedBorderBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#444" Offset="0.0"/>
+            <GradientStop Color="#888" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="DisabledBackgroundBrush" Color="#EEE"/>
+        <SolidColorBrush x:Key="DisabledBorderBrush" Color="#AAA"/>
+
+        <!-- Disabled Brushes are used for the Disabled look of each control -->
+        <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#888"/>
+
+        <!-- Simple Repeat Button - This is used by Simple ScrollBar for the up and down buttons -->
+        <Style x:Key="SimpleRepeatButton" d:IsControlPart="True" TargetType="{x:Type RepeatButton}" BasedOn="{x:Null}">
+            <Setter Property="Background" Value="{DynamicResource NormalBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid>
+                            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
+                            <ContentPresenter HorizontalAlignment="Center" x:Name="ContentPresenter" VerticalAlignment="Center" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" Value="{DynamicResource DefaultedBorderBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource MouseOverBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource PressedBrush}" TargetName="Border"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource PressedBorderBrush}" TargetName="Border"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Border"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}" TargetName="Border"/>
+                                <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollRepeatButton Style - This RepeatButton is used above and below the Thumb in the Scrollbar. They are set to transparent si that they do not show over the scrollbar -->
+        <Style x:Key="SimpleScrollRepeatButtonStyle" d:IsControlPart="True" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="IsTabStop" Value="false"/>
+            <Setter Property="Focusable" Value="false"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid>
+                            <Rectangle StrokeThickness="{TemplateBinding BorderThickness}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple Thumb - The Thumb is the draggable part of the Scrollbar -->
+        <Style x:Key="SimpleThumbStyle" d:IsControlPart="True" TargetType="{x:Type Thumb}" BasedOn="{x:Null}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Grid Margin="0,0,0,0" x:Name="Grid">
+                            <Rectangle HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="2" RadiusY="2" Fill="{DynamicResource NormalBrush}" Stroke="{DynamicResource NormalBorderBrush}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                            <Trigger Property="IsDragging" Value="True"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollBar  This makes use of SimpleThumb, SimpleRepeatButton and SimpleScrollRepeatButton -->
+
+        <Style x:Key="SimpleScrollBar" TargetType="{x:Type ScrollBar}">
+            <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ScrollBar}">
+                        <Grid x:Name="GridRoot" Width="7.475" Background="#FF000000">
+                            <Grid.RowDefinitions>
+                                <RowDefinition MaxHeight="18" Height="0.144*"/>
+                                <RowDefinition Height="0.712*"/>
+                                <RowDefinition MaxHeight="18" Height="0.144*"/>
+                            </Grid.RowDefinitions>
+
+                            <RepeatButton x:Name="DecreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineUpCommand">
+                                <RepeatButton.Background>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FF444444" Offset="0"/>
+                                        <GradientStop Color="#FFCCCCCC" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </RepeatButton.Background>
+                                <Grid/>
+                            </RepeatButton>
+
+                            <!-- Track is a special layout container which sizes the thumb and the repeat button which do jump scrolling either side of it -->
+                            <Track Grid.Row="1" x:Name="PART_Track" Orientation="Vertical" IsDirectionReversed="true">
+                                <Track.Thumb>
+                                    <Thumb Style="{DynamicResource SimpleThumbStyle}" Cursor="Hand"/>
+                                </Track.Thumb>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton x:Name="PageUp" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageDownCommand" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                                </Track.IncreaseRepeatButton>
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton x:Name="PageDown" Style="{DynamicResource SimpleScrollRepeatButtonStyle}" Command="ScrollBar.PageUpCommand" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                                </Track.DecreaseRepeatButton>
+                            </Track>
+
+                            <RepeatButton Grid.Row="2" x:Name="IncreaseRepeat" Style="{DynamicResource SimpleRepeatButton}" Command="ScrollBar.LineDownCommand">
+                                <RepeatButton.Background>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                        <GradientStop Color="#FFEEEEEE" Offset="0"/>
+                                        <GradientStop Color="#FF444444" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </RepeatButton.Background>
+                                <Grid/>
+                            </RepeatButton>
+                        </Grid>
+
+                        <!-- This uses a single template for ScrollBar and rotate it to be Horizontal
+					It also changes the commands so that the it does Left and Right instead of Up and Down Commands -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Orientation" Value="Horizontal">
+
+                                <!-- Rotate the ScrollBar from Vertical to Horizontal -->
+                                <Setter Property="LayoutTransform" TargetName="GridRoot">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="-90"/>
+                                    </Setter.Value>
+                                </Setter>
+
+                                <!-- Track is bound to Orientation internally, so we need to rotate it back to Vertical -->
+                                <Setter TargetName="PART_Track" Property="Orientation" Value="Vertical"/>
+
+                                <!-- Change the commands to do Horizontal commands -->
+                                <Setter Property="Command" Value="ScrollBar.LineLeftCommand" TargetName="DecreaseRepeat"/>
+                                <Setter Property="Command" Value="ScrollBar.LineRightCommand" TargetName="IncreaseRepeat"/>
+                                <Setter Property="Command" Value="ScrollBar.PageLeftCommand" TargetName="PageDown"/>
+                                <Setter Property="Command" Value="ScrollBar.PageRightCommand" TargetName="PageUp"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Simple ScrollViewer 
+	ScrollViewer is a Grid control which has a ContentPresenter and a Horizontal and Vertical ScrollBar 
+	It is used by ListBox, MenuItem, ComboBox, and TreeView -->
+        <Style x:Key="SimpleScrollViewer" TargetType="{x:Type ScrollViewer}" BasedOn="{x:Null}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <ScrollContentPresenter Grid.Column="0" Grid.Row="0" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" CanContentScroll="{TemplateBinding CanContentScroll}"/>
+
+                            <!-- The visibility of the ScrollBars is controlled by the implementation fo the control -->
+                            <ScrollBar Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Grid.Column="0" Grid.Row="1" x:Name="PART_HorizontalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Horizontal" Value="{Binding Path=HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Minimum="0" Maximum="{TemplateBinding ScrollableWidth}" AutomationProperties.AutomationId="HorizontalScrollBar"/>
+                            <ScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Grid.Column="1" Grid.Row="0" x:Name="PART_VerticalScrollBar" Style="{DynamicResource SimpleScrollBar}" Orientation="Vertical" Value="{Binding Path=VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Minimum="0" Maximum="{TemplateBinding ScrollableHeight}" AutomationProperties.AutomationId="VerticalScrollBar"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TextBoxStyle1" TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="{x:Static Microsoft_Windows_Themes:ClassicBorderDecorator.ClassicBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Microsoft_Windows_Themes:ClassicBorderDecorator x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderStyle="Sunken" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Microsoft_Windows_Themes:ClassicBorderDecorator>
+                        <ControlTemplate.Triggers>
+                            <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <LinearGradientBrush x:Key="Brush2" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FF777777" Offset="0"/>
+            <GradientStop Color="#FF000000" Offset="1"/>
+        </LinearGradientBrush>
+
+        <!-- Simple ComboBox Toggle Button - This is used in ComboBox to expand and collapse the ComboBox Popup-->
+        <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Stretch" x:Name="Rectangle" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Stroke="{x:Null}" Opacity="1" TextElement.Foreground="#FFFFFFFF">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="-0.004,0.754" StartPoint="-0.004,-0.246">
+                            <GradientStop Color="#FF777777" Offset="0.359"/>
+                            <GradientStop Color="#FF000000" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Label Height="Auto" x:Name="lblNewsProvider" Width="88" Foreground="White" FontSize="12" Content="IBN-Live.com" HorizontalAlignment="Right" Margin="0,2,0,0.208"/>
+                <Rectangle Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" RadiusX="5" RadiusY="5" Fill="{x:Null}" Stroke="{x:Null}"/>
+                <Path Grid.Column="1" HorizontalAlignment="Center" x:Name="Arrow" VerticalAlignment="Center" Fill="{DynamicResource DisabledBackgroundBrush}" Data="M 0 0 L 4 4 L 8 0 Z"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource MouseOverBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Fill" Value="{DynamicResource PressedBrush}" TargetName="Rectangle"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Fill" Value="{DynamicResource DisabledBackgroundBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Stroke" Value="{DynamicResource DisabledBorderBrush}" TargetName="Rectangle"/>
+                    <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                    <Setter Property="Fill" Value="{DynamicResource DisabledForegroundBrush}" TargetName="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <!-- This is the area which contains the selected item in the ComboBox -->
+
+        <ControlTemplate x:Key="ComboBoxTextBox" TargetType="{x:Type TextBox}">
+            <!-- This must be named as PART_ContentHost -->
+            <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}"/>
+        </ControlTemplate>
+
+        <!-- Used for background of ScrollViewer, TreeView, ListBox, Expander, TextBox, Tab Control -->
+        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#FFF"/>
+
+        <SolidColorBrush x:Key="SolidBorderBrush" Color="#888"/>
+
+        <!-- Simple ComboBox 
+	This uses the ComboBoxToggleButton to expand and collapse a Popup control
+	SimpleScrollViewer to allow items to be scrolled and SimpleComboBoxItem to define the look of each item 
+	The Popup shows a list of items in a StackPanel-->
+
+        <Style x:Key="SimpleComboBox" TargetType="{x:Type ComboBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            <!-- The ToggleButton is databound to the ComboBox itself to toggle IsDropDownOpen -->
+                            <ToggleButton Grid.Column="2" Template="{DynamicResource ComboBoxToggleButton}" x:Name="ToggleButton" Focusable="false" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press" Content="{x:Null}"/>
+                            <ContentPresenter HorizontalAlignment="Left" Margin="3,3,23,3" x:Name="ContentSite" VerticalAlignment="Center" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" IsHitTestVisible="False"/>
+
+                            <!-- The TextBox must be named PART_EditableTextBox or ComboBox will not recognize it -->
+                            <TextBox Visibility="Hidden" Template="{DynamicResource ComboBoxTextBox}" HorizontalAlignment="Left" Margin="3,3,23,3" x:Name="PART_EditableTextBox" Style="{x:Null}" VerticalAlignment="Center" Focusable="True" Background="Transparent" IsReadOnly="{TemplateBinding IsReadOnly}" ToolTip="Select Catagory" Foreground="#FFF48F16" Text="Select Catagory"/>
+
+                            <!-- The Popup shows the list of items in the ComboBox. IsOpen is databound to IsDropDownOpen which is toggled via the ComboBoxToggleButton -->
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
+                                <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+                                    <Border x:Name="DropDownBorder" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{DynamicResource SolidBorderBrush}" BorderThickness="1"/>
+                                    <ScrollViewer Margin="4,6,4,6" Style="{DynamicResource SimpleScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+
+                                        <!-- The StackPanel is used to display the children by setting IsItemsHost to be True -->
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained"/>
+
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="MaxDropDownHeight" Value="256"/>
+                            <!-- This forces the DropDown to have a minimum size if it is empty -->
+                            <Trigger Property="HasItems" Value="false">
+                                <Setter Property="MinHeight" Value="95" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource DisabledForegroundBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsGrouping" Value="true">
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
+                            </Trigger>
+                            <Trigger Property="AllowsTransparency" SourceName="Popup" Value="true">
+                                <Setter Property="CornerRadius" Value="4" TargetName="DropDownBorder"/>
+                                <Setter Property="Margin" Value="0,2,0,0" TargetName="DropDownBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsEditable" Value="true">
+                                <Setter Property="IsTabStop" Value="false"/>
+                                <Setter Property="Visibility" Value="Visible" TargetName="PART_EditableTextBox"/>
+                                <Setter Property="Visibility" Value="Hidden" TargetName="ContentSite"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+            <StackPanel IsItemsHost="True"/>
+        </ItemsPanelTemplate>
+
+        <LinearGradientBrush x:Key="Brush3" EndPoint="0.517,1.109" StartPoint="0.516,-0.118">
+            <GradientStop Color="#FFBEE9F5" Offset="0.033"/>
+            <GradientStop Color="#FF000000" Offset="0.301"/>
+        </LinearGradientBrush>
+
+    </UserControl.Resources>
+
+
+    <Canvas Height="406" Width="252" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top" >
+        <ScrollViewer x:Name="scrollPanel" Style="{DynamicResource SimpleScrollViewer}" VerticalScrollBarVisibility="Auto" Width="252" Height="280.042" Canvas.Top="28.208" HorizontalAlignment="Stretch" Canvas.Left="0" Background="#FF000000">
+            <StackPanel x:Name="wrapPanel" Width="220" Height="Auto" HorizontalAlignment="Left" Background="#FF000000" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        </ScrollViewer>
+        <ComboBox Style="{DynamicResource SimpleComboBox}"  SelectedIndex="0" IsSynchronizedWithCurrentItem="True" Width="252" x:Name="cbxFeeds"  Height="28.208" OpacityMask="{x:Null}" FontSize="13" FontWeight="Normal" Foreground="#FFFF7900" HorizontalContentAlignment="Left" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" Text="Select Catagory" HorizontalAlignment="Stretch" Canvas.Left="0" Canvas.Top="0" Focusable="False">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#FF000000" Offset="0"/>
+                    <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem  Content=" Select category" Tag="http://www.ibnlive.com/xml/rss/world.xml"/>
+            <ComboBoxItem Content=" Top Stories" Tag="http://www.ibnlive.com/xml/top.xml"/>
+            <ComboBoxItem Content=" World" Tag="http://www.ibnlive.com/xml/rss/world.xml"/>
+            <ComboBoxItem Content=" India" Tag="http://www.ibnlive.com/xml/rss/india.xml"/>
+            <ComboBoxItem Content=" U.S" Tag="http://rss.cnn.com/rss/edition_us.rss"/>
+            <ComboBoxItem Content=" Europe" Tag="http://rss.cnn.com/rss/edition_europe.rss"/>
+            <ComboBoxItem Content=" Business" Tag=" http://rss.cnn.com/rss/edition_business.rss"/>
+            <ComboBoxItem Content=" Markets" Tag="http://www.ibnlive.com/xml/rss/markets.xml"/>
+            <ComboBoxItem Content=" Life Style" Tag="http://www.ibnlive.com/xml/rss/lifestyle.xml"/>
+            <ComboBoxItem Content=" Entertainment" Tag="http://www.ibnlive.com/xml/rss/entertainment.xml"/>
+            <ComboBoxItem Content=" Sci-Space" Tag="http://www.ibnlive.com/xml/rss/sci-tech.xml"/>
+            <ComboBoxItem Content=" Tech" Tag="http://www.ibnlive.com/xml/rss/tech.xml"/>
+            <ComboBoxItem Content=" Health" Tag="http://www.ibnlive.com/xml/rss/health.xml"/>
+            <ComboBoxItem Content=" Sports" Tag="http://www.ibnlive.com/xml/rss/sports.xml"/>
+            <ComboBoxItem Content=" World sport" Tag="http://rss.cnn.com/rss/edition_sport.rss"/>
+
+        </ComboBox>
+
+        <Label x:Name="lblNetStatus" Width="186" Height="40" Canvas.Left="16" Canvas.Top="107" FontSize="20" FontStretch="Expanded" Foreground="#FFFB0C0C" Content="Net Is Not Available "/>
+        <Border HorizontalAlignment="Left" Width="251" Height="93" Background="#7FFFFFFF" BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,1" CornerRadius="0,0,4,4" Canvas.Top="309.25" x:Name="border1" Canvas.Left="1">
+
+            <Border.BitmapEffect>
+                <DropShadowBitmapEffect/>
+            </Border.BitmapEffect>
+
+            <WrapPanel  Width="250" Height="91" x:Name="popupPanle" Background="{DynamicResource Brush3}" VerticalAlignment="Top">
+                <Grid Width="250" Height="112" Canvas.Top="236" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.45*"/>
+                        <ColumnDefinition Width="0.80*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="4,7,0,29" HorizontalAlignment="Left" Width="89.84" Grid.ColumnSpan="2">
+                        <Image x:Name="imgNews" OpacityMask="#FF000000" Width="88.84" Height="73" />
+                    </Border>
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Style="{DynamicResource SimpleScrollViewer}" Grid.Column="1" Margin="10.84,9,0.16,29" Width="149" Height="74" >
+                        <TextBlock x:Name="txtPopup" Width="124" Height="Auto" FontSize="12"  TextWrapping="WrapWithOverflow" Background="#00FFFFFF" FontStyle="Normal" FontWeight="Thin" FontFamily="Tahoma" HorizontalAlignment="Left" TextAlignment="Justify"  />
+    				</ScrollViewer>
+
+                    <Label Margin="35,16,0,0" x:Name="lblImageNot" Height="28" VerticalAlignment="Top" Visibility="Visible" Foreground="Red" FontSize="13" Content="Not" HorizontalAlignment="Left" Width="58.84" Grid.ColumnSpan="2"/>
+                    <Label Margin="22,38,0,46" x:Name="lblImageAv" Foreground="Red" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="75.84" FontSize="13" Content="Available"/>
+                </Grid>
+            </WrapPanel>
+
+        </Border>
+    </Canvas>
+
+
+
+</UserControl>

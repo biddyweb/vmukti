@@ -1,0 +1,200 @@
+
+foreach (object o in cnvPaint.Children)
+        {
+            if (o.GetType() == typeof(TextBox))
+            {
+                string[] str = ((TextBox)o).Tag.ToString().Split('-');
+                if (str[0].ToLower() == "bind")
+                {
+			ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+
+                    ((TextBox)o).Text = objlead[0].PropertyValue;
+                }
+            }
+
+            else if (o.GetType() == typeof(Button))
+            {
+                string[] str = ((Button)o).Tag.ToString().Split('-');
+                if (str[0].ToLower() == "bind")
+                {
+
+ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+
+                    ((Button)o).Content = objlead[0].PropertyValue;
+                }
+            }
+
+            else if (o.GetType() == typeof(Label))
+            {
+                string[] str = ((Label)o).Tag.ToString().Split('-');
+                if (str[0].ToLower() == "bind")
+                {
+			ClsLeadCollection objlead = CRM.Business.ClsLeadCollection.GetAll(clsStartClass.LeadID, int.Parse(str[1].ToString()));
+
+                    ((Label)o).Content = objlead[0].PropertyValue;
+                }
+            }
+
+        }
+
+
+            if (((Button)sender).Tag.ToString().ToLower() == "radiobutton")
+            {
+                foreach (object r in cnvPaint.Children)
+                {
+                    if (r.GetType() == typeof(RadioButton))
+                    {
+                        if (((RadioButton)r).IsChecked == true)
+                        {
+                            string[] str = ((RadioButton)r).Tag.ToString().Split(',');
+                            int CurrentQueCount = int.Parse(str[0]);
+                            int optID=int.Parse(str[1]);
+                            //MessageBox.Show("Option ID = " + optID.ToString());
+
+                            ClsAnswerR objAns = new ClsAnswerR();
+                            objAns.CallID = clsStartClass.CallID;
+                            objAns.QusOptionID = int.Parse(optID.ToString());
+                            objAns.Save();
+
+                            for (int k = 0; k < objQueCollection.Count; k++)
+                            {
+                                if (objQueCollection[k].ID == CurrentQueCount)
+                                {
+					System.Reflection.Assembly asm = System.Reflection.Assembly.Load("CRM.Presentation");
+                                    Type t = asm.GetType("CRM.Presentation.UserControl" + objQueCollection[k].ID.ToString()); 
+                                    object obj = Activator.CreateInstance(t);
+                                    ((UserControl)obj).Height = 768;
+                                    ((UserControl)obj).Width = 1024;
+                                    ((UserControl)obj).SetValue(Canvas.LeftProperty, 0.0);
+                                    ((UserControl)obj).SetValue(Canvas.TopProperty, 0.0);
+                                    ((Canvas)this.Parent).Children.Add((UIElement)obj);
+                                    break;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            
+	else if (((Button)sender).Tag.ToString().ToLower() == "checkbox")
+            {
+                foreach (object r in cnvPaint.Children)
+                {
+                    if (r.GetType() == typeof(CheckBox))
+                    {
+                        if (((CheckBox)r).IsChecked == true)
+                        {
+                            string[] str = ((CheckBox)r).Tag.ToString().Split(',');
+                            int CurrentQueCount = int.Parse(str[0]);
+                            int optID = int.Parse(str[1]);
+                            //MessageBox.Show("Option ID = " + optID.ToString());
+
+                            ClsAnswerR objAns = new ClsAnswerR();
+                            objAns.CallID = clsStartClass.CallID;
+                            objAns.QusOptionID = int.Parse(optID.ToString());
+                            objAns.Save();
+
+                            for (int k = 0; k < objQueCollection.Count; k++)
+                            {
+                                if (objQueCollection[k].ID == CurrentQueCount)
+                                {
+				System.Reflection.Assembly asm = System.Reflection.Assembly.Load("CRM.Presentation");
+                                    Type t = asm.GetType("CRM.Presentation.UserControl" + objQueCollection[k].ID.ToString()); 
+                                    object obj = Activator.CreateInstance(t);
+                                    ((UserControl)obj).Height = 768;
+                                    ((UserControl)obj).Width = 1024;
+                                    ((UserControl)obj).SetValue(Canvas.LeftProperty, 0.0);
+                                    ((UserControl)obj).SetValue(Canvas.TopProperty, 0.0);
+                                    ((Canvas)this.Parent).Children.Add((UIElement)obj);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+	
+	else if (((Button)sender).Tag.ToString().ToLower() == "listbox")
+            {
+                foreach (object r in cnvPaint.Children)
+                {
+                    if (r.GetType() == typeof(ListBox))
+                    {
+                        for (int i = 0; i < ((ListBox)r).Items.Count; i++)
+                        {
+                            if (((ListBoxItem)((ListBox)r).Items[i]).IsSelected == true)
+                            {
+                                string[] str = ((ListBoxItem)((ListBox)r).Items[i]).Tag.ToString().Split(',');
+                                int CurrentQueCount = int.Parse(str[0]);
+                                int optID = int.Parse(str[1]);
+                                //MessageBox.Show("Option ID = " + optID.ToString());
+
+                                ClsAnswerR objAns = new ClsAnswerR();
+                                objAns.CallID = clsStartClass.CallID;
+                                objAns.QusOptionID = int.Parse(optID.ToString());
+                                objAns.Save();
+
+                                for (int k = 0; k < objQueCollection.Count; k++)
+                                {
+                                    if (objQueCollection[k].ID == CurrentQueCount)
+                                    {
+					System.Reflection.Assembly asm = System.Reflection.Assembly.Load("CRM.Presentation");
+                                    Type t = asm.GetType("CRM.Presentation.UserControl" + objQueCollection[k].ID.ToString()); 
+                                    object obj = Activator.CreateInstance(t);
+                                    ((UserControl)obj).Height = 768;
+                                    ((UserControl)obj).Width = 1024;
+                                    ((UserControl)obj).SetValue(Canvas.LeftProperty, 0.0);
+                                    ((UserControl)obj).SetValue(Canvas.TopProperty, 0.0);
+                                    ((Canvas)this.Parent).Children.Add((UIElement)obj);
+                                    break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            else if (((Button)sender).Tag.ToString().ToLower() == "combobox")
+            {
+                foreach (object r in cnvPaint.Children)
+                {
+                    if (r.GetType() == typeof(ComboBox))
+                    {
+                        for (int i = 0; i < ((ComboBox)r).Items.Count; i++)
+                        {
+                            if (((ComboBoxItem)((ComboBox)r).Items[i]).IsSelected == true)
+                            {
+                                string[] str = ((ComboBoxItem)((ComboBox)r).Items[i]).Tag.ToString().Split(',');
+                                int CurrentQueCount = int.Parse(str[0]);
+                                int optID = int.Parse(str[1]);
+                                //MessageBox.Show("Option ID = " + optID.ToString());
+
+                                ClsAnswerR objAns = new ClsAnswerR();
+                                objAns.CallID = clsStartClass.CallID;
+                                objAns.QusOptionID = int.Parse(optID.ToString());
+                                objAns.Save();
+
+                                for (int k = 0; k < objQueCollection.Count; k++)
+                                {
+                                    if (objQueCollection[k].ID == CurrentQueCount)
+                                    {
+					System.Reflection.Assembly asm = System.Reflection.Assembly.Load("CRM.Presentation");
+                                    Type t = asm.GetType("CRM.Presentation.UserControl" + objQueCollection[k].ID.ToString()); 
+                                    object obj = Activator.CreateInstance(t);
+                                    ((UserControl)obj).Height = 768;
+                                    ((UserControl)obj).Width = 1024;
+                                    ((UserControl)obj).SetValue(Canvas.LeftProperty, 0.0);
+                                    ((UserControl)obj).SetValue(Canvas.TopProperty, 0.0);
+                                    ((Canvas)this.Parent).Children.Add((UIElement)obj);
+                                    break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }

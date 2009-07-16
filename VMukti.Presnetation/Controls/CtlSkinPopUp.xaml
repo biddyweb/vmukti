@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="VMukti.Presentation.Controls.CtlSkinPopUp"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:VMuktiControls="clr-namespace:VMukti.Presentation.Controls" 
+                Name="ctlUserControl" Width="Auto" Height="Auto" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+
+    <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <VMuktiControls:ctlSkinItem x:Name="White" Tag="\Skins\White.xaml" Height="50" Width="50" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#9FF3F3F3" Offset="0"/>
+                    <GradientStop Color="#9FEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#9FDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#9FCDCDCD" Offset="1"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+        <VMuktiControls:ctlSkinItem x:Name="Black"  Tag="\Skins\BlackTheme.xaml" 
+                                            Height="50" Width="50" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#CC353539" Offset="0"/>
+                    <GradientStop Color="#CC000000" Offset="0.495"/>
+                    <GradientStop Color="#CC353539" Offset="0.49"/>
+                    <GradientStop Color="#CC000000" Offset="1"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+        <VMuktiControls:ctlSkinItem x:Name="Purple"   Tag="\Skins\PurpleTheme.xaml" Height="50" Width="50" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFAE9ADD" Offset="0"/>
+                    <GradientStop Color="#FF6641BF" Offset="0.46"/>
+                    <GradientStop Color="#FF7D5EC9" Offset="0.455"/>
+                    <GradientStop Color="#FF6641BF" Offset="0.585"/>
+                    <GradientStop Color="#FF9684C2" Offset="0.995"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+        <VMuktiControls:ctlSkinItem x:Name="Pink"  Tag="\Skins\PinkTheme.xaml" Height="50" Width="50" Background="{x:Null}" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9D76A4" Offset="0"/>
+                    <GradientStop Color="#FF500559" Offset="0.36"/>
+                    <GradientStop Color="#FF6F3176" Offset="0.355"/>
+                    <GradientStop Color="#FF59054B" Offset="0.465"/>
+                    <GradientStop Color="#FF921494" Offset="0.985"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+        <VMuktiControls:ctlSkinItem x:Name="Green"  Tag="\Skins\GreenTheme.xaml" Height="50" Width="50" Background="{x:Null}" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8EA476" Offset="0"/>
+                    <GradientStop Color="#FF325905" Offset="0.43"/>
+                    <GradientStop Color="#FF567631" Offset="0.42"/>
+                    <GradientStop Color="#FF325905" Offset="0.505"/>
+                    <GradientStop Color="#FF589414" Offset="0.985"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+
+        <VMuktiControls:ctlSkinItem x:Name="Blue"  Tag="\Skins\BlueTheme.xaml" Height="50" Width="50"
+                                                Background="{x:Null}" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8C9CD6" Offset="0"/>
+                    <GradientStop Color="#FF3753B7" Offset="0.415"/>
+                    <GradientStop Color="#FF5A71C4" Offset="0.41"/>
+                    <GradientStop Color="#FF3753B7" Offset="0.56"/>
+                    <GradientStop Color="#FF80A0D9" Offset="0.995"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+        <VMuktiControls:ctlSkinItem x:Name="Orkut"  Tag="\Skins\Orkut.xaml" Height="50" Width="50"
+                                                Background="{x:Null}" Margin="5,10,5,10" >
+            <VMuktiControls:ctlSkinItem.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF376DB1" Offset="0"/>
+                    <GradientStop Color="#FF376DB1" Offset="1"/>
+                    <GradientStop Color="#FF749CCF" Offset="0.54"/>
+                </LinearGradientBrush>
+            </VMuktiControls:ctlSkinItem.Foreground>
+        </VMuktiControls:ctlSkinItem>
+
+    </WrapPanel>
+
+</UserControl>

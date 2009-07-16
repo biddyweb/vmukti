@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services control="WebLink">
+
+	<Service name="SendLink">
+		<ServerInterface value="IsvcWebLink"></ServerInterface>
+		<ClientInterface value="ICliWebLinkCallback"></ClientInterface>
+		<ServerClass value="svcWebLink"></ServerClass>
+	</Service>
+
+</Services>

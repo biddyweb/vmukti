@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="rptQuestionAnswers.Presentation.ctlRptQuestionAnswers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="280" Width="412" MinHeight="280" MinWidth="412"
+    xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+    Name="ucRptQuestionAnswers">
+
+    <Canvas Name="cnvView" Height="221"  ClipToBounds="True">
+            <Label Canvas.Left="5" Width="100" Canvas.Top="5" Content="Select Script:" />
+            <ComboBox Canvas.Left="81" Canvas.Top="6" Height="23" Name="cmbScript" Width="150" />
+
+            <Button Name="btnGo" Content="Go" Height="25" Width="75" Canvas.Left="252" Canvas.Top="5" Click="btnGo_Click" />
+        <WindowsFormsHost x:Name="wfhRptViewer" Canvas.Left="0"  Height="179" Width="100" MaxWidth="400" Canvas.Top="41" Margin="0,0,0,0">
+            <rv:ReportViewer  x:Name="objReportViewer" />
+        </WindowsFormsHost>
+
+    </Canvas>
+   
+</UserControl>

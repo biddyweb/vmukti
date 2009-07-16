@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTeleNumAudit" targetNamespace="http://tempuri.org/dsTeleNumAudit.xsd" xmlns:mstns="http://tempuri.org/dsTeleNumAudit.xsd" xmlns="http://tempuri.org/dsTeleNumAudit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTeleNumAudit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsTeleNumAudit" msprop:Generator_DataSetName="dsTeleNumAudit" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtTeleNumAudit" msprop:Generator_UserTableName="dtTeleNumAudit" msprop:Generator_RowDeletedName="dtTeleNumAuditRowDeleted" msprop:Generator_RowChangedName="dtTeleNumAuditRowChanged" msprop:Generator_RowClassName="dtTeleNumAuditRow" msprop:Generator_RowChangingName="dtTeleNumAuditRowChanging" msprop:Generator_RowEvArgName="dtTeleNumAuditRowChangeEvent" msprop:Generator_RowEvHandlerName="dtTeleNumAuditRowChangeEventHandler" msprop:Generator_TableClassName="dtTeleNumAuditDataTable" msprop:Generator_TableVarName="tabledtTeleNumAudit" msprop:Generator_RowDeletingName="dtTeleNumAuditRowDeleting" msprop:Generator_TablePropName="dtTeleNumAudit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TelephoneNumber" msprop:Generator_UserColumnName="TelephoneNumber" msprop:Generator_ColumnVarNameInTable="columnTelephoneNumber" msprop:Generator_ColumnPropNameInRow="TelephoneNumber" msprop:Generator_ColumnPropNameInTable="TelephoneNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Disposition" msprop:Generator_UserColumnName="Disposition" msprop:Generator_ColumnVarNameInTable="columnDisposition" msprop:Generator_ColumnPropNameInRow="Disposition" msprop:Generator_ColumnPropNameInTable="DispositionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDateAndTime" msprop:Generator_UserColumnName="StartDateAndTime" msprop:Generator_ColumnVarNameInTable="columnStartDateAndTime" msprop:Generator_ColumnPropNameInRow="StartDateAndTime" msprop:Generator_ColumnPropNameInTable="StartDateAndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndDateAndTime" msprop:Generator_UserColumnName="EndDateAndTime" msprop:Generator_ColumnVarNameInTable="columnEndDateAndTime" msprop:Generator_ColumnPropNameInRow="EndDateAndTime" msprop:Generator_ColumnPropNameInTable="EndDateAndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DurationInSecond" msprop:Generator_UserColumnName="DurationInSecond" msprop:Generator_ColumnVarNameInTable="columnDurationInSecond" msprop:Generator_ColumnPropNameInRow="DurationInSecond" msprop:Generator_ColumnPropNameInTable="DurationInSecondColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

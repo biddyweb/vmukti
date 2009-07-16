@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess\bin\Debug\YatePBX.DataAccess.dll">
+   <Modules>
+    <Module Name="yatepbx.dataaccess.dll">
+     <Namespaces>
+      <Namespace Name="YatePBX.DataAccess">
+       <Types>
+        <Type Name="ClsDataServiceBase" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CheckParamValue(System.DateTime)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="329">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(DateTime)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.Decimal)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="365">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(decimal)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.Double)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="341">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(double)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.Guid)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="317">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(Guid)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.Int32)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="377">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(int)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.Single)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="353">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(float)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckParamValue(System.String)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="305">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.CheckParamValue(string)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetConnectionString()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-07-13 13:38:17Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Common\Yate\YatePBX.DataAccess" File="ClsDataServiceBase.cs" Line="61">The 'this' parameter (or 'Me' in Visual Basic) of 'ClsDataServiceBase.GetConnectionString()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

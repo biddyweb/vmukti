@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSPHByTimezone" targetNamespace="http://tempuri.org/dsSPHByTimezone.xsd" xmlns:mstns="http://tempuri.org/dsSPHByTimezone.xsd" xmlns="http://tempuri.org/dsSPHByTimezone.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSPHByTimezone" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsSPHByTimezone" msprop:Generator_UserDSName="dsSPHByTimezone" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtSPHByTimezone" msprop:Generator_UserTableName="dtSPHByTimezone" msprop:Generator_RowDeletedName="dtSPHByTimezoneRowDeleted" msprop:Generator_TableClassName="dtSPHByTimezoneDataTable" msprop:Generator_RowChangedName="dtSPHByTimezoneRowChanged" msprop:Generator_RowClassName="dtSPHByTimezoneRow" msprop:Generator_RowChangingName="dtSPHByTimezoneRowChanging" msprop:Generator_RowEvArgName="dtSPHByTimezoneRowChangeEvent" msprop:Generator_RowEvHandlerName="dtSPHByTimezoneRowChangeEventHandler" msprop:Generator_TablePropName="dtSPHByTimezone" msprop:Generator_TableVarName="tabledtSPHByTimezone" msprop:Generator_RowDeletingName="dtSPHByTimezoneRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Timezone" msprop:Generator_UserColumnName="Timezone" msprop:Generator_ColumnPropNameInRow="Timezone" msprop:Generator_ColumnVarNameInTable="columnTimezone" msprop:Generator_ColumnPropNameInTable="TimezoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Hours" msprop:Generator_UserColumnName="Hours" msprop:Generator_ColumnPropNameInRow="Hours" msprop:Generator_ColumnVarNameInTable="columnHours" msprop:Generator_ColumnPropNameInTable="HoursColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sales" msprop:Generator_UserColumnName="Sales" msprop:Generator_ColumnPropNameInRow="Sales" msprop:Generator_ColumnVarNameInTable="columnSales" msprop:Generator_ColumnPropNameInTable="SalesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SPH" msprop:Generator_UserColumnName="SPH" msprop:Generator_ColumnPropNameInRow="SPH" msprop:Generator_ColumnVarNameInTable="columnSPH" msprop:Generator_ColumnPropNameInTable="SPHColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

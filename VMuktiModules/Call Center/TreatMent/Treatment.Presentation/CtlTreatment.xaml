@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="Treatment.Presentation.CtlTreatment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:TreatmentGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    Height="Auto" Width="Auto"
+    Name="UcTreatment" MinHeight="631" MinWidth="501">
+    <Canvas Name="cnvMain" Height="{Binding Height,ElementName=ucTreatment}" Width="{Binding Width, ElementName=ucTreatment}">
+        <Canvas Name="cnvView" Height="219" Width="490">
+            <TreatmentGrid:ctlGrid Name="CtlGrid" Height="180" Width="490"  btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked"/>
+        </Canvas>
+
+        <TabControl x:Name="tbcTreatment" Width="500" Height="338" IsSynchronizedWithCurrentItem="True" Canvas.Left="0" Canvas.Top="190" IsEnabled="True">
+        <TabItem Header="Treatment" IsSelected="True" Name="tbiTreatment">
+        <Canvas IsEnabled="True">
+          <Label Canvas.Left="94" Canvas.Top="40" Height="25" Name="lblName" Width="70">Name</Label>
+          <TextBox Canvas.Left="150" Canvas.Top="38" Height="25" Name="txtName" TextWrapping="Wrap" Width="196"></TextBox>
+                    <Label Canvas.Left="85" Canvas.Top="78" Height="25" Name="lblDescription" Width="70">Description</Label>
+                    <TextBox Canvas.Left="150" Canvas.Top="78" Height="25" Name="txtDescription" TextWrapping="Wrap" Width="196"></TextBox>
+        </Canvas>
+      </TabItem>  
+
+      <TabItem Focusable="True" Header="Treatment Condition" IsEnabled="True" IsSelected="True" Name="tbiTreatmentCondition">
+        <Canvas>
+                    <RadioButton x:Name="rdFieldValue"  Checked="rdFieldValue_Checked" Canvas.Left="100" Canvas.Top="20">Field Value</RadioButton>
+                    <RadioButton x:Name="rdDisposition" Checked="rdDisposition_Checked" Canvas.Left="200" Canvas.Top="20">Disposition</RadioButton>
+                    <RadioButton x:Name="rdFilter" Checked="rdFilter_Checked" Canvas.Left="300" Canvas.Top="20">Filter</RadioButton>
+                    <Label Canvas.Left="12" Canvas.Top="53" Height="25" Name="lblLeadFormat" Width="70">LeadFormat</Label>
+                    <Label Canvas.Left="12" Canvas.Top="53" Height="25" Name="lblCampaign" Visibility="Collapsed" Width="70">Campaign</Label>
+                    <Label Canvas.Left="15" Canvas.Top="93" Height="25" Name="lblField" Width="65">Field</Label>
+                    <Label Canvas.Left="15" Canvas.Top="133" Height="25" Name="lblOperator" Width="65">Operator</Label>
+                    <Label Canvas.Left="15" Canvas.Top="133" Name="lblHours" Visibility="Collapsed">Hour:</Label>
+                    <Label Canvas.Left="150" Canvas.Top="133" Name="lblMinutes" Visibility="Collapsed">Minutes:</Label>
+                    <Label Canvas.Left="15" Canvas.Top="173" Height="25" Name="lblValues" Width="65">Values</Label>
+                    <Label Canvas.Left="15" Canvas.Top="173" Height="25" Visibility="Collapsed" Name="lblDisposition1" Width="65">Disposition</Label>
+                    <ComboBox Canvas.Left="80" Canvas.Top="51" Height="25" IsSynchronizedWithCurrentItem="True" Name="cmbLeadFormat" Width="196" SelectionChanged="cmbLeadFormat_SelectionChanged"/>
+                    <ComboBox Canvas.Left="80" Canvas.Top="51" Visibility="Collapsed" Height="25" IsSynchronizedWithCurrentItem="True" Name="cmbCampaign" Width="196" SelectionChanged="cmbCampaign_SelectionChanged"/>
+                    <ComboBox Canvas.Left="80" Canvas.Top="131" Height="25" IsSynchronizedWithCurrentItem="True" Name="cmbOperator" Width="196" />
+                    <ComboBox Canvas.Left="80" Visibility="Collapsed" Canvas.Top="131" Name="cmbHours" Width="40" ></ComboBox>
+                    <ComboBox Canvas.Left="220" Canvas.Top="131" Visibility="Collapsed" Name="cmbMins" Width="40" ></ComboBox>
+                    <ComboBox Canvas.Left="80" Canvas.Top="90" Height="25" IsSynchronizedWithCurrentItem="True" Name="cmbField" Width="196" />
+                    <Label Canvas.Left="80" Visibility="Collapsed" Canvas.Top="90" Content="Disposition" Height="25" Name="lblDisposition" Width="196" />
+                    <Label Canvas.Left="306" Canvas.Top="38" FontSize="13" Height="24" HorizontalContentAlignment="Center" Name="lblConditionsCreated" Width="137">Conditions Created</Label>
+          <!--<TextBox Canvas.Left="80" Canvas.Top="98" Height="25" Name="txtValues" TextWrapping="Wrap" Width="193"></TextBox>-->
+                    <Label Name="lblExample" Visibility="Hidden" Canvas.Left="80" Canvas.Top="153" Height="23">Example:  'Value1','Value2',...</Label>
+                    <ComboBox Canvas.Left="80" Canvas.Top="173" Height="25" Name="cmbValues" Width="196"></ComboBox>
+                    <TextBox Name="txtValues" Canvas.Left="80" Canvas.Top="172" Visibility="Hidden" Height="50" Width="196"></TextBox>
+                    <ListBox Canvas.Left="300" Canvas.Top="63" Height="130" IsSynchronizedWithCurrentItem="True" Name="lstConditionsCreated" Width="163" />
+                    <Button Canvas.Left="310" Canvas.Top="203" Height="25" Name="btnEdit" Width="60">Edit</Button>
+                    <Button Canvas.Left="400" Canvas.Top="203" Height="25" Name="btnDelete" Width="60">Delete</Button>
+                    <Button Canvas.Left="137" Canvas.Top="236" Height="25" Name="btnAdd" Width="60">Add</Button>
+        </Canvas>
+
+            </TabItem>
+    </TabControl>
+        
+        <Button  Width="80" Height="30" Content="Save" Canvas.Left="100" Canvas.Top="530" x:Name="btnSave" Click="btnSave_Click" TabIndex="37" />
+        <Button  Width="80" Height="30" Content="Cancel" Canvas.Left="240" Canvas.Top="530" x:Name="btnCancel" Click="btnCancel_Click" TabIndex="38" />
+        <ListBox Name="lstFill" Canvas.Left="330" Canvas.Top="50" Height="450" Width="155" Visibility="Collapsed" SelectionChanged="lstFill_SelectionChanged" />
+
+	</Canvas>
+</UserControl>

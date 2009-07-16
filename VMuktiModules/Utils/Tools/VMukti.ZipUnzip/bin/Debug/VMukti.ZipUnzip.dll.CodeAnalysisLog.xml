@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\bin\Debug\VMukti.ZipUnzip.dll">
+   <Modules>
+    <Module Name="vmukti.zipunzip.dll">
+     <Namespaces>
+      <Namespace Name="VMukti.ZipUnzip.Core">
+       <Types>
+        <Type Name="NameFilter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsValidFilterExpression(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="toCompile" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Core" File="NameFilter.cs" Line="114">'NameFilter.IsValidFilterExpression(string)' declares a variable, 'toCompile', of type 'string', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="VMukti.ZipUnzip.Tar">
+       <Types>
+        <Type Name="TarBuffer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsEOFBlock(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Tar" File="TarBuffer.cs" Line="262">The 'this' parameter (or 'Me' in Visual Basic) of 'TarBuffer.IsEOFBlock(byte[])' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TarInputStream" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Mark(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Tar" File="TarInputStream.cs" Line="388">The 'this' parameter (or 'Me' in Visual Basic) of 'TarInputStream.Mark(int)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Reset()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Tar" File="TarInputStream.cs" Line="395">The 'this' parameter (or 'Me' in Visual Basic) of 'TarInputStream.Reset()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="VMukti.ZipUnzip.Zip">
+       <Types>
+        <Type Name="DiskArchiveStorage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetTempFileName(System.String,System.Boolean)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="3541">The 'this' parameter (or 'Me' in Visual Basic) of 'DiskArchiveStorage.GetTempFileName(string, bool)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FastZip" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#UpdateEntry(VMukti.ZipUnzip.Zip.ZipEntry,System.IO.FileInfo)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="FastZip.cs" Line="328">The 'this' parameter (or 'Me' in Visual Basic) of 'FastZip.UpdateEntry(ZipEntry, FileInfo)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="KeysRequiredEventArgs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Key" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="100">Change 'KeysRequiredEventArgs.Key' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StaticDiskDataSource" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'StaticDiskDataSource' is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ZipEntry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExtraData" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipEntry.cs" Line="781">Change 'ZipEntry.ExtraData' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipFile" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetDescriptorSize(VMukti.ZipUnzip.Zip.ZipFile+ZipUpdate)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="1844">The 'this' parameter (or 'Me' in Visual Basic) of 'ZipFile.GetDescriptorSize(ZipFile.ZipUpdate)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Key" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Key()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="357">'ZipFile.Key.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#set_Key(System.Byte[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="358">'ZipFile.Key.set(byte[])' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReadEntries()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="centralDirDisk" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2683">'ZipFile.ReadEntries()' declares a variable, 'centralDirDisk', of type 'uint', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="diskStartNo" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2726">'ZipFile.ReadEntries()' declares a variable, 'diskStartNo', of type 'int', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="internalAttributes" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2727">'ZipFile.ReadEntries()' declares a variable, 'internalAttributes', of type 'int', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="recordSize" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2679">'ZipFile.ReadEntries()' declares a variable, 'recordSize', of type 'ulong', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="thisDisk" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2682">'ZipFile.ReadEntries()' declares a variable, 'thisDisk', of type 'uint', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+            <Message Id="totalDisks" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2669">'ZipFile.ReadEntries()' declares a variable, 'totalDisks', of type 'uint', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#tempDirectory_" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'ZipFile.tempDirectory_' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteLEUlong(System.UInt64)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="1512">'ZipFile.WriteLEUlong(ulong)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipFile+PartialInputStream" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SkipBytes(System.Int64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="3146">'ZipFile.PartialInputStream.SkipBytes(long)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipFile+ZipString" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2903">'ZipFile.ZipString.ZipString(byte[])' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Reset()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2935">'ZipFile.ZipString.Reset()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipFile+ZipUpdate" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2499">'ZipFile.ZipUpdate.ZipUpdate(string, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(VMukti.ZipUnzip.Zip.ZipEntry,VMukti.ZipUnzip.Zip.ZipEntry)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipFile.cs" Line="2499">'ZipFile.ZipUpdate.ZipUpdate(ZipEntry, ZipEntry)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipHelperStream" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#IsStreamOwner" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_IsStreamOwner()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipHelperStream.cs" Line="73">'ZipHelperStream.IsStreamOwner.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#ReadLELong()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipHelperStream.cs" Line="290">'ZipHelperStream.ReadLELong()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteLEUlong(System.UInt64)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipHelperStream.cs" Line="349">'ZipHelperStream.WriteLEUlong(ulong)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ZipNameTransform" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip" File="ZipNameTransform.cs" Line="106">Initialize all static fields in 'ZipNameTransform' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="VMukti.ZipUnzip.Zip.Compression">
+       <Types>
+        <Type Name="DeflaterHuffman" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression" File="DeflaterHuffman.cs" Line="72">Initialize all static fields in 'DeflaterHuffman' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DeflaterHuffman+Tree" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Members>
+          <Member Name="#BuildCodes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="numSymbols" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression" File="DeflaterHuffman.cs" Line="206">'DeflaterHuffman.Tree.BuildCodes()' declares a variable, 'numSymbols', of type 'int', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckEmpty()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression" File="DeflaterHuffman.cs" Line="176">'DeflaterHuffman.Tree.CheckEmpty()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InflaterHuffmanTree" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression" File="InflaterHuffmanTree.cs" Line="50">Initialize all static fields in 'InflaterHuffmanTree' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="VMukti.ZipUnzip.Zip.Compression.Streams">
+       <Types>
+        <Type Name="InflaterInputBuffer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearText" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression\Streams" File="InflaterInputStream.cs" Line="123">Change 'InflaterInputBuffer.ClearText' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RawData" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2009-06-15 05:45:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Utils\Tools\VMukti.ZipUnzip\Zip\Compression\Streams" File="InflaterInputStream.cs" Line="103">Change 'InflaterInputBuffer.RawData' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182264(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>Avoid uninstantiated internal classes</Name>
+   <Description>An internal class was detected that is apparently never instantiated. This rule does not attempt to detect late-bound creation and will generate false positives if instances of a type are only created in this way (for example, by means of Activator.CreateInstance or by passing the type as an argument to a TypeConverter constructor).</Description>
+   <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182265(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245042(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+   <Name>Initialize reference type static fields inline</Name>
+   <Description>Static fields should be initialized when declared. Initializing static data in explicit static constructors results in less performant code.</Description>
+   <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182275(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">CriticalWarning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Properties should not return arrays</Name>
+   <Description>Properties that return arrays are prone to code inefficiencies. Consider using a collection or making this a method. See the design guidelines for more information.</Description>
+   <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/0fss9skc(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182278(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

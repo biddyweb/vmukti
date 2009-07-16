@@ -1,0 +1,14 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\Chat.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\Chat.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\obj\Debug\Chat.Business.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\obj\Debug\Chat.Business.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\obj\Debug\Chat.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Chat\Chat.Business\obj\Debug\Chat.Business.pdb

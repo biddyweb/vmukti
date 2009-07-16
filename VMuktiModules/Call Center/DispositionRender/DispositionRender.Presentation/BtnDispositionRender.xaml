@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="DispositionRender.Presentation.BtnAutoDispositionRender"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="50" Width="100">
+    <Grid>
+        <Button Name="btnDisposition"  FontWeight="Bold" Width="80" Height="30" MouseEnter="btnDisposition_MouseEnter" Background="LightGray">Disposition</Button>
+        <Popup Name="PopUpDispo" Width="210"  Placement="Absolute"   MouseLeave="PopUpDispo_MouseLeave"></Popup>
+    </Grid>
+</UserControl>

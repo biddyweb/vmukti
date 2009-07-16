@@ -1,0 +1,188 @@
+
+
+body { 
+	margin: 0; 
+	padding: 0; 
+	background: #fff url(images/Dock.gif) repeat-x; 
+	font: normal .7em Tahoma, Verdana, Arial, Helvetica, Sans-Serif; 
+	line-height: 1.6em; 
+	color: #333; 
+}
+
+/* LINKS AND HEADINGS STYLING */
+
+a { color: #546F92; background: inherit; }
+a:hover { color: #808080; background: inherit; }
+h1  { font: bold 2em "Trebuchet MS", Helvetica, Sans-Serif; margin: 0; color: #fff; background-color:transparent; }
+h2  { font: bold 1.4em "Trebuchet MS", Helvetica, Sans-Serif; }
+h3 { clear: both; font-size: 1.1em; color: #000; background: #fff url(images/h3bg.gif) no-repeat center left; padding: 0 14px; margin: 0;}
+h4 {font-size: 18px; color: white;
+	width: 563px;
+	top: 19px;
+	left: 49px;
+	position: absolute;
+	height: 18px;
+}
+.blue { color: #546F92; background: inherit; }
+.image { float: left; border: 2px solid #338cc4; padding: 3px; margin: 0 15px 10px 0; }
+
+/* CONTENT WRAPPER */
+
+#main { 
+	width: 900px; 
+	margin: 25px auto 0 auto; 
+}
+
+/* TOP LEFT LOGO */
+
+#logo { 
+	float: left; 
+	padding: 2px 0 0 0px; 
+}
+	#logo h1 { color: #000; background: #fff; }
+
+/* TOP RIGHT HORIZONTAL MENU */
+	
+#menu { 
+	float: right; 
+	background: #fff url(images/barul.gif) no-repeat bottom right; 
+	color: #808080; 
+	padding: 18px 1px 11px 0; 
+	margin: 0; 
+}
+	#menu li { 
+		padding: 14px 18px 14px 18px; 
+		color: #444; 
+		background: #fff url(images/bar.gif) no-repeat bottom left; 
+		display: inline; 
+	}
+	#menu li.active { 
+		background: #fff url(images/baractive.gif) no-repeat bottom left; 
+		color: #8D9CAF; 
+		font-weight: bold; 
+		padding: 14px 18px 14px 18px; 
+		margin: 0 1px 0 0; 
+	}
+	#menu li a { 
+		background: #f8f8f8; 
+		color: #808080; 
+		text-decoration: none; 
+	} 	
+	#menu li a:hover { 
+		color: #000; 
+		background: #f8f8f8; 
+	} 	
+	.key { text-decoration: underline; } /* ACCESKEY UNDERLINED LETTER */
+
+/* LEFT INTRO SIDE */	
+
+#intro_left {
+	clear: left;
+	float: left;
+	width: 329px;
+	
+	color: #E5EAF2;
+	margin: 0 0 1px 0;
+	height: 311px;
+}
+	#intro_left a { color: #fff; background: inherit; }
+	#intro_left p { padding: 25px 15px; margin: 0; }
+	
+	#intro_left #t {
+			width: 60px;
+			height: 23px;
+			background: #FFDBE1;
+			border: 1px solid #F57F8C;
+		      }	
+
+	/* LEFT VERTICAL MENU */
+	
+	#menu_left { 
+		float: left;  
+		margin: 0 0 6px 0; 
+		padding: 0 0 1px 0; 
+		border-bottom: 2px solid #338cc4; 
+	}
+		#menu_left li { list-style: none; }
+		#menu_left li a { 
+			display: block; 
+			color: #3F5B7F; 
+			background: #01a1ff url(images/arrow.gif) no-repeat center left; 
+			width: 204px; 
+			padding: 7px 23px 7px 23px; 
+			margin: 0 0 1px 0; 
+			font-weight: bold; 
+			text-decoration: none; 
+		}	
+		#menu_left li a:hover { background: #9EB1C9 url(images/arrow.gif) no-repeat center left; color: #fff;  }
+
+/* RIGHT INTRO SIDE */
+	
+#intro_right {
+	float: right;
+	width: 340px;
+	padding: 25px 280px 0 20px;
+	background: #BCCEDA url(images/intro.jpg) no-repeat;
+	color: #547592;
+	margin: 0 0 6px 0;
+	height: 174px;
+	border: 2px solid #338cc4;
+}
+	#intro_right h1 { margin: 0 0 20px 0; }
+	#intro_right .white { color: #000; background-color:transparent; }
+	
+/* LEFT SIDE */
+	
+#left {
+	float: left;
+	width: 250px;
+}
+	.noote{
+		
+		
+		border: 1px solid #338cc4;
+		margin: 0 0 5px 0;
+		background: #FFFFAD url(images/test2.jpg) no-repeat;
+		color: #585616;
+	}
+	.note {
+		padding: 110px 15px 20px 120px;
+		border: 1px solid #338cc4;
+		margin: 0 0 5px 0;
+		background: #FFFFAD url(images/package.gif) no-repeat;
+		color: #585616;
+	}
+
+/* RIGHT SIDE */
+
+#right {
+	float: right;
+	width: 643px;
+}
+	.leftcol { 
+		float: left; 
+		padding: 12px 15px;
+		width: 615px; 
+		border:#338cc4 1px solid;
+		text-align: justify;
+		margin: 0 0 10px 0;
+	}
+	.rightcol { 
+		float: right; 
+		padding: 10px 15px;
+		width: 285px; 
+		border:#338cc4 1px solid;
+		margin: 0 0 10px 0;
+		}
+	.special {
+		clear: both;
+		margin:0px 0 20px 0;	
+		padding: 5px 20px;
+		border: 1px solid #338cc4;
+		background: #eee;
+		color: #444;
+	}
+
+/* FOOTER */
+
+#footer { clear: both; padding: 5px; border-top: 1px solid #338cc4; }

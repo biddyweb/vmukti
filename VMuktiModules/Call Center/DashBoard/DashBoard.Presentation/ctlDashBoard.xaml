@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="DashBoard.Presentation.ctlDashBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" VerticalAlignment="Top"
+   Height="959.904" Width="1119" Background="#FFFFFFFF" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    
+	<ScrollViewer Height="956.571" Width="1119.888">
+		<Border BorderBrush="#FF000000" BorderThickness="1,1,1,1">
+			<Grid Width="1050" Height="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="320"/>
+					<RowDefinition Height="30"/>
+					<RowDefinition Height="260"/>
+					<RowDefinition Height="Auto" MinHeight="285" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<ComboBox Margin="183,12,14,10" x:Name="cmbCampaign" />
+				<Label Margin="10,12,0,10" x:Name="label1" FontSize="15" HorizontalAlignment="Left" Content="SELECT CAMPAIGN :" Width="147.547" />
+				<Border Margin="8,0,25,145" x:Name="brdLabels" Grid.ColumnSpan="2" Grid.Row="1" BorderBrush="#FF1982A5" BorderThickness="1,1,1,1" CornerRadius="5,5,5,5">
+					<Grid Margin="5,5,5,5" x:Name="grdlables" Height="151">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="143.547*" />
+							<ColumnDefinition Width="65*" />
+							<ColumnDefinition Width="158.045*" />
+                            <ColumnDefinition Width="56.463*" />
+                            <ColumnDefinition Width="330.941*" />
+                            <ColumnDefinition Width="251*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    
+						<Label Margin="0,0,0.001,0" x:Name="lblSPH" FontSize="12" HorizontalContentAlignment="Left" Content="SALES PER HOUR (SPH) :" Grid.Row="1" />
+						<Label x:Name="lblSPHValue" HorizontalContentAlignment="Center" FontSize="12" Grid.Column="1" Grid.Row="1" />
+						<Label Margin="0,0,0.001,0" x:Name="lblCPH" FontSize="12" HorizontalContentAlignment="Left" Content="CALLS PER HOUR (CPH) :" Grid.Row="2" d:LayoutOverrides="GridBox"/>
+						<Label x:Name="lblCPHValue" HorizontalContentAlignment="Center" FontSize="12" Grid.Column="1" Grid.Row="2" d:LayoutOverrides="GridBox" />
+						<Label Margin="0,0,0.001,0" x:Name="lblDialableLeads" FontSize="12" HorizontalContentAlignment="Left" Content="DIALABLE LEADS :" Grid.Row="3" d:LayoutOverrides="GridBox"/>
+						<Label x:Name="lblDialableLeadsValue" HorizontalContentAlignment="Center" FontSize="12" Grid.Column="1" Grid.Row="3" d:LayoutOverrides="GridBox" />
+						<Label x:Name="lblCallsToday" FontSize="12" HorizontalContentAlignment="Left" Content="CALLS TODAY :" d:LayoutOverrides="GridBox"/>
+						<Label x:Name="lblCallsTodayValue" HorizontalContentAlignment="Center" FontSize="12" Grid.Column="1" d:LayoutOverrides="GridBox" />
+						<Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblAnswered" Content="ANSWERED CALLS:" Margin="0,0,0,2.2" Grid.Row="4" />
+						<Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblAnsweredValues" Grid.Column="1" Margin="0,0,0,2.2" Grid.Row="4" />
+                        
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblToAgentsInCall" Content="AGENT IN CALL:" d:LayoutOverrides="GridBox" Grid.Column="2" Grid.Row="2" Margin="0,1.6,0,28.2" Grid.RowSpan="2" />
+						<Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblToAgentsInCallValues" Grid.Column="2" Grid.Row="2" d:LayoutOverrides="GridBox" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="57.005" />
+
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblTotLoggedAgents" Content="LOGGED AGENTS:" Grid.Column="2" />
+                        <Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblTotLoggedAgentsValues" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="57.005" />
+
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblTotWaitingCallAgents" Content="AGENT WAITING FOR CALL:" Grid.Row="4" Grid.Column="2" />
+                        <Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblTotWaitingCallAgentsValues" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="57.005" />
+
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblStoppedDialing" Content="AGENT STOPPED DIAL:" Grid.Row="1" Grid.Column="2" />
+                        <Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblStoppedDialingValues" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="57.005" />
+
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblTotRingingCalls" Content="TOTAL CALLS RINGING:" Grid.Row="3" Grid.Column="1" Margin="64.474,0,0,0" Grid.ColumnSpan="2" />
+                        <Label FontSize="12" HorizontalContentAlignment="Center" x:Name="lblTotRingingCallsValues" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="57.005" />
+
+
+
+                        <Label FontSize="12" HorizontalContentAlignment="Left" x:Name="lblStatuses" Content="STATUS :" Grid.Column="4" d:LayoutOverrides="GridBox" HorizontalAlignment="Left" Width="87.944" />
+
+                        <ListBox Grid.Column="4" Grid.RowSpan="5" Margin="87.97,0,0,2.2" Name="lstDisposition" IsSynchronizedWithCurrentItem="True">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate x:Name="DT">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Grid HorizontalAlignment="Stretch">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition MinWidth="100" Width="Auto" />
+                                                <ColumnDefinition MinWidth="100" Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Name="DispositionName" Text="{Binding Path=DispositionName}" HorizontalAlignment="Left"/>
+                                            <TextBlock Name="DispositionCount" Text="{Binding Path=DispositionCount}" HorizontalAlignment="Right"/>
+                                        </Grid>    
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+
+                        <!--<ItemsControl x:Name="DispositionCount" Grid.RowSpan="6" Grid.Column="3"  />-->
+                        
+                        
+                        
+                        
+
+                        
+                        
+                    </Grid>
+				</Border>
+				<Border Height="1" BorderBrush="#FF000000" x:Name="border2" BorderThickness="1,1,1,1" Margin="0,146,0,0" VerticalAlignment="Top" />
+				<Border Height="1" BorderBrush="#FF000000" x:Name="border3" BorderThickness="1,1,1,1" Margin="0,180,0,0" VerticalAlignment="Top" />
+				<!--<Border BorderBrush="#FF000000" x:Name="border4" BorderThickness="1,1,1,1" Margin="0,0,0,376" Height="1" VerticalAlignment="Bottom" />-->
+				<Border BorderBrush="#FF000000" x:Name="border5" BorderThickness="1,1,1,1" Margin="0,44,350,377" HorizontalAlignment="Right" Width="1" />
+                    
+				<Border Margin="8,5,0,0" x:Name="brdCampaign" Grid.ColumnSpan="2" Grid.Row="4" BorderBrush="#FF4C9FB9" BorderThickness="1,1,1,1" CornerRadius="5,5,5,5" HorizontalAlignment="Left" Width="1017">                    
+				
+				</Border>
+				<GroupBox Style="{DynamicResource temp}" Margin="8,171,25,0"  x:Name="grbActiveagent" Background="#FFFFFFFF" BorderBrush="#FF1982A5" BorderThickness="1,1,1,1" FontFamily="Segoe UI" FontSize="18" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2" Header="Active Agent">
+
+                    <Canvas x:Name="cnvActiveAgent"/>
+                </GroupBox>
+			
+			</Grid>
+		</Border>
+	</ScrollViewer>
+</UserControl>

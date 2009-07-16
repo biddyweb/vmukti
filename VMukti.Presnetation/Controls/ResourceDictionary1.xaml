@@ -1,0 +1,417 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Resource dictionary entries should be defined here. -->
+    <LinearGradientBrush x:Key="Title1" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFF3F3F3" Offset="0"/>
+        <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+        <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+        <GradientStop Color="#FFCDCDCD" Offset="1"/>
+    </LinearGradientBrush>
+
+    <ImageBrush x:Key="ImgSignIn" ImageSource="Images\Sign In.png"/>
+    <ImageBrush x:Key="ImgSignOut" ImageSource="Images\Sign Out.png"/>
+    <ImageBrush x:Key="ImgBuddies" ImageSource="Images\Buddies.png"/>
+    <ImageBrush x:Key="ImgModules" ImageSource="Images\Modules.png"/>
+    <ImageBrush x:Key="ImgSettings" ImageSource="Images\Settings.png"/>
+    <ImageBrush x:Key="ImgMonitoring" ImageSource="Images\My Computer.png"/>
+    <ImageBrush x:Key="ImgMN" ImageSource="Images\MN.gif"/>
+    <ImageBrush x:Key="ImgMt" ImageSource="Images\Mt.gif"/>
+    <ImageBrush x:Key="CallCenter" ImageSource="Images\CallCenter.ico"/>
+    <ImageBrush x:Key="Meeting" ImageSource="Images\Meeting.png"/>
+    <ImageBrush x:Key="ImgControlPanel" ImageSource="Images\Control Panel.png"/>
+    <ImageBrush x:Key="ImgProfile" ImageSource="Images\userprofile.png"/>
+    <SolidColorBrush x:Key="TextBrush" Color="#FF000000" />
+
+    <LinearGradientBrush x:Key="Background" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+        <GradientStop Color="#FFF5F5F5" Offset="0.905"/>
+        <GradientStop Color="#FFEDEDED" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Key="ArrowButtons" TargetType="Button">
+        <Setter Property="SnapsToDevicePixels" Value="true"/>
+        <Setter Property="OverridesDefaultStyle" Value="true"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border 
+            x:Name="Border"  
+            CornerRadius="2" 
+            BorderThickness="0"
+            Background="{DynamicResource ArrowButtonNormal}">
+                        <ContentPresenter 
+              Margin="2"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource ArrowButtonOver}" />
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter TargetName="Border" Property="BitmapEffect">
+                                <Setter.Value>
+                                    <OuterGlowBitmapEffect GlowColor="#FFFFFFFF" GlowSize="5" Opacity="0.75"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource ArrowButtonPressed}" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter TargetName="Border" Property="BitmapEffect">
+                                <Setter.Value>
+                                    <OuterGlowBitmapEffect GlowColor="#FFFFFFFF" GlowSize="5" Opacity="0.75"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <DrawingBrush x:Key="ArrowButtonPressed" Viewbox="0,0,37.789,24" ViewboxUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.OpacityMask>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </DrawingGroup.OpacityMask>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,1.19175359259421,1,0.177478444434741,0"/>
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="#FF979797" Offset="0.0"/>
+                                <GradientStop Color="#FFA3A3A3" Offset="1.0"/>
+
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,-1.19175359259421,1,14.4105215555653,11.932"/>
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="#FF979797" Offset="0.0"/>
+                                <GradientStop Color="#FFA3A3A3" Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <DrawingBrush x:Key="ArrowButtonOver" Viewbox="0,0,37.789,24" ViewboxUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.OpacityMask>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </DrawingGroup.OpacityMask>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,1.19175359259421,1,0.177478444434741,0"/>
+                    </DrawingGroup.Transform>
+
+                    <GeometryDrawing Brush="#FF9ED8F9">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,-1.19175359259421,1,14.4105215555653,11.932"/>
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing Brush="#FF8CD1F7">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <DrawingBrush x:Key="ArrowButtonNormal" Viewbox="0,0,37.789,24" ViewboxUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.OpacityMask>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#00000000" Offset="0"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </DrawingGroup.OpacityMask>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,1.19175359259421,1,0.177478444434741,0"/>
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing Brush="#FFFF0000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,-1.19175359259421,1,14.4105215555653,11.932"/>
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing Brush="#FFFF0000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0,0,24,12"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <Style x:Key="BtnModuleExplorer" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="25" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="25" Width="25" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgModules}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="25" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="BtnBuddies" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="25" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="25" Width="25" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgBuddies}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="25" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnSettings" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="20" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="20" Width="20" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgSettings}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="20" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnLogin" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="15" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="15" Width="15" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgSignIn}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="15" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="0">
+                            <Setter Property="Fill" Value="{DynamicResource ImgSignIn}" TargetName="RctLogo"/>
+                            <Setter Property="Content" Value="Sign In" TargetName="lblCap"/>
+                        </Trigger>
+                        <Trigger Property="Tag" Value="1">
+                            <Setter Property="Fill" Value="{DynamicResource ImgSignOut}" TargetName="RctLogo"/>
+                            <Setter Property="Content" Value="Sign Out" TargetName="lblCap"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnMonitoring" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="30" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="30" Width="30" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgMonitoring}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="30" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnControlPanel" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="25" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="25" Width="25" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgControlPanel}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="25" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnProfile" BasedOn="{x:Null}" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="GrdBtn">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Name="colDef1" Width="25" />
+                            <ColumnDefinition Name="colDef2" Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="rowDef0" Height="0"/>
+                            <RowDefinition Name="rowDef1" Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle x:Name="RctLogo" Height="25" Width="25" Grid.Row="1" Grid.Column="0" Fill="{DynamicResource ImgProfile}" Stroke="#00000000"/>
+                        <ContentPresenter x:Name="lblCap" Grid.Row="1" Height="25" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5,5,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Height" Value="1" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Height" Value="2" TargetName="rowDef0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False" />
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

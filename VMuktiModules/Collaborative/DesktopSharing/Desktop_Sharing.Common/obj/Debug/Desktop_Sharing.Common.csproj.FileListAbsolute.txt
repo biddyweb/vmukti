@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\bin\Debug\Desktop_Sharing.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\bin\Debug\Desktop_Sharing.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\obj\Debug\Desktop_Sharing.Common.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\obj\Debug\Desktop_Sharing.Common.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\obj\Debug\Desktop_Sharing.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\DesktopSharing\Desktop_Sharing.Common\obj\Debug\Desktop_Sharing.Common.pdb

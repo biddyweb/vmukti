@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Tabbed Mode - Google AJAX Search API Sample</title>
+    <style type="text/css">
+      @import url(http://www.google.com/uds/css/gsearch.css);
+
+      body *, table *,
+      body {
+        font-family: "trebuchet ms", verdana, sans-serif;
+        font-size: 13px;
+      }
+
+      .gsc-control { width : 500px; }
+      .search-control { margin: 20px; }
+    </style>
+
+    <script src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=internal-sample;key=ABQIAAAAzr2EBOXUKnm_jVnk0OJI7xSosDVG8KKPE1-m51RBrvYughuyMxQ-i1QfUnH94QxWIa6N4U6MouMmBA"" type="text/javascript"></script>
+
+    <script language="Javascript" type="text/javascript">//<![CDATA[
+
+      function OnLoad() {
+
+        // create a tabbed mode search control
+        var tabbed = new GSearchControl();
+
+        tabbed.addSearcher(new GlocalSearch());
+        tabbed.addSearcher(new GwebSearch());
+        tabbed.addSearcher(new GblogSearch());
+        tabbed.addSearcher(new GnewsSearch());
+        tabbed.addSearcher(new GbookSearch());
+
+        // draw in tabbed layout mode
+        var drawOptions = new GdrawOptions();
+        drawOptions.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+        tabbed.draw(document.getElementById("search_control_tabbed"), drawOptions);
+
+        tabbed.execute("Ferrari Enzo");
+      }
+      GSearch.setOnLoadCallback(OnLoad);
+    //]]>
+    </script>
+  </head>
+
+  <body>
+    <div style="text-align: right; color=#676767; margin-bottom: 8px;">
+      <a href="http://code.google.com/apis/ajaxsearch/index.html"><span style="color:#676767; cursor: pointer; text-decoration: underline;">Google AJAX Search API Documentation</span></a>
+    </div>
+    <div class="search-control" id="search_control_tabbed">Loading</div>
+  </body>
+</html>

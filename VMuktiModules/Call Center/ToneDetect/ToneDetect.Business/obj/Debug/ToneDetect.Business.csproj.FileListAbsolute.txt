@@ -1,0 +1,28 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.SharpPcap.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.SharpPcap.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ToneDetect.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ToneDetect.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.SharpPcap.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\ToneDetect.SharpPcap.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ToneDetect.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\ToneDetect\ToneDetect.Business\obj\Debug\ToneDetect.Business.pdb

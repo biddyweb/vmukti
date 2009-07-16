@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.Web.Services;
+
+public partial class Controls_ctlPOD : System.Web.UI.UserControl
+{
+    #region Property
+    string _title = "Widget Title";
+    public string TitleText
+    {
+        get { return divTitleTex.InnerText; }
+        set 
+        {
+            divTitleTex.InnerText = value; 
+            
+        }
+    }
+
+    //public Image TitleIcon 
+    //{
+    //    get { return imIcon; }
+    //    set { imIcon = value; }
+    //}
+    private WebControl _widgetCont=new WebControl(HtmlTextWriterTag.Div);
+    public WebControl WidgetControl 
+    {
+        get { return _widgetCont; }
+        set 
+        {
+            _widgetCont = value;
+            midContent.Controls.Add(_widgetCont);
+        }
+    }
+
+    #endregion
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        pnlPanel.Attributes["onmouseover"] = string.Format("showButton('{0}','{1}','{2}',true);",widgetMinimize.ClientID, widgetClose.ClientID,titleVisible.ClientID);
+        pnlPanel.Attributes["onmouseout"] = string.Format("showButton('{0}','{1}','{2}',false);", widgetMinimize.ClientID, widgetClose.ClientID, titleVisible.ClientID);
+        widgetMinimize.Attributes["onclick"] = string.Format("WidgetMinimize_Click('{0}','{1}');", widgetMinimize, midLeft.ClientID);
+        titleVisible.Attributes["onclick"] = string.Format("CallWebService();");
+        //titleVisible.Attributes["onclick"] = string.Format("WidgetTitleHide('{0}')", topLeft.ClientID);        
+    }
+
+
+
+    protected void WidgetTitle_Click(object sender, EventArgs e)
+    {
+        //WidgetTitleTextBox.Text = this.WidgetInstance.Title;
+        //WidgetTitleTextBox.Visible = true;
+        //SaveWidgetTitle.Visible = true;
+        //WidgetTitle.Visible = false;
+    }
+    protected void SaveWidgetTitle_Click(object sender, EventArgs e)
+    {
+        //WidgetTitleTextBox.Visible = SaveWidgetTitle.Visible = false;
+        //WidgetTitle.Visible = true;
+        //WidgetTitle.Text = WidgetTitleTextBox.Text;
+
+        //DetachAssociation(new Action(delegate()
+        //{
+        //    DatabaseHelper.Update<WidgetInstance>(this.WidgetInstance, delegate(WidgetInstance wi)
+        //    {
+        //        wi.Title = WidgetTitleTextBox.Text;
+        //    });
+        //}));
+    }
+    protected void WidgetMinimize_Click(object sender, EventArgs e)
+    {
+        //(this as IWidgetHost).Minimize();
+    }
+    protected void ExpandWidget_Click(object sender, EventArgs e)
+    {
+        //(this as IWidgetHost).Maximize();
+    }
+    protected void CloseWidget_Click(object sender, EventArgs e)
+    {
+        //this._WidgetRef.Closed();
+        //(this as IWidgetHost).Close();
+    }
+    private void DetachAssociation(Action a)
+    {
+        //var pageRef = this.WidgetInstance.Page;
+        //var widgetRef = this.WidgetInstance.Widget;
+
+        //this.WidgetInstance.Detach();
+
+        //a.Invoke();
+
+        //this.WidgetInstance.Detach();
+
+        //this.WidgetInstance.Page = pageRef;
+        //this.WidgetInstance.Widget = widgetRef;
+    }
+
+}

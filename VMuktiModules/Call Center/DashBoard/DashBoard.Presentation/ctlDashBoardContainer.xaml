@@ -1,0 +1,7 @@
+﻿<UserControl x:Class="DashBoard.Presentation.ctlDashBoardContainer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  x:Name="ucDashBoardContainer">
+    <Grid>
+        <TabControl TabStripPlacement="Left" Height="{Binding Path=Height,ElementName=ucDashBoardContainer}" Width="{Binding Path=Width,ElementName=ucDashBoardContainer}" Name="tbCnt" />
+    </Grid>
+</UserControl>

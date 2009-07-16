@@ -1,0 +1,8 @@
+﻿<Window x:Class="importExe.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="77" Width="105" Loaded="Window_Loaded">
+    <Grid Height="27" Width="72">
+        
+    </Grid>
+</Window>

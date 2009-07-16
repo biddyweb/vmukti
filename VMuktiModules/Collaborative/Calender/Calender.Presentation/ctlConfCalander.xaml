@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="Calender.Presentation.ctlConfCalander"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DateControl="clr-namespace:VMukti.CtlDatePicker.Presentation;assembly=VMukti.CtlDatePicker.Presentation"
+    Height="480" Width="700">
+    <Grid>
+        <Grid ShowGridLines="True" Margin="0,1,0,-1">
+            <Grid.RowDefinitions>
+                <RowDefinition Name="row0" Height="100" />
+                <RowDefinition Name="row1" Height="*" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="col0" Width="200" />
+                <ColumnDefinition Name="col1" Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <DateControl:MonthCalendar Name="mncCal" Grid.Row="1" Height="169" VerticalAlignment="Top" />
+            <Canvas Name="cnvMain" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+            </Canvas>
+            <TextBlock Height="13" Canvas.Top="79" Canvas.Left="178" Margin="14,0,87,13" Text="Create An Event >>>" VerticalAlignment="Bottom" Foreground="Blue" Cursor="Hand" PreviewMouseLeftButtonDown="TextBlock_PreviewMouseLeftButtonDown_1" />
+            <Label Grid.Column="1" HorizontalAlignment="Left" Margin="3,24,0,3" Name="lblshow" Width="199"></Label>
+            <ScrollViewer Name="scrvGrid" ScrollChanged="scrvGrid_ScrollChanged" FontFamily="Arial Bold" Grid.Column="1" Margin="0,0,0,-15" Grid.Row="1">
+                <Canvas Height="1150" Width="500">
+                    <Grid Name="grdMain" Height="1140" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="523*" />
+                            <ColumnDefinition Width="501*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Canvas Background="Transparent" Name="cnvPopup" Height="154" Width="286" Visibility="Collapsed" Canvas.Left="-2" Canvas.Top="13">
+                        <Canvas.BitmapEffect>
+                            <DropShadowBitmapEffect />
+                        </Canvas.BitmapEffect>
+                        <Rectangle Name="rctPopup" Canvas.Top="13" Canvas.Left="2" Height="150" Width="284" RadiusX="25" RadiusY="25" Fill="WhiteSmoke" Stroke="LightGray" />
+                        <Polygon Name="plyDown" Points="0,0 -50,75 50,0" Fill="WhiteSmoke" Stroke="LightGray" Canvas.Top="162" Canvas.Left="19" Height="77" Width="52" />
+                        <Polygon Name="plyUp" Points="60,0 60,40 10,0" Fill="WhiteSmoke" Stroke="LightGray" Height="77" Width="76" Canvas.Left="-56" Canvas.Top="31" />
+                        <Line X1="200" Y1="149" X2="250" Y2="149" Stroke="White" StrokeThickness="1" Height="150" Canvas.Top="-2" />
+                        <Line X1="200" Y1="150" X2="249" Y2="150" Stroke="White" StrokeThickness="2" Width="0" />
+                        <Label Name="lblTime" Height="30" Width="263" Content="" Canvas.Top="15" Canvas.Left="14" />
+                        <Label Name="lblPurpose" Height="25" Content="Purpose:" Canvas.Top="51" Canvas.Left="4" Width="53" FontFamily="Arial Bold" />
+                        <TextBox Name="txtPurpose" Height="25" Text="" Canvas.Top="51" Width="222" Canvas.Left="55" />
+                        <Button Name="btnOK" Height="20" Width="60" Content="Create" Canvas.Left="130" Canvas.Top="98" Click="btnOK_Click_1" />
+                        <Button Name="btnCancel" Height="20" Width="60" Content="cancel" Canvas.Left="197" Canvas.Top="98" Click="btnCancel_Click_1" />
+                        <TextBlock Height="13" Canvas.Top="77" Canvas.Left="171" Width="103" Foreground="Blue" Cursor="Hand" Text="Edit event details>>" PreviewMouseLeftButtonDown="TextBlock_PreviewMouseLeftButtonDown" />
+                    </Canvas>
+                    <Canvas Background="Transparent" Name="cnvPopupEdit" Height="152" Width="286" Visibility="Collapsed" Canvas.Left="-2" Canvas.Top="13">
+                        <Canvas.BitmapEffect>
+                            <DropShadowBitmapEffect />
+                        </Canvas.BitmapEffect>
+                        <Rectangle Name="rctPopupEdit" Canvas.Top="13" Canvas.Left="2" Height="150" Width="284" RadiusX="25" RadiusY="25" Fill="WhiteSmoke" Stroke="LightGray" />
+                        <Polygon Name="plyEditDown"  Points="0,0 -50,75 50,0" Fill="WhiteSmoke" Stroke="LightGray" Canvas.Top="162" Canvas.Left="19" Height="77" Width="52" />
+                        <Polygon Name="plyEditUp" Points="60,0 60,40 10,0" Fill="WhiteSmoke" Stroke="LightGray" Height="77" Width="76" Canvas.Left="-56" Canvas.Top="31" />
+                        <Line X1="200" Y1="149" X2="250" Y2="149" Stroke="White" StrokeThickness="1" Height="150" Canvas.Top="-2" />
+                        <Line X1="200" Y1="150" X2="249" Y2="150" Stroke="White" StrokeThickness="2" Width="0" />
+                        <Label Name="lblEditTime" Height="30" Width="263" Content="" Canvas.Top="60" Canvas.Left="15" FontStyle="Italic" />
+                        <Label Name="txtEditPurpose" Height="32" Content="" Canvas.Top="26" Width="258" Canvas.Left="17" FontFamily="Arial Bold" FontSize="15" />
+                        <Button Name="btnDelete" Height="20" Width="60" Content="Delete" Canvas.Left="130" Canvas.Top="126" Click="btnDelete1_Click" />
+                        <Button Name="btnCancel1" Height="20" Width="60" Content="cancel" Canvas.Left="198" Canvas.Top="126" Click="btnCancel_Click_1" />
+                        <TextBlock Height="13" Canvas.Top="109" Canvas.Left="15" Width="103" Foreground="Blue" Cursor="Hand" Text="Edit event details>>" PreviewMouseLeftButtonDown="TextBlock_PreviewMouseLeftButtonDown" />
+                    </Canvas>
+
+                   <Canvas Background="Transparent" Name="cnvPopupJoin" Height="152" Width="286" Visibility="Collapsed" Canvas.Left="-2" Canvas.Top="13">
+                        <Canvas.BitmapEffect>
+                            <DropShadowBitmapEffect />
+                        </Canvas.BitmapEffect>
+                        <Rectangle Name="rctPopupJoin" Canvas.Top="-2" Canvas.Left="2" Height="165" Width="284" RadiusX="25" RadiusY="25" Fill="WhiteSmoke" Stroke="LightGray" />
+                        <Polygon Name="plyJoinDown" Points="0,0 -50,75 50,0" Fill="WhiteSmoke" Stroke="LightGray" Canvas.Top="162" Canvas.Left="19" Height="77" Width="52" />
+                        <Polygon Name="plyJoinUp" Points="60,0 60,40 10,0" Fill="WhiteSmoke" Stroke="LightGray" Height="77" Width="76" Canvas.Left="-56" Canvas.Top="31" />
+                        <Line X1="200" Y1="149" X2="250" Y2="149" Stroke="White" StrokeThickness="1" Height="150" Canvas.Top="-2" />
+                        <Line X1="200" Y1="150" X2="249" Y2="150" Stroke="White" StrokeThickness="2" Width="0" />
+                        <Label Name="lblEditTime1" Height="30" Width="263" Content="" Canvas.Top="60" Canvas.Left="15" FontStyle="Italic" />
+                        <Label Name="txtEditPurpose1" Height="32" Content="" Canvas.Top="26" Width="258" Canvas.Left="17" FontFamily="Arial Bold" FontSize="15" />
+                        <Label Name="lblGoing" Height="25" Content="Are You Going?:" Canvas.Top="91" Canvas.Left="13" Width="101" FontFamily="Arial Bold" />
+                        <Button Name="btnGoingYes" Height="20" Width="45" Content="Yes" Canvas.Left="127" Canvas.Top="93" Click="btnGoingYes_Click" />
+                        <Label Name="lblGoingYes" Height="30" Width="42" Content="Yes" Canvas.Left="134" Canvas.Top="91" />
+                        <Button Name="btnGoingNo" Height="20" Width="40" Content="No" Canvas.Left="172" Canvas.Top="93" Click="btnGoingNo_Click" />
+                        <Label Name="lblGoingNo" Height="30" Width="26" Content="No" Canvas.Left="179" Canvas.Top="91" />
+                        <Button Name="btnGoingMayBe" Height="20" Width="45" Content="May Be" Canvas.Left="212" Canvas.Top="93" Click="btnGoingMayBe_Click" />
+                        <Label Name="lblGoingMayBe" Height="24" Width="50" Content="May Be" Canvas.Left="210" Canvas.Top="91" />
+                        <Button Name="btnDelete1" Height="20" Width="60" Content="Delete" Canvas.Left="125" Canvas.Top="124" Click="btnDelete_Click" />
+                        <Button Name="btnCancel2" Height="20" Width="60" Content="cancel" Canvas.Left="198" Canvas.Top="124" Click="btnCancel_Click_1" />
+                        <TextBlock Height="13" Canvas.Top="127" Canvas.Left="15" Width="102" Text="See event details>>" Foreground="Blue" Cursor="Hand" PreviewMouseLeftButtonDown="TextBlock_PreviewMouseLeftButtonDown_2" />
+                    </Canvas>
+                </Canvas>
+            </ScrollViewer>
+        </Grid>
+
+
+
+    </Grid>
+
+
+
+</UserControl>

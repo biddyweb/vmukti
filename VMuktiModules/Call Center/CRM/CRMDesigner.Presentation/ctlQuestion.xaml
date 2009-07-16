@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="CRMDesigner.Presentation.ctlQuestion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+	<Canvas Name="cnvMainNo1" Height="768" Width="1024" Background="AliceBlue">
+		<ListBox Name="lstQuestion" Height="600" Width="150" Canvas.Left="610" Canvas.Top="10" />
+		<Button Name="btnNextQue" Height="30" Width="120" Content="Next Question" Canvas.Left="500" Canvas.Top="30" Click="btnNextQue_Click" />
+		<Canvas Name="cnvMain" Height="668" Width="1024" Background="AliceBlue" Canvas.Top="100">
+			<Label Name="lblHeader" Height="30" Width="100" Canvas.Top="20" Content="Question Header"/>
+			<TextBox Name="txtHeader" Height="25" Width="500" Canvas.Left="100" Canvas.Top="20"/>
+			<Label Name="lblType" Height="30" Width="100" Canvas.Top="50" Content="Question Type"/>
+			<ComboBox Name="cmbType" Height="25" Width="200" Canvas.Left="100" Canvas.Top="50">
+				<ComboBoxItem Name="cbiRadio" Content="ComboBox"/>
+				<ComboBoxItem Name="cbiRadio1" Content="ListBox"/>
+				<ComboBoxItem Name="cbiRadio2" Content="RadioButton"/>
+				<ComboBoxItem Name="cbiRadio3" Content="CheckBox"/>
+				<ComboBoxItem Name="cbiRadio4" Content="TextBox"/>
+			</ComboBox>
+			<Label Name="lblNoOfOptions" Height="30" Width="100" Canvas.Top="50" Canvas.Left="320" Content="No Of Options"/>
+			<TextBox Name="txtNoOfOptions" Height="25" Width="50" Canvas.Left="400" Canvas.Top="50" TextChanged="txtNoOfOptions_TextChanged" />
+			<Button Name="btnOK" Height="25" Width="50" Canvas.Top="49" Canvas.Left="480" Content="OK" Click="btnOK_Click" />
+
+			<Button Name="btnNext" Height="25" Width="70" Canvas.Top="49" Canvas.Left="550" Content="NEXT>>" Click="btnNext_Click" />
+			<Button Canvas.Left="640" Canvas.Top="49" Height="23" Name="btnFinish" Width="75" Click="btnFinish_Click">Finish</Button>
+			<Button Canvas.Left="40" Canvas.Top="80" Height="23" Name="btnStart" Width="125" Click="btnStart_Click">Set As Start Question</Button>
+			
+			<Label Name="lbl1" Height="30" Canvas.Top="80" Canvas.Left="750" Content="Action Question Name"/>
+
+			<Canvas Name="cnvOptions" Height="500" Canvas.Top="100" Width="1024"/>
+
+		</Canvas>
+	</Canvas>
+</UserControl>

@@ -1,0 +1,487 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="MasterPages_Default" %>
+
+<%@ Register Src="~/Controls/StyleButton.ascx" TagName="StyleButton" TagPrefix="uc" %>
+<%@ Register Src="~/Controls/LoginRegisterControl.ascx" TagName="LoginRegisterPanel"
+    TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Master Page</title>
+    <meta name="description" content=" Free services of Audio & video conferences, calling ,  Integrated chat, desktop sharing and using White-Boarding Tools and main benefit is Low Bandwidth and Infrastructure Cost.  " />
+
+<meta name="keywords" content=" free services, audio, video conferences, integrated chat, desktop sharing and using white-boarding tools and main benefit is low bandwidth and infrastructure cost." />
+
+<meta name="robots" content="index, follow" />
+
+<meta name="author" content="vmukti.com"/>
+    
+      <style type="text/css">
+       
+        .href
+        {
+        	font-family:Segoe UI;
+        	color:#ff6600;
+        }
+          .height
+        {
+        	height: 50px;
+        }
+        .TableHelp
+        {
+           
+            text-align: justify;
+           
+        }
+        .marg
+        {
+           
+            margin:[-200px][20px][40px][0px]
+           
+        }
+       
+        .style16
+        {
+            font-weight:normal;
+            font-size: x-large;
+            color: #000000;
+            text-align: center;
+            height: 100px;
+            font-family:Segoe UI;
+        }
+        
+       .fntHelp1
+        {
+            font-size: 14px;
+            bottom:20px;
+            font-weight: normal;
+            font-style: normal;
+            color: #000000;
+            font-family:Segoe UI;
+           
+        }
+       
+        .fntHelp
+        {
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            color: #000000;
+            font-family:Segoe UI;
+        }
+          
+          
+          .style17
+          {
+              height: 70px;
+          }
+          
+          
+        </style>
+        
+    <link id="linkCss" href="~/Css/Default.css" type="text/css" rel="stylesheet" runat="server" />
+    <script type="text/javascript" src="Scripts/CommonScript.js"></script>
+    
+</head>
+
+<body>
+    <form id="mainFrom" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="scrManager" runat="server" EnablePageMethods="true"
+        ScriptMode="Debug" LoadScriptsBeforeUI="false">
+        <Scripts>
+            <asp:ScriptReference Name="AjaxControlToolkit.ExtenderBase.BaseScripts.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Common.Common.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Compat.Timer.Timer.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Animation.Animations.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Animation.AnimationBehavior.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.PopupExtender.PopupBehavior.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.PopupControl.PopupControlBehavior.js"
+                Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Common.Threading.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Common.DateTime.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="AjaxControlToolkit.Compat.DragDrop.DragDropScripts.js" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" />
+            <asp:ScriptReference Name="VMukti.AjaxControls.PanelItem.PanelItemBehavior.js" Assembly="VMukti.AjaxControls" />
+            <asp:ScriptReference Name="VMukti.WidgetBaseExtender.WidgetBaseBehavior.js" Assembly="VMukti.WidgetBaseExtender" />
+            </Scripts>
+       
+    </ajaxToolkit:ToolkitScriptManager>
+    
+    <div id="maincontainer" style="overflow:hidden;min-width:800px;">
+        <div id="topsection">
+            <div id="divShowModuleExplorer" class="moduleButton" title="Hide Module Explorer"
+                runat="server">
+                &nbsp;</div>
+            <div id="divShowBuddyList" class="buddyButton" title="Hide Buddy List" runat="server">
+                &nbsp;</div>
+            <div id="divShowControlPanel" class="controlButton" title="Show Control Panel" runat="server">
+                &nbsp;</div>
+            <div class="topTheme">
+                Themes&nbsp;</div>
+            
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertube" style="text-align: center;">
+                  
+                    <asp:ContentPlaceHolder ID="CenterContent" runat="server" />
+                     <table class="TableHelp">
+            <tr>
+            <td align="center" class="style16" id="Td1">
+                Welcome to VMukti
+             </td>
+             </tr> 
+            <tr >
+            <td class="style17" >
+               <ul>
+                <li class="fntHelp">  First time user please download and install VMukti client setup from here:&nbsp;&nbsp;
+                <a class="href" href="ClientSetupInstructions.aspx"  tabindex="11">VMukti client setup</a>
+                
+                    <div class="fntHelp1">
+                    (This setup does not install VMukti program. It only prepares your machine to use web based VMukti Video Conferencing.)
+                    </div>
+                </li>
+                </ul>
+              
+             </td>
+            </tr>
+                
+        <tr >
+            <td class="height">
+                <ul><li class="fntHelp">Once the installation is complete, return to this page and register yourself</li></ul> </td>
+        </tr>
+        <tr>
+            <td class="height">
+              <ul><li class="fntHelp">Login to VMukti </li></ul></td>
+        </tr>
+        <tr>
+            <td class="height">
+              <ul><li class="fntHelp">Add existing VMukti users as your buddies using My buddies interface</li></ul></td>
+        </tr>
+        <tr>
+            <td class="height">
+              <ul><li class="fntHelp">To start Conferencing, drag video widget from the left panel
+                                and drop buddy from the right panel on the widget</li></ul></td>
+        </tr>
+        <tr>
+            <td class="height">
+              <ul><li class="fntHelp">- REMEMBER! If you want to be "100%-Easy Step by Step" Guided by us until the application is properly
+                                 Up-And-Running on your servers, you have our 'Support Package' available, to get that package, just go to the 
+                                 <a class="href" href="http://www.vmukti.com/index.php?page=shop.product_details&flypage=flypage-ask.tpl&product_id=17&category_id=6&option=com_virtuemart&Itemid=70" target="_blank" tabindex="11">VMukti Store</a>
+                   and see for the option you need.</li></ul></td>
+                                
+        </tr>
+           
+        <tr><td>
+        <div class="fntHelp">
+            </br>
+                  <ul>**Please note that, This version currently works with only IE 6.0 or later</ul>  
+               </div>
+        </td></tr>
+             
+              <tr><td>
+             </br></br></br></br>
+             <div ><ul>
+             <asp:Label ID="lblRights" runat="server" 
+        Text="Copyright 2008 @ VMukti " TabIndex="12"></asp:Label>&nbsp;|&nbsp; Contact :
+    <a href="mailto:contact@vmukti.com" tabindex="13">contact@vmukti.com</a>|<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=162339&amp;type=3" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a>
+    &nbsp;|
+    <asp:HyperLink ID="hpCodePlex" runat="server" 
+        NavigateUrl="http://codeplex.com/vmukti" ImageUrl="images/codeplex.jpg">CodePlex</asp:HyperLink></ul>
+             </div>
+             </td></tr>
+     
+    </table>
+                </div>
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="leftcolumntop">
+                <div class="moduleButton" style="margin-left: 2px;margin-top:0px;background-position:top;">
+                    &nbsp;</div>
+                <div style="float: left; margin-left: 5px; margin-top: -5px;">
+                    Widget Explorer</div>
+                <div class="closeButton" onclick="closePanel('Module');" title="Hide Module Explorer">
+                    &nbsp;</div>
+            </div>
+            <div class="leftcolumncontent">
+                <div id="divLoginPanel" style="float: left; width: 100%;">
+                    <uc:LoginRegisterPanel ID="loginRegiaterPanel" runat="server" />
+                </div>
+                <ajaxToolkit:CollapsiblePanelExtender ID="cpePage" TargetControlID="pnlPages" CollapseControlID="divPage"
+                    ExpandControlID="divPage" Collapsed="false" runat="server" />
+                <div id="divPage" runat="server" class="arrowUp" style="width: 100%; float: left;
+                    cursor: default;" onclick="changeButtonStyle(this);">
+                    <div id="image">
+                        &nbsp;</div>
+                    <div style="float: left; padding-left: 3px;">
+                        Page</div>
+                </div>
+                <asp:Panel ID="pnlPages" Style="float: left; width: 100%;" runat="server" />
+                <ajaxToolkit:CollapsiblePanelExtender ID="cpeModule" TargetControlID="pnlModules"
+                    CollapseControlID="divModule" ExpandControlID="divModule" Collapsed="false" runat="server" />
+                <div id="divModule" runat="server" class="arrowUp" style="width: 100%; float: left;
+                    cursor: default;" onclick="changeButtonStyle(this);">
+                    <div id="image">
+                        &nbsp;</div>
+                    <div style="float: left; padding-left: 3px;">
+                        Module</div>
+                </div>
+                <asp:Panel ID="pnlModules" Style="float: left; width: 100%;" runat="server" />
+                <div style="width: 100%; float: left;">&nbsp;</div>
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="rightcolumntop">
+                <div class="buddyButton" style="margin-left: 2px;margin-top:0px;background-position:top;">
+                    &nbsp;</div>
+                <div style="float: left; margin-left: 5px; margin-top: -5px;">
+                    My Buddies</div>
+                <div class="closeButton" onclick="closePanel('Buddy');" title="Hide Buddy List">
+                    &nbsp;</div>
+            </div>
+            <div class="rightcolumncontent">
+                <asp:TextBox ID="tbAddBuddy" Width="86px" CssClass="textBox" Style="margin-bottom: 10px;"
+                    runat="server" />
+                <uc:StyleButton ID="btnAddBuddy" Text="Add Buddy" Width="80px" runat="server"  />
+                <asp:Panel ID="pnlBuddies" Style="width: 100%; float: left; margin-top: 10px;" runat="server" />
+            </div>
+        </div>
+    </div>
+    <ajaxToolkit:AnimationExtender ID="hideBuddyExt" runat="server" TargetControlID="divShowBuddyList">
+        <Animations>
+            <OnClick>
+                <Sequence>
+                    <Case SelectScript="toolboxVisible('Module')">  
+                        <Parallel Duration=".01" Fps="60">
+                            <Length AnimationTarget="rightcolumn" PropertyKey="marginLeft" Property="style" StartValue="0" EndValue="-20" unit="%"/>  
+                            <Length AnimationTarget="rightcolumn" PropertyKey="marginRight" Property="style" StartValue="-22" EndValue="0" unit="%"/>  
+                            <Length AnimationTarget="contentcolumn" PropertyKey="marginRight" Property="style" StartValue="0" EndValue="20" unit="%"/>  
+                        </Parallel>  
+                        <Parallel Duration=".01" Fps="60">
+                            <Length AnimationTarget="rightcolumn" PropertyKey="marginLeft" Property="style" StartValue="-20" EndValue="0" unit="%"/> 
+                            <Length AnimationTarget="rightcolumn" PropertyKey="marginRight" Property="style" EndValue="-22" StartValue="0" unit="%"/> 
+                            <Length AnimationTarget="contentcolumn" PropertyKey="marginRight" Property="style" StartValue="20" EndValue="0" unit="%"/>   
+                        </Parallel>      
+                    </Case> 
+                    <ScriptAction Script="toggleShower('Module');" />
+                </Sequence>                                          
+            </OnClick>
+        </Animations>
+    </ajaxToolkit:AnimationExtender>
+    <ajaxToolkit:AnimationExtender ID="hideModuleExt" runat="server" TargetControlID="divShowModuleExplorer">
+        <Animations>
+            <OnClick>
+             <Sequence>
+                    <Case SelectScript="toolboxVisible('Buddy')">  
+                         <Parallel Duration=".05" Fps="60">
+                            <Length AnimationTarget="leftcolumn" PropertyKey="marginLeft" Property="style" StartValue="-120" EndValue="-100" unit="%"/>  
+                            <Length AnimationTarget="contentcolumn" PropertyKey="marginLeft" Property="style" StartValue="0" EndValue="20" unit="%"/>  
+                        </Parallel>  
+                        <Parallel Duration=".05" Fps="60">
+                            <Length AnimationTarget="leftcolumn" PropertyKey="marginLeft" Property="style" StartValue="-100" EndValue="-120" unit="%"/> 
+                            <Length AnimationTarget="contentcolumn" PropertyKey="marginLeft" Property="style" StartValue="20" EndValue="0" unit="%"/>  
+                        </Parallel>      
+                      </Case> 
+                      <ScriptAction Script="toggleShower('Buddy');" />
+                </Sequence>                                          
+            </OnClick>        
+        </Animations>
+    </ajaxToolkit:AnimationExtender>
+   <ajaxToolkit:ModalPopupExtender ID="settingsExtender" PopupDragHandleControlID="popUpSettings"
+        runat="server" TargetControlID="divShowControlPanel" PopupControlID="popUpSettings" BackgroundCssClass="modalBackground" />
+ 
+  <asp:Panel ID="popUpSettings" runat="server" Style="display: none; top:100;">
+        <asp:Panel ID="settingsPanel" CssClass="popupBox" runat="server">
+            <div class="closeButton" onclick="hidePanel('settings');" title="Hide Settings Panel">
+                    &nbsp;</div>
+            <div class="tabContent">
+                Please register Your self to use the functinality
+            </div>
+        </asp:Panel>
+    </asp:Panel>
+
+    <script type="text/javascript">
+        function pageLoad()
+        {
+            var pnlModules = $get('<%=pnlModules.ClientID %>');
+            var pnlPages = $get('<%=pnlPages.ClientID %>');
+            if(pnlModules && pnlPages)
+            {
+                pnlModules.firstChild.style.display = "none";
+                pnlPages.firstChild.style.display = "none";
+                //Hardcode
+//                var titles = { 1 : 'First', 2 : 'Second', 3 : 'Third', 4 : 'Fourth', 5 : 'Fifth'};
+//                for(var i=1; i<=3; i++)
+//                {
+//                    var panelItemContent = document.createElement("div");
+//                    panelItemContent.id=pnlPages.id+"_pageItem"+ i;
+//                    pnlPages.appendChild(panelItemContent);
+//                    $create(VMukti.AjaxControls.PanelItemBehavior, {
+//                    'title' : titles[i] + " Page",
+//                    'imageCss' : "panelPageItemImage",
+//                    'description' : titles[i] + " Page Description",
+//                    'itemEnabled' : true,
+//                    'itemVisible' : true,
+//                    'cssClass' : "panelItem",
+//                    'selectedCssClass' : "panelItem",
+//                    'moveItemEnabled' : false,
+//                    'id' : 'pageItemEx_' + i}, {'click' : onPageClick}, null, 
+//                    panelItemContent);
+//                }
+//                var chatItemContent = document.createElement("div");
+//                chatItemContent.id = pnlModules.id + "_chatModuleItem";
+//                pnlModules.appendChild(chatItemContent);
+//                $create(VMukti.AjaxControls.PanelItemBehavior, {
+//                'title' : "Chat",
+//                'imageCss' : "panelModuleItemImage",
+//                'description' : "Chat Module",
+//                'itemEnabled' : true,
+//                'itemVisible' : true,
+//                'cssClass' : "panelItem",
+//                'selectedCssClass' : "panelItem",
+//                'moveItemEnabled' : true,
+//                'id' : 'chatModuleItemEx'}, {'click' : onModuleClick, 'keyup' : onModuleKeyUp}, null, 
+//                chatItemContent);
+//                
+//                var coAuthItemContent = document.createElement("div");
+//                coAuthItemContent.id = pnlModules.id + "_coAuthModuleItem";
+//                pnlModules.appendChild(coAuthItemContent);
+//                $create(VMukti.AjaxControls.PanelItemBehavior, {
+//                'title' : "Co-Authering",
+//                'imageCss' : "panelModuleItemImage",
+//                'description' : "Co-Authering Module",
+//                'itemEnabled' : true,
+//                'itemVisible' : true,
+//                'cssClass' : "panelItem",
+//                'selectedCssClass' : "panelItem",
+//                'moveItemEnabled' : true,
+//                'id' : 'coAuthModuleItemEx'}, {'click' : onModuleClick, 'keyup' : onModuleKeyUp}, null, 
+//                coAuthItemContent);
+            }           
+        }
+        
+        function onPageClick(sender, ev)
+        {
+            //TO DO
+        } 
+        
+        function onModuleClick(sender, ev)
+        {
+            var moveItem = $get(sender._id + "_MoveItem");
+            //moveItem.style.display = "";            
+            //aThumbv.onDrag = function(x, y) {// x, y contains current offset coords of drag
+            //scrolldiv.style.top=y * (-1) +"px";
+        } 
+        
+        function onModuleKeyUp(sender, ev)
+        {
+        }
+        
+        function onBuddyClick(sender, ev)
+        {
+            alert(sender.get_title());
+        }
+        function toolboxVisible(mode)
+        {
+            var res = false;
+            var div = null;
+            var buttonText = "";
+            if (mode == 'Buddy')
+            {
+                div = $get('<%=divShowBuddyList.ClientID %>');
+                buttonText = "Buddy List";
+            }
+            else if (mode == 'Module')
+            {
+                div = $get('<%=divShowModuleExplorer.ClientID %>');
+                buttonText = "Module Explorer";
+            }
+            if(div)
+            {
+                if(div.title == "Hide " + buttonText)
+                {
+                    res = true;
+                }
+            }
+            return (res)?1:0;
+        }
+        function toggleShower(mode)
+        {
+            var res = false;
+            var div = null;
+            var buttonText = "";
+            if (mode == 'Buddy')
+            {
+                div = $get('<%=divShowBuddyList.ClientID %>');
+                buttonText = "Buddy List";
+            }
+            else if (mode == 'Module')
+            {
+                div = $get('<%=divShowModuleExplorer.ClientID %>');
+                buttonText = "Module Explorer";
+            }
+            if(div)
+            {
+                if(div.title == "Hide " + buttonText)
+                {
+                    div.title = "Show " + buttonText;
+                }
+                else
+                {
+                    div.title="Hide " +  buttonText;
+                }
+            }
+        }
+        function closePanel(mode)
+        {
+            var ext = null;
+            if (mode == 'Buddy')
+            {
+                ext = $find('<%=hideBuddyExt.ClientID %>');
+            }
+            else if (mode == 'Module')
+            {
+                ext = $find('<%=hideModuleExt.ClientID %>');
+            }
+            if(ext)
+            {
+                ext.OnClick();
+            }
+        }
+        function changeButtonStyle(sender)
+        {
+            if(sender.className == 'arrowUp')
+            {
+                sender.className = 'arrowDown';
+            }
+            else
+            {
+                sender.className = 'arrowUp';
+            }
+        }
+        
+        function hidePanel(panel)
+        {
+            if(panel == 'settings')
+            {
+                var extPanel = $find('<%=settingsExtender.ClientID %>');
+                if(extPanel)
+                {
+                    extPanel.hide();
+                }
+            }
+        }
+    </script>
+
+    </form>
+   <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3491317-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

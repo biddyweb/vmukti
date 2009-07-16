@@ -1,0 +1,5 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.Common\bin\Debug\User.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.Common\bin\Debug\User.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.Common\obj\Debug\User.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\UserInfo\User.Common\obj\Debug\User.Common.pdb

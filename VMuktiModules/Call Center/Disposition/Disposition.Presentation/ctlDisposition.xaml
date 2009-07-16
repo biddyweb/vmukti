@@ -1,0 +1,35 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DispositionGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    x:Class="Disposition.Presentation.UserControl2" Height="520" Width="550"
+    x:Name="ucDisposition" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+<!--</Viewbox>-->
+	<!--</Viewbox>-->
+	<Grid x:Name="cnvView" Width="{Binding Path=Width, ElementName=ucDisposition, Mode=Default}">
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+      
+		<DispositionGrid:ctlGrid x:Name="CtlGrid" Height="230"  Width="{Binding Path=Width, ElementName=cnvView}" MinWidth="506" btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked" Margin="0,0,6,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+		<TabControl IsSynchronizedWithCurrentItem="True" x:Name="tbcUserAdditon" Grid.Row="1">
+			<TabItem  Header="Disposition Details" x:Name="tbiDisposition" >
+				<Canvas Margin="0,0,10,0" Width="350" HorizontalAlignment="Left">
+					<Label Width="110" Height="25" Content="Disposition Name" Canvas.Left="8" Canvas.Top="9" x:Name="lblDesposition" HorizontalAlignment="Stretch" HorizontalContentAlignment="Right" />
+					<Label Width="110" Height="25" Content="Is Active" Canvas.Left="8" Canvas.Top="42" x:Name="lblStartTime" HorizontalAlignment="Stretch" HorizontalContentAlignment="Right" />
+					<Label Width="110" Height="25" Content="Description" Canvas.Left="8" Canvas.Top="75" x:Name="lblDescription" HorizontalAlignment="Stretch" HorizontalContentAlignment="Right" /> 				
+					
+					<TextBox  Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="125" Canvas.Top="9" x:Name="txtName" TabIndex="1" GotFocus="txtName_GotFocus" MaxLength="50" />
+					<TextBox  Width="200" Height="75" Text="" TextWrapping="Wrap" Canvas.Left="125" Canvas.Top="75" x:Name="txtDescription" TabIndex="3" GotFocus="txtDescription_GotFocus" MaxLength="250"/>
+					<CheckBox  x:Name="chkIsActive" Width="20" Height="18" Canvas.Top="48" Canvas.Left="125" TabIndex="2" Focusable="False"/>
+				</Canvas>
+			</TabItem>
+		</TabControl>
+		<Button  Width="75" Height="25" Content="Save" x:Name="btnSave" Click="btnSave_Click" TabIndex="4" HorizontalAlignment="Left" Margin="125,0,0,45" VerticalAlignment="Bottom" Grid.Row="1" />
+		<Button Width="75" Height="25" Content="Cancel" x:Name="btnCancel" Click="btnCancel_Click" TabIndex="5" HorizontalAlignment="Left" Margin="210,0,181,45" VerticalAlignment="Bottom" Grid.Row="1" />
+	
+	</Grid>
+</UserControl>

@@ -1,0 +1,211 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using VMukti.Common;
+
+public partial class Controls_DragPanelControl : System.Web.UI.UserControl
+{
+    private double topPanelSize = 100;
+    private double leftPanelSize;
+    private double middlePanelSize;
+    private double rightPanelSize;
+
+    private string rightPanelVisible;
+    private string middlePanelVisible;
+    private int padding = 3;
+
+    private List<KeyValuePair<PanelPosition, Control>> _widgets;
+    public List<KeyValuePair<PanelPosition, Control>> Widgets
+    {
+        get
+        {
+            if (_widgets == null)
+            {
+                _widgets = new List<KeyValuePair<PanelPosition, Control>>();
+            }
+            return _widgets;
+        }
+        set
+        {
+            _widgets = value;
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+    public void AddWidget(Control widget, string position)
+    {
+        switch (position)
+        {
+            case "Top":
+                {
+                    AddWidget(widget, PanelPosition.Top);
+                    break;
+                }
+            case "Left":
+                {
+                    AddWidget(widget, PanelPosition.Left);
+                    break;
+                }
+            case "Middle":
+                {
+                    AddWidget(widget, PanelPosition.Middle);
+                    break;
+                }
+            case "Right":
+                {
+                    AddWidget(widget, PanelPosition.Right);
+                    break;
+                }
+            case "Bottom":
+                {
+                    AddWidget(widget, PanelPosition.Bottom);
+                    break;
+                }
+            default:
+                {
+                    AddWidget(widget, PanelPosition.Left);
+                    break;
+                }
+        }
+    }
+    public void AddWidget(Control widget, PanelPosition position)
+    {
+        Widgets.Add(new KeyValuePair<PanelPosition, Control>(position, widget));
+        //foreach (KeyValuePair<PanelPosition, Control> item in Widgets)
+        //{
+        switch (position)
+            {
+                case PanelPosition.Top:
+                    {
+                        //TopPanel.Controls.Add(item.Value);
+                        //TopUpdatePanel.Update();
+                        break;
+                    }
+                case PanelPosition.Left:
+                    {
+                        LeftPanel.Controls.Add(widget);
+                        LeftUpdatePanel.Update();
+                        break;
+                    }
+                case PanelPosition.Middle:
+                    {
+                        MiddlePanel.Controls.Add(widget);
+                        MiddleUpdatePanel.Update();
+                        break;
+                    }
+                case PanelPosition.Right:
+                    {
+                        RightPanel.Controls.Add(widget);
+                        RightUpdatePanel.Update();
+                        break;
+                    }
+                case PanelPosition.Bottom:
+                    {
+                        //BottomPanel.Controls.Add(widget);
+                        //BottomUpdatePanel.Update();
+                        break;
+                    }
+                default:
+                    {
+                        LeftPanel.Controls.Add(widget);
+                        LeftUpdatePanel.Update();
+                        break;
+                    }
+            }
+        //}
+    }
+
+    public string TopPanelSize
+    {
+        get { return this.topPanelSize.ToString() + "%"; }
+    }
+    public string MiddlePanelSize
+    {
+        get { return (this.middlePanelSize - padding).ToString() + "%"; }
+    }
+    public string RightPanelSize
+    {
+        get { return (this.rightPanelSize - padding).ToString() + "%"; }
+    }
+    public string LeftPanelSize
+    {
+        get { return (this.leftPanelSize - padding).ToString() + "%"; }
+    }
+    public string RightPanelVisible
+    {
+        get { return this.rightPanelVisible; }
+    }
+
+    public string MiddlePanelVisible
+    {
+        get { return this.middlePanelVisible; }
+    }
+
+    public void SetLayout(int layoutID)
+    {
+        switch (layoutID)
+        {
+            case 1:
+                this.leftPanelSize = 33;
+                this.middlePanelSize = 33;
+                this.rightPanelSize = 33;
+                this.rightPanelVisible = "visible";
+                this.middlePanelVisible = "visible";
+                this.CustomDragDropExtender2.Enabled = true;
+                this.CustomDragDropExtender3.Enabled = true;
+                //topRow.Attributes["colspan"] = "5";
+                break;
+            case 2:
+                this.leftPanelSize = 25;
+                this.middlePanelSize = 75;
+                this.rightPanelSize = 0;
+                this.rightPanelVisible = "hidden";
+                this.middlePanelVisible = "visible";
+                this.CustomDragDropExtender2.Enabled = true;
+                this.CustomDragDropExtender3.Enabled = false;
+                //topRow.Attributes["colspan"] = "3";
+                break;
+            case 3:
+                this.leftPanelSize = 75;
+                this.middlePanelSize = 25;
+                this.rightPanelSize = 0;
+                this.rightPanelVisible = "hidden";
+                this.middlePanelVisible = "visible";
+                this.CustomDragDropExtender2.Enabled = true;
+                this.CustomDragDropExtender3.Enabled = false;
+                //topRow.Attributes["colspan"] = "3";
+                break;
+            case 4:
+                this.leftPanelSize = 100;
+                this.middlePanelSize = 0;
+                this.rightPanelSize = 0;
+                this.rightPanelVisible = "hidden";
+                this.middlePanelVisible = "hidden";
+                this.CustomDragDropExtender2.Enabled = false;
+                this.CustomDragDropExtender3.Enabled = false;
+                //topRow.Attributes["colspan"] = "1";
+                break;
+            default:
+                this.leftPanelSize = 33;
+                this.middlePanelSize = 33;
+                this.rightPanelSize = 33;
+                this.rightPanelVisible = "visible";
+                this.middlePanelVisible = "visible";
+                this.CustomDragDropExtender2.Enabled = true;
+                this.CustomDragDropExtender3.Enabled = true;
+                break;
+        }
+    }
+}

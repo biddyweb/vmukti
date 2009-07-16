@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLeadCountByZipcode" targetNamespace="http://tempuri.org/dsLeadCountByZipcode.xsd" xmlns:mstns="http://tempuri.org/dsLeadCountByZipcode.xsd" xmlns="http://tempuri.org/dsLeadCountByZipcode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLeadCountByZipcode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsLeadCountByZipcode" msprop:Generator_UserDSName="dsLeadCountByZipcode" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtLeadCountByZipcode" msprop:Generator_UserTableName="dtLeadCountByZipcode" msprop:Generator_RowDeletedName="dtLeadCountByZipcodeRowDeleted" msprop:Generator_TableClassName="dtLeadCountByZipcodeDataTable" msprop:Generator_RowChangedName="dtLeadCountByZipcodeRowChanged" msprop:Generator_RowClassName="dtLeadCountByZipcodeRow" msprop:Generator_RowChangingName="dtLeadCountByZipcodeRowChanging" msprop:Generator_RowEvArgName="dtLeadCountByZipcodeRowChangeEvent" msprop:Generator_RowEvHandlerName="dtLeadCountByZipcodeRowChangeEventHandler" msprop:Generator_TablePropName="dtLeadCountByZipcode" msprop:Generator_TableVarName="tabledtLeadCountByZipcode" msprop:Generator_RowDeletingName="dtLeadCountByZipcodeRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ZipCode" msprop:Generator_UserColumnName="ZipCode" msprop:Generator_ColumnPropNameInRow="ZipCode" msprop:Generator_ColumnVarNameInTable="columnZipCode" msprop:Generator_ColumnPropNameInTable="ZipCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_UserColumnName="Count" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInTable="CountColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

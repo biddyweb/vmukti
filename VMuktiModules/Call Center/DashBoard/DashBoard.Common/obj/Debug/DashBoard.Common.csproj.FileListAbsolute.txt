@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\bin\Debug\DashBoard.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\bin\Debug\DashBoard.Common.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\obj\Debug\DashBoard.Common.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\obj\Debug\DashBoard.Common.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\obj\Debug\DashBoard.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\DashBoard\DashBoard.Common\obj\Debug\DashBoard.Common.pdb

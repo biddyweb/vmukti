@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="CRMContainer.Presentation.CtlCRMContainer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="ucCRMContainer"
+	MinHeight="184" MinWidth="454"
+	Width="1000" Height="570"
+    >
+		<Canvas x:Name="cnvLayoutRoot" Height="{Binding Height,ElementName=ucCRMContainer}" Width="{Binding Width,ElementName=ucCRMContainer}">
+
+		</Canvas>
+	
+</UserControl>

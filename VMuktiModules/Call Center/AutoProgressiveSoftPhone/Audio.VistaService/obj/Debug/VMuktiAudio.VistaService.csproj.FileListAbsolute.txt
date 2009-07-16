@@ -1,0 +1,44 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAudio.VistaService.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAudio.VistaService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Audio.VistaService.Business.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Interop.RTCCORELib.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAPI.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiService.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Audio.VistaService.Business.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiService.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAPI.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\Window1.baml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\Window1.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\App.g.cs
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService_MarkupCompile.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.g.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.Properties.Resources.resources
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.csproj.GenerateResource.Cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.exe
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAudio.VistaService.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAudio.VistaService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Audio.VistaService.Business.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Interop.RTCCORELib.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAPI.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiService.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\Audio.VistaService.Business.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiService.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\bin\Debug\VMuktiAPI.pdb
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\ResolveAssemblyReference.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\Window1.baml
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\Window1.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\App.g.cs
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService_MarkupCompile.cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.g.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.Properties.Resources.resources
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.csproj.GenerateResource.Cache
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.exe
+F:\upload source code to sourceforge\VMukti-TFS-Latest\VMukti\VMuktiModules\Call Center\AutoProgressiveSoftPhone\Audio.VistaService\obj\Debug\VMuktiAudio.VistaService.pdb

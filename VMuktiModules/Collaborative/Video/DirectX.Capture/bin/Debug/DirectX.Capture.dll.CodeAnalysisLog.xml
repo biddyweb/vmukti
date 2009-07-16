@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture\bin\Debug\DirectX.Capture.dll">
+   <Modules>
+    <Module Name="directx.capture.dll">
+     <Namespaces>
+      <Namespace Name="DirectX.Capture">
+       <Types>
+        <Type Name="AudioSource" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#getName(DShowNET.IPin)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="AudioSource.cs" Line="91">The 'this' parameter (or 'Me' in Visual Basic) of 'AudioSource.getName(IPin)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Capture" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(DirectX.Capture.Filter,DirectX.Capture.Filter)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="892">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioCaps' of type 'AudioCapabilities' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="886">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioCompressor' of type 'Filter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="908">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioCompressorFilter' of type 'IBaseFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="907">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioDeviceFilter' of type 'IBaseFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="894">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioSources' of type 'SourceCollection' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="904">'Capture.Capture(Filter, Filter)' initializes field 'Capture.audioStreamConfig' of type 'IAMStreamConfig' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="902">'Capture.Capture(Filter, Filter)' initializes field 'Capture.captureGraphBuilder' of type 'ICaptureGraphBuilder2' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="910">'Capture.Capture(Filter, Filter)' initializes field 'Capture.fileWriterFilter' of type 'IFileSinkFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="878">'Capture.Capture(Filter, Filter)' initializes field 'Capture.isCaptureRendered' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="877">'Capture.Capture(Filter, Filter)' initializes field 'Capture.isPreviewRendered' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="909">'Capture.Capture(Filter, Filter)' initializes field 'Capture.muxFilter' of type 'IBaseFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="889">'Capture.Capture(Filter, Filter)' initializes field 'Capture.previewWindow' of type 'Canvas' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="895">'Capture.Capture(Filter, Filter)' initializes field 'Capture.propertyPages' of type 'PropertyPageCollection' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="882">'Capture.Capture(Filter, Filter)' initializes field 'Capture.rotCookie' of type 'int' to 0. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="920">'Capture.Capture(Filter, Filter)' initializes field 'Capture.sampGrabber' of type 'ISampleGrabber' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="896">'Capture.Capture(Filter, Filter)' initializes field 'Capture.tuner' of type 'Tuner' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="891">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoCaps' of type 'VideoCapabilities' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="885">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoCompressor' of type 'Filter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="906">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoCompressorFilter' of type 'IBaseFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="905">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoDeviceFilter' of type 'IBaseFilter' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="893">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoSources' of type 'SourceCollection' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="903">'Capture.Capture(Filter, Filter)' initializes field 'Capture.videoStreamConfig' of type 'IAMStreamConfig' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="880">'Capture.Capture(Filter, Filter)' initializes field 'Capture.wantCaptureRendered' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="879">'Capture.Capture(Filter, Filter)' initializes field 'Capture.wantPreviewRendered' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#assertStopped()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1860">The 'this' parameter (or 'Me' in Visual Basic) of 'Capture.assertStopped()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#bufferedSize" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Capture.bufferedSize' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getTempFilename()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1701">The 'this' parameter (or 'Me' in Visual Basic) of 'Capture.getTempFilename()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hideVideo()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="hr" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1473">'Capture.hideVideo()' declares a variable, 'hr', of type 'int', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnCaptureDone()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1892">'Capture.OnCaptureDone()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1892">The 'this' parameter (or 'Me' in Visual Basic) of 'Capture.OnCaptureDone()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#showVideo()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="hr" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Capture.cs" Line="1481">'Capture.showVideo()' declares a variable, 'hr', of type 'int', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CrossbarSource" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ConnectorType" Kind="Field" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'CrossbarSource.ConnectorType' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getName(DShowNET.PhysicalConnectorType)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="CrossbarSource.cs" Line="101">The 'this' parameter (or 'Me' in Visual Basic) of 'CrossbarSource.getName(PhysicalConnectorType)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Filter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#getAnyMoniker()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Filter.cs" Line="147">The 'this' parameter (or 'Me' in Visual Basic) of 'Filter.getAnyMoniker()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getMonikerString(System.Runtime.InteropServices.UCOMIMoniker)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Filter.cs" Line="77">The 'this' parameter (or 'Me' in Visual Basic) of 'Filter.getMonikerString(UCOMIMoniker)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getName(System.Runtime.InteropServices.UCOMIMoniker)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Filter.cs" Line="85">The 'this' parameter (or 'Me' in Visual Basic) of 'Filter.getName(UCOMIMoniker)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Filters" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Filters.cs" Line="66">'Filters.Filters()' initializes field 'Filters.AudioCompressors' of type 'FilterCollection' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="Filters.cs" Line="59">'Filters.Filters()' initializes field 'Filters.AudioInputDevices' of type 'FilterCollection' to null. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PropertyPage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="PropertyPage.cs" Line="45">'PropertyPage.PropertyPage()' initializes field 'PropertyPage.SupportsPersisting' of type 'bool' to false. Remove this initialization because it will be done automatically by the runtime.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#State" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="PropertyPage.cs" Line="73">Change 'PropertyPage.State' to return a collection or make it a method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SourceCollection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#findAudioSources(DShowNET.ICaptureGraphBuilder2,DShowNET.IBaseFilter)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="SourceCollection.cs" Line="283">The 'this' parameter (or 'Me' in Visual Basic) of 'SourceCollection.findAudioSources(ICaptureGraphBuilder2, IBaseFilter)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#findCrossbars(DShowNET.ICaptureGraphBuilder2,DShowNET.IBaseFilter)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="SourceCollection.cs" Line="193">'comObj', a variable, is cast to type 'IAMCrossbar' multiple times in method 'SourceCollection.findCrossbars(ICaptureGraphBuilder2, IBaseFilter)'. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant isint instruction.</Issue>
+            </Message>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="SourceCollection.cs" Line="175">The 'this' parameter (or 'Me' in Visual Basic) of 'SourceCollection.findCrossbars(ICaptureGraphBuilder2, IBaseFilter)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#findCrossbarSources(DShowNET.ICaptureGraphBuilder2,DShowNET.IAMCrossbar,System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2009-06-04 06:49:18Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DirectX.Capture" File="SourceCollection.cs" Line="214">The 'this' parameter (or 'Me' in Visual Basic) of 'SourceCollection.findCrossbarSources(ICaptureGraphBuilder2, IAMCrossbar, bool)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182264(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245042(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+   <Name>Do not cast unnecessarily</Name>
+   <Description>Avoid duplicate casts where possible, since there is a cost associated with them.</Description>
+   <Resolution Name="Local">{0}, a variable, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182271(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+   <Name>Do not initialize unnecessarily</Name>
+   <Description>Do not make initializations that have already been done by the runtime.</Description>
+   <Resolution Name="Default">{0} initializes field {1} of type {2} to {3}. Remove this initialization because it will be done automatically by the runtime.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182274(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms245046(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Properties should not return arrays</Name>
+   <Description>Properties that return arrays are prone to code inefficiencies. Consider using a collection or making this a method. See the design guidelines for more information.</Description>
+   <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/0fss9skc(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/ms182278(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

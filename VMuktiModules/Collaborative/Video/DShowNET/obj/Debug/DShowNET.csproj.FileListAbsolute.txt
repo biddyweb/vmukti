@@ -1,0 +1,7 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\bin\Debug\DShowNET.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\bin\Debug\DShowNET.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\bin\Debug\DShowNET.dll.CodeAnalysisLog.xml
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\bin\Debug\DShowNET.dll.lastcodeanalysissucceeded
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\obj\Debug\DShowNET.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\Collaborative\Video\DShowNET\obj\Debug\DShowNET.pdb

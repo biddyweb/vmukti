@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Role.Presentation.CtlRole"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:RoleGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    Height="Auto" Width="518" MinHeight="545" MinWidth="518"
+    Name="ucRole">
+
+	
+	
+		<Canvas Name="cnvMain" Height="{Binding Height, ElementName=ucRole}">
+            
+         <RoleGrid:ctlGrid Name="CtlGrid" Width="{Binding Width, ElementName=ucRole}" MinWidth="380" Height="230"  btnDeleteClicked="CtlGrid_btnDeleteClicked" btnEditClicked="CtlGrid_btnEditClicked" HorizontalAlignment="Left"></RoleGrid:ctlGrid>
+
+        <TabControl Height="275" IsSynchronizedWithCurrentItem="True" Canvas.Left="0" Canvas.Top="240" x:Name="tbcRoleAddition" Width="{Binding Width, ElementName=ucRole}">
+            <TabItem  Header="Roles" x:Name="tbiRoles" IsSelected="True">
+                <Canvas Width="{Binding Width, ElementName=ucRole}" HorizontalAlignment="Left">
+                    <TextBox  VerticalAlignment="Top" Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="136" Canvas.Top="15" x:Name="txtName" GotFocus="txtName_GotFocus" TabIndex="1" />
+                    <TextBox  Width="200" Text="" TextWrapping="Wrap" Canvas.Left="136" Canvas.Top="52" x:Name="txtDescription" Height="65" GotFocus="txtDescription_GotFocus" KeyDown="txtDescription_KeyDown" LostFocus="txtDescription_LostFocus" TabIndex="2" />
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="30" Content="Name" Canvas.Left="55" Canvas.Top="15" x:Name="lblName" />
+                    <Label HorizontalAlignment="Left" Width="80" Content="Description" Canvas.Left="55" Canvas.Top="49" x:Name="lblDescription" />
+                    <Label VerticalAlignment="Bottom" Width="70" Height="30" Content="Is Admin" Canvas.Left="55" Canvas.Top="120" x:Name="lblIsAdmin" />
+                    <CheckBox  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="25" Height="18" Content="" Canvas.Left="136" Canvas.Top="125" x:Name="chkIsAdmin" TabIndex="3" Focusable="False" />
+
+
+                </Canvas>
+            </TabItem>
+
+            <TabItem  Header="Management" x:Name="tbiManagement" Visibility="Collapsed" GotFocus="tbiManagement_GotFocus" LostFocus="tbiManagement_LostFocus" IsSelected="True" TabIndex="6">
+                <Canvas  Width="{Binding Width, ElementName=ucRole}" Name="cnvPermission" HorizontalAlignment="Left">
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="30" Content="Name" Canvas.Left="55" Canvas.Top="15" x:Name="lblCurrentRole" />
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="30" Content="Name" Canvas.Left="55" Canvas.Top="45" x:Name="lblModule" />
+                    <ComboBox  Canvas.Left="130" Canvas.Top="50" x:Name="cmbModules" Width="200" TabIndex="7"></ComboBox>
+                    <Label x:Name="lblPermissions" Canvas.Left="55" Canvas.Top="80">Permissions</Label>
+                    <ListBox  x:Name="lstPermissions" Canvas.Left="130" Canvas.Top="86" Height="150" Width="200" SelectionMode="Multiple" TabIndex="8" />
+                    <Button  x:Name="btnSavePer" Height="30" Width="70" Canvas.Left="150" Canvas.Top="250" TabIndex="9">Save</Button>
+                    <Button  x:Name="btnCancelPer" Height="30" Width="70" Canvas.Left="250" Canvas.Top="250" TabIndex="10">Cancel</Button>
+                    <!--<Button x:Name="btnFinish" Height="30" Width="70" Canvas.Left="350" Canvas.Top="250" TabIndex="10">Finish</Button>-->
+                </Canvas>
+            </TabItem>
+            <TabItem Visibility="Collapsed"  Name="tbiMgmt" Header="Management" TabIndex="4" IsSelected="True">
+                <Canvas Background="{DynamicResource WindowBackgroundBrush}" Name="cnvManagement" Height="300" Width="380"/>
+            </TabItem>
+        </TabControl>
+        <Button  Width="70" Height="25" Content="Save" Canvas.Left="115" Canvas.Top="475" x:Name="btnSave" Click="btnSave_Click" TabIndex="10000000" />
+		<Button  Width="70" Height="25" Content="Cancel" Canvas.Left="200" Canvas.Top="475" x:Name="btnCancel" Click="btnCancel_click" TabIndex="100000001" />
+    </Canvas>
+
+</UserControl>

@@ -1,0 +1,42 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:CallingListGrid="clr-namespace:VMukti.CtlGrid.Presentation;assembly=VMukti.CtlGrid.Presentation"
+    x:Class="CallingList.Presentation.CtlCallingList" 
+    Height="520" Width="550"
+    Name="ucCallingList"
+    >
+    
+    
+    <UserControl.Resources>
+		<!---->
+	</UserControl.Resources>
+
+	 
+      <Grid x:Name="cnvView">
+      	<Grid.RowDefinitions>
+      		<RowDefinition/>
+      		<RowDefinition/>
+      	</Grid.RowDefinitions> 
+    
+		<CallingListGrid:ctlGrid x:Name="CtlGrid" MinHeight="230" Height="230" Width="{Binding Path=Width, ElementName=ucCallingList}" btnDeleteClicked="CtlGrid_btnDeleteClicked" Margin="0,0,6,0" btnEditClicked="CtlGrid_btnEditClicked" VerticalAlignment="Top" HorizontalAlignment="Left"/>    
+
+		<TabControl IsSynchronizedWithCurrentItem="True"  x:Name="tbcUserAdditon" Grid.Row="1" >
+			<TabItem Header="Calling/DNC List" x:Name="tbiCallingList">
+				<Canvas Margin="0,0,10,0" Width="250" HorizontalAlignment="Left"> 
+					<Label Width="110" Height="25" Content="Calling List Name" Canvas.Left="10" Canvas.Top="9" x:Name="lblCallingTimeList" HorizontalContentAlignment="Right" FontSize="10" />
+					<Label Width="110" Height="25" Content="Is Active" Canvas.Left="10" Canvas.Top="44" x:Name="lblStartTime" HorizontalContentAlignment="Right" />
+					<Label Width="110" Height="25" Content="DNCList" Canvas.Left="10" Canvas.Top="79" x:Name="lblEndTime" HorizontalContentAlignment="Right" />
+					
+					<TextBox Width="200" Height="25" Text="" TextWrapping="Wrap" Canvas.Left="126" Canvas.Top="9" x:Name="txtName" TabIndex="1" GotFocus="txtName_GotFocus" MaxLength="50" />
+					<CheckBox x:Name="chkIsActive" Width="20" Height="18" Canvas.Top="48" Canvas.Left="126" TabIndex="2" Focusable="False"/>
+					<CheckBox x:Name="chkIsDNCList" Width="20" Height="18" Canvas.Top="83" Canvas.Left="126" TabIndex="3" Focusable="False"/>			
+	
+				</Canvas>
+			</TabItem>
+		</TabControl>
+		<Button Width="75" Height="25" Content="Save" x:Name="btnSave" Click="btnSave_Click" TabIndex="4" HorizontalAlignment="Left" Margin="100,0,0,60" VerticalAlignment="Bottom" Grid.Row="1" />
+		<Button Height="25" Content="Cancel" x:Name="btnCancel" Click="btnCancel_Click" TabIndex="5" Margin="200,0,0,60" VerticalAlignment="Bottom" Grid.Row="1"  HorizontalAlignment="Left" Width="67"/>
+	</Grid>
+	
+</UserControl>

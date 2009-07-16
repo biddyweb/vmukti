@@ -1,0 +1,54 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="VMuktiGrid.CustomMenu.ctlPgTabHeader"
+    Height="Auto" Background="{x:Null}" FontSize="18"  
+    HorizontalAlignment="Stretch" Padding="0,0,0,5">
+    
+    <Grid Width="Auto" HorizontalAlignment="Stretch" Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        
+        <Border HorizontalAlignment="Left" Margin="0,0,0,0" BorderThickness="0,0,0,0" Padding="0,0,0,0" Grid.Column="0">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#B2515151" Offset="0"/>
+                    <GradientStop Color="#80FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <TextBlock  FontSize="12" Foreground="{DynamicResource TextBrush}" Text="TextBlock" 
+                        TextWrapping="Wrap" Cursor="Hand" Width="Auto" 
+                        Height="15" Padding="1,1,1,1" FontWeight="Normal" Background="{x:Null}" 
+                        HorizontalAlignment="Stretch" PreviewMouseLeftButtonDown="txtTitle_MouseDown" 
+                        TextTrimming="CharacterEllipsis"  FontFamily="Segoe UI"/>
+        </Border>
+        <Border HorizontalAlignment="Left" Margin="0,0,0,0" BorderThickness="0,0,0,0" Padding="0,0,0,0" Grid.Column="0" Visibility="Collapsed">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#B2515151" Offset="0"/>
+                    <GradientStop Color="#80FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <TextBox  FontSize="12" Foreground="{DynamicResource TextBrush}" 
+                      Text="TextBlock" TextWrapping="Wrap" Width="Auto" Height="20" 
+                      Padding="0" BorderThickness="1" BorderBrush="{DynamicResource TextBrush}" FontWeight="Normal" Background="{DynamicResource MenuBackground}" 
+                      FontFamily="Segoe UI" HorizontalAlignment="Stretch" LostFocus="TextBox_LostFocus" 
+                      KeyUp="TextBox_PreviewKeyDown"/>
+        </Border>
+
+        <Border HorizontalAlignment="Left" Name="brdIsSaved" Margin="0,0,0,0" 
+                BorderThickness="0,0,0,0" Padding="0,0,0,0" Grid.Column="1" Visibility="Collapsed">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#B2515151" Offset="0"/>
+                    <GradientStop Color="#80FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Label FontFamily="Segoe UI" FontSize="12" Foreground="{DynamicResource TextBrush}" Content="*" 
+                   Width="Auto" Height="20" Padding="1,1,1,1" 
+                   FontWeight="Normal" HorizontalAlignment="Stretch" Background="Transparent" />
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,5 @@
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\FirewallDetector\bin\Debug\StunFireWallDetector.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\FirewallDetector\bin\Debug\StunFireWallDetector.pdb
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\FirewallDetector\obj\Debug\ResolveAssemblyReference.cache
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\FirewallDetector\obj\Debug\StunFireWallDetector.dll
+F:\tejas\VMukti-TFS-Latest\VMukti\VMuktiModules\FirewallDetector\obj\Debug\StunFireWallDetector.pdb

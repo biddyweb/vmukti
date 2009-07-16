@@ -1,0 +1,12 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="VMukti.Presentation.Controls.CtlGeneral"	
+	Width="488" Height="416" Background="#FFFFFFFF">
+
+	<Canvas Width="488" Height="416" Background="{DynamicResource Background}" >
+		<TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Width="488" Height="32" FontSize="22" FontStretch="ExtraExpanded" FontWeight="Bold"  TextAlignment="Center" TextWrapping="Wrap" Canvas.Left="2" Canvas.Top="117">
+			<Run Text="Page Under Construction..." Foreground="#FF000000"/>
+		</TextBlock>
+	</Canvas>
+</UserControl>

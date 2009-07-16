@@ -1,0 +1,143 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+    x:Class="VMuktiGrid.CustomMenu.ctlMenu"    
+    xmlns:nmMenu="clr-namespace:VMuktiGrid.CustomMenu"
+    Height="Auto">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Skins\TabControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Storyboard x:Key="OnMouseEnter1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgPODIcon" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+            </Storyboard>
+
+            <Storyboard x:Key="OnMouseLeave1">
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="objBuddyList" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnHidePanel" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnClose" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+
+                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="btnMinPanel1" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <SolidColorBrush x:Key="tbTabCloseButtonBrush" Color="#FFADADAD"/>
+            
+            <Style x:Key="tbCloseButtonStyle" TargetType="{x:Type Button}">
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border x:Name="border" 
+						CornerRadius="2" 
+						Background="{TemplateBinding Background}" 
+						BorderThickness="1" 
+						BorderBrush="{TemplateBinding BorderBrush}" 
+						Width="16" Height="16" 
+						SnapsToDevicePixels="True">
+                                <Grid Width="8" Height="8" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Path x:Name="path1" Stroke="{DynamicResource TextBrush}" Data="M0,0 L8,8" StrokeThickness="2" />
+                                    <Path x:Name="path2" Stroke="{DynamicResource TextBrush}" Data="M8,0 L0,8" StrokeThickness="2" />
+                                </Grid>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderBrush" Value="{StaticResource tbTabCloseButtonBrush}"/>
+                                    <Setter Property="Background" Value="WhiteSmoke"/>
+                                    <Setter Property="Stroke" TargetName="path1" Value="DarkRed"/>
+                                    <Setter Property="Stroke" TargetName="path2" Value="DarkRed"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                <GradientStop Color="#FFADADAD" Offset="0"/>
+                                                <GradientStop Color="White" Offset="0.5"/>
+                                                <GradientStop Color="White" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        
+        <Button x:Name="btnMenu" Width="16" Content="" Style="{DynamicResource ArrowButtons}" 
+                RenderTransformOrigin="0.5,0.5" Foreground="{x:Null}" Focusable="False" HorizontalAlignment="Right" 
+                Height="10" Margin="0,0,0,0" Click="btnMenu_Click" ToolTip="Options"/>
+        <Popup Name="menuPopUP" PlacementTarget="{Binding ElementName=btnMenu}" 
+               PopupAnimation="Slide" PlacementRectangle="-132,20,0,0" Width="150" MinWidth="150" 
+               StaysOpen="False">
+            <StackPanel Width="150" MinWidth="150" Background="{DynamicResource MenuBackGround}" Name="stPanel">
+                
+                <!--<Grid HorizontalAlignment="Stretch" Background="{DynamicResource MenuBackGround}">
+                    <Label x:Name="lblMenuTitle" Width="100" Content="Menu Options" Height="25" 
+                        FontWeight="14" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="{DynamicResource TextBrush}" />
+                    <Button x:Name="btnClosePopUp" VerticalAlignment="Top"
+					    HorizontalAlignment="Right" Margin="2,5,2,2" ToolTip="Close"
+					    Style="{StaticResource tbCloseButtonStyle}" Click="btnClosePopUp_Click" Foreground="{DynamicResource TextBrush}" />
+                </Grid>-->
+                <!--<Border HorizontalAlignment="Left" Margin="2,0,2,0" BorderThickness="0,0,0,1" Padding="0,0,0,2" Grid.Column="1" MinWidth="150">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#B2515151" Offset="0"/>
+                            <GradientStop Color="#80FFFFFF" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                </Border>-->
+                
+                <nmMenu:ctlMenuItem x:Name="objMIClose" Title="Close"  PreviewMouseLeftButtonDown="objMIClose_PreviewMouseLeftButtonDown" />
+                <nmMenu:ctlMenuItem x:Name="objMIDelete" Title="Delete" strLeftImage="..\Images\PageDelete.png" PreviewMouseLeftButtonDown="objMIDelete_PreviewMouseLeftButtonDown" />
+                <nmMenu:ctlMenuItem x:Name="objMIRename" Title="Rename" strLeftImage="..\Images\Rename.png" PreviewMouseLeftButtonDown="objMIRename_PreviewMouseLeftButtonDown" />
+                <nmMenu:ctlMenuItem x:Name="objMISave" Title="Save" strLeftImage="..\Images\Save.gif" PreviewMouseLeftButtonDown="objMISave_PreviewMouseLeftButtonDown" />
+                
+                <nmMenu:ctlExpMenuItem x:Name="objEMIBuddyList" Title="Buddies" />
+            </StackPanel>
+        </Popup>
+    </Grid>
+
+
+</UserControl>

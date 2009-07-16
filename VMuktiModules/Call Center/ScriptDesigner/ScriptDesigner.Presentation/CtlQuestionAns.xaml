@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="ScriptDesigner.Presentation.CtlQuestionAns"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" MinHeight="700" MinWidth="728" >
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="Background" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+            <GradientStop Color="#FFF5F5F5" Offset="0.905"/>
+            <GradientStop Color="#FFEDEDED" Offset="1"/>
+        </LinearGradientBrush>
+
+    </UserControl.Resources>
+    <Canvas Name="cnvMain" Background="{DynamicResource Background}">
+    <Label Name="lblScript" Height="25" Width="150" Canvas.Left="20" Canvas.Top="20" Content="Script"/>
+    <ComboBox Name="cmbScript" Height="25" Width="170" Canvas.Left="70" Canvas.Top="20" />
+		<Button Name="btnDesigner" Height="25" Width="150" Canvas.Left="260" Canvas.Top="19" Content="Question Designer" Click="btnDesigner_Click" />
+		<TabControl Height="250" Width="700" Canvas.Left="20" Canvas.Top="270">
+    <TabItem Name="tbiQuestions" Header="Question" IsSelected="True">
+    <Canvas>
+    <Label Name="lblHeader" Height="25" Width="70" Canvas.Left="10" Canvas.Top="10" Content="Header"/>
+    <TextBox Name="txtHeader" Height="40" Width="570" Canvas.Left="80" Canvas.Top="10" TextWrapping="Wrap" />
+    
+    <Label Name="lblDescription" Height="25" Width="70" Canvas.Left="10" Canvas.Top="55" Content="Description"/>
+    <TextBox Name="txtDescription" Height="40" Width="570" Canvas.Left="80" Canvas.Top="58" TextWrapping="Wrap" />
+    
+    <Label Name="lblName" Height="25" Width="70" Canvas.Left="10" Canvas.Top="105" Content="Question"/>
+    <TextBox Name="txtName" Height="40" Width="570" Canvas.Left="80" Canvas.Top="105" TextWrapping="Wrap" />
+    
+    <Label Name="lblCategory" Height="25" Width="70" Canvas.Left="10" Canvas.Top="150" Content="Category"/>
+    <ComboBox Name="cmbCategory" Height="25" Width="200" Canvas.Left="80" Canvas.Top="150" SelectionChanged="cmbCategory_SelectionChanged">
+    <ComboBoxItem Content="None" IsSelected="True"/>
+    <ComboBoxItem Content="RadioButton"/>
+    <ComboBoxItem Content="CheckBox"/>
+    <ComboBoxItem Content="ListBox"/>
+    <ComboBoxItem Content="ComboBox"/>
+    </ComboBox>
+    
+    <Label Name="lblNoOfOption" Height="25" Width="75" Canvas.Left="10" Canvas.Top="185" Content="NoOfOptions"/>
+    <TextBox Name="txtNoOfOptions" Height="25" Width="70" Canvas.Left="80" Canvas.Top="185" MaxLength="2" />
+    
+    </Canvas>
+    </TabItem>
+    
+    <TabItem Name="tbiAnswers" Header="Answers" IsSelected="True">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="217" Width="680">
+    <Canvas Name="cnvAnswer">
+    </Canvas>
+    </ScrollViewer>
+    </TabItem>
+    
+    </TabControl>
+    <Button Name="btnSave" Height="25" Width="70" Canvas.Left="200" Canvas.Top="550">Save</Button>
+    <Button Name="btnCancel" Height="25" Width="70" Canvas.Left="300" Canvas.Top="550">Cancel</Button>
+    </Canvas>
+    
+</UserControl>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD:VMuktiModules/Call Center/ToneDetect/ToneDetect.Business/FaxInfo/FaxSpecifiecations.cs
 ﻿/* VMukti 2.0 -- An Open Source Video Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
@@ -25,6 +26,9 @@
  
 */
 namespace ToneDetect.Business.FaxInfo
+=======
+﻿namespace ToneDetect.Business.FaxInfo
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/ToneDetect/ToneDetect.Business/FaxInfo/FaxSpecifiecations.cs
 {
 	/// <summary>
 	/// The purpose of this enumeration is to provide specifications for the

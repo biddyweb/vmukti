@@ -1,3 +1,4 @@
+<<<<<<< HEAD:VMuktiModules/Call Center/ServerInfo/ServerInfo.Business/ClsUser.cs
 /* VMukti 2.0 -- An Open Source Video Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
@@ -24,6 +25,8 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>
  
 */
+=======
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/ServerInfo/ServerInfo.Business/ClsUser.cs
 using System;
 using ServerInfo.Common;
 using System.Data;

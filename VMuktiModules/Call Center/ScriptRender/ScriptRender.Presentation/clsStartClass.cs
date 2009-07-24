@@ -1,3 +1,4 @@
+<<<<<<< HEAD:VMuktiModules/Call Center/ScriptRender/ScriptRender.Presentation/clsStartClass.cs
 ﻿/* VMukti 2.0 -- An Open Source Video Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
@@ -25,6 +26,9 @@
  
 */
 using System.Collections.Generic;
+=======
+﻿using System.Collections.Generic;
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/ScriptRender/ScriptRender.Presentation/clsStartClass.cs
 //using System.Linq;
 using System.Text;
 

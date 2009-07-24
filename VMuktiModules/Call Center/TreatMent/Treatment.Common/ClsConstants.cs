@@ -1,4 +1,8 @@
+<<<<<<< HEAD:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
 ﻿/* VMukti 2.0 -- An Open Source Video Communications Suite
+=======
+﻿/* VMukti 2.0 -- An Open Source Unified Communications Engine
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
 *
@@ -7,7 +11,11 @@
 * See http://www.vmukti.com for more information about
 * the VMukti project. Please do not directly contact
 * any of the maintainers of this project for assistance;
+<<<<<<< HEAD:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
 * the project provides a web site, forums and mailing lists      
+=======
+* the project provides a web site, forums and mailing lists
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
 * for your use.
 
 * This program is free software: you can redistribute it and/or modify
@@ -22,7 +30,12 @@
 
 * You should have received a copy of the GNU General Public License
 * along with this program. If not, see <http://www.gnu.org/licenses/>
+<<<<<<< HEAD:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
  
+=======
+
+
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/TreatMent/Treatment.Common/ClsConstants.cs
 */
 using System;
 

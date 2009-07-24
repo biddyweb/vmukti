@@ -1,3 +1,4 @@
+<<<<<<< HEAD:VMuktiModules/Call Center/ToneDetect/ToneDetect.Business/Detect/IDetectTone.cs
 ﻿/* VMukti 2.0 -- An Open Source Video Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
@@ -25,6 +26,9 @@
  
 */
 using System;
+=======
+﻿using System;
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/ToneDetect/ToneDetect.Business/Detect/IDetectTone.cs
 using System.Collections.Generic;
 using System.Text;
 

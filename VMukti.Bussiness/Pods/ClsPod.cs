@@ -39,7 +39,12 @@ namespace VMukti.Business
 
         #region Fields
 
+<<<<<<< HEAD:VMukti.Bussiness/Pods/ClsPod.cs
         private int moduleId = VMukti.Common.ClsConstants.NullInt;
+=======
+	private string test = "";
+	      private int moduleId = VMukti.Common.ClsConstants.NullInt;
+>>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMukti.Bussiness/Pods/ClsPod.cs
         private string zipFile = VMukti.Common.ClsConstants.NullString;
         private string assemblyFile = VMukti.Common.ClsConstants.NullString;
         private string className = VMukti.Common.ClsConstants.NullString;

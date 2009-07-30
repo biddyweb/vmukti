@@ -1,4 +1,4 @@
-/* VMukti 1.0 -- An Open Source Unified Communications Engine
+/* VMukti 2.0 -- An Open Source Video Communications Suite
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
 *
@@ -7,7 +7,7 @@
 * See http://www.vmukti.com for more information about
 * the VMukti project. Please do not directly contact
 * any of the maintainers of this project for assistance;
-* the project provides a web site, forums and mailing lists
+* the project provides a web site, forums and mailing lists      
 * for your use.
 
 * This program is free software: you can redistribute it and/or modify
@@ -22,8 +22,9 @@
 
 * You should have received a copy of the GNU General Public License
 * along with this program. If not, see <http://www.gnu.org/licenses/>
-
+ 
 */
+
 using System;
 using rptSPHByTimezone.DataAccess;
 

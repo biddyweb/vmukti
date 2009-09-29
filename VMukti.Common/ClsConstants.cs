@@ -1,4 +1,4 @@
-﻿/* VMukti 2.0 -- An Open Source Unified Communications Engine
+﻿/* VMukti 1.0 -- An Open Source Unified Communications Engine
 *
 * Copyright (C) 2008 - 2009, VMukti Solutions Pvt. Ltd.
 *

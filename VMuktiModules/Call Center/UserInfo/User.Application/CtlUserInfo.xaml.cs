@@ -12,9 +12,6 @@
 * the VMukti project. Please do not directly contact
 * any of the maintainers of this project for assistance;
 
-
-
->>>>>>> b74131bacb80d82c79711cf70fe93af3fb611b40:VMuktiModules/Call Center/UserInfo/User.Application/CtlUserInfo.xaml.cs
 */
 using System;
 using System.IO;
